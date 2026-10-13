@@ -1,0 +1,272 @@
+[
+  {
+    "algorithm": "logistic_regression",
+    "generator_retrained": false,
+    "generator_training_seconds": 0.0,
+    "matching_seconds": 0.0003832500005955808,
+    "pool_load_seconds": 0.04380304399819579,
+    "role": "inner",
+    "seed": 0
+  },
+  {
+    "algorithm": "random_forest",
+    "generator_retrained": false,
+    "generator_training_seconds": 0.0,
+    "matching_seconds": 0.0003313979977974668,
+    "pool_load_seconds": 0.039960662004887126,
+    "role": "inner",
+    "seed": 0
+  },
+  {
+    "algorithm": "lightgbm",
+    "generator_retrained": false,
+    "generator_training_seconds": 0.0,
+    "matching_seconds": 0.00029844199889339507,
+    "pool_load_seconds": 0.03985413000191329,
+    "role": "inner",
+    "seed": 0
+  },
+  {
+    "algorithm": "logistic_regression",
+    "generator_retrained": false,
+    "generator_training_seconds": 0.0,
+    "matching_seconds": 0.0003638050038716756,
+    "pool_load_seconds": 0.04676056600146694,
+    "role": "outer",
+    "seed": 0
+  },
+  {
+    "algorithm": "random_forest",
+    "generator_retrained": false,
+    "generator_training_seconds": 0.0,
+    "matching_seconds": 0.00038068399589974433,
+    "pool_load_seconds": 0.04037255900038872,
+    "role": "outer",
+    "seed": 0
+  },
+  {
+    "algorithm": "lightgbm",
+    "generator_retrained": false,
+    "generator_training_seconds": 0.0,
+    "matching_seconds": 0.00037430600059451535,
+    "pool_load_seconds": 0.12046153700066498,
+    "role": "outer",
+    "seed": 0
+  },
+  {
+    "algorithm": "logistic_regression",
+    "generator_retrained": false,
+    "generator_training_seconds": 0.0,
+    "matching_seconds": 0.0003135430015390739,
+    "pool_load_seconds": 0.04063426899665501,
+    "role": "inner",
+    "seed": 1
+  },
+  {
+    "algorithm": "random_forest",
+    "generator_retrained": false,
+    "generator_training_seconds": 0.0,
+    "matching_seconds": 0.0002929299953393638,
+    "pool_load_seconds": 0.040084246000333223,
+    "role": "inner",
+    "seed": 1
+  },
+  {
+    "algorithm": "lightgbm",
+    "generator_retrained": false,
+    "generator_training_seconds": 0.0,
+    "matching_seconds": 0.0003065959972445853,
+    "pool_load_seconds": 0.04886899099801667,
+    "role": "inner",
+    "seed": 1
+  },
+  {
+    "algorithm": "logistic_regression",
+    "generator_retrained": false,
+    "generator_training_seconds": 0.0,
+    "matching_seconds": 0.00031868700170889497,
+    "pool_load_seconds": 0.039753443001245614,
+    "role": "outer",
+    "seed": 1
+  },
+  {
+    "algorithm": "random_forest",
+    "generator_retrained": false,
+    "generator_training_seconds": 0.0,
+    "matching_seconds": 0.0003027299972018227,
+    "pool_load_seconds": 0.043994275998556986,
+    "role": "outer",
+    "seed": 1
+  },
+  {
+    "algorithm": "lightgbm",
+    "generator_retrained": false,
+    "generator_training_seconds": 0.0,
+    "matching_seconds": 0.00029802799690514803,
+    "pool_load_seconds": 0.03822929500165628,
+    "role": "outer",
+    "seed": 1
+  },
+  {
+    "algorithm": "logistic_regression",
+    "generator_retrained": false,
+    "generator_training_seconds": 0.0,
+    "matching_seconds": 0.00036840599932475016,
+    "pool_load_seconds": 0.03997874100605259,
+    "role": "inner",
+    "seed": 2
+  },
+  {
+    "algorithm": "random_forest",
+    "generator_retrained": false,
+    "generator_training_seconds": 0.0,
+    "matching_seconds": 0.00032228099735220894,
+    "pool_load_seconds": 0.03672461800306337,
+    "role": "inner",
+    "seed": 2
+  },
+  {
+    "algorithm": "lightgbm",
+    "generator_retrained": false,
+    "generator_training_seconds": 0.0,
+    "matching_seconds": 0.000294964003842324,
+    "pool_load_seconds": 0.04633142099919496,
+    "role": "inner",
+    "seed": 2
+  },
+  {
+    "algorithm": "logistic_regression",
+    "generator_retrained": false,
+    "generator_training_seconds": 0.0,
+    "matching_seconds": 0.00034937400050694123,
+    "pool_load_seconds": 0.04028886600281112,
+    "role": "outer",
+    "seed": 2
+  },
+  {
+    "algorithm": "random_forest",
+    "generator_retrained": false,
+    "generator_training_seconds": 0.0,
+    "matching_seconds": 0.00033316900226054713,
+    "pool_load_seconds": 0.04096026699698996,
+    "role": "outer",
+    "seed": 2
+  },
+  {
+    "algorithm": "lightgbm",
+    "generator_retrained": false,
+    "generator_training_seconds": 0.0,
+    "matching_seconds": 0.0003126110023004003,
+    "pool_load_seconds": 0.04211910700541921,
+    "role": "outer",
+    "seed": 2
+  },
+  {
+    "algorithm": "logistic_regression",
+    "generator_retrained": false,
+    "generator_training_seconds": 0.0,
+    "matching_seconds": 0.00030350899760378525,
+    "pool_load_seconds": 0.04117825299908873,
+    "role": "inner",
+    "seed": 3
+  },
+  {
+    "algorithm": "random_forest",
+    "generator_retrained": false,
+    "generator_training_seconds": 0.0,
+    "matching_seconds": 0.00030577999859815463,
+    "pool_load_seconds": 0.041617044000304304,
+    "role": "inner",
+    "seed": 3
+  },
+  {
+    "algorithm": "lightgbm",
+    "generator_retrained": false,
+    "generator_training_seconds": 0.0,
+    "matching_seconds": 0.0003123500064248219,
+    "pool_load_seconds": 0.044629286996496376,
+    "role": "inner",
+    "seed": 3
+  },
+  {
+    "algorithm": "logistic_regression",
+    "generator_retrained": false,
+    "generator_training_seconds": 0.0,
+    "matching_seconds": 0.0003400920031708665,
+    "pool_load_seconds": 0.04284912900038762,
+    "role": "outer",
+    "seed": 3
+  },
+  {
+    "algorithm": "random_forest",
+    "generator_retrained": false,
+    "generator_training_seconds": 0.0,
+    "matching_seconds": 0.0003165160014759749,
+    "pool_load_seconds": 0.04193502900307067,
+    "role": "outer",
+    "seed": 3
+  },
+  {
+    "algorithm": "lightgbm",
+    "generator_retrained": false,
+    "generator_training_seconds": 0.0,
+    "matching_seconds": 0.00031879799644229934,
+    "pool_load_seconds": 0.040754927998932544,
+    "role": "outer",
+    "seed": 3
+  },
+  {
+    "algorithm": "logistic_regression",
+    "generator_retrained": false,
+    "generator_training_seconds": 0.0,
+    "matching_seconds": 0.0002909140021074563,
+    "pool_load_seconds": 0.04400430699752178,
+    "role": "inner",
+    "seed": 4
+  },
+  {
+    "algorithm": "random_forest",
+    "generator_retrained": false,
+    "generator_training_seconds": 0.0,
+    "matching_seconds": 0.00033935299870790914,
+    "pool_load_seconds": 0.044069914998544846,
+    "role": "inner",
+    "seed": 4
+  },
+  {
+    "algorithm": "lightgbm",
+    "generator_retrained": false,
+    "generator_training_seconds": 0.0,
+    "matching_seconds": 0.0003134729995508678,
+    "pool_load_seconds": 0.04616320400236873,
+    "role": "inner",
+    "seed": 4
+  },
+  {
+    "algorithm": "logistic_regression",
+    "generator_retrained": false,
+    "generator_training_seconds": 0.0,
+    "matching_seconds": 0.00031434099946636707,
+    "pool_load_seconds": 0.04059745999984443,
+    "role": "outer",
+    "seed": 4
+  },
+  {
+    "algorithm": "random_forest",
+    "generator_retrained": false,
+    "generator_training_seconds": 0.0,
+    "matching_seconds": 0.000309843999275472,
+    "pool_load_seconds": 0.04117578900331864,
+    "role": "outer",
+    "seed": 4
+  },
+  {
+    "algorithm": "lightgbm",
+    "generator_retrained": false,
+    "generator_training_seconds": 0.0,
+    "matching_seconds": 0.0003186570029356517,
+    "pool_load_seconds": 0.04091101999802049,
+    "role": "outer",
+    "seed": 4
+  }
+]

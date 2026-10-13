@@ -1,0 +1,196 @@
+[
+  {
+    "algorithm": "logistic_regression",
+    "artifact_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261004T062629-ec34a40b4f3b",
+    "augmentation": {
+      "actual_count": 1000,
+      "actual_counts": {
+        "0": 8338,
+        "1": 2526
+      },
+      "mode": "matched",
+      "real_counts": {
+        "0": 8338,
+        "1": 1526
+      },
+      "requested_count": 1000,
+      "underspend": 0
+    },
+    "augmentation_count": null,
+    "average_precision": 0.6175400722816023,
+    "balanced_accuracy": 0.6657743867512135,
+    "budget_mode": "matched",
+    "candidate_configs": [
+      {},
+      {
+        "C": 0.1
+      },
+      {
+        "C": 10.0
+      },
+      {
+        "C": 0.1
+      },
+      {
+        "C": 0.01
+      },
+      {
+        "C": 0.01
+      },
+      {
+        "C": 100.0
+      },
+      {
+        "C": 1.0
+      },
+      {
+        "C": 0.1
+      },
+      {
+        "C": 0.01
+      }
+    ],
+    "classifiers": [
+      "logistic_regression"
+    ],
+    "config": {
+      "selected_epoch_sequence": [
+        null
+      ],
+      "selected_parameters": {
+        "C": 0.01
+      },
+      "settings": {
+        "augmentation": {
+          "mode": "matched",
+          "total": 1000
+        },
+        "device": "auto",
+        "method_parameters": {},
+        "mlp_epochs": 160,
+        "ugo_max_iterations": 20
+      },
+      "threshold": 0.5
+    },
+    "config_sha256": "60c0a9469b3f51e952041a585f0258bd3a3a0aa91d13b340b126dc588dd50854",
+    "configuration_id": "c866c70f8479aec5ed676aaf972069aaccce0d880b3c03fab81871b1f42ec01e",
+    "cost": 123510,
+    "cuda_peak_torch_allocated_bytes": 0,
+    "cuda_peak_torch_reserved_bytes": 0,
+    "data_home": ".cache/benchmarks",
+    "dataset": "shoppers",
+    "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+    "device": "auto",
+    "download": false,
+    "effective_classifiers": [
+      "logistic_regression"
+    ],
+    "effective_seeds": [
+      3
+    ],
+    "effective_settings": {
+      "augmentation": {
+        "mode": "matched",
+        "total": 1000
+      },
+      "device": "auto",
+      "method_parameters": {},
+      "mlp_epochs": 160,
+      "ugo_max_iterations": 20
+    },
+    "effective_tuning_budget": 10,
+    "effective_variants": [
+      "kmeans_smote"
+    ],
+    "error": null,
+    "evaluation_policy_sha256": "af8a8e50eb193c0b5816d0ad8728f8f943b6449b0a95769d7e1822545cceafec",
+    "experiment_type": "development",
+    "fn": 246,
+    "fold": "4d429ae367cbb3b9226fcd0818328855be271613fe2c3254af3eee962f803fe7",
+    "fp": 51,
+    "local_data": null,
+    "macro_average_precision": 0.7960018834223532,
+    "macro_f1": 0.7049796036087131,
+    "mcc": 0.4531427110108806,
+    "memory_scope": "cell process RSS sampled at 10ms; Torch CUDA allocator only",
+    "method": "kmeans_smote",
+    "methods": [
+      "kmeans_smote"
+    ],
+    "metrics": {
+      "average_precision": 0.6175400722816023,
+      "balanced_accuracy": 0.6657743867512135,
+      "cost": 123510,
+      "fn": 246,
+      "fp": 51,
+      "macro_average_precision": 0.7960018834223532,
+      "macro_f1": 0.7049796036087131,
+      "mcc": 0.4531427110108806,
+      "minority_f1": 0.4780316344463972,
+      "minority_recall": 0.35602094240837695,
+      "primary_metric": "average_precision",
+      "primary_metric_value": 0.6175400722816023,
+      "realized_fpr_test": 0.024472168905950095,
+      "realized_recall_test": 0.35602094240837695,
+      "recall_at_fpr_test": 0.5209424083769634,
+      "roc_attained_fpr_test": 0.04990403071017274,
+      "roc_fpr_limit": 0.05,
+      "roc_operating_point_definition": "maximum attainable TPR with FPR <= limit; >= threshold; ties intact; no interpolation",
+      "sos_inverse_support_f1": 0.548343170715663,
+      "threshold": 0.5,
+      "tn": 2033,
+      "tp": 136,
+      "weighted_f1": 0.8616160365017633
+    },
+    "minority_f1": 0.4780316344463972,
+    "minority_recall": 0.35602094240837695,
+    "mlp_epochs": null,
+    "output_dir": null,
+    "peak_rss_bytes": 1124212736,
+    "positive_class": 1,
+    "predictions_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261004T062629-ec34a40b4f3b/shoppers/fold-0/seed-3/logistic_regression/kmeans_smote/predictions.csv",
+    "prepare": false,
+    "primary_metric": "average_precision",
+    "primary_metric_value": 0.6175400722816023,
+    "protocol": "configs/benchmarks/shoppers_controlled.yaml",
+    "protocol_id": "shoppers_uci_controlled_v1",
+    "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+    "realized_fpr_test": 0.024472168905950095,
+    "realized_recall_test": 0.35602094240837695,
+    "recall_at_fpr_test": 0.5209424083769634,
+    "record_id": "24d4a4618b1c9a6feb7ee37e5b25611b53cca8217205c9c59854d5920c8a9779",
+    "record_scope": "benchmark_cell",
+    "roc_attained_fpr_test": 0.04990403071017274,
+    "roc_fpr_limit": 0.05,
+    "roc_operating_point_definition": "maximum attainable TPR with FPR <= limit; >= threshold; ties intact; no interpolation",
+    "rss_sample_interval_seconds": 0.01,
+    "run": true,
+    "run_id": "20261004T062629-ec34a40b4f3b",
+    "runtime_seconds": 0.6391622920000373,
+    "seed": 3,
+    "seeds": [
+      3
+    ],
+    "selected_candidate": 4,
+    "smoke": false,
+    "smoke_test_rows": 120,
+    "smoke_train_rows": 400,
+    "sos_inverse_support_f1": 0.548343170715663,
+    "split_fingerprint": "4d429ae367cbb3b9226fcd0818328855be271613fe2c3254af3eee962f803fe7",
+    "status": "completed",
+    "strategy": "kmeans_smote",
+    "study": "configs/ablations/stage1_controls.yaml",
+    "study_id": "stage1_baseline_controls_v1",
+    "study_sha256": "91f40a43ae81fe9914a13f09359ca59491b767dcf008910ea373553eb0e109dd",
+    "study_type": "baseline_control",
+    "threshold": 0.5,
+    "tn": 2033,
+    "tp": 136,
+    "tuning_budget": 10,
+    "ugo_max_iterations": null,
+    "unique_candidate_count": 6,
+    "variant": null,
+    "variant_id": "kmeans_smote",
+    "weighted_f1": 0.8616160365017633
+  }
+]

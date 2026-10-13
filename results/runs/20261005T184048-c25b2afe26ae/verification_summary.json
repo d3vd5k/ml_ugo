@@ -1,0 +1,21 @@
+{
+  "completed_cells": 120,
+  "failed_cells": 0,
+  "metric_recomputations": 120,
+  "pipeline_audits": 1320,
+  "constraint_audits": 495,
+  "verified_accepted_points": 333607,
+  "verified_attempts": 4861611,
+  "real_preprocessing_contexts": 6,
+  "geometry_refits": 6,
+  "observed_training_fits_including_oof": 13238,
+  "runtime_cell_sum_seconds": 11612.140121188004,
+  "peak_rss_mib": 1810.84765625,
+  "retention": "awaiting_user_decision",
+  "manual_decisions": {
+    "U1": "keep",
+    "U2": "keep",
+    "U3": "pending"
+  },
+  "u3_underspent_outer_cells": 45
+}

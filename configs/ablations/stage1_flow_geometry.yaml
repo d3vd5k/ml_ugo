@@ -1,0 +1,56 @@
+study_id: stage1_flow_geometry_shoppers_v1
+study_type: component_ablation
+experiment_type: development
+development_datasets: [shoppers]
+confirmatory_datasets: []
+controlled_component_base: U2_random_pool
+manual_review:
+  policy: user_only_keep_or_discard
+  decisions: {U1: keep, U2: keep, U3: discard, U4: discard, U5: discard, H1: discard, F1: keep, F2: discard, U5_F1: keep, pool_utility: discard, pool_random_f1: pending, flow_geometry: pending}
+freeze: {status: not_frozen, reason: Frozen Flow geometry is an authorized experiment, not a retained Phase 1 configuration., evidence: {}}
+stage_gate: {stage2_allowed: false}
+pairing:
+  splits: original_Shoppers_inner_outer_real_access
+  seeds: [0, 1, 2, 3, 4]
+  classifiers: [logistic_regression, random_forest, lightgbm]
+  native_settings: lock_same_seed_original_canonical_U2_learner_and_group_alpha
+  primary: same_group_input_geometry_vs_same_group_latent_geometry
+  initial_pairs: identical_native_checkpoint_anchor_partner_lambda_stream
+  iterative_pairs: matched_seeds_budgets_later_models_and_pools_may_diverge
+  accepted_target: 1000
+  retraining_cap: 20
+  shortfalls: recorded_no_forced_regeneration_or_quota_override
+geometry_policy:
+  frozen_flow: existing_original_auto_device_checkpoint_inference_only
+  parent_cache: once_per_real_seed_role_shared_across_both_geometries_and_all_classifiers
+  parent_transform: original_content_keyed_dequantized_Flow_representation
+  parents: distinct_real_same_class_same_U2_group
+  partners: closest_input_space_neighbors_within_original_group
+  anchors_quotas_stopping: unchanged_U2
+  proposals_per_distinct_anchor: 5
+  selection: unchanged_seeded_random_one_per_anchor_then_group_quota_fill
+  latent_path: inverse_Flow_of_lambda_interpolated_parent_latents
+  numeric_decode: detector_scaler_inverse_then_original_classifier_preprocessing
+  categorical_decode: original_U2_partner_categories_after_numeric_decode
+  discrete_caveat: projected_mixed_feature_path_not_exact_inverse_in_discrete_columns
+  numeric_domain: nonnegative_numeric_and_unit_interval_BounceRates_ExitRates_SpecialDay
+  numeric_counts: continuous_as_original_U2_no_rounding
+  invalidity: exclude_unknown_nonfinite_out_of_domain_before_neighbor_relocation
+  parent_validity: identical_Flow_representability_filter_in_both_matched_controls
+  relocation: unchanged_original_native_neighbor_handling_on_valid_proposals_only
+  F1_rejection: disabled
+  utility_surrogates_guidance: disabled
+  excluded: [H1, F2, HDBSCAN, U1_for_new_methods, U3, U4, new_flow_training, clipping, fallback_generation]
+reference_policy:
+  verified_run: results/runs/20261009T170013-d5be50bc2107
+  import: original_UGO_U2_U5_U5_F1_pool_random_pool_random_F1_with_source_provenance
+  smoke: fresh_prior_protocol_reference_subrun_using_outer_training_development_rows_only
+variants:
+  U0: {method: ugo_original, available: true, missing_components: []}
+  U2: {method: ugo_groups_only, available: true, missing_components: []}
+  U5: {method: ugo_combined, available: true, retention_status: discarded_reference_only, missing_components: []}
+  U5_F1: {method: ugo_combined_f1, available: true, retention_status: kept_by_user, missing_components: []}
+  pool_random: {method: ugo_groups_only, available: true, retention_status: reference_only, missing_components: []}
+  pool_random_f1: {method: ugo_f1, available: true, retention_status: pending_reference_only, missing_components: []}
+  pool_random_group_input: {method: ugo_groups_only, available: true, retention_status: matched_geometry_control_only, missing_components: []}
+  pool_random_group_flow: {method: ugo_groups_only, available: true, retention_status: pending_user_decision, missing_components: []}

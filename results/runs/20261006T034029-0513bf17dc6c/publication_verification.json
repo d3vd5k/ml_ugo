@@ -1,0 +1,8 @@
+{
+  "equal_count_or_equal_compute_claim": false,
+  "paired_numeric_deltas_recomputed": 12150,
+  "report_artifact_links_resolved": 14,
+  "retention": "U1/U2 keep; U3 discard; U4 pending",
+  "statistics_tolerance": "1e-12 relative/absolute; byte resource outputs rounded to MiB in report",
+  "summary_numeric_values_recomputed": 1134
+}

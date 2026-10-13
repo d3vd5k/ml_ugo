@@ -1,0 +1,10 @@
+algorithm,variant_id,seed,tau,accepted_count,underspend,proposal_count,repeated_synthetic_count,synthetic_matches_real_count,detector_training_seconds_shared,detector_inference_seconds,replay_wall_seconds,classifier_fit_count,domain_invalid_count,unknown_detector_category_count,nonfinite_detector_score_count
+lightgbm,F1_pool,2.0,0.72,631.2,368.8,1000.0,0.0,0.0,12.872712946799584,0.06441507360068499,0.23487545940006385,5.0,0.0,0.0,0.0
+lightgbm,N_reject_pool,2.0,,936.4,63.6,1000.0,0.0,0.0,0.0,0.4073965033989225,0.338120886800607,2.0,0.0,0.0,0.0
+lightgbm,U2_pool,2.0,,1000.0,0.0,1000.0,11.0,63.6,0.0,0.0,0.3361366183991777,2.0,0.0,0.0,0.0
+logistic_regression,F1_pool,2.0,0.8,518.2,481.8,1000.0,0.0,0.0,12.872712946799584,0.06490208019895363,0.15336890239996137,5.0,0.0,0.0,0.0
+logistic_regression,N_reject_pool,2.0,,929.6,70.4,1000.0,0.0,0.0,0.0,0.4115523831984319,0.1876520181998785,2.0,0.0,0.0,0.0
+logistic_regression,U2_pool,2.0,,1000.0,0.0,1000.0,7.8,70.4,0.0,0.0,0.18609875120018843,2.0,0.0,0.0,0.0
+random_forest,F1_pool,2.0,0.6599999999999999,666.8,333.2,1000.0,0.0,0.0,12.872712946799584,0.12127454619985656,4.661208754999825,5.0,0.0,0.0,0.0
+random_forest,N_reject_pool,2.0,,948.0,52.0,1000.0,0.0,0.0,0.0,0.39191324380080916,8.678947471599532,2.0,0.0,0.0,0.0
+random_forest,U2_pool,2.0,,1000.0,0.0,1000.0,6.6,52.0,0.0,0.0,8.617995651000092,2.0,0.0,0.0,0.0

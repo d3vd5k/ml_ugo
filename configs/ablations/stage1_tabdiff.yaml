@@ -1,0 +1,58 @@
+study_id: stage1_tabdiff_shoppers_fixed_round_v1
+study_type: component_ablation
+experiment_type: development
+development_datasets: [shoppers]
+confirmatory_datasets: []
+manual_review:
+  policy: user_only_keep_or_discard
+  current_U5_semantics: U2_only_no_U1_OOF
+  decisions: {U2: keep, F1: keep, pool_utility: discard, TabDiff: pending}
+freeze: {status: not_frozen, evidence: {}}
+stage_gate: {stage2_allowed: false}
+protocol:
+  augmentation_rounds: 1
+  proposal_cap: 1000
+  round_budget: min_cap_and_original_U2_lambda_step
+  anchors: unchanged_native_U2_first_round_real_minority_schedule
+  groups: unchanged_canonical_U2_kmeans_stability_quotas
+  count_matching: per_group_minimum_feasible_A_B_C_then_uniform_thinning
+  quota_shortfalls: report_no_refill_or_reallocation
+  count_decoder: user_approved_common_np_rint_ties_even_all_arms_before_F1
+  validity: raw_nonnegative_and_finite_before_rounding_then_zero_count_implies_zero_duration
+  rates: BounceRates_ExitRates_SpecialDay_in_0_1
+  categorical: observed_real_role_training_categories_original_fields
+  duplicates: log_exact_real_and_pool_duplicates_no_new_rejection_policy
+  near_duplicate_threshold: 0.001
+  near_duplicate_units: original_classifier_preprocessed_euclidean
+  F1: existing_frozen_auto_CUDA_checkpoint_and_locked_per_cell_tau
+  relocation: disabled_as_existing_F1
+  utility_ranking: disabled
+  TAP_policy: disabled
+  downstream: native_LR_RF_LightGBM_identical_locked_U2_parameters_across_arms
+  feature_masks: train_only_domain_blocks_nested_nearest_25_and_50_percent_excluding_label
+  mask_selection: inner_validation_AP_B_vs_C_tie_prefers_B
+  final_generator: refit_real_outer_training_after_inner_selection_former_inner_validation_now_training
+  outer_test: no_fitting_generation_tuning_or_configuration_selection
+  bootstrap: {draws: 2000, seed: 20261011, shared_stratified_test_rows: true, matched_seed_resampling: true}
+generator:
+  upstream_commit: 5ecdb3356261aea72716cc9a779f31d7ad083bf4
+  TAP_reference_commit: f7de90f86a63f2a446d0eaf2b81c67ec59f7f7d0
+  epochs: 8000
+  batch_size: 4096
+  learning_rate: 0.001
+  ema_decay: 0.997
+  num_steps: 50
+  hidden_dim: 1024
+  num_layers: 2
+  d_token: 4
+  factor: 32
+  lr_factor: 0.90
+  lr_patience: 50
+  checkpoint: final_epoch_EMA_no_heldout_selection
+  label: joint_categorical_conditioned_unmasked_minority
+  preprocessing: real_role_train_only_quantile_normal_numeric_observed_nominal_categories
+  conditioning: corrected_actual_time_xt_Euler_Heun_known_noise_final_exact_restoration
+variants:
+  A: {method: ugo_f1, available: true, missing_components: [], description: fixed_round_current_generator_common_count_decoder_U2_F1}
+  B: {method: tabdiff_inpaint_f1, available: true, missing_components: [], description: fixed_round_TabDiff_approximately_25_percent}
+  C: {method: tabdiff_inpaint_f1, available: true, missing_components: [], description: fixed_round_TabDiff_approximately_50_percent}

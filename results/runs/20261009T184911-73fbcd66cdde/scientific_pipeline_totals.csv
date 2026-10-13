@@ -1,0 +1,11 @@
+phase,value,scope
+observed_invocation_wall_seconds,1037.0314438269997,includes fresh reference subrun in smoke only; includes cache and trajectory phases
+fresh_trajectory_runtime_seconds,1002.6559821110022,includes native fits and proposal/selection
+fresh_native_fit_seconds,697.34400718295,subset of fresh trajectory runtime
+fresh_native_fit_count,502.0,inner and outer geometry branches
+fresh_inverse_seconds,7.900792524971621,"subset of geometry generation, latent branch only"
+fresh_inverse_rows,211173.0,"eligible-parent candidate rows, not all accepted"
+shared_parent_cache_seconds,3.175140155999543,once per seed/role; subphases overlap cache_seconds
+shared_parent_representation_seconds,1.4111251660106063,once per seed/role; subphases overlap cache_seconds
+shared_parent_forward_seconds,1.2216027499998745,once per seed/role; subphases overlap cache_seconds
+shared_parent_roundtrip_seconds,0.37892664100945694,once per seed/role; subphases overlap cache_seconds

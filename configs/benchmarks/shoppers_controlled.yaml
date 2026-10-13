@@ -1,0 +1,65 @@
+{
+  "track": "controlled",
+  "status": "ready",
+  "validation_fraction": 0.2,
+  "classifiers": [
+    "logistic_regression",
+    "random_forest",
+    "lightgbm",
+    "mlp"
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "tuning_budget": {
+    "n_candidates": 10,
+    "sampler_seed": 42
+  },
+  "threshold": {
+    "name": "fixed_0.5"
+  },
+  "methods": [
+    "baseline",
+    "class_weight",
+    "ros",
+    "smote",
+    "borderline_smote",
+    "kmeans_smote",
+    "ugo_original",
+    "ugo_corrected"
+  ],
+  "augmentation": {
+    "mode": "matched",
+    "total": 1000
+  },
+  "classifier_methods": {
+    "balanced_random_forest": [
+      "baseline"
+    ]
+  },
+  "preprocessing": {
+    "fit_on": "fit_indices",
+    "numeric": "median_impute_standard_scale",
+    "categorical": "mode_impute_one_hot_unknown_ignore",
+    "category_safe_sampling": true
+  },
+  "role": "development",
+  "protocol_id": "shoppers_uci_controlled_v1",
+  "dataset": "shoppers",
+  "primary_metric": "average_precision",
+  "split": {
+    "type": "stratified_holdout",
+    "test_fraction": 0.2,
+    "outer_seed": 2026
+  },
+  "smoke_method_parameters": {
+    "kmeans_smote": {
+      "cluster_balance_threshold": 0.05,
+      "kmeans_estimator": 3
+    }
+  }
+}

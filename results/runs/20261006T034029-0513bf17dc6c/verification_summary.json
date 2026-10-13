@@ -1,0 +1,30 @@
+{
+  "U4_outer_refits": 30,
+  "U4_outer_selected_budget_underspends": 0,
+  "U4_outer_zero": 20,
+  "checkpoint_metric_sets_verified": 1200,
+  "classifier_fits": 4984,
+  "completed_cells": 105,
+  "confirmatory_allowed": false,
+  "generations_across_search_and_refits": 1079750,
+  "interpretation": "descriptive full-procedure comparison; differing selected counts and selection effort; no equal-count/equal-compute claim",
+  "metric_value_checks": 33705,
+  "peak_process_rss_mib": 1782.12890625,
+  "pipeline_audits_verified": 1605,
+  "prediction_sets_verified": 105,
+  "retention": {
+    "U1": "keep",
+    "U2": "keep",
+    "U3": "discard",
+    "U4": "pending",
+    "U5": "pending"
+  },
+  "selected_budgets": {
+    "0": 20,
+    "250": 3,
+    "500": 1,
+    "1000": 6
+  },
+  "sum_cell_seconds": 6001.443936293028,
+  "wall_seconds": 6003.325024919002
+}

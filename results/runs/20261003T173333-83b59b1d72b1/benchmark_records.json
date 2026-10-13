@@ -1,0 +1,4502 @@
+[
+  {
+    "algorithm": "logistic_regression",
+    "artifact_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T173333-83b59b1d72b1",
+    "augmentation": {},
+    "augmentation_count": null,
+    "budget_mode": "matched",
+    "candidate_configs": [
+      {},
+      {
+        "C": 0.1
+      },
+      {
+        "C": 10.0
+      },
+      {
+        "C": 0.1
+      },
+      {
+        "C": 0.01
+      },
+      {
+        "C": 0.01
+      },
+      {
+        "C": 100.0
+      },
+      {
+        "C": 1.0
+      },
+      {
+        "C": 0.1
+      },
+      {
+        "C": 0.01
+      }
+    ],
+    "classifiers": null,
+    "config": {
+      "settings": {
+        "augmentation": {
+          "mode": "matched",
+          "total": 1000
+        },
+        "device": "auto",
+        "method_parameters": {},
+        "mlp_epochs": 160,
+        "ugo_max_iterations": 20
+      }
+    },
+    "config_sha256": "f7b15383f1148f4a18af5fdff7f8742df0d7dd43e139acc0b5ef92dad607bc65",
+    "configuration_id": "869d85a4e7154548a860bb24315c0ddb67c4586bc162dbec32a950e63511e4e6",
+    "data_home": ".cache/benchmarks",
+    "dataset": "shoppers",
+    "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+    "device": "auto",
+    "download": true,
+    "effective_classifiers": [
+      "logistic_regression",
+      "random_forest",
+      "lightgbm",
+      "balanced_random_forest"
+    ],
+    "effective_seeds": [
+      42
+    ],
+    "effective_settings": {
+      "augmentation": {
+        "mode": "matched",
+        "total": 1000
+      },
+      "device": "auto",
+      "method_parameters": {},
+      "mlp_epochs": 160,
+      "ugo_max_iterations": 20
+    },
+    "effective_tuning_budget": 10,
+    "effective_variants": [
+      "baseline",
+      "class_weight",
+      "ros",
+      "smote",
+      "borderline_smote",
+      "kmeans_smote",
+      "ugo_original",
+      "ugo_corrected"
+    ],
+    "error": null,
+    "evaluation_policy_sha256": "46728802ab301fc16325ceb8be859210f1219706194e524d82f0b23a5ba0d3a3",
+    "experiment_type": "setup_prepare",
+    "fold": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "local_data": null,
+    "method": "baseline",
+    "methods": null,
+    "metrics": {},
+    "mlp_epochs": null,
+    "output_dir": null,
+    "prepare": true,
+    "protocol": "configs/benchmarks/shoppers_controlled.yaml",
+    "protocol_id": "shoppers_uci_controlled_v1",
+    "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+    "record_id": "c6d84a0d2f20b2c0466be42b6cbdaf3c964f2797ed92517adb31cfd19564c1cb",
+    "record_scope": "benchmark_cell",
+    "run": false,
+    "run_id": "20261003T173333-83b59b1d72b1",
+    "seed": 42,
+    "seeds": [
+      42
+    ],
+    "smoke": false,
+    "smoke_test_rows": 120,
+    "smoke_train_rows": 400,
+    "split_fingerprint": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "status": "prepared",
+    "strategy": "baseline",
+    "study": "configs/ablations/stage1_controls.yaml",
+    "study_id": "stage1_baseline_controls_v1",
+    "study_sha256": "2d88ecfe00891c2ed7cd518b460ecd1b2b783c2ee28bb65547a2458ace9dd835",
+    "study_type": "baseline_control",
+    "tuning_budget": 10,
+    "ugo_max_iterations": null,
+    "variant": null,
+    "variant_id": "baseline"
+  },
+  {
+    "algorithm": "logistic_regression",
+    "artifact_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T173333-83b59b1d72b1",
+    "augmentation": {},
+    "augmentation_count": null,
+    "budget_mode": "matched",
+    "candidate_configs": [
+      {},
+      {
+        "C": 0.1
+      },
+      {
+        "C": 10.0
+      },
+      {
+        "C": 0.1
+      },
+      {
+        "C": 0.01
+      },
+      {
+        "C": 0.01
+      },
+      {
+        "C": 100.0
+      },
+      {
+        "C": 1.0
+      },
+      {
+        "C": 0.1
+      },
+      {
+        "C": 0.01
+      }
+    ],
+    "classifiers": null,
+    "config": {
+      "settings": {
+        "augmentation": {
+          "mode": "matched",
+          "total": 1000
+        },
+        "device": "auto",
+        "method_parameters": {},
+        "mlp_epochs": 160,
+        "ugo_max_iterations": 20
+      }
+    },
+    "config_sha256": "f7b15383f1148f4a18af5fdff7f8742df0d7dd43e139acc0b5ef92dad607bc65",
+    "configuration_id": "6888fbfd76c9c2364aba71b59b0ab9b3489aa69c0bc892da7880be1c25c117a8",
+    "data_home": ".cache/benchmarks",
+    "dataset": "shoppers",
+    "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+    "device": "auto",
+    "download": true,
+    "effective_classifiers": [
+      "logistic_regression",
+      "random_forest",
+      "lightgbm",
+      "balanced_random_forest"
+    ],
+    "effective_seeds": [
+      42
+    ],
+    "effective_settings": {
+      "augmentation": {
+        "mode": "matched",
+        "total": 1000
+      },
+      "device": "auto",
+      "method_parameters": {},
+      "mlp_epochs": 160,
+      "ugo_max_iterations": 20
+    },
+    "effective_tuning_budget": 10,
+    "effective_variants": [
+      "baseline",
+      "class_weight",
+      "ros",
+      "smote",
+      "borderline_smote",
+      "kmeans_smote",
+      "ugo_original",
+      "ugo_corrected"
+    ],
+    "error": null,
+    "evaluation_policy_sha256": "46728802ab301fc16325ceb8be859210f1219706194e524d82f0b23a5ba0d3a3",
+    "experiment_type": "setup_prepare",
+    "fold": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "local_data": null,
+    "method": "class_weight",
+    "methods": null,
+    "metrics": {},
+    "mlp_epochs": null,
+    "output_dir": null,
+    "prepare": true,
+    "protocol": "configs/benchmarks/shoppers_controlled.yaml",
+    "protocol_id": "shoppers_uci_controlled_v1",
+    "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+    "record_id": "1a9596d028f301bc344633f840793af978b7cbbb08891abef60d73bf2532b7f1",
+    "record_scope": "benchmark_cell",
+    "run": false,
+    "run_id": "20261003T173333-83b59b1d72b1",
+    "seed": 42,
+    "seeds": [
+      42
+    ],
+    "smoke": false,
+    "smoke_test_rows": 120,
+    "smoke_train_rows": 400,
+    "split_fingerprint": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "status": "prepared",
+    "strategy": "class_weight",
+    "study": "configs/ablations/stage1_controls.yaml",
+    "study_id": "stage1_baseline_controls_v1",
+    "study_sha256": "2d88ecfe00891c2ed7cd518b460ecd1b2b783c2ee28bb65547a2458ace9dd835",
+    "study_type": "baseline_control",
+    "tuning_budget": 10,
+    "ugo_max_iterations": null,
+    "variant": null,
+    "variant_id": "class_weight"
+  },
+  {
+    "algorithm": "logistic_regression",
+    "artifact_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T173333-83b59b1d72b1",
+    "augmentation": {},
+    "augmentation_count": null,
+    "budget_mode": "matched",
+    "candidate_configs": [
+      {},
+      {
+        "C": 0.1
+      },
+      {
+        "C": 10.0
+      },
+      {
+        "C": 0.1
+      },
+      {
+        "C": 0.01
+      },
+      {
+        "C": 0.01
+      },
+      {
+        "C": 100.0
+      },
+      {
+        "C": 1.0
+      },
+      {
+        "C": 0.1
+      },
+      {
+        "C": 0.01
+      }
+    ],
+    "classifiers": null,
+    "config": {
+      "settings": {
+        "augmentation": {
+          "mode": "matched",
+          "total": 1000
+        },
+        "device": "auto",
+        "method_parameters": {},
+        "mlp_epochs": 160,
+        "ugo_max_iterations": 20
+      }
+    },
+    "config_sha256": "f7b15383f1148f4a18af5fdff7f8742df0d7dd43e139acc0b5ef92dad607bc65",
+    "configuration_id": "b03e67a10143d0c49899970af24e60862371b3eab245c24b5e760bded4a6fbc6",
+    "data_home": ".cache/benchmarks",
+    "dataset": "shoppers",
+    "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+    "device": "auto",
+    "download": true,
+    "effective_classifiers": [
+      "logistic_regression",
+      "random_forest",
+      "lightgbm",
+      "balanced_random_forest"
+    ],
+    "effective_seeds": [
+      42
+    ],
+    "effective_settings": {
+      "augmentation": {
+        "mode": "matched",
+        "total": 1000
+      },
+      "device": "auto",
+      "method_parameters": {},
+      "mlp_epochs": 160,
+      "ugo_max_iterations": 20
+    },
+    "effective_tuning_budget": 10,
+    "effective_variants": [
+      "baseline",
+      "class_weight",
+      "ros",
+      "smote",
+      "borderline_smote",
+      "kmeans_smote",
+      "ugo_original",
+      "ugo_corrected"
+    ],
+    "error": null,
+    "evaluation_policy_sha256": "46728802ab301fc16325ceb8be859210f1219706194e524d82f0b23a5ba0d3a3",
+    "experiment_type": "setup_prepare",
+    "fold": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "local_data": null,
+    "method": "ros",
+    "methods": null,
+    "metrics": {},
+    "mlp_epochs": null,
+    "output_dir": null,
+    "prepare": true,
+    "protocol": "configs/benchmarks/shoppers_controlled.yaml",
+    "protocol_id": "shoppers_uci_controlled_v1",
+    "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+    "record_id": "b654c2f33e58d92a891dd29fe93172d484bd155ddef645dae4b611886b8546d6",
+    "record_scope": "benchmark_cell",
+    "run": false,
+    "run_id": "20261003T173333-83b59b1d72b1",
+    "seed": 42,
+    "seeds": [
+      42
+    ],
+    "smoke": false,
+    "smoke_test_rows": 120,
+    "smoke_train_rows": 400,
+    "split_fingerprint": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "status": "prepared",
+    "strategy": "ros",
+    "study": "configs/ablations/stage1_controls.yaml",
+    "study_id": "stage1_baseline_controls_v1",
+    "study_sha256": "2d88ecfe00891c2ed7cd518b460ecd1b2b783c2ee28bb65547a2458ace9dd835",
+    "study_type": "baseline_control",
+    "tuning_budget": 10,
+    "ugo_max_iterations": null,
+    "variant": null,
+    "variant_id": "ros"
+  },
+  {
+    "algorithm": "logistic_regression",
+    "artifact_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T173333-83b59b1d72b1",
+    "augmentation": {},
+    "augmentation_count": null,
+    "budget_mode": "matched",
+    "candidate_configs": [
+      {},
+      {
+        "C": 0.1
+      },
+      {
+        "C": 10.0
+      },
+      {
+        "C": 0.1
+      },
+      {
+        "C": 0.01
+      },
+      {
+        "C": 0.01
+      },
+      {
+        "C": 100.0
+      },
+      {
+        "C": 1.0
+      },
+      {
+        "C": 0.1
+      },
+      {
+        "C": 0.01
+      }
+    ],
+    "classifiers": null,
+    "config": {
+      "settings": {
+        "augmentation": {
+          "mode": "matched",
+          "total": 1000
+        },
+        "device": "auto",
+        "method_parameters": {},
+        "mlp_epochs": 160,
+        "ugo_max_iterations": 20
+      }
+    },
+    "config_sha256": "f7b15383f1148f4a18af5fdff7f8742df0d7dd43e139acc0b5ef92dad607bc65",
+    "configuration_id": "4df93d3114f6a022a9f3287bedfd524d072dbd93427df93a00ddf2713ac943a9",
+    "data_home": ".cache/benchmarks",
+    "dataset": "shoppers",
+    "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+    "device": "auto",
+    "download": true,
+    "effective_classifiers": [
+      "logistic_regression",
+      "random_forest",
+      "lightgbm",
+      "balanced_random_forest"
+    ],
+    "effective_seeds": [
+      42
+    ],
+    "effective_settings": {
+      "augmentation": {
+        "mode": "matched",
+        "total": 1000
+      },
+      "device": "auto",
+      "method_parameters": {},
+      "mlp_epochs": 160,
+      "ugo_max_iterations": 20
+    },
+    "effective_tuning_budget": 10,
+    "effective_variants": [
+      "baseline",
+      "class_weight",
+      "ros",
+      "smote",
+      "borderline_smote",
+      "kmeans_smote",
+      "ugo_original",
+      "ugo_corrected"
+    ],
+    "error": null,
+    "evaluation_policy_sha256": "46728802ab301fc16325ceb8be859210f1219706194e524d82f0b23a5ba0d3a3",
+    "experiment_type": "setup_prepare",
+    "fold": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "local_data": null,
+    "method": "smote",
+    "methods": null,
+    "metrics": {},
+    "mlp_epochs": null,
+    "output_dir": null,
+    "prepare": true,
+    "protocol": "configs/benchmarks/shoppers_controlled.yaml",
+    "protocol_id": "shoppers_uci_controlled_v1",
+    "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+    "record_id": "facd800aacd783f1db5f84868bf882bd25fd9655e280128cf70a235febd71788",
+    "record_scope": "benchmark_cell",
+    "run": false,
+    "run_id": "20261003T173333-83b59b1d72b1",
+    "seed": 42,
+    "seeds": [
+      42
+    ],
+    "smoke": false,
+    "smoke_test_rows": 120,
+    "smoke_train_rows": 400,
+    "split_fingerprint": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "status": "prepared",
+    "strategy": "smote",
+    "study": "configs/ablations/stage1_controls.yaml",
+    "study_id": "stage1_baseline_controls_v1",
+    "study_sha256": "2d88ecfe00891c2ed7cd518b460ecd1b2b783c2ee28bb65547a2458ace9dd835",
+    "study_type": "baseline_control",
+    "tuning_budget": 10,
+    "ugo_max_iterations": null,
+    "variant": null,
+    "variant_id": "smote"
+  },
+  {
+    "algorithm": "logistic_regression",
+    "artifact_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T173333-83b59b1d72b1",
+    "augmentation": {},
+    "augmentation_count": null,
+    "budget_mode": "matched",
+    "candidate_configs": [
+      {},
+      {
+        "C": 0.1
+      },
+      {
+        "C": 10.0
+      },
+      {
+        "C": 0.1
+      },
+      {
+        "C": 0.01
+      },
+      {
+        "C": 0.01
+      },
+      {
+        "C": 100.0
+      },
+      {
+        "C": 1.0
+      },
+      {
+        "C": 0.1
+      },
+      {
+        "C": 0.01
+      }
+    ],
+    "classifiers": null,
+    "config": {
+      "settings": {
+        "augmentation": {
+          "mode": "matched",
+          "total": 1000
+        },
+        "device": "auto",
+        "method_parameters": {},
+        "mlp_epochs": 160,
+        "ugo_max_iterations": 20
+      }
+    },
+    "config_sha256": "f7b15383f1148f4a18af5fdff7f8742df0d7dd43e139acc0b5ef92dad607bc65",
+    "configuration_id": "af52e3b9c38c779b332dca8a68a5a3d6eb62ec0446585f18dd9bd12e2f8c30c9",
+    "data_home": ".cache/benchmarks",
+    "dataset": "shoppers",
+    "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+    "device": "auto",
+    "download": true,
+    "effective_classifiers": [
+      "logistic_regression",
+      "random_forest",
+      "lightgbm",
+      "balanced_random_forest"
+    ],
+    "effective_seeds": [
+      42
+    ],
+    "effective_settings": {
+      "augmentation": {
+        "mode": "matched",
+        "total": 1000
+      },
+      "device": "auto",
+      "method_parameters": {},
+      "mlp_epochs": 160,
+      "ugo_max_iterations": 20
+    },
+    "effective_tuning_budget": 10,
+    "effective_variants": [
+      "baseline",
+      "class_weight",
+      "ros",
+      "smote",
+      "borderline_smote",
+      "kmeans_smote",
+      "ugo_original",
+      "ugo_corrected"
+    ],
+    "error": null,
+    "evaluation_policy_sha256": "46728802ab301fc16325ceb8be859210f1219706194e524d82f0b23a5ba0d3a3",
+    "experiment_type": "setup_prepare",
+    "fold": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "local_data": null,
+    "method": "borderline_smote",
+    "methods": null,
+    "metrics": {},
+    "mlp_epochs": null,
+    "output_dir": null,
+    "prepare": true,
+    "protocol": "configs/benchmarks/shoppers_controlled.yaml",
+    "protocol_id": "shoppers_uci_controlled_v1",
+    "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+    "record_id": "ec733c97dd08014a8f3ec270280a480b1292fdb84a85ced0a39bed8174f40772",
+    "record_scope": "benchmark_cell",
+    "run": false,
+    "run_id": "20261003T173333-83b59b1d72b1",
+    "seed": 42,
+    "seeds": [
+      42
+    ],
+    "smoke": false,
+    "smoke_test_rows": 120,
+    "smoke_train_rows": 400,
+    "split_fingerprint": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "status": "prepared",
+    "strategy": "borderline_smote",
+    "study": "configs/ablations/stage1_controls.yaml",
+    "study_id": "stage1_baseline_controls_v1",
+    "study_sha256": "2d88ecfe00891c2ed7cd518b460ecd1b2b783c2ee28bb65547a2458ace9dd835",
+    "study_type": "baseline_control",
+    "tuning_budget": 10,
+    "ugo_max_iterations": null,
+    "variant": null,
+    "variant_id": "borderline_smote"
+  },
+  {
+    "algorithm": "logistic_regression",
+    "artifact_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T173333-83b59b1d72b1",
+    "augmentation": {},
+    "augmentation_count": null,
+    "budget_mode": "matched",
+    "candidate_configs": [
+      {},
+      {
+        "C": 0.1
+      },
+      {
+        "C": 10.0
+      },
+      {
+        "C": 0.1
+      },
+      {
+        "C": 0.01
+      },
+      {
+        "C": 0.01
+      },
+      {
+        "C": 100.0
+      },
+      {
+        "C": 1.0
+      },
+      {
+        "C": 0.1
+      },
+      {
+        "C": 0.01
+      }
+    ],
+    "classifiers": null,
+    "config": {
+      "settings": {
+        "augmentation": {
+          "mode": "matched",
+          "total": 1000
+        },
+        "device": "auto",
+        "method_parameters": {},
+        "mlp_epochs": 160,
+        "ugo_max_iterations": 20
+      }
+    },
+    "config_sha256": "f7b15383f1148f4a18af5fdff7f8742df0d7dd43e139acc0b5ef92dad607bc65",
+    "configuration_id": "0d50306edaf3320c6612aa67230742dae01807ce42f77b3bbf9552b5be2944ef",
+    "data_home": ".cache/benchmarks",
+    "dataset": "shoppers",
+    "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+    "device": "auto",
+    "download": true,
+    "effective_classifiers": [
+      "logistic_regression",
+      "random_forest",
+      "lightgbm",
+      "balanced_random_forest"
+    ],
+    "effective_seeds": [
+      42
+    ],
+    "effective_settings": {
+      "augmentation": {
+        "mode": "matched",
+        "total": 1000
+      },
+      "device": "auto",
+      "method_parameters": {},
+      "mlp_epochs": 160,
+      "ugo_max_iterations": 20
+    },
+    "effective_tuning_budget": 10,
+    "effective_variants": [
+      "baseline",
+      "class_weight",
+      "ros",
+      "smote",
+      "borderline_smote",
+      "kmeans_smote",
+      "ugo_original",
+      "ugo_corrected"
+    ],
+    "error": null,
+    "evaluation_policy_sha256": "46728802ab301fc16325ceb8be859210f1219706194e524d82f0b23a5ba0d3a3",
+    "experiment_type": "setup_prepare",
+    "fold": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "local_data": null,
+    "method": "kmeans_smote",
+    "methods": null,
+    "metrics": {},
+    "mlp_epochs": null,
+    "output_dir": null,
+    "prepare": true,
+    "protocol": "configs/benchmarks/shoppers_controlled.yaml",
+    "protocol_id": "shoppers_uci_controlled_v1",
+    "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+    "record_id": "3e7c5caf9c1e20f2f2a70fa2f65f8a64ea131a17613bc25d767286aa328384e2",
+    "record_scope": "benchmark_cell",
+    "run": false,
+    "run_id": "20261003T173333-83b59b1d72b1",
+    "seed": 42,
+    "seeds": [
+      42
+    ],
+    "smoke": false,
+    "smoke_test_rows": 120,
+    "smoke_train_rows": 400,
+    "split_fingerprint": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "status": "prepared",
+    "strategy": "kmeans_smote",
+    "study": "configs/ablations/stage1_controls.yaml",
+    "study_id": "stage1_baseline_controls_v1",
+    "study_sha256": "2d88ecfe00891c2ed7cd518b460ecd1b2b783c2ee28bb65547a2458ace9dd835",
+    "study_type": "baseline_control",
+    "tuning_budget": 10,
+    "ugo_max_iterations": null,
+    "variant": null,
+    "variant_id": "kmeans_smote"
+  },
+  {
+    "algorithm": "logistic_regression",
+    "artifact_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T173333-83b59b1d72b1",
+    "augmentation": {},
+    "augmentation_count": null,
+    "budget_mode": "matched",
+    "candidate_configs": [
+      {},
+      {
+        "C": 0.1
+      },
+      {
+        "C": 10.0
+      },
+      {
+        "C": 0.1
+      },
+      {
+        "C": 0.01
+      },
+      {
+        "C": 0.01
+      },
+      {
+        "C": 100.0
+      },
+      {
+        "C": 1.0
+      },
+      {
+        "C": 0.1
+      },
+      {
+        "C": 0.01
+      }
+    ],
+    "classifiers": null,
+    "config": {
+      "settings": {
+        "augmentation": {
+          "mode": "matched",
+          "total": 1000
+        },
+        "device": "auto",
+        "method_parameters": {},
+        "mlp_epochs": 160,
+        "ugo_max_iterations": 20
+      }
+    },
+    "config_sha256": "f7b15383f1148f4a18af5fdff7f8742df0d7dd43e139acc0b5ef92dad607bc65",
+    "configuration_id": "9c9664e2446ee2aab00e241cd584d4a189b38def0b15e77867515ebf37e80cc9",
+    "data_home": ".cache/benchmarks",
+    "dataset": "shoppers",
+    "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+    "device": "auto",
+    "download": true,
+    "effective_classifiers": [
+      "logistic_regression",
+      "random_forest",
+      "lightgbm",
+      "balanced_random_forest"
+    ],
+    "effective_seeds": [
+      42
+    ],
+    "effective_settings": {
+      "augmentation": {
+        "mode": "matched",
+        "total": 1000
+      },
+      "device": "auto",
+      "method_parameters": {},
+      "mlp_epochs": 160,
+      "ugo_max_iterations": 20
+    },
+    "effective_tuning_budget": 10,
+    "effective_variants": [
+      "baseline",
+      "class_weight",
+      "ros",
+      "smote",
+      "borderline_smote",
+      "kmeans_smote",
+      "ugo_original",
+      "ugo_corrected"
+    ],
+    "error": null,
+    "evaluation_policy_sha256": "46728802ab301fc16325ceb8be859210f1219706194e524d82f0b23a5ba0d3a3",
+    "experiment_type": "setup_prepare",
+    "fold": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "local_data": null,
+    "method": "ugo_original",
+    "methods": null,
+    "metrics": {},
+    "mlp_epochs": null,
+    "output_dir": null,
+    "prepare": true,
+    "protocol": "configs/benchmarks/shoppers_controlled.yaml",
+    "protocol_id": "shoppers_uci_controlled_v1",
+    "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+    "record_id": "f89f5070dd5ec8c2e31f360bd1872c8f986cd9e7a6db7eaa23c006f2914fe3c6",
+    "record_scope": "benchmark_cell",
+    "run": false,
+    "run_id": "20261003T173333-83b59b1d72b1",
+    "seed": 42,
+    "seeds": [
+      42
+    ],
+    "smoke": false,
+    "smoke_test_rows": 120,
+    "smoke_train_rows": 400,
+    "split_fingerprint": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "status": "prepared",
+    "strategy": "ugo_original",
+    "study": "configs/ablations/stage1_controls.yaml",
+    "study_id": "stage1_baseline_controls_v1",
+    "study_sha256": "2d88ecfe00891c2ed7cd518b460ecd1b2b783c2ee28bb65547a2458ace9dd835",
+    "study_type": "baseline_control",
+    "tuning_budget": 10,
+    "ugo_max_iterations": null,
+    "variant": null,
+    "variant_id": "ugo_original"
+  },
+  {
+    "algorithm": "logistic_regression",
+    "artifact_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T173333-83b59b1d72b1",
+    "augmentation": {},
+    "augmentation_count": null,
+    "budget_mode": "matched",
+    "candidate_configs": [
+      {},
+      {
+        "C": 0.1
+      },
+      {
+        "C": 10.0
+      },
+      {
+        "C": 0.1
+      },
+      {
+        "C": 0.01
+      },
+      {
+        "C": 0.01
+      },
+      {
+        "C": 100.0
+      },
+      {
+        "C": 1.0
+      },
+      {
+        "C": 0.1
+      },
+      {
+        "C": 0.01
+      }
+    ],
+    "classifiers": null,
+    "config": {
+      "settings": {
+        "augmentation": {
+          "mode": "matched",
+          "total": 1000
+        },
+        "device": "auto",
+        "method_parameters": {},
+        "mlp_epochs": 160,
+        "ugo_max_iterations": 20
+      }
+    },
+    "config_sha256": "f7b15383f1148f4a18af5fdff7f8742df0d7dd43e139acc0b5ef92dad607bc65",
+    "configuration_id": "37b21ae8922ded8752a9c231797a725cf4d8216d31d4f724265913c1db8eb56f",
+    "data_home": ".cache/benchmarks",
+    "dataset": "shoppers",
+    "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+    "device": "auto",
+    "download": true,
+    "effective_classifiers": [
+      "logistic_regression",
+      "random_forest",
+      "lightgbm",
+      "balanced_random_forest"
+    ],
+    "effective_seeds": [
+      42
+    ],
+    "effective_settings": {
+      "augmentation": {
+        "mode": "matched",
+        "total": 1000
+      },
+      "device": "auto",
+      "method_parameters": {},
+      "mlp_epochs": 160,
+      "ugo_max_iterations": 20
+    },
+    "effective_tuning_budget": 10,
+    "effective_variants": [
+      "baseline",
+      "class_weight",
+      "ros",
+      "smote",
+      "borderline_smote",
+      "kmeans_smote",
+      "ugo_original",
+      "ugo_corrected"
+    ],
+    "error": null,
+    "evaluation_policy_sha256": "46728802ab301fc16325ceb8be859210f1219706194e524d82f0b23a5ba0d3a3",
+    "experiment_type": "setup_prepare",
+    "fold": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "local_data": null,
+    "method": "ugo_corrected",
+    "methods": null,
+    "metrics": {},
+    "mlp_epochs": null,
+    "output_dir": null,
+    "prepare": true,
+    "protocol": "configs/benchmarks/shoppers_controlled.yaml",
+    "protocol_id": "shoppers_uci_controlled_v1",
+    "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+    "record_id": "d104945921f20796e4a9d4e6789a342c0cff71d827868bd7026aca07b28f4730",
+    "record_scope": "benchmark_cell",
+    "run": false,
+    "run_id": "20261003T173333-83b59b1d72b1",
+    "seed": 42,
+    "seeds": [
+      42
+    ],
+    "smoke": false,
+    "smoke_test_rows": 120,
+    "smoke_train_rows": 400,
+    "split_fingerprint": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "status": "prepared",
+    "strategy": "ugo_corrected",
+    "study": "configs/ablations/stage1_controls.yaml",
+    "study_id": "stage1_baseline_controls_v1",
+    "study_sha256": "2d88ecfe00891c2ed7cd518b460ecd1b2b783c2ee28bb65547a2458ace9dd835",
+    "study_type": "baseline_control",
+    "tuning_budget": 10,
+    "ugo_max_iterations": null,
+    "variant": null,
+    "variant_id": "ugo_corrected"
+  },
+  {
+    "algorithm": "random_forest",
+    "artifact_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T173333-83b59b1d72b1",
+    "augmentation": {},
+    "augmentation_count": null,
+    "budget_mode": "matched",
+    "candidate_configs": [
+      {},
+      {
+        "max_depth": 6,
+        "max_features": "sqrt",
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 3,
+        "n_estimators": 400
+      },
+      {
+        "max_depth": 12,
+        "max_features": 0.8,
+        "min_samples_leaf": 1,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 8,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 3,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 8,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      }
+    ],
+    "classifiers": null,
+    "config": {
+      "settings": {
+        "augmentation": {
+          "mode": "matched",
+          "total": 1000
+        },
+        "device": "auto",
+        "method_parameters": {},
+        "mlp_epochs": 160,
+        "ugo_max_iterations": 20
+      }
+    },
+    "config_sha256": "46bebb86a4519fa68034d9fc87e9c7440e5cac40fa0ec8ac46f366717662c1e6",
+    "configuration_id": "29049df5e0ff9d7cf37abf5380bc8d40fb2bc961a6f75cd020d4bef62f486227",
+    "data_home": ".cache/benchmarks",
+    "dataset": "shoppers",
+    "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+    "device": "auto",
+    "download": true,
+    "effective_classifiers": [
+      "logistic_regression",
+      "random_forest",
+      "lightgbm",
+      "balanced_random_forest"
+    ],
+    "effective_seeds": [
+      42
+    ],
+    "effective_settings": {
+      "augmentation": {
+        "mode": "matched",
+        "total": 1000
+      },
+      "device": "auto",
+      "method_parameters": {},
+      "mlp_epochs": 160,
+      "ugo_max_iterations": 20
+    },
+    "effective_tuning_budget": 10,
+    "effective_variants": [
+      "baseline",
+      "class_weight",
+      "ros",
+      "smote",
+      "borderline_smote",
+      "kmeans_smote",
+      "ugo_original",
+      "ugo_corrected"
+    ],
+    "error": null,
+    "evaluation_policy_sha256": "46728802ab301fc16325ceb8be859210f1219706194e524d82f0b23a5ba0d3a3",
+    "experiment_type": "setup_prepare",
+    "fold": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "local_data": null,
+    "method": "baseline",
+    "methods": null,
+    "metrics": {},
+    "mlp_epochs": null,
+    "output_dir": null,
+    "prepare": true,
+    "protocol": "configs/benchmarks/shoppers_controlled.yaml",
+    "protocol_id": "shoppers_uci_controlled_v1",
+    "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+    "record_id": "fae1085bf4f2000df048160783a71fd428ff9d0430c03036bac84b9f852387d3",
+    "record_scope": "benchmark_cell",
+    "run": false,
+    "run_id": "20261003T173333-83b59b1d72b1",
+    "seed": 42,
+    "seeds": [
+      42
+    ],
+    "smoke": false,
+    "smoke_test_rows": 120,
+    "smoke_train_rows": 400,
+    "split_fingerprint": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "status": "prepared",
+    "strategy": "baseline",
+    "study": "configs/ablations/stage1_controls.yaml",
+    "study_id": "stage1_baseline_controls_v1",
+    "study_sha256": "2d88ecfe00891c2ed7cd518b460ecd1b2b783c2ee28bb65547a2458ace9dd835",
+    "study_type": "baseline_control",
+    "tuning_budget": 10,
+    "ugo_max_iterations": null,
+    "variant": null,
+    "variant_id": "baseline"
+  },
+  {
+    "algorithm": "random_forest",
+    "artifact_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T173333-83b59b1d72b1",
+    "augmentation": {},
+    "augmentation_count": null,
+    "budget_mode": "matched",
+    "candidate_configs": [
+      {},
+      {
+        "max_depth": 6,
+        "max_features": "sqrt",
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 3,
+        "n_estimators": 400
+      },
+      {
+        "max_depth": 12,
+        "max_features": 0.8,
+        "min_samples_leaf": 1,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 8,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 3,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 8,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      }
+    ],
+    "classifiers": null,
+    "config": {
+      "settings": {
+        "augmentation": {
+          "mode": "matched",
+          "total": 1000
+        },
+        "device": "auto",
+        "method_parameters": {},
+        "mlp_epochs": 160,
+        "ugo_max_iterations": 20
+      }
+    },
+    "config_sha256": "46bebb86a4519fa68034d9fc87e9c7440e5cac40fa0ec8ac46f366717662c1e6",
+    "configuration_id": "0240278419808ead9d0448aad319b6e40f11c287a9b8d3d24c614c05e211a378",
+    "data_home": ".cache/benchmarks",
+    "dataset": "shoppers",
+    "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+    "device": "auto",
+    "download": true,
+    "effective_classifiers": [
+      "logistic_regression",
+      "random_forest",
+      "lightgbm",
+      "balanced_random_forest"
+    ],
+    "effective_seeds": [
+      42
+    ],
+    "effective_settings": {
+      "augmentation": {
+        "mode": "matched",
+        "total": 1000
+      },
+      "device": "auto",
+      "method_parameters": {},
+      "mlp_epochs": 160,
+      "ugo_max_iterations": 20
+    },
+    "effective_tuning_budget": 10,
+    "effective_variants": [
+      "baseline",
+      "class_weight",
+      "ros",
+      "smote",
+      "borderline_smote",
+      "kmeans_smote",
+      "ugo_original",
+      "ugo_corrected"
+    ],
+    "error": null,
+    "evaluation_policy_sha256": "46728802ab301fc16325ceb8be859210f1219706194e524d82f0b23a5ba0d3a3",
+    "experiment_type": "setup_prepare",
+    "fold": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "local_data": null,
+    "method": "class_weight",
+    "methods": null,
+    "metrics": {},
+    "mlp_epochs": null,
+    "output_dir": null,
+    "prepare": true,
+    "protocol": "configs/benchmarks/shoppers_controlled.yaml",
+    "protocol_id": "shoppers_uci_controlled_v1",
+    "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+    "record_id": "9468a7fbde36bd136e9228e64e3cbfb3151ce033a6462652458ef5ae6f193d47",
+    "record_scope": "benchmark_cell",
+    "run": false,
+    "run_id": "20261003T173333-83b59b1d72b1",
+    "seed": 42,
+    "seeds": [
+      42
+    ],
+    "smoke": false,
+    "smoke_test_rows": 120,
+    "smoke_train_rows": 400,
+    "split_fingerprint": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "status": "prepared",
+    "strategy": "class_weight",
+    "study": "configs/ablations/stage1_controls.yaml",
+    "study_id": "stage1_baseline_controls_v1",
+    "study_sha256": "2d88ecfe00891c2ed7cd518b460ecd1b2b783c2ee28bb65547a2458ace9dd835",
+    "study_type": "baseline_control",
+    "tuning_budget": 10,
+    "ugo_max_iterations": null,
+    "variant": null,
+    "variant_id": "class_weight"
+  },
+  {
+    "algorithm": "random_forest",
+    "artifact_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T173333-83b59b1d72b1",
+    "augmentation": {},
+    "augmentation_count": null,
+    "budget_mode": "matched",
+    "candidate_configs": [
+      {},
+      {
+        "max_depth": 6,
+        "max_features": "sqrt",
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 3,
+        "n_estimators": 400
+      },
+      {
+        "max_depth": 12,
+        "max_features": 0.8,
+        "min_samples_leaf": 1,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 8,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 3,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 8,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      }
+    ],
+    "classifiers": null,
+    "config": {
+      "settings": {
+        "augmentation": {
+          "mode": "matched",
+          "total": 1000
+        },
+        "device": "auto",
+        "method_parameters": {},
+        "mlp_epochs": 160,
+        "ugo_max_iterations": 20
+      }
+    },
+    "config_sha256": "46bebb86a4519fa68034d9fc87e9c7440e5cac40fa0ec8ac46f366717662c1e6",
+    "configuration_id": "3d6096d4ee80f3cab19003dfb8b4d76c825aaa7a27dca0981dfe6d4b97e88b64",
+    "data_home": ".cache/benchmarks",
+    "dataset": "shoppers",
+    "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+    "device": "auto",
+    "download": true,
+    "effective_classifiers": [
+      "logistic_regression",
+      "random_forest",
+      "lightgbm",
+      "balanced_random_forest"
+    ],
+    "effective_seeds": [
+      42
+    ],
+    "effective_settings": {
+      "augmentation": {
+        "mode": "matched",
+        "total": 1000
+      },
+      "device": "auto",
+      "method_parameters": {},
+      "mlp_epochs": 160,
+      "ugo_max_iterations": 20
+    },
+    "effective_tuning_budget": 10,
+    "effective_variants": [
+      "baseline",
+      "class_weight",
+      "ros",
+      "smote",
+      "borderline_smote",
+      "kmeans_smote",
+      "ugo_original",
+      "ugo_corrected"
+    ],
+    "error": null,
+    "evaluation_policy_sha256": "46728802ab301fc16325ceb8be859210f1219706194e524d82f0b23a5ba0d3a3",
+    "experiment_type": "setup_prepare",
+    "fold": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "local_data": null,
+    "method": "ros",
+    "methods": null,
+    "metrics": {},
+    "mlp_epochs": null,
+    "output_dir": null,
+    "prepare": true,
+    "protocol": "configs/benchmarks/shoppers_controlled.yaml",
+    "protocol_id": "shoppers_uci_controlled_v1",
+    "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+    "record_id": "ae7d6c668a7fda3d902b58deccfc2a062b243bd9ad117846bb5dae28a262105b",
+    "record_scope": "benchmark_cell",
+    "run": false,
+    "run_id": "20261003T173333-83b59b1d72b1",
+    "seed": 42,
+    "seeds": [
+      42
+    ],
+    "smoke": false,
+    "smoke_test_rows": 120,
+    "smoke_train_rows": 400,
+    "split_fingerprint": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "status": "prepared",
+    "strategy": "ros",
+    "study": "configs/ablations/stage1_controls.yaml",
+    "study_id": "stage1_baseline_controls_v1",
+    "study_sha256": "2d88ecfe00891c2ed7cd518b460ecd1b2b783c2ee28bb65547a2458ace9dd835",
+    "study_type": "baseline_control",
+    "tuning_budget": 10,
+    "ugo_max_iterations": null,
+    "variant": null,
+    "variant_id": "ros"
+  },
+  {
+    "algorithm": "random_forest",
+    "artifact_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T173333-83b59b1d72b1",
+    "augmentation": {},
+    "augmentation_count": null,
+    "budget_mode": "matched",
+    "candidate_configs": [
+      {},
+      {
+        "max_depth": 6,
+        "max_features": "sqrt",
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 3,
+        "n_estimators": 400
+      },
+      {
+        "max_depth": 12,
+        "max_features": 0.8,
+        "min_samples_leaf": 1,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 8,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 3,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 8,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      }
+    ],
+    "classifiers": null,
+    "config": {
+      "settings": {
+        "augmentation": {
+          "mode": "matched",
+          "total": 1000
+        },
+        "device": "auto",
+        "method_parameters": {},
+        "mlp_epochs": 160,
+        "ugo_max_iterations": 20
+      }
+    },
+    "config_sha256": "46bebb86a4519fa68034d9fc87e9c7440e5cac40fa0ec8ac46f366717662c1e6",
+    "configuration_id": "c740bdf7769478929b0d58c107c538d108fb11342f8f613fe3add9aeb8422f75",
+    "data_home": ".cache/benchmarks",
+    "dataset": "shoppers",
+    "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+    "device": "auto",
+    "download": true,
+    "effective_classifiers": [
+      "logistic_regression",
+      "random_forest",
+      "lightgbm",
+      "balanced_random_forest"
+    ],
+    "effective_seeds": [
+      42
+    ],
+    "effective_settings": {
+      "augmentation": {
+        "mode": "matched",
+        "total": 1000
+      },
+      "device": "auto",
+      "method_parameters": {},
+      "mlp_epochs": 160,
+      "ugo_max_iterations": 20
+    },
+    "effective_tuning_budget": 10,
+    "effective_variants": [
+      "baseline",
+      "class_weight",
+      "ros",
+      "smote",
+      "borderline_smote",
+      "kmeans_smote",
+      "ugo_original",
+      "ugo_corrected"
+    ],
+    "error": null,
+    "evaluation_policy_sha256": "46728802ab301fc16325ceb8be859210f1219706194e524d82f0b23a5ba0d3a3",
+    "experiment_type": "setup_prepare",
+    "fold": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "local_data": null,
+    "method": "smote",
+    "methods": null,
+    "metrics": {},
+    "mlp_epochs": null,
+    "output_dir": null,
+    "prepare": true,
+    "protocol": "configs/benchmarks/shoppers_controlled.yaml",
+    "protocol_id": "shoppers_uci_controlled_v1",
+    "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+    "record_id": "a10cb09e5fc37dde04d59b24aa2060f0b5c851ec6a7f128d71e3c8a48bd21a0a",
+    "record_scope": "benchmark_cell",
+    "run": false,
+    "run_id": "20261003T173333-83b59b1d72b1",
+    "seed": 42,
+    "seeds": [
+      42
+    ],
+    "smoke": false,
+    "smoke_test_rows": 120,
+    "smoke_train_rows": 400,
+    "split_fingerprint": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "status": "prepared",
+    "strategy": "smote",
+    "study": "configs/ablations/stage1_controls.yaml",
+    "study_id": "stage1_baseline_controls_v1",
+    "study_sha256": "2d88ecfe00891c2ed7cd518b460ecd1b2b783c2ee28bb65547a2458ace9dd835",
+    "study_type": "baseline_control",
+    "tuning_budget": 10,
+    "ugo_max_iterations": null,
+    "variant": null,
+    "variant_id": "smote"
+  },
+  {
+    "algorithm": "random_forest",
+    "artifact_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T173333-83b59b1d72b1",
+    "augmentation": {},
+    "augmentation_count": null,
+    "budget_mode": "matched",
+    "candidate_configs": [
+      {},
+      {
+        "max_depth": 6,
+        "max_features": "sqrt",
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 3,
+        "n_estimators": 400
+      },
+      {
+        "max_depth": 12,
+        "max_features": 0.8,
+        "min_samples_leaf": 1,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 8,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 3,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 8,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      }
+    ],
+    "classifiers": null,
+    "config": {
+      "settings": {
+        "augmentation": {
+          "mode": "matched",
+          "total": 1000
+        },
+        "device": "auto",
+        "method_parameters": {},
+        "mlp_epochs": 160,
+        "ugo_max_iterations": 20
+      }
+    },
+    "config_sha256": "46bebb86a4519fa68034d9fc87e9c7440e5cac40fa0ec8ac46f366717662c1e6",
+    "configuration_id": "f0d99516edfb61c14d143ba87c196b62ddb1678beebacba46932b803eab4a43c",
+    "data_home": ".cache/benchmarks",
+    "dataset": "shoppers",
+    "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+    "device": "auto",
+    "download": true,
+    "effective_classifiers": [
+      "logistic_regression",
+      "random_forest",
+      "lightgbm",
+      "balanced_random_forest"
+    ],
+    "effective_seeds": [
+      42
+    ],
+    "effective_settings": {
+      "augmentation": {
+        "mode": "matched",
+        "total": 1000
+      },
+      "device": "auto",
+      "method_parameters": {},
+      "mlp_epochs": 160,
+      "ugo_max_iterations": 20
+    },
+    "effective_tuning_budget": 10,
+    "effective_variants": [
+      "baseline",
+      "class_weight",
+      "ros",
+      "smote",
+      "borderline_smote",
+      "kmeans_smote",
+      "ugo_original",
+      "ugo_corrected"
+    ],
+    "error": null,
+    "evaluation_policy_sha256": "46728802ab301fc16325ceb8be859210f1219706194e524d82f0b23a5ba0d3a3",
+    "experiment_type": "setup_prepare",
+    "fold": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "local_data": null,
+    "method": "borderline_smote",
+    "methods": null,
+    "metrics": {},
+    "mlp_epochs": null,
+    "output_dir": null,
+    "prepare": true,
+    "protocol": "configs/benchmarks/shoppers_controlled.yaml",
+    "protocol_id": "shoppers_uci_controlled_v1",
+    "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+    "record_id": "c5d029f5026668e8ca421cd956dc61282fccd947172eed8883e596e8a8044c1d",
+    "record_scope": "benchmark_cell",
+    "run": false,
+    "run_id": "20261003T173333-83b59b1d72b1",
+    "seed": 42,
+    "seeds": [
+      42
+    ],
+    "smoke": false,
+    "smoke_test_rows": 120,
+    "smoke_train_rows": 400,
+    "split_fingerprint": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "status": "prepared",
+    "strategy": "borderline_smote",
+    "study": "configs/ablations/stage1_controls.yaml",
+    "study_id": "stage1_baseline_controls_v1",
+    "study_sha256": "2d88ecfe00891c2ed7cd518b460ecd1b2b783c2ee28bb65547a2458ace9dd835",
+    "study_type": "baseline_control",
+    "tuning_budget": 10,
+    "ugo_max_iterations": null,
+    "variant": null,
+    "variant_id": "borderline_smote"
+  },
+  {
+    "algorithm": "random_forest",
+    "artifact_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T173333-83b59b1d72b1",
+    "augmentation": {},
+    "augmentation_count": null,
+    "budget_mode": "matched",
+    "candidate_configs": [
+      {},
+      {
+        "max_depth": 6,
+        "max_features": "sqrt",
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 3,
+        "n_estimators": 400
+      },
+      {
+        "max_depth": 12,
+        "max_features": 0.8,
+        "min_samples_leaf": 1,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 8,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 3,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 8,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      }
+    ],
+    "classifiers": null,
+    "config": {
+      "settings": {
+        "augmentation": {
+          "mode": "matched",
+          "total": 1000
+        },
+        "device": "auto",
+        "method_parameters": {},
+        "mlp_epochs": 160,
+        "ugo_max_iterations": 20
+      }
+    },
+    "config_sha256": "46bebb86a4519fa68034d9fc87e9c7440e5cac40fa0ec8ac46f366717662c1e6",
+    "configuration_id": "494132fe15f54f36a9cc1ab9a1a3a1185d5659130383ed5fb18269e08be63718",
+    "data_home": ".cache/benchmarks",
+    "dataset": "shoppers",
+    "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+    "device": "auto",
+    "download": true,
+    "effective_classifiers": [
+      "logistic_regression",
+      "random_forest",
+      "lightgbm",
+      "balanced_random_forest"
+    ],
+    "effective_seeds": [
+      42
+    ],
+    "effective_settings": {
+      "augmentation": {
+        "mode": "matched",
+        "total": 1000
+      },
+      "device": "auto",
+      "method_parameters": {},
+      "mlp_epochs": 160,
+      "ugo_max_iterations": 20
+    },
+    "effective_tuning_budget": 10,
+    "effective_variants": [
+      "baseline",
+      "class_weight",
+      "ros",
+      "smote",
+      "borderline_smote",
+      "kmeans_smote",
+      "ugo_original",
+      "ugo_corrected"
+    ],
+    "error": null,
+    "evaluation_policy_sha256": "46728802ab301fc16325ceb8be859210f1219706194e524d82f0b23a5ba0d3a3",
+    "experiment_type": "setup_prepare",
+    "fold": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "local_data": null,
+    "method": "kmeans_smote",
+    "methods": null,
+    "metrics": {},
+    "mlp_epochs": null,
+    "output_dir": null,
+    "prepare": true,
+    "protocol": "configs/benchmarks/shoppers_controlled.yaml",
+    "protocol_id": "shoppers_uci_controlled_v1",
+    "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+    "record_id": "f1d58676e6cb8ac234c2e3a932051151fbd0a05e5dd4ea5906f9207a192b50d0",
+    "record_scope": "benchmark_cell",
+    "run": false,
+    "run_id": "20261003T173333-83b59b1d72b1",
+    "seed": 42,
+    "seeds": [
+      42
+    ],
+    "smoke": false,
+    "smoke_test_rows": 120,
+    "smoke_train_rows": 400,
+    "split_fingerprint": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "status": "prepared",
+    "strategy": "kmeans_smote",
+    "study": "configs/ablations/stage1_controls.yaml",
+    "study_id": "stage1_baseline_controls_v1",
+    "study_sha256": "2d88ecfe00891c2ed7cd518b460ecd1b2b783c2ee28bb65547a2458ace9dd835",
+    "study_type": "baseline_control",
+    "tuning_budget": 10,
+    "ugo_max_iterations": null,
+    "variant": null,
+    "variant_id": "kmeans_smote"
+  },
+  {
+    "algorithm": "random_forest",
+    "artifact_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T173333-83b59b1d72b1",
+    "augmentation": {},
+    "augmentation_count": null,
+    "budget_mode": "matched",
+    "candidate_configs": [
+      {},
+      {
+        "max_depth": 6,
+        "max_features": "sqrt",
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 3,
+        "n_estimators": 400
+      },
+      {
+        "max_depth": 12,
+        "max_features": 0.8,
+        "min_samples_leaf": 1,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 8,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 3,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 8,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      }
+    ],
+    "classifiers": null,
+    "config": {
+      "settings": {
+        "augmentation": {
+          "mode": "matched",
+          "total": 1000
+        },
+        "device": "auto",
+        "method_parameters": {},
+        "mlp_epochs": 160,
+        "ugo_max_iterations": 20
+      }
+    },
+    "config_sha256": "46bebb86a4519fa68034d9fc87e9c7440e5cac40fa0ec8ac46f366717662c1e6",
+    "configuration_id": "c534bd2ce4e2738980bbf9f26a366db5e5042ebeee6964faf72feea3a72b8f5c",
+    "data_home": ".cache/benchmarks",
+    "dataset": "shoppers",
+    "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+    "device": "auto",
+    "download": true,
+    "effective_classifiers": [
+      "logistic_regression",
+      "random_forest",
+      "lightgbm",
+      "balanced_random_forest"
+    ],
+    "effective_seeds": [
+      42
+    ],
+    "effective_settings": {
+      "augmentation": {
+        "mode": "matched",
+        "total": 1000
+      },
+      "device": "auto",
+      "method_parameters": {},
+      "mlp_epochs": 160,
+      "ugo_max_iterations": 20
+    },
+    "effective_tuning_budget": 10,
+    "effective_variants": [
+      "baseline",
+      "class_weight",
+      "ros",
+      "smote",
+      "borderline_smote",
+      "kmeans_smote",
+      "ugo_original",
+      "ugo_corrected"
+    ],
+    "error": null,
+    "evaluation_policy_sha256": "46728802ab301fc16325ceb8be859210f1219706194e524d82f0b23a5ba0d3a3",
+    "experiment_type": "setup_prepare",
+    "fold": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "local_data": null,
+    "method": "ugo_original",
+    "methods": null,
+    "metrics": {},
+    "mlp_epochs": null,
+    "output_dir": null,
+    "prepare": true,
+    "protocol": "configs/benchmarks/shoppers_controlled.yaml",
+    "protocol_id": "shoppers_uci_controlled_v1",
+    "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+    "record_id": "4034e821ba509b5dff3c092de65e9a9b7f0560552a11cd2ee3ec9c1b66f8682a",
+    "record_scope": "benchmark_cell",
+    "run": false,
+    "run_id": "20261003T173333-83b59b1d72b1",
+    "seed": 42,
+    "seeds": [
+      42
+    ],
+    "smoke": false,
+    "smoke_test_rows": 120,
+    "smoke_train_rows": 400,
+    "split_fingerprint": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "status": "prepared",
+    "strategy": "ugo_original",
+    "study": "configs/ablations/stage1_controls.yaml",
+    "study_id": "stage1_baseline_controls_v1",
+    "study_sha256": "2d88ecfe00891c2ed7cd518b460ecd1b2b783c2ee28bb65547a2458ace9dd835",
+    "study_type": "baseline_control",
+    "tuning_budget": 10,
+    "ugo_max_iterations": null,
+    "variant": null,
+    "variant_id": "ugo_original"
+  },
+  {
+    "algorithm": "random_forest",
+    "artifact_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T173333-83b59b1d72b1",
+    "augmentation": {},
+    "augmentation_count": null,
+    "budget_mode": "matched",
+    "candidate_configs": [
+      {},
+      {
+        "max_depth": 6,
+        "max_features": "sqrt",
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 3,
+        "n_estimators": 400
+      },
+      {
+        "max_depth": 12,
+        "max_features": 0.8,
+        "min_samples_leaf": 1,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 8,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 3,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 8,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      }
+    ],
+    "classifiers": null,
+    "config": {
+      "settings": {
+        "augmentation": {
+          "mode": "matched",
+          "total": 1000
+        },
+        "device": "auto",
+        "method_parameters": {},
+        "mlp_epochs": 160,
+        "ugo_max_iterations": 20
+      }
+    },
+    "config_sha256": "46bebb86a4519fa68034d9fc87e9c7440e5cac40fa0ec8ac46f366717662c1e6",
+    "configuration_id": "67d9696a1ebaa6aade8286e7d2494309919314d8a212a0c5f56c2c8999f77df3",
+    "data_home": ".cache/benchmarks",
+    "dataset": "shoppers",
+    "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+    "device": "auto",
+    "download": true,
+    "effective_classifiers": [
+      "logistic_regression",
+      "random_forest",
+      "lightgbm",
+      "balanced_random_forest"
+    ],
+    "effective_seeds": [
+      42
+    ],
+    "effective_settings": {
+      "augmentation": {
+        "mode": "matched",
+        "total": 1000
+      },
+      "device": "auto",
+      "method_parameters": {},
+      "mlp_epochs": 160,
+      "ugo_max_iterations": 20
+    },
+    "effective_tuning_budget": 10,
+    "effective_variants": [
+      "baseline",
+      "class_weight",
+      "ros",
+      "smote",
+      "borderline_smote",
+      "kmeans_smote",
+      "ugo_original",
+      "ugo_corrected"
+    ],
+    "error": null,
+    "evaluation_policy_sha256": "46728802ab301fc16325ceb8be859210f1219706194e524d82f0b23a5ba0d3a3",
+    "experiment_type": "setup_prepare",
+    "fold": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "local_data": null,
+    "method": "ugo_corrected",
+    "methods": null,
+    "metrics": {},
+    "mlp_epochs": null,
+    "output_dir": null,
+    "prepare": true,
+    "protocol": "configs/benchmarks/shoppers_controlled.yaml",
+    "protocol_id": "shoppers_uci_controlled_v1",
+    "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+    "record_id": "1313dbaadede5f219fbff6ac2190c8a6ba2728e9621fcdef7dcc05db46cd3c4e",
+    "record_scope": "benchmark_cell",
+    "run": false,
+    "run_id": "20261003T173333-83b59b1d72b1",
+    "seed": 42,
+    "seeds": [
+      42
+    ],
+    "smoke": false,
+    "smoke_test_rows": 120,
+    "smoke_train_rows": 400,
+    "split_fingerprint": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "status": "prepared",
+    "strategy": "ugo_corrected",
+    "study": "configs/ablations/stage1_controls.yaml",
+    "study_id": "stage1_baseline_controls_v1",
+    "study_sha256": "2d88ecfe00891c2ed7cd518b460ecd1b2b783c2ee28bb65547a2458ace9dd835",
+    "study_type": "baseline_control",
+    "tuning_budget": 10,
+    "ugo_max_iterations": null,
+    "variant": null,
+    "variant_id": "ugo_corrected"
+  },
+  {
+    "algorithm": "lightgbm",
+    "artifact_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T173333-83b59b1d72b1",
+    "augmentation": {},
+    "augmentation_count": null,
+    "budget_mode": "matched",
+    "candidate_configs": [
+      {},
+      {
+        "learning_rate": 0.05,
+        "min_child_samples": 10,
+        "n_estimators": 200,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.01,
+        "min_child_samples": 20,
+        "n_estimators": 400,
+        "num_leaves": 63
+      },
+      {
+        "learning_rate": 0.05,
+        "min_child_samples": 10,
+        "n_estimators": 400,
+        "num_leaves": 63
+      },
+      {
+        "learning_rate": 0.05,
+        "min_child_samples": 50,
+        "n_estimators": 100,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.1,
+        "min_child_samples": 10,
+        "n_estimators": 200,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.01,
+        "min_child_samples": 50,
+        "n_estimators": 200,
+        "num_leaves": 63
+      },
+      {
+        "learning_rate": 0.1,
+        "min_child_samples": 20,
+        "n_estimators": 100,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.05,
+        "min_child_samples": 20,
+        "n_estimators": 100,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.01,
+        "min_child_samples": 10,
+        "n_estimators": 200,
+        "num_leaves": 15
+      }
+    ],
+    "classifiers": null,
+    "config": {
+      "settings": {
+        "augmentation": {
+          "mode": "matched",
+          "total": 1000
+        },
+        "device": "auto",
+        "method_parameters": {},
+        "mlp_epochs": 160,
+        "ugo_max_iterations": 20
+      }
+    },
+    "config_sha256": "494ccfe03ea00796ebea5f47d8a75d73c5f4b5cf48e68156a1ce8fafcb1a1e12",
+    "configuration_id": "2a523534a080392f66a5cb4635a5242ac05417d9b7e5db56ff86cb736957f687",
+    "data_home": ".cache/benchmarks",
+    "dataset": "shoppers",
+    "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+    "device": "auto",
+    "download": true,
+    "effective_classifiers": [
+      "logistic_regression",
+      "random_forest",
+      "lightgbm",
+      "balanced_random_forest"
+    ],
+    "effective_seeds": [
+      42
+    ],
+    "effective_settings": {
+      "augmentation": {
+        "mode": "matched",
+        "total": 1000
+      },
+      "device": "auto",
+      "method_parameters": {},
+      "mlp_epochs": 160,
+      "ugo_max_iterations": 20
+    },
+    "effective_tuning_budget": 10,
+    "effective_variants": [
+      "baseline",
+      "class_weight",
+      "ros",
+      "smote",
+      "borderline_smote",
+      "kmeans_smote",
+      "ugo_original",
+      "ugo_corrected"
+    ],
+    "error": null,
+    "evaluation_policy_sha256": "46728802ab301fc16325ceb8be859210f1219706194e524d82f0b23a5ba0d3a3",
+    "experiment_type": "setup_prepare",
+    "fold": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "local_data": null,
+    "method": "baseline",
+    "methods": null,
+    "metrics": {},
+    "mlp_epochs": null,
+    "output_dir": null,
+    "prepare": true,
+    "protocol": "configs/benchmarks/shoppers_controlled.yaml",
+    "protocol_id": "shoppers_uci_controlled_v1",
+    "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+    "record_id": "d15ec7c955054c010dc77cc4280cc4afbfab9c8328fa5e34c22b41a1a4efc8b1",
+    "record_scope": "benchmark_cell",
+    "run": false,
+    "run_id": "20261003T173333-83b59b1d72b1",
+    "seed": 42,
+    "seeds": [
+      42
+    ],
+    "smoke": false,
+    "smoke_test_rows": 120,
+    "smoke_train_rows": 400,
+    "split_fingerprint": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "status": "prepared",
+    "strategy": "baseline",
+    "study": "configs/ablations/stage1_controls.yaml",
+    "study_id": "stage1_baseline_controls_v1",
+    "study_sha256": "2d88ecfe00891c2ed7cd518b460ecd1b2b783c2ee28bb65547a2458ace9dd835",
+    "study_type": "baseline_control",
+    "tuning_budget": 10,
+    "ugo_max_iterations": null,
+    "variant": null,
+    "variant_id": "baseline"
+  },
+  {
+    "algorithm": "lightgbm",
+    "artifact_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T173333-83b59b1d72b1",
+    "augmentation": {},
+    "augmentation_count": null,
+    "budget_mode": "matched",
+    "candidate_configs": [
+      {},
+      {
+        "learning_rate": 0.05,
+        "min_child_samples": 10,
+        "n_estimators": 200,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.01,
+        "min_child_samples": 20,
+        "n_estimators": 400,
+        "num_leaves": 63
+      },
+      {
+        "learning_rate": 0.05,
+        "min_child_samples": 10,
+        "n_estimators": 400,
+        "num_leaves": 63
+      },
+      {
+        "learning_rate": 0.05,
+        "min_child_samples": 50,
+        "n_estimators": 100,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.1,
+        "min_child_samples": 10,
+        "n_estimators": 200,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.01,
+        "min_child_samples": 50,
+        "n_estimators": 200,
+        "num_leaves": 63
+      },
+      {
+        "learning_rate": 0.1,
+        "min_child_samples": 20,
+        "n_estimators": 100,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.05,
+        "min_child_samples": 20,
+        "n_estimators": 100,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.01,
+        "min_child_samples": 10,
+        "n_estimators": 200,
+        "num_leaves": 15
+      }
+    ],
+    "classifiers": null,
+    "config": {
+      "settings": {
+        "augmentation": {
+          "mode": "matched",
+          "total": 1000
+        },
+        "device": "auto",
+        "method_parameters": {},
+        "mlp_epochs": 160,
+        "ugo_max_iterations": 20
+      }
+    },
+    "config_sha256": "494ccfe03ea00796ebea5f47d8a75d73c5f4b5cf48e68156a1ce8fafcb1a1e12",
+    "configuration_id": "b7ef54a4567ef6819dd6e903a70ae72ff52bfffed4ea5981e4321f813a0d9cbb",
+    "data_home": ".cache/benchmarks",
+    "dataset": "shoppers",
+    "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+    "device": "auto",
+    "download": true,
+    "effective_classifiers": [
+      "logistic_regression",
+      "random_forest",
+      "lightgbm",
+      "balanced_random_forest"
+    ],
+    "effective_seeds": [
+      42
+    ],
+    "effective_settings": {
+      "augmentation": {
+        "mode": "matched",
+        "total": 1000
+      },
+      "device": "auto",
+      "method_parameters": {},
+      "mlp_epochs": 160,
+      "ugo_max_iterations": 20
+    },
+    "effective_tuning_budget": 10,
+    "effective_variants": [
+      "baseline",
+      "class_weight",
+      "ros",
+      "smote",
+      "borderline_smote",
+      "kmeans_smote",
+      "ugo_original",
+      "ugo_corrected"
+    ],
+    "error": null,
+    "evaluation_policy_sha256": "46728802ab301fc16325ceb8be859210f1219706194e524d82f0b23a5ba0d3a3",
+    "experiment_type": "setup_prepare",
+    "fold": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "local_data": null,
+    "method": "class_weight",
+    "methods": null,
+    "metrics": {},
+    "mlp_epochs": null,
+    "output_dir": null,
+    "prepare": true,
+    "protocol": "configs/benchmarks/shoppers_controlled.yaml",
+    "protocol_id": "shoppers_uci_controlled_v1",
+    "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+    "record_id": "4d59d2373a853dd4feda0d06dc40ff59e25862787f017e3b265aace11b548060",
+    "record_scope": "benchmark_cell",
+    "run": false,
+    "run_id": "20261003T173333-83b59b1d72b1",
+    "seed": 42,
+    "seeds": [
+      42
+    ],
+    "smoke": false,
+    "smoke_test_rows": 120,
+    "smoke_train_rows": 400,
+    "split_fingerprint": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "status": "prepared",
+    "strategy": "class_weight",
+    "study": "configs/ablations/stage1_controls.yaml",
+    "study_id": "stage1_baseline_controls_v1",
+    "study_sha256": "2d88ecfe00891c2ed7cd518b460ecd1b2b783c2ee28bb65547a2458ace9dd835",
+    "study_type": "baseline_control",
+    "tuning_budget": 10,
+    "ugo_max_iterations": null,
+    "variant": null,
+    "variant_id": "class_weight"
+  },
+  {
+    "algorithm": "lightgbm",
+    "artifact_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T173333-83b59b1d72b1",
+    "augmentation": {},
+    "augmentation_count": null,
+    "budget_mode": "matched",
+    "candidate_configs": [
+      {},
+      {
+        "learning_rate": 0.05,
+        "min_child_samples": 10,
+        "n_estimators": 200,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.01,
+        "min_child_samples": 20,
+        "n_estimators": 400,
+        "num_leaves": 63
+      },
+      {
+        "learning_rate": 0.05,
+        "min_child_samples": 10,
+        "n_estimators": 400,
+        "num_leaves": 63
+      },
+      {
+        "learning_rate": 0.05,
+        "min_child_samples": 50,
+        "n_estimators": 100,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.1,
+        "min_child_samples": 10,
+        "n_estimators": 200,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.01,
+        "min_child_samples": 50,
+        "n_estimators": 200,
+        "num_leaves": 63
+      },
+      {
+        "learning_rate": 0.1,
+        "min_child_samples": 20,
+        "n_estimators": 100,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.05,
+        "min_child_samples": 20,
+        "n_estimators": 100,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.01,
+        "min_child_samples": 10,
+        "n_estimators": 200,
+        "num_leaves": 15
+      }
+    ],
+    "classifiers": null,
+    "config": {
+      "settings": {
+        "augmentation": {
+          "mode": "matched",
+          "total": 1000
+        },
+        "device": "auto",
+        "method_parameters": {},
+        "mlp_epochs": 160,
+        "ugo_max_iterations": 20
+      }
+    },
+    "config_sha256": "494ccfe03ea00796ebea5f47d8a75d73c5f4b5cf48e68156a1ce8fafcb1a1e12",
+    "configuration_id": "e36a6fd02852958015c56b1667a941d469d2cd48d3ae2de54dde970269b9c340",
+    "data_home": ".cache/benchmarks",
+    "dataset": "shoppers",
+    "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+    "device": "auto",
+    "download": true,
+    "effective_classifiers": [
+      "logistic_regression",
+      "random_forest",
+      "lightgbm",
+      "balanced_random_forest"
+    ],
+    "effective_seeds": [
+      42
+    ],
+    "effective_settings": {
+      "augmentation": {
+        "mode": "matched",
+        "total": 1000
+      },
+      "device": "auto",
+      "method_parameters": {},
+      "mlp_epochs": 160,
+      "ugo_max_iterations": 20
+    },
+    "effective_tuning_budget": 10,
+    "effective_variants": [
+      "baseline",
+      "class_weight",
+      "ros",
+      "smote",
+      "borderline_smote",
+      "kmeans_smote",
+      "ugo_original",
+      "ugo_corrected"
+    ],
+    "error": null,
+    "evaluation_policy_sha256": "46728802ab301fc16325ceb8be859210f1219706194e524d82f0b23a5ba0d3a3",
+    "experiment_type": "setup_prepare",
+    "fold": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "local_data": null,
+    "method": "ros",
+    "methods": null,
+    "metrics": {},
+    "mlp_epochs": null,
+    "output_dir": null,
+    "prepare": true,
+    "protocol": "configs/benchmarks/shoppers_controlled.yaml",
+    "protocol_id": "shoppers_uci_controlled_v1",
+    "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+    "record_id": "27b9b6087517ccce645ecb5b0b67ddf0506402d559b4a3288c84c67fcb411617",
+    "record_scope": "benchmark_cell",
+    "run": false,
+    "run_id": "20261003T173333-83b59b1d72b1",
+    "seed": 42,
+    "seeds": [
+      42
+    ],
+    "smoke": false,
+    "smoke_test_rows": 120,
+    "smoke_train_rows": 400,
+    "split_fingerprint": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "status": "prepared",
+    "strategy": "ros",
+    "study": "configs/ablations/stage1_controls.yaml",
+    "study_id": "stage1_baseline_controls_v1",
+    "study_sha256": "2d88ecfe00891c2ed7cd518b460ecd1b2b783c2ee28bb65547a2458ace9dd835",
+    "study_type": "baseline_control",
+    "tuning_budget": 10,
+    "ugo_max_iterations": null,
+    "variant": null,
+    "variant_id": "ros"
+  },
+  {
+    "algorithm": "lightgbm",
+    "artifact_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T173333-83b59b1d72b1",
+    "augmentation": {},
+    "augmentation_count": null,
+    "budget_mode": "matched",
+    "candidate_configs": [
+      {},
+      {
+        "learning_rate": 0.05,
+        "min_child_samples": 10,
+        "n_estimators": 200,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.01,
+        "min_child_samples": 20,
+        "n_estimators": 400,
+        "num_leaves": 63
+      },
+      {
+        "learning_rate": 0.05,
+        "min_child_samples": 10,
+        "n_estimators": 400,
+        "num_leaves": 63
+      },
+      {
+        "learning_rate": 0.05,
+        "min_child_samples": 50,
+        "n_estimators": 100,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.1,
+        "min_child_samples": 10,
+        "n_estimators": 200,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.01,
+        "min_child_samples": 50,
+        "n_estimators": 200,
+        "num_leaves": 63
+      },
+      {
+        "learning_rate": 0.1,
+        "min_child_samples": 20,
+        "n_estimators": 100,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.05,
+        "min_child_samples": 20,
+        "n_estimators": 100,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.01,
+        "min_child_samples": 10,
+        "n_estimators": 200,
+        "num_leaves": 15
+      }
+    ],
+    "classifiers": null,
+    "config": {
+      "settings": {
+        "augmentation": {
+          "mode": "matched",
+          "total": 1000
+        },
+        "device": "auto",
+        "method_parameters": {},
+        "mlp_epochs": 160,
+        "ugo_max_iterations": 20
+      }
+    },
+    "config_sha256": "494ccfe03ea00796ebea5f47d8a75d73c5f4b5cf48e68156a1ce8fafcb1a1e12",
+    "configuration_id": "bf6804970c26dcc5c818b8cf8f00c2d75d6a7643aaf0fe9bd0a4ec1ecf2bf5b3",
+    "data_home": ".cache/benchmarks",
+    "dataset": "shoppers",
+    "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+    "device": "auto",
+    "download": true,
+    "effective_classifiers": [
+      "logistic_regression",
+      "random_forest",
+      "lightgbm",
+      "balanced_random_forest"
+    ],
+    "effective_seeds": [
+      42
+    ],
+    "effective_settings": {
+      "augmentation": {
+        "mode": "matched",
+        "total": 1000
+      },
+      "device": "auto",
+      "method_parameters": {},
+      "mlp_epochs": 160,
+      "ugo_max_iterations": 20
+    },
+    "effective_tuning_budget": 10,
+    "effective_variants": [
+      "baseline",
+      "class_weight",
+      "ros",
+      "smote",
+      "borderline_smote",
+      "kmeans_smote",
+      "ugo_original",
+      "ugo_corrected"
+    ],
+    "error": null,
+    "evaluation_policy_sha256": "46728802ab301fc16325ceb8be859210f1219706194e524d82f0b23a5ba0d3a3",
+    "experiment_type": "setup_prepare",
+    "fold": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "local_data": null,
+    "method": "smote",
+    "methods": null,
+    "metrics": {},
+    "mlp_epochs": null,
+    "output_dir": null,
+    "prepare": true,
+    "protocol": "configs/benchmarks/shoppers_controlled.yaml",
+    "protocol_id": "shoppers_uci_controlled_v1",
+    "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+    "record_id": "19622fe7c8cb5dceb53bda2a41c130d97e499eacce67d2c3979285db214d9360",
+    "record_scope": "benchmark_cell",
+    "run": false,
+    "run_id": "20261003T173333-83b59b1d72b1",
+    "seed": 42,
+    "seeds": [
+      42
+    ],
+    "smoke": false,
+    "smoke_test_rows": 120,
+    "smoke_train_rows": 400,
+    "split_fingerprint": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "status": "prepared",
+    "strategy": "smote",
+    "study": "configs/ablations/stage1_controls.yaml",
+    "study_id": "stage1_baseline_controls_v1",
+    "study_sha256": "2d88ecfe00891c2ed7cd518b460ecd1b2b783c2ee28bb65547a2458ace9dd835",
+    "study_type": "baseline_control",
+    "tuning_budget": 10,
+    "ugo_max_iterations": null,
+    "variant": null,
+    "variant_id": "smote"
+  },
+  {
+    "algorithm": "lightgbm",
+    "artifact_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T173333-83b59b1d72b1",
+    "augmentation": {},
+    "augmentation_count": null,
+    "budget_mode": "matched",
+    "candidate_configs": [
+      {},
+      {
+        "learning_rate": 0.05,
+        "min_child_samples": 10,
+        "n_estimators": 200,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.01,
+        "min_child_samples": 20,
+        "n_estimators": 400,
+        "num_leaves": 63
+      },
+      {
+        "learning_rate": 0.05,
+        "min_child_samples": 10,
+        "n_estimators": 400,
+        "num_leaves": 63
+      },
+      {
+        "learning_rate": 0.05,
+        "min_child_samples": 50,
+        "n_estimators": 100,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.1,
+        "min_child_samples": 10,
+        "n_estimators": 200,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.01,
+        "min_child_samples": 50,
+        "n_estimators": 200,
+        "num_leaves": 63
+      },
+      {
+        "learning_rate": 0.1,
+        "min_child_samples": 20,
+        "n_estimators": 100,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.05,
+        "min_child_samples": 20,
+        "n_estimators": 100,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.01,
+        "min_child_samples": 10,
+        "n_estimators": 200,
+        "num_leaves": 15
+      }
+    ],
+    "classifiers": null,
+    "config": {
+      "settings": {
+        "augmentation": {
+          "mode": "matched",
+          "total": 1000
+        },
+        "device": "auto",
+        "method_parameters": {},
+        "mlp_epochs": 160,
+        "ugo_max_iterations": 20
+      }
+    },
+    "config_sha256": "494ccfe03ea00796ebea5f47d8a75d73c5f4b5cf48e68156a1ce8fafcb1a1e12",
+    "configuration_id": "ad4d7dbf55d3b4eb3b32a80a7ccb9c18a107278d4957eaa8a6732f391b3c0927",
+    "data_home": ".cache/benchmarks",
+    "dataset": "shoppers",
+    "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+    "device": "auto",
+    "download": true,
+    "effective_classifiers": [
+      "logistic_regression",
+      "random_forest",
+      "lightgbm",
+      "balanced_random_forest"
+    ],
+    "effective_seeds": [
+      42
+    ],
+    "effective_settings": {
+      "augmentation": {
+        "mode": "matched",
+        "total": 1000
+      },
+      "device": "auto",
+      "method_parameters": {},
+      "mlp_epochs": 160,
+      "ugo_max_iterations": 20
+    },
+    "effective_tuning_budget": 10,
+    "effective_variants": [
+      "baseline",
+      "class_weight",
+      "ros",
+      "smote",
+      "borderline_smote",
+      "kmeans_smote",
+      "ugo_original",
+      "ugo_corrected"
+    ],
+    "error": null,
+    "evaluation_policy_sha256": "46728802ab301fc16325ceb8be859210f1219706194e524d82f0b23a5ba0d3a3",
+    "experiment_type": "setup_prepare",
+    "fold": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "local_data": null,
+    "method": "borderline_smote",
+    "methods": null,
+    "metrics": {},
+    "mlp_epochs": null,
+    "output_dir": null,
+    "prepare": true,
+    "protocol": "configs/benchmarks/shoppers_controlled.yaml",
+    "protocol_id": "shoppers_uci_controlled_v1",
+    "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+    "record_id": "18097b0dbec6882d2684c6e0f27a8640a143ca007958f8ba4a2fd0ea227bbb3d",
+    "record_scope": "benchmark_cell",
+    "run": false,
+    "run_id": "20261003T173333-83b59b1d72b1",
+    "seed": 42,
+    "seeds": [
+      42
+    ],
+    "smoke": false,
+    "smoke_test_rows": 120,
+    "smoke_train_rows": 400,
+    "split_fingerprint": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "status": "prepared",
+    "strategy": "borderline_smote",
+    "study": "configs/ablations/stage1_controls.yaml",
+    "study_id": "stage1_baseline_controls_v1",
+    "study_sha256": "2d88ecfe00891c2ed7cd518b460ecd1b2b783c2ee28bb65547a2458ace9dd835",
+    "study_type": "baseline_control",
+    "tuning_budget": 10,
+    "ugo_max_iterations": null,
+    "variant": null,
+    "variant_id": "borderline_smote"
+  },
+  {
+    "algorithm": "lightgbm",
+    "artifact_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T173333-83b59b1d72b1",
+    "augmentation": {},
+    "augmentation_count": null,
+    "budget_mode": "matched",
+    "candidate_configs": [
+      {},
+      {
+        "learning_rate": 0.05,
+        "min_child_samples": 10,
+        "n_estimators": 200,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.01,
+        "min_child_samples": 20,
+        "n_estimators": 400,
+        "num_leaves": 63
+      },
+      {
+        "learning_rate": 0.05,
+        "min_child_samples": 10,
+        "n_estimators": 400,
+        "num_leaves": 63
+      },
+      {
+        "learning_rate": 0.05,
+        "min_child_samples": 50,
+        "n_estimators": 100,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.1,
+        "min_child_samples": 10,
+        "n_estimators": 200,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.01,
+        "min_child_samples": 50,
+        "n_estimators": 200,
+        "num_leaves": 63
+      },
+      {
+        "learning_rate": 0.1,
+        "min_child_samples": 20,
+        "n_estimators": 100,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.05,
+        "min_child_samples": 20,
+        "n_estimators": 100,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.01,
+        "min_child_samples": 10,
+        "n_estimators": 200,
+        "num_leaves": 15
+      }
+    ],
+    "classifiers": null,
+    "config": {
+      "settings": {
+        "augmentation": {
+          "mode": "matched",
+          "total": 1000
+        },
+        "device": "auto",
+        "method_parameters": {},
+        "mlp_epochs": 160,
+        "ugo_max_iterations": 20
+      }
+    },
+    "config_sha256": "494ccfe03ea00796ebea5f47d8a75d73c5f4b5cf48e68156a1ce8fafcb1a1e12",
+    "configuration_id": "66509ad105f357d2bd4b480534a4408a687c28d9dbe4bb0070565a4f23e0a718",
+    "data_home": ".cache/benchmarks",
+    "dataset": "shoppers",
+    "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+    "device": "auto",
+    "download": true,
+    "effective_classifiers": [
+      "logistic_regression",
+      "random_forest",
+      "lightgbm",
+      "balanced_random_forest"
+    ],
+    "effective_seeds": [
+      42
+    ],
+    "effective_settings": {
+      "augmentation": {
+        "mode": "matched",
+        "total": 1000
+      },
+      "device": "auto",
+      "method_parameters": {},
+      "mlp_epochs": 160,
+      "ugo_max_iterations": 20
+    },
+    "effective_tuning_budget": 10,
+    "effective_variants": [
+      "baseline",
+      "class_weight",
+      "ros",
+      "smote",
+      "borderline_smote",
+      "kmeans_smote",
+      "ugo_original",
+      "ugo_corrected"
+    ],
+    "error": null,
+    "evaluation_policy_sha256": "46728802ab301fc16325ceb8be859210f1219706194e524d82f0b23a5ba0d3a3",
+    "experiment_type": "setup_prepare",
+    "fold": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "local_data": null,
+    "method": "kmeans_smote",
+    "methods": null,
+    "metrics": {},
+    "mlp_epochs": null,
+    "output_dir": null,
+    "prepare": true,
+    "protocol": "configs/benchmarks/shoppers_controlled.yaml",
+    "protocol_id": "shoppers_uci_controlled_v1",
+    "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+    "record_id": "6441ec0020343179495868d2cd1f9e193becb81f868dd0e7cd86eb1ee3249e06",
+    "record_scope": "benchmark_cell",
+    "run": false,
+    "run_id": "20261003T173333-83b59b1d72b1",
+    "seed": 42,
+    "seeds": [
+      42
+    ],
+    "smoke": false,
+    "smoke_test_rows": 120,
+    "smoke_train_rows": 400,
+    "split_fingerprint": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "status": "prepared",
+    "strategy": "kmeans_smote",
+    "study": "configs/ablations/stage1_controls.yaml",
+    "study_id": "stage1_baseline_controls_v1",
+    "study_sha256": "2d88ecfe00891c2ed7cd518b460ecd1b2b783c2ee28bb65547a2458ace9dd835",
+    "study_type": "baseline_control",
+    "tuning_budget": 10,
+    "ugo_max_iterations": null,
+    "variant": null,
+    "variant_id": "kmeans_smote"
+  },
+  {
+    "algorithm": "lightgbm",
+    "artifact_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T173333-83b59b1d72b1",
+    "augmentation": {},
+    "augmentation_count": null,
+    "budget_mode": "matched",
+    "candidate_configs": [
+      {},
+      {
+        "learning_rate": 0.05,
+        "min_child_samples": 10,
+        "n_estimators": 200,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.01,
+        "min_child_samples": 20,
+        "n_estimators": 400,
+        "num_leaves": 63
+      },
+      {
+        "learning_rate": 0.05,
+        "min_child_samples": 10,
+        "n_estimators": 400,
+        "num_leaves": 63
+      },
+      {
+        "learning_rate": 0.05,
+        "min_child_samples": 50,
+        "n_estimators": 100,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.1,
+        "min_child_samples": 10,
+        "n_estimators": 200,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.01,
+        "min_child_samples": 50,
+        "n_estimators": 200,
+        "num_leaves": 63
+      },
+      {
+        "learning_rate": 0.1,
+        "min_child_samples": 20,
+        "n_estimators": 100,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.05,
+        "min_child_samples": 20,
+        "n_estimators": 100,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.01,
+        "min_child_samples": 10,
+        "n_estimators": 200,
+        "num_leaves": 15
+      }
+    ],
+    "classifiers": null,
+    "config": {
+      "settings": {
+        "augmentation": {
+          "mode": "matched",
+          "total": 1000
+        },
+        "device": "auto",
+        "method_parameters": {},
+        "mlp_epochs": 160,
+        "ugo_max_iterations": 20
+      }
+    },
+    "config_sha256": "494ccfe03ea00796ebea5f47d8a75d73c5f4b5cf48e68156a1ce8fafcb1a1e12",
+    "configuration_id": "05815163ef905896bdaa5754c6775958b1d566f7243d6d1820c3d1d1bad9edce",
+    "data_home": ".cache/benchmarks",
+    "dataset": "shoppers",
+    "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+    "device": "auto",
+    "download": true,
+    "effective_classifiers": [
+      "logistic_regression",
+      "random_forest",
+      "lightgbm",
+      "balanced_random_forest"
+    ],
+    "effective_seeds": [
+      42
+    ],
+    "effective_settings": {
+      "augmentation": {
+        "mode": "matched",
+        "total": 1000
+      },
+      "device": "auto",
+      "method_parameters": {},
+      "mlp_epochs": 160,
+      "ugo_max_iterations": 20
+    },
+    "effective_tuning_budget": 10,
+    "effective_variants": [
+      "baseline",
+      "class_weight",
+      "ros",
+      "smote",
+      "borderline_smote",
+      "kmeans_smote",
+      "ugo_original",
+      "ugo_corrected"
+    ],
+    "error": null,
+    "evaluation_policy_sha256": "46728802ab301fc16325ceb8be859210f1219706194e524d82f0b23a5ba0d3a3",
+    "experiment_type": "setup_prepare",
+    "fold": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "local_data": null,
+    "method": "ugo_original",
+    "methods": null,
+    "metrics": {},
+    "mlp_epochs": null,
+    "output_dir": null,
+    "prepare": true,
+    "protocol": "configs/benchmarks/shoppers_controlled.yaml",
+    "protocol_id": "shoppers_uci_controlled_v1",
+    "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+    "record_id": "a7eec71d6b6500c1387fb7b1bb95f8f265d8e27f0c7f659a9b9b54ef0036d686",
+    "record_scope": "benchmark_cell",
+    "run": false,
+    "run_id": "20261003T173333-83b59b1d72b1",
+    "seed": 42,
+    "seeds": [
+      42
+    ],
+    "smoke": false,
+    "smoke_test_rows": 120,
+    "smoke_train_rows": 400,
+    "split_fingerprint": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "status": "prepared",
+    "strategy": "ugo_original",
+    "study": "configs/ablations/stage1_controls.yaml",
+    "study_id": "stage1_baseline_controls_v1",
+    "study_sha256": "2d88ecfe00891c2ed7cd518b460ecd1b2b783c2ee28bb65547a2458ace9dd835",
+    "study_type": "baseline_control",
+    "tuning_budget": 10,
+    "ugo_max_iterations": null,
+    "variant": null,
+    "variant_id": "ugo_original"
+  },
+  {
+    "algorithm": "lightgbm",
+    "artifact_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T173333-83b59b1d72b1",
+    "augmentation": {},
+    "augmentation_count": null,
+    "budget_mode": "matched",
+    "candidate_configs": [
+      {},
+      {
+        "learning_rate": 0.05,
+        "min_child_samples": 10,
+        "n_estimators": 200,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.01,
+        "min_child_samples": 20,
+        "n_estimators": 400,
+        "num_leaves": 63
+      },
+      {
+        "learning_rate": 0.05,
+        "min_child_samples": 10,
+        "n_estimators": 400,
+        "num_leaves": 63
+      },
+      {
+        "learning_rate": 0.05,
+        "min_child_samples": 50,
+        "n_estimators": 100,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.1,
+        "min_child_samples": 10,
+        "n_estimators": 200,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.01,
+        "min_child_samples": 50,
+        "n_estimators": 200,
+        "num_leaves": 63
+      },
+      {
+        "learning_rate": 0.1,
+        "min_child_samples": 20,
+        "n_estimators": 100,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.05,
+        "min_child_samples": 20,
+        "n_estimators": 100,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.01,
+        "min_child_samples": 10,
+        "n_estimators": 200,
+        "num_leaves": 15
+      }
+    ],
+    "classifiers": null,
+    "config": {
+      "settings": {
+        "augmentation": {
+          "mode": "matched",
+          "total": 1000
+        },
+        "device": "auto",
+        "method_parameters": {},
+        "mlp_epochs": 160,
+        "ugo_max_iterations": 20
+      }
+    },
+    "config_sha256": "494ccfe03ea00796ebea5f47d8a75d73c5f4b5cf48e68156a1ce8fafcb1a1e12",
+    "configuration_id": "e16a110fdc607e9760e86f980ea3fdba0f086de241fa84d78aced81733a6144a",
+    "data_home": ".cache/benchmarks",
+    "dataset": "shoppers",
+    "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+    "device": "auto",
+    "download": true,
+    "effective_classifiers": [
+      "logistic_regression",
+      "random_forest",
+      "lightgbm",
+      "balanced_random_forest"
+    ],
+    "effective_seeds": [
+      42
+    ],
+    "effective_settings": {
+      "augmentation": {
+        "mode": "matched",
+        "total": 1000
+      },
+      "device": "auto",
+      "method_parameters": {},
+      "mlp_epochs": 160,
+      "ugo_max_iterations": 20
+    },
+    "effective_tuning_budget": 10,
+    "effective_variants": [
+      "baseline",
+      "class_weight",
+      "ros",
+      "smote",
+      "borderline_smote",
+      "kmeans_smote",
+      "ugo_original",
+      "ugo_corrected"
+    ],
+    "error": null,
+    "evaluation_policy_sha256": "46728802ab301fc16325ceb8be859210f1219706194e524d82f0b23a5ba0d3a3",
+    "experiment_type": "setup_prepare",
+    "fold": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "local_data": null,
+    "method": "ugo_corrected",
+    "methods": null,
+    "metrics": {},
+    "mlp_epochs": null,
+    "output_dir": null,
+    "prepare": true,
+    "protocol": "configs/benchmarks/shoppers_controlled.yaml",
+    "protocol_id": "shoppers_uci_controlled_v1",
+    "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+    "record_id": "224f44b67960f83055fd0f4b6c6f01008a03986ab624bc56e836ada22edd3f24",
+    "record_scope": "benchmark_cell",
+    "run": false,
+    "run_id": "20261003T173333-83b59b1d72b1",
+    "seed": 42,
+    "seeds": [
+      42
+    ],
+    "smoke": false,
+    "smoke_test_rows": 120,
+    "smoke_train_rows": 400,
+    "split_fingerprint": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "status": "prepared",
+    "strategy": "ugo_corrected",
+    "study": "configs/ablations/stage1_controls.yaml",
+    "study_id": "stage1_baseline_controls_v1",
+    "study_sha256": "2d88ecfe00891c2ed7cd518b460ecd1b2b783c2ee28bb65547a2458ace9dd835",
+    "study_type": "baseline_control",
+    "tuning_budget": 10,
+    "ugo_max_iterations": null,
+    "variant": null,
+    "variant_id": "ugo_corrected"
+  },
+  {
+    "algorithm": "balanced_random_forest",
+    "artifact_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T173333-83b59b1d72b1",
+    "augmentation": {},
+    "augmentation_count": null,
+    "budget_mode": "matched",
+    "candidate_configs": [
+      {},
+      {
+        "max_depth": 6,
+        "max_features": "sqrt",
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 3,
+        "n_estimators": 400
+      },
+      {
+        "max_depth": 12,
+        "max_features": 0.8,
+        "min_samples_leaf": 1,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 8,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 3,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 8,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      }
+    ],
+    "classifiers": null,
+    "config": {
+      "settings": {
+        "augmentation": {
+          "mode": "matched",
+          "total": 1000
+        },
+        "device": "auto",
+        "method_parameters": {},
+        "mlp_epochs": 160,
+        "ugo_max_iterations": 20
+      }
+    },
+    "config_sha256": "46bebb86a4519fa68034d9fc87e9c7440e5cac40fa0ec8ac46f366717662c1e6",
+    "configuration_id": "7e346326ff3e265f414be6a8d936bb913127e5281fb538f63f563ba15b18b014",
+    "data_home": ".cache/benchmarks",
+    "dataset": "shoppers",
+    "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+    "device": "auto",
+    "download": true,
+    "effective_classifiers": [
+      "logistic_regression",
+      "random_forest",
+      "lightgbm",
+      "balanced_random_forest"
+    ],
+    "effective_seeds": [
+      42
+    ],
+    "effective_settings": {
+      "augmentation": {
+        "mode": "matched",
+        "total": 1000
+      },
+      "device": "auto",
+      "method_parameters": {},
+      "mlp_epochs": 160,
+      "ugo_max_iterations": 20
+    },
+    "effective_tuning_budget": 10,
+    "effective_variants": [
+      "baseline",
+      "class_weight",
+      "ros",
+      "smote",
+      "borderline_smote",
+      "kmeans_smote",
+      "ugo_original",
+      "ugo_corrected"
+    ],
+    "error": null,
+    "evaluation_policy_sha256": "46728802ab301fc16325ceb8be859210f1219706194e524d82f0b23a5ba0d3a3",
+    "experiment_type": "setup_prepare",
+    "fold": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "local_data": null,
+    "method": "baseline",
+    "methods": null,
+    "metrics": {},
+    "mlp_epochs": null,
+    "output_dir": null,
+    "prepare": true,
+    "protocol": "configs/benchmarks/shoppers_controlled.yaml",
+    "protocol_id": "shoppers_uci_controlled_v1",
+    "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+    "record_id": "6c693d84c0a388d374ddd218ea8a5c59a42b012b77eb301a923dba3be2a8c3a4",
+    "record_scope": "benchmark_cell",
+    "run": false,
+    "run_id": "20261003T173333-83b59b1d72b1",
+    "seed": 42,
+    "seeds": [
+      42
+    ],
+    "smoke": false,
+    "smoke_test_rows": 120,
+    "smoke_train_rows": 400,
+    "split_fingerprint": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "status": "prepared",
+    "strategy": "baseline",
+    "study": "configs/ablations/stage1_controls.yaml",
+    "study_id": "stage1_baseline_controls_v1",
+    "study_sha256": "2d88ecfe00891c2ed7cd518b460ecd1b2b783c2ee28bb65547a2458ace9dd835",
+    "study_type": "baseline_control",
+    "tuning_budget": 10,
+    "ugo_max_iterations": null,
+    "variant": null,
+    "variant_id": "baseline"
+  },
+  {
+    "algorithm": "balanced_random_forest",
+    "artifact_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T173333-83b59b1d72b1",
+    "augmentation": {},
+    "augmentation_count": null,
+    "budget_mode": "matched",
+    "candidate_configs": [
+      {},
+      {
+        "max_depth": 6,
+        "max_features": "sqrt",
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 3,
+        "n_estimators": 400
+      },
+      {
+        "max_depth": 12,
+        "max_features": 0.8,
+        "min_samples_leaf": 1,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 8,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 3,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 8,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      }
+    ],
+    "classifiers": null,
+    "config_sha256": "a5d71012ec7c6fe2e2bd64aabcc7adf4b666ea9dffeff934ae5af34a22181f52",
+    "configuration_id": "9c280c7b861851c6b5646d328bf36dfb0920bdd8db3ab0ca1a4ac25f35d8deef",
+    "data_home": ".cache/benchmarks",
+    "dataset": "shoppers",
+    "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+    "device": "auto",
+    "download": true,
+    "effective_classifiers": [
+      "logistic_regression",
+      "random_forest",
+      "lightgbm",
+      "balanced_random_forest"
+    ],
+    "effective_seeds": [
+      42
+    ],
+    "effective_settings": {
+      "augmentation": {
+        "mode": "matched",
+        "total": 1000
+      },
+      "device": "auto",
+      "method_parameters": {},
+      "mlp_epochs": 160,
+      "ugo_max_iterations": 20
+    },
+    "effective_tuning_budget": 10,
+    "effective_variants": [
+      "baseline",
+      "class_weight",
+      "ros",
+      "smote",
+      "borderline_smote",
+      "kmeans_smote",
+      "ugo_original",
+      "ugo_corrected"
+    ],
+    "error": "balanced_random_forest is an intrinsic ensemble control; declared methods: ['baseline'].",
+    "evaluation_policy_sha256": "46728802ab301fc16325ceb8be859210f1219706194e524d82f0b23a5ba0d3a3",
+    "experiment_type": "setup_prepare",
+    "fold": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "local_data": null,
+    "method": "class_weight",
+    "methods": null,
+    "metrics": {},
+    "mlp_epochs": null,
+    "output_dir": null,
+    "prepare": true,
+    "protocol": "configs/benchmarks/shoppers_controlled.yaml",
+    "protocol_id": "shoppers_uci_controlled_v1",
+    "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+    "record_id": "27b41499a55aedd05f5c799c8add5e9158e1e176da9a0dee737ccf5c2aa4e819",
+    "record_scope": "benchmark_cell",
+    "run": false,
+    "run_id": "20261003T173333-83b59b1d72b1",
+    "seed": 42,
+    "seeds": [
+      42
+    ],
+    "smoke": false,
+    "smoke_test_rows": 120,
+    "smoke_train_rows": 400,
+    "split_fingerprint": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "status": "unsupported",
+    "strategy": "class_weight",
+    "study": "configs/ablations/stage1_controls.yaml",
+    "study_id": "stage1_baseline_controls_v1",
+    "study_sha256": "2d88ecfe00891c2ed7cd518b460ecd1b2b783c2ee28bb65547a2458ace9dd835",
+    "study_type": "baseline_control",
+    "tuning_budget": 10,
+    "ugo_max_iterations": null,
+    "variant": null,
+    "variant_id": "class_weight"
+  },
+  {
+    "algorithm": "balanced_random_forest",
+    "artifact_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T173333-83b59b1d72b1",
+    "augmentation": {},
+    "augmentation_count": null,
+    "budget_mode": "matched",
+    "candidate_configs": [
+      {},
+      {
+        "max_depth": 6,
+        "max_features": "sqrt",
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 3,
+        "n_estimators": 400
+      },
+      {
+        "max_depth": 12,
+        "max_features": 0.8,
+        "min_samples_leaf": 1,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 8,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 3,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 8,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      }
+    ],
+    "classifiers": null,
+    "config_sha256": "a5d71012ec7c6fe2e2bd64aabcc7adf4b666ea9dffeff934ae5af34a22181f52",
+    "configuration_id": "3061dc35c4f2e67a6fe384159a68a9baeb8624424defbc5faa5fde053884c808",
+    "data_home": ".cache/benchmarks",
+    "dataset": "shoppers",
+    "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+    "device": "auto",
+    "download": true,
+    "effective_classifiers": [
+      "logistic_regression",
+      "random_forest",
+      "lightgbm",
+      "balanced_random_forest"
+    ],
+    "effective_seeds": [
+      42
+    ],
+    "effective_settings": {
+      "augmentation": {
+        "mode": "matched",
+        "total": 1000
+      },
+      "device": "auto",
+      "method_parameters": {},
+      "mlp_epochs": 160,
+      "ugo_max_iterations": 20
+    },
+    "effective_tuning_budget": 10,
+    "effective_variants": [
+      "baseline",
+      "class_weight",
+      "ros",
+      "smote",
+      "borderline_smote",
+      "kmeans_smote",
+      "ugo_original",
+      "ugo_corrected"
+    ],
+    "error": "balanced_random_forest is an intrinsic ensemble control; declared methods: ['baseline'].",
+    "evaluation_policy_sha256": "46728802ab301fc16325ceb8be859210f1219706194e524d82f0b23a5ba0d3a3",
+    "experiment_type": "setup_prepare",
+    "fold": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "local_data": null,
+    "method": "ros",
+    "methods": null,
+    "metrics": {},
+    "mlp_epochs": null,
+    "output_dir": null,
+    "prepare": true,
+    "protocol": "configs/benchmarks/shoppers_controlled.yaml",
+    "protocol_id": "shoppers_uci_controlled_v1",
+    "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+    "record_id": "98308ab8c8ed09059e7c99d9600e58dfbad1627792d29d3ae6f72fd3132b0df5",
+    "record_scope": "benchmark_cell",
+    "run": false,
+    "run_id": "20261003T173333-83b59b1d72b1",
+    "seed": 42,
+    "seeds": [
+      42
+    ],
+    "smoke": false,
+    "smoke_test_rows": 120,
+    "smoke_train_rows": 400,
+    "split_fingerprint": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "status": "unsupported",
+    "strategy": "ros",
+    "study": "configs/ablations/stage1_controls.yaml",
+    "study_id": "stage1_baseline_controls_v1",
+    "study_sha256": "2d88ecfe00891c2ed7cd518b460ecd1b2b783c2ee28bb65547a2458ace9dd835",
+    "study_type": "baseline_control",
+    "tuning_budget": 10,
+    "ugo_max_iterations": null,
+    "variant": null,
+    "variant_id": "ros"
+  },
+  {
+    "algorithm": "balanced_random_forest",
+    "artifact_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T173333-83b59b1d72b1",
+    "augmentation": {},
+    "augmentation_count": null,
+    "budget_mode": "matched",
+    "candidate_configs": [
+      {},
+      {
+        "max_depth": 6,
+        "max_features": "sqrt",
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 3,
+        "n_estimators": 400
+      },
+      {
+        "max_depth": 12,
+        "max_features": 0.8,
+        "min_samples_leaf": 1,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 8,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 3,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 8,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      }
+    ],
+    "classifiers": null,
+    "config_sha256": "a5d71012ec7c6fe2e2bd64aabcc7adf4b666ea9dffeff934ae5af34a22181f52",
+    "configuration_id": "979ca3b989c5d881b6b567d34050222b588bed8d2f095cad57f7f42cae6845eb",
+    "data_home": ".cache/benchmarks",
+    "dataset": "shoppers",
+    "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+    "device": "auto",
+    "download": true,
+    "effective_classifiers": [
+      "logistic_regression",
+      "random_forest",
+      "lightgbm",
+      "balanced_random_forest"
+    ],
+    "effective_seeds": [
+      42
+    ],
+    "effective_settings": {
+      "augmentation": {
+        "mode": "matched",
+        "total": 1000
+      },
+      "device": "auto",
+      "method_parameters": {},
+      "mlp_epochs": 160,
+      "ugo_max_iterations": 20
+    },
+    "effective_tuning_budget": 10,
+    "effective_variants": [
+      "baseline",
+      "class_weight",
+      "ros",
+      "smote",
+      "borderline_smote",
+      "kmeans_smote",
+      "ugo_original",
+      "ugo_corrected"
+    ],
+    "error": "balanced_random_forest is an intrinsic ensemble control; declared methods: ['baseline'].",
+    "evaluation_policy_sha256": "46728802ab301fc16325ceb8be859210f1219706194e524d82f0b23a5ba0d3a3",
+    "experiment_type": "setup_prepare",
+    "fold": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "local_data": null,
+    "method": "smote",
+    "methods": null,
+    "metrics": {},
+    "mlp_epochs": null,
+    "output_dir": null,
+    "prepare": true,
+    "protocol": "configs/benchmarks/shoppers_controlled.yaml",
+    "protocol_id": "shoppers_uci_controlled_v1",
+    "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+    "record_id": "5f24583476504d3fd7f28a810fb048ffed5ed7ca262ed8b35d2ed792260c4d08",
+    "record_scope": "benchmark_cell",
+    "run": false,
+    "run_id": "20261003T173333-83b59b1d72b1",
+    "seed": 42,
+    "seeds": [
+      42
+    ],
+    "smoke": false,
+    "smoke_test_rows": 120,
+    "smoke_train_rows": 400,
+    "split_fingerprint": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "status": "unsupported",
+    "strategy": "smote",
+    "study": "configs/ablations/stage1_controls.yaml",
+    "study_id": "stage1_baseline_controls_v1",
+    "study_sha256": "2d88ecfe00891c2ed7cd518b460ecd1b2b783c2ee28bb65547a2458ace9dd835",
+    "study_type": "baseline_control",
+    "tuning_budget": 10,
+    "ugo_max_iterations": null,
+    "variant": null,
+    "variant_id": "smote"
+  },
+  {
+    "algorithm": "balanced_random_forest",
+    "artifact_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T173333-83b59b1d72b1",
+    "augmentation": {},
+    "augmentation_count": null,
+    "budget_mode": "matched",
+    "candidate_configs": [
+      {},
+      {
+        "max_depth": 6,
+        "max_features": "sqrt",
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 3,
+        "n_estimators": 400
+      },
+      {
+        "max_depth": 12,
+        "max_features": 0.8,
+        "min_samples_leaf": 1,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 8,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 3,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 8,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      }
+    ],
+    "classifiers": null,
+    "config_sha256": "a5d71012ec7c6fe2e2bd64aabcc7adf4b666ea9dffeff934ae5af34a22181f52",
+    "configuration_id": "6c9137966fc4219958280c330dd5aacc5b6d5f4964921623824036c815e16188",
+    "data_home": ".cache/benchmarks",
+    "dataset": "shoppers",
+    "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+    "device": "auto",
+    "download": true,
+    "effective_classifiers": [
+      "logistic_regression",
+      "random_forest",
+      "lightgbm",
+      "balanced_random_forest"
+    ],
+    "effective_seeds": [
+      42
+    ],
+    "effective_settings": {
+      "augmentation": {
+        "mode": "matched",
+        "total": 1000
+      },
+      "device": "auto",
+      "method_parameters": {},
+      "mlp_epochs": 160,
+      "ugo_max_iterations": 20
+    },
+    "effective_tuning_budget": 10,
+    "effective_variants": [
+      "baseline",
+      "class_weight",
+      "ros",
+      "smote",
+      "borderline_smote",
+      "kmeans_smote",
+      "ugo_original",
+      "ugo_corrected"
+    ],
+    "error": "balanced_random_forest is an intrinsic ensemble control; declared methods: ['baseline'].",
+    "evaluation_policy_sha256": "46728802ab301fc16325ceb8be859210f1219706194e524d82f0b23a5ba0d3a3",
+    "experiment_type": "setup_prepare",
+    "fold": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "local_data": null,
+    "method": "borderline_smote",
+    "methods": null,
+    "metrics": {},
+    "mlp_epochs": null,
+    "output_dir": null,
+    "prepare": true,
+    "protocol": "configs/benchmarks/shoppers_controlled.yaml",
+    "protocol_id": "shoppers_uci_controlled_v1",
+    "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+    "record_id": "cec5a9a559681a2887907228bd03d88d1d93c8144555fdde45ca0c97275495b9",
+    "record_scope": "benchmark_cell",
+    "run": false,
+    "run_id": "20261003T173333-83b59b1d72b1",
+    "seed": 42,
+    "seeds": [
+      42
+    ],
+    "smoke": false,
+    "smoke_test_rows": 120,
+    "smoke_train_rows": 400,
+    "split_fingerprint": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "status": "unsupported",
+    "strategy": "borderline_smote",
+    "study": "configs/ablations/stage1_controls.yaml",
+    "study_id": "stage1_baseline_controls_v1",
+    "study_sha256": "2d88ecfe00891c2ed7cd518b460ecd1b2b783c2ee28bb65547a2458ace9dd835",
+    "study_type": "baseline_control",
+    "tuning_budget": 10,
+    "ugo_max_iterations": null,
+    "variant": null,
+    "variant_id": "borderline_smote"
+  },
+  {
+    "algorithm": "balanced_random_forest",
+    "artifact_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T173333-83b59b1d72b1",
+    "augmentation": {},
+    "augmentation_count": null,
+    "budget_mode": "matched",
+    "candidate_configs": [
+      {},
+      {
+        "max_depth": 6,
+        "max_features": "sqrt",
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 3,
+        "n_estimators": 400
+      },
+      {
+        "max_depth": 12,
+        "max_features": 0.8,
+        "min_samples_leaf": 1,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 8,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 3,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 8,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      }
+    ],
+    "classifiers": null,
+    "config_sha256": "a5d71012ec7c6fe2e2bd64aabcc7adf4b666ea9dffeff934ae5af34a22181f52",
+    "configuration_id": "ff7cd5c1a2054e8c5e4ca8d9c24867182bf552417f70834d38d85b94afdb33fe",
+    "data_home": ".cache/benchmarks",
+    "dataset": "shoppers",
+    "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+    "device": "auto",
+    "download": true,
+    "effective_classifiers": [
+      "logistic_regression",
+      "random_forest",
+      "lightgbm",
+      "balanced_random_forest"
+    ],
+    "effective_seeds": [
+      42
+    ],
+    "effective_settings": {
+      "augmentation": {
+        "mode": "matched",
+        "total": 1000
+      },
+      "device": "auto",
+      "method_parameters": {},
+      "mlp_epochs": 160,
+      "ugo_max_iterations": 20
+    },
+    "effective_tuning_budget": 10,
+    "effective_variants": [
+      "baseline",
+      "class_weight",
+      "ros",
+      "smote",
+      "borderline_smote",
+      "kmeans_smote",
+      "ugo_original",
+      "ugo_corrected"
+    ],
+    "error": "balanced_random_forest is an intrinsic ensemble control; declared methods: ['baseline'].",
+    "evaluation_policy_sha256": "46728802ab301fc16325ceb8be859210f1219706194e524d82f0b23a5ba0d3a3",
+    "experiment_type": "setup_prepare",
+    "fold": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "local_data": null,
+    "method": "kmeans_smote",
+    "methods": null,
+    "metrics": {},
+    "mlp_epochs": null,
+    "output_dir": null,
+    "prepare": true,
+    "protocol": "configs/benchmarks/shoppers_controlled.yaml",
+    "protocol_id": "shoppers_uci_controlled_v1",
+    "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+    "record_id": "d2bc289a0742912986dff3d5f1fa721659558aa2ce0322864c0a4b59935cb17a",
+    "record_scope": "benchmark_cell",
+    "run": false,
+    "run_id": "20261003T173333-83b59b1d72b1",
+    "seed": 42,
+    "seeds": [
+      42
+    ],
+    "smoke": false,
+    "smoke_test_rows": 120,
+    "smoke_train_rows": 400,
+    "split_fingerprint": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "status": "unsupported",
+    "strategy": "kmeans_smote",
+    "study": "configs/ablations/stage1_controls.yaml",
+    "study_id": "stage1_baseline_controls_v1",
+    "study_sha256": "2d88ecfe00891c2ed7cd518b460ecd1b2b783c2ee28bb65547a2458ace9dd835",
+    "study_type": "baseline_control",
+    "tuning_budget": 10,
+    "ugo_max_iterations": null,
+    "variant": null,
+    "variant_id": "kmeans_smote"
+  },
+  {
+    "algorithm": "balanced_random_forest",
+    "artifact_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T173333-83b59b1d72b1",
+    "augmentation": {},
+    "augmentation_count": null,
+    "budget_mode": "matched",
+    "candidate_configs": [
+      {},
+      {
+        "max_depth": 6,
+        "max_features": "sqrt",
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 3,
+        "n_estimators": 400
+      },
+      {
+        "max_depth": 12,
+        "max_features": 0.8,
+        "min_samples_leaf": 1,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 8,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 3,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 8,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      }
+    ],
+    "classifiers": null,
+    "config_sha256": "a5d71012ec7c6fe2e2bd64aabcc7adf4b666ea9dffeff934ae5af34a22181f52",
+    "configuration_id": "23bd628a713ac9233c73cb129b75ec9351ae77e39bdaaea4cfa26ef43d4cd4fe",
+    "data_home": ".cache/benchmarks",
+    "dataset": "shoppers",
+    "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+    "device": "auto",
+    "download": true,
+    "effective_classifiers": [
+      "logistic_regression",
+      "random_forest",
+      "lightgbm",
+      "balanced_random_forest"
+    ],
+    "effective_seeds": [
+      42
+    ],
+    "effective_settings": {
+      "augmentation": {
+        "mode": "matched",
+        "total": 1000
+      },
+      "device": "auto",
+      "method_parameters": {},
+      "mlp_epochs": 160,
+      "ugo_max_iterations": 20
+    },
+    "effective_tuning_budget": 10,
+    "effective_variants": [
+      "baseline",
+      "class_weight",
+      "ros",
+      "smote",
+      "borderline_smote",
+      "kmeans_smote",
+      "ugo_original",
+      "ugo_corrected"
+    ],
+    "error": "balanced_random_forest is an intrinsic ensemble control; declared methods: ['baseline'].",
+    "evaluation_policy_sha256": "46728802ab301fc16325ceb8be859210f1219706194e524d82f0b23a5ba0d3a3",
+    "experiment_type": "setup_prepare",
+    "fold": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "local_data": null,
+    "method": "ugo_original",
+    "methods": null,
+    "metrics": {},
+    "mlp_epochs": null,
+    "output_dir": null,
+    "prepare": true,
+    "protocol": "configs/benchmarks/shoppers_controlled.yaml",
+    "protocol_id": "shoppers_uci_controlled_v1",
+    "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+    "record_id": "e020615526295b3009145c8183af3e00a95ac1781f38ee1bbaf47cf5b566cbee",
+    "record_scope": "benchmark_cell",
+    "run": false,
+    "run_id": "20261003T173333-83b59b1d72b1",
+    "seed": 42,
+    "seeds": [
+      42
+    ],
+    "smoke": false,
+    "smoke_test_rows": 120,
+    "smoke_train_rows": 400,
+    "split_fingerprint": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "status": "unsupported",
+    "strategy": "ugo_original",
+    "study": "configs/ablations/stage1_controls.yaml",
+    "study_id": "stage1_baseline_controls_v1",
+    "study_sha256": "2d88ecfe00891c2ed7cd518b460ecd1b2b783c2ee28bb65547a2458ace9dd835",
+    "study_type": "baseline_control",
+    "tuning_budget": 10,
+    "ugo_max_iterations": null,
+    "variant": null,
+    "variant_id": "ugo_original"
+  },
+  {
+    "algorithm": "balanced_random_forest",
+    "artifact_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T173333-83b59b1d72b1",
+    "augmentation": {},
+    "augmentation_count": null,
+    "budget_mode": "matched",
+    "candidate_configs": [
+      {},
+      {
+        "max_depth": 6,
+        "max_features": "sqrt",
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 3,
+        "n_estimators": 400
+      },
+      {
+        "max_depth": 12,
+        "max_features": 0.8,
+        "min_samples_leaf": 1,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 8,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 3,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 8,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      }
+    ],
+    "classifiers": null,
+    "config_sha256": "a5d71012ec7c6fe2e2bd64aabcc7adf4b666ea9dffeff934ae5af34a22181f52",
+    "configuration_id": "216ba84964b55755b402b820818b61f00aca4af194b26321abde07d79394d8a6",
+    "data_home": ".cache/benchmarks",
+    "dataset": "shoppers",
+    "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+    "device": "auto",
+    "download": true,
+    "effective_classifiers": [
+      "logistic_regression",
+      "random_forest",
+      "lightgbm",
+      "balanced_random_forest"
+    ],
+    "effective_seeds": [
+      42
+    ],
+    "effective_settings": {
+      "augmentation": {
+        "mode": "matched",
+        "total": 1000
+      },
+      "device": "auto",
+      "method_parameters": {},
+      "mlp_epochs": 160,
+      "ugo_max_iterations": 20
+    },
+    "effective_tuning_budget": 10,
+    "effective_variants": [
+      "baseline",
+      "class_weight",
+      "ros",
+      "smote",
+      "borderline_smote",
+      "kmeans_smote",
+      "ugo_original",
+      "ugo_corrected"
+    ],
+    "error": "balanced_random_forest is an intrinsic ensemble control; declared methods: ['baseline'].",
+    "evaluation_policy_sha256": "46728802ab301fc16325ceb8be859210f1219706194e524d82f0b23a5ba0d3a3",
+    "experiment_type": "setup_prepare",
+    "fold": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "local_data": null,
+    "method": "ugo_corrected",
+    "methods": null,
+    "metrics": {},
+    "mlp_epochs": null,
+    "output_dir": null,
+    "prepare": true,
+    "protocol": "configs/benchmarks/shoppers_controlled.yaml",
+    "protocol_id": "shoppers_uci_controlled_v1",
+    "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+    "record_id": "67c2336671c013e072cbb0a75f8c557a9419afd04251f415963063861d009d70",
+    "record_scope": "benchmark_cell",
+    "run": false,
+    "run_id": "20261003T173333-83b59b1d72b1",
+    "seed": 42,
+    "seeds": [
+      42
+    ],
+    "smoke": false,
+    "smoke_test_rows": 120,
+    "smoke_train_rows": 400,
+    "split_fingerprint": "3e0c27caecbf12e5f46f90921d3c21f99ce29c349b7ef52c1ae85bee2da81d24",
+    "status": "unsupported",
+    "strategy": "ugo_corrected",
+    "study": "configs/ablations/stage1_controls.yaml",
+    "study_id": "stage1_baseline_controls_v1",
+    "study_sha256": "2d88ecfe00891c2ed7cd518b460ecd1b2b783c2ee28bb65547a2458ace9dd835",
+    "study_type": "baseline_control",
+    "tuning_budget": 10,
+    "ugo_max_iterations": null,
+    "variant": null,
+    "variant_id": "ugo_corrected"
+  }
+]

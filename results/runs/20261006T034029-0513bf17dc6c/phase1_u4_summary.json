@@ -1,0 +1,89 @@
+{
+  "baseline_equivalences": 20,
+  "confirmatory_allowed": false,
+  "decisions": {
+    "U1": "keep",
+    "U2": "keep",
+    "U3": "discard",
+    "U4": "pending",
+    "U5": "pending"
+  },
+  "interpretation": "Isolated U4; not U1+U2+U4. Variable-budget and unequal-validation-effort procedure comparison. Tree outputs exactly baseline at added search cost. No equal-count/equal-compute claim.",
+  "policies": [
+    "checkpoint",
+    "fixed_grid"
+  ],
+  "provenance": {
+    "canonical_index_identities_verified": 105,
+    "historical_metric_values_verified": 1575,
+    "historical_reference_cells_exactly_reproduced": 75,
+    "manual_decisions": {
+      "U1": "keep",
+      "U2": "keep",
+      "U3": "discard",
+      "U4": "pending",
+      "U5": "pending"
+    },
+    "post_smoke_incidental_test_removal": [],
+    "real_split_fingerprints_reconstructed": 5,
+    "refusals": {
+      "R5": "Variant R5 unavailable: selected_U5_seed_multiplicity, equivalent_loss_normalization_and_regularization, allocation_exact_duplication_pipeline",
+      "U5": "Variant U5 unavailable: completed_U1_U2_U3_U4_evidence, justified_component_selection, combined_pipeline",
+      "W5": "Variant W5 unavailable: selected_U5_seed_multiplicity, equivalent_loss_normalization_and_regularization, allocation_weight_pipeline",
+      "confirmatory": "Confirmatory evaluation requires an evidence-backed frozen configuration"
+    },
+    "shared_proposals_reconstructed": 105,
+    "source_sha256": {
+      "benchmarks/protocols.py": "65f8f6de630a1128e06acb7e1593f7fb68d2f0eaee6f2833a04e2aeeb14c6d5e",
+      "benchmarks/run.py": "b9ee522c14898793d6eb399c419d84b5be96bf1cb5e3a70521f98a79c2224f7d",
+      "samplers/controls.py": "01badf5b3f80fe8a54563cdb7c72629d72fadfea795c49cca491183c96192bf3",
+      "samplers/stopping.py": "2f8af8413b6a175f7a84a7518122934cf17233a1fa00653163cca1d9054377ad",
+      "samplers/ugo.py": "e98c16c6b5773f4dce67bf2d9516746f1ea366c255127539430faecdf4e5dc7d",
+      "tests/test_shoppers_u4.py": "e51a4af53867a93d1aafa6d509f09f58edb5cf622a0c487be49f592ccd3f3cf9",
+      "tests/test_ugo_stopping.py": "17acc04bd50f90fb4d7c9d7bf1a3cae810820fdb40900dcaa18e46b139365067"
+    },
+    "source_snapshot_files_verified": 7
+  },
+  "publication": {
+    "equal_count_or_equal_compute_claim": false,
+    "paired_numeric_deltas_recomputed": 12150,
+    "report_artifact_links_resolved": 14,
+    "retention": "U1/U2 keep; U3 discard; U4 pending",
+    "statistics_tolerance": "1e-12 relative/absolute; byte resource outputs rounded to MiB in report",
+    "summary_numeric_values_recomputed": 1134
+  },
+  "repository_tests_passed": 149,
+  "retention_status": "awaiting_user_decision",
+  "run": "results/runs/20261006T034029-0513bf17dc6c",
+  "status": "completed",
+  "verification": {
+    "U4_outer_refits": 30,
+    "U4_outer_selected_budget_underspends": 0,
+    "U4_outer_zero": 20,
+    "checkpoint_metric_sets_verified": 1200,
+    "classifier_fits": 4984,
+    "completed_cells": 105,
+    "confirmatory_allowed": false,
+    "generations_across_search_and_refits": 1079750,
+    "interpretation": "descriptive full-procedure comparison; differing selected counts and selection effort; no equal-count/equal-compute claim",
+    "metric_value_checks": 33705,
+    "peak_process_rss_mib": 1782.12890625,
+    "pipeline_audits_verified": 1605,
+    "prediction_sets_verified": 105,
+    "retention": {
+      "U1": "keep",
+      "U2": "keep",
+      "U3": "discard",
+      "U4": "pending",
+      "U5": "pending"
+    },
+    "selected_budgets": {
+      "0": 20,
+      "1000": 6,
+      "250": 3,
+      "500": 1
+    },
+    "sum_cell_seconds": 6001.443936293028,
+    "wall_seconds": 6003.325024919002
+  }
+}

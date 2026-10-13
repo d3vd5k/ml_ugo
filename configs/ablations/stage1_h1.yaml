@@ -1,0 +1,68 @@
+study_id: stage1_h1_shoppers_v1
+study_type: component_ablation
+experiment_type: development
+development_datasets: [shoppers]
+confirmatory_datasets: []
+controlled_component_base: U2
+manual_review:
+  policy: user_only_keep_or_discard
+  decisions: {U1: keep, U2: keep, U3: discard, U4: discard, U5: discard, H1: discard}
+  confirmatory_evaluation: only_after_user_finalizes_phase1_configuration
+freeze:
+  status: not_frozen
+  reason: The user discarded H1 after reviewing Shoppers comparisons; F1 testing is separately authorized, not retained.
+  evidence: {}
+stage_gate: {stage2_allowed: false}
+pairing:
+  split: identical_real_outer_and_inner_split_fingerprints
+  seed: identical_classifier_and_sampler_seeds
+  classifier: same_ten_U2_joint_learner_proposals_then_lock_selected_learner_and_group_alpha
+  count_budget: fixed_1000_proposals_no_refill_report_actual_acceptance
+  retraining_cap: 20_generation_rounds
+  underspend: report_and_disallow_equal_count_claim_when_actual_counts_differ
+h1_policy:
+  training_source: real_minority_only
+  preprocessing: training_standardized_continuous_plus_onehot_scaled_by_inverse_sqrt_two
+  prediction: frozen_hdbscan_approximate_predict
+  gate: predicted_label_not_minus_one_after_U2_relocation
+  no_usable_clusters: reject_all_with_explicit_status
+  selection: twelve_independent_detector_pairs_on_real_inner_validation_after_U2_selection
+  thinning_seeds: [0, 1, 2, 3, 4]
+  historical_U5_reference: results/runs/20261006T060142-8e042c6ffcf0
+variants:
+  baseline:
+    method: baseline
+    status: ready
+    available: true
+    missing_components: []
+  U0:
+    method: ugo_original
+    status: ready
+    available: true
+    missing_components: []
+  corrected_current:
+    method: ugo_corrected
+    status: ready
+    available: true
+    missing_components: []
+  U2:
+    method: ugo_groups_only
+    status: ready_for_experiment
+    available: true
+    retention_status: kept_by_user
+    sampler_parameters: {grouping: kmeans, allocation: stability}
+    sampler_search: {group_alpha: [0.0, 0.5, 1.0]}
+    missing_components: []
+  H1:
+    method: ugo_h1
+    status: ready_for_experiment
+    available: true
+    retention_status: discarded_by_user
+    retained_components: [U2]
+    excluded_components: [U1, U3, U4, U5, H2, F1, F2]
+    sampler_parameters: {grouping: kmeans, allocation: stability}
+    sampler_search:
+      group_alpha: [0.0, 0.5, 1.0]
+      h1_min_cluster_size: [5, 10, 20, 40]
+      h1_min_samples: [1, 5, 10]
+    missing_components: []

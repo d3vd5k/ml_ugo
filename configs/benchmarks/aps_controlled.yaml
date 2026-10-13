@@ -1,0 +1,59 @@
+{
+  "track": "controlled",
+  "status": "ready",
+  "validation_fraction": 0.2,
+  "classifiers": [
+    "logistic_regression",
+    "random_forest",
+    "lightgbm",
+    "balanced_random_forest"
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "tuning_budget": {
+    "n_candidates": 10,
+    "sampler_seed": 42
+  },
+  "threshold": {
+    "name": "aps_cost",
+    "fp_cost": 10,
+    "fn_cost": 500
+  },
+  "methods": [
+    "baseline",
+    "class_weight",
+    "ros",
+    "smote",
+    "borderline_smote",
+    "kmeans_smote",
+    "ugo_original",
+    "ugo_corrected"
+  ],
+  "augmentation": {
+    "mode": "matched",
+    "total": 1000
+  },
+  "classifier_methods": {
+    "balanced_random_forest": [
+      "baseline"
+    ]
+  },
+  "preprocessing": {
+    "fit_on": "fit_indices",
+    "numeric": "median_impute_standard_scale",
+    "categorical": "mode_impute_one_hot_unknown_ignore",
+    "category_safe_sampling": true
+  },
+  "role": "development",
+  "protocol_id": "aps_uci_official_controlled_v1",
+  "dataset": "aps",
+  "primary_metric": "aps_cost",
+  "split": {
+    "type": "official"
+  }
+}

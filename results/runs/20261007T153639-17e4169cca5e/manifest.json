@@ -1,0 +1,613 @@
+{
+  "arguments": {
+    "augmentation_count": null,
+    "budget_mode": null,
+    "classifiers": [
+      "logistic_regression",
+      "random_forest",
+      "lightgbm"
+    ],
+    "data_home": ".cache/benchmarks",
+    "device": "auto",
+    "download": false,
+    "effective_classifiers": [
+      "logistic_regression",
+      "random_forest",
+      "lightgbm"
+    ],
+    "effective_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "effective_settings": {
+      "augmentation": {
+        "mode": "matched",
+        "total": 1000
+      },
+      "device": "auto",
+      "method_parameters": {},
+      "mlp_epochs": 160,
+      "ugo_max_iterations": 20
+    },
+    "effective_tuning_budget": 10,
+    "effective_variants": [
+      "baseline",
+      "U0",
+      "corrected_current",
+      "U2",
+      "H1"
+    ],
+    "experiment_type": "development",
+    "local_data": null,
+    "methods": [
+      "baseline",
+      "U0",
+      "corrected_current",
+      "U2",
+      "H1"
+    ],
+    "mlp_epochs": null,
+    "output_dir": null,
+    "prepare": false,
+    "protocol": "configs/benchmarks/shoppers_controlled.yaml",
+    "run": true,
+    "seeds": null,
+    "smoke": false,
+    "smoke_test_rows": 120,
+    "smoke_train_rows": 400,
+    "study": "configs/ablations/stage1_h1.yaml",
+    "study_id": null,
+    "tuning_budget": null,
+    "ugo_max_iterations": null,
+    "variant": null
+  },
+  "benchmark_index": "/home/d3vd5k/Projects/ml_project_2/results/benchmark_runs.csv",
+  "command": [
+    "/home/d3vd5k/Projects/ml_project_2/benchmarks/run.py",
+    "--run",
+    "--protocol",
+    "configs/benchmarks/shoppers_controlled.yaml",
+    "--study",
+    "configs/ablations/stage1_h1.yaml",
+    "--classifiers",
+    "logistic_regression",
+    "random_forest",
+    "lightgbm",
+    "--methods",
+    "baseline",
+    "U0",
+    "corrected_current",
+    "U2",
+    "H1"
+  ],
+  "cuda": "13.0",
+  "cuda_available": true,
+  "cuda_devices": [
+    "NVIDIA GeForce RTX 3050 Ti Laptop GPU"
+  ],
+  "datasets": {
+    "shoppers": {
+      "fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+      "metadata": {
+        "categorical_features": [
+          "Month",
+          "OperatingSystems",
+          "Browser",
+          "Region",
+          "TrafficType",
+          "VisitorType",
+          "Weekend"
+        ],
+        "class_counts": {
+          "0": 10422,
+          "1": 1908
+        },
+        "climb_overlap": {
+          "catalog_name": "online-shoppers-intention",
+          "independent_evidence": false,
+          "openml_id": 45560,
+          "status": "same named UCI task; row-level identity not independently fingerprinted againstOpenML"
+        },
+        "entity_fields": [],
+        "label_mapping": {
+          "False": 0,
+          "True": 1
+        },
+        "license": "CC-BY-4.0 (official UCI page)",
+        "missingness": {
+          "Administrative": 0,
+          "Administrative_Duration": 0,
+          "BounceRates": 0,
+          "Browser": 0,
+          "ExitRates": 0,
+          "Informational": 0,
+          "Informational_Duration": 0,
+          "Month": 0,
+          "OperatingSystems": 0,
+          "PageValues": 0,
+          "ProductRelated": 0,
+          "ProductRelated_Duration": 0,
+          "Region": 0,
+          "SpecialDay": 0,
+          "TrafficType": 0,
+          "VisitorType": 0,
+          "Weekend": 0
+        },
+        "predictors": 17,
+        "preprocessing": "raw; fit transforms on fit_indices only",
+        "raw_fingerprint": "6f969065e6b22d094ce09cc9645b577f24b940b8222d6286f3f90b8aa1f8efd4",
+        "rows": 12330,
+        "source": "https://archive.ics.uci.edu/dataset/468/online+shoppers+purchasing+intention+dataset",
+        "source_checksums": {
+          "online_shoppers_intention.csv": "b3055ee355f59134d851d32641183cb4a8b45def7124d2f50442a042f358e0d9",
+          "shoppers.zip": "2972e6184d3ad7beaaa831d9fc2b059dc3ee29df69d1ec593c466a5cd8485d14"
+        },
+        "time_fields": [
+          "Month"
+        ],
+        "version": "UCI archive acquired2026-10-03; metadata lastupdated2024-01-11"
+      },
+      "rows": 12330
+    }
+  },
+  "dependencies": {
+    "Jinja2": "3.1.6",
+    "MarkupSafe": "3.0.3",
+    "PyJWT": "2.13.0",
+    "PyYAML": "6.0.3",
+    "Pygments": "2.21.0",
+    "Send2Trash": "2.1.0",
+    "aiohappyeyeballs": "2.7.1",
+    "aiohttp": "3.14.3",
+    "aiosignal": "1.4.0",
+    "annotated-types": "0.8.0",
+    "anyio": "4.15.0",
+    "argon2-cffi": "25.1.0",
+    "argon2-cffi-bindings": "26.1.0",
+    "arrow": "1.4.0",
+    "attrs": "26.1.0",
+    "beautifulsoup4": "4.15.0",
+    "bleach": "6.4.0",
+    "certifi": "2026.7.22",
+    "cffi": "2.1.1",
+    "charset-normalizer": "3.5.1",
+    "click": "8.5.0",
+    "contourpy": "1.3.3",
+    "cryptography": "50.0.1",
+    "cuda-bindings": "13.3.1",
+    "cuda-pathfinder": "1.8.0",
+    "cuda-toolkit": "13.0.3.0",
+    "cycler": "0.12.1",
+    "data": "0.4",
+    "decorator": "5.3.1",
+    "defusedxml": "0.7.1",
+    "fastjsonschema": "2.22.2",
+    "filelock": "3.32.4",
+    "fonttools": "4.63.0",
+    "fqdn": "1.5.1",
+    "frozenlist": "1.8.0",
+    "fsspec": "2026.7.0",
+    "funcsigs": "1.0.2",
+    "future": "1.0.0",
+    "greenlet": "3.5.5",
+    "h11": "0.16.0",
+    "hdbscan": "0.8.44",
+    "httpcore": "1.0.9",
+    "httpcore2": "2.12.0",
+    "httpx": "0.28.1",
+    "httpx-sse": "0.4.3",
+    "httpx2": "2.12.0",
+    "idna": "3.19",
+    "imbalance-synthesis-lab": "1.0.0",
+    "imbalanced-ensemble": "0.2.3",
+    "imbalanced-learn": "0.14.2",
+    "iniconfig": "2.3.0",
+    "isoduration": "20.11.0",
+    "jiter": "0.16.0",
+    "joblib": "1.5.3",
+    "jsonpointer": "3.1.1",
+    "jsonschema": "4.26.0",
+    "jsonschema-specifications": "2025.9.1",
+    "jupyter-collaboration-ui": "2.4.2",
+    "jupyter-events": "0.12.1",
+    "jupyter-ydoc": "3.5.0",
+    "jupyter_client": "8.10.0",
+    "jupyter_core": "5.9.1",
+    "jupyter_server": "2.21.0",
+    "jupyter_server_documents": "0.2.5",
+    "jupyter_server_fileid": "0.9.3",
+    "jupyter_server_terminals": "0.5.4",
+    "jupyterlab_pygments": "0.3.0",
+    "kiwisolver": "1.5.1",
+    "lark": "1.3.1",
+    "latex": "0.7.0",
+    "liac-arff": "2.5.0",
+    "lightgbm": "4.6.0",
+    "markdownify": "1.2.3",
+    "matplotlib": "3.11.1",
+    "mcp": "1.29.1",
+    "minio": "7.2.20",
+    "mistune": "3.3.4",
+    "mpmath": "1.3.0",
+    "multidict": "6.7.1",
+    "narwhals": "2.25.0",
+    "nbclient": "0.11.0",
+    "nbconvert": "7.17.1",
+    "nbformat": "5.11.1",
+    "networkx": "3.6.1",
+    "numpy": "2.5.2",
+    "nvidia-cublas": "13.1.1.3",
+    "nvidia-cuda-cupti": "13.0.85",
+    "nvidia-cuda-nvrtc": "13.0.88",
+    "nvidia-cuda-runtime": "13.0.96",
+    "nvidia-cudnn-cu13": "9.20.0.48",
+    "nvidia-cufft": "12.0.0.61",
+    "nvidia-cufile": "1.15.1.6",
+    "nvidia-curand": "10.4.0.35",
+    "nvidia-cusolver": "12.0.4.66",
+    "nvidia-cusparse": "12.6.3.3",
+    "nvidia-cusparselt-cu13": "0.8.1",
+    "nvidia-nccl-cu13": "2.29.7",
+    "nvidia-nvjitlink": "13.3.33",
+    "nvidia-nvshmem-cu13": "3.4.5",
+    "nvidia-nvtx": "13.0.85",
+    "openai": "3.7.0",
+    "openml": "0.15.1",
+    "packaging": "26.3",
+    "pandas": "3.0.5",
+    "pandocfilters": "1.5.1",
+    "pillow": "12.3.0",
+    "pip": "26.2.1",
+    "platformdirs": "4.11.5",
+    "playwright": "1.62.0",
+    "pluggy": "1.6.0",
+    "prometheus_client": "0.26.0",
+    "propcache": "0.5.2",
+    "psutil": "7.2.2",
+    "ptyprocess": "0.7.0",
+    "pyarrow": "25.0.1",
+    "pycparser": "3.0",
+    "pycrdt": "0.13.1",
+    "pycryptodome": "3.23.0",
+    "pydantic": "2.13.5",
+    "pydantic-settings": "2.15.0",
+    "pydantic_core": "2.46.5",
+    "pyee": "13.0.1",
+    "pyparsing": "3.3.2",
+    "pytest": "9.1.1",
+    "python-dateutil": "2.9.0.post0",
+    "python-dotenv": "1.2.3",
+    "python-json-logger": "4.2.0",
+    "python-multipart": "0.0.32",
+    "pyzmq": "27.2.0",
+    "referencing": "0.37.0",
+    "requests": "2.34.2",
+    "resvg_py": "0.3.4",
+    "rfc3339-validator": "0.1.4",
+    "rfc3986-validator": "0.1.1",
+    "rfc3987-syntax": "1.1.0",
+    "rfc8785": "0.1.4",
+    "rpds-py": "2026.6.3",
+    "runcell": "0.2.3",
+    "scikit-learn": "1.6.0",
+    "scipy": "1.18.1",
+    "seaborn": "0.13.2",
+    "setuptools": "84.0.0",
+    "shutilwhich": "1.1.0",
+    "six": "1.17.0",
+    "sklearn-compat": "0.1.6",
+    "sniffio": "1.3.1",
+    "soupsieve": "2.9.2",
+    "sse-starlette": "3.4.10",
+    "starlette": "1.6.0",
+    "sympy": "1.14.0",
+    "tempdir": "0.7.1",
+    "terminado": "0.18.1",
+    "threadpoolctl": "3.6.0",
+    "tinycss2": "1.5.1",
+    "torch": "2.13.0",
+    "torchaudio": "2.11.0",
+    "torchvision": "0.28.0",
+    "tornado": "6.5.8",
+    "tqdm": "4.70.0",
+    "traitlets": "5.16.1",
+    "triton": "3.7.1",
+    "truststore": "0.10.4",
+    "typing-inspection": "0.4.4",
+    "typing_extensions": "4.16.0",
+    "tzdata": "2026.3",
+    "uri-template": "1.3.0",
+    "urllib3": "2.7.0",
+    "uvicorn": "0.52.4",
+    "webcolors": "25.10.0",
+    "webencodings": "0.6.1",
+    "websocket-client": "1.9.2",
+    "websockets": "17.1",
+    "xgboost": "3.4.1",
+    "xmltodict": "1.0.4",
+    "yarl": "1.24.5"
+  },
+  "error": null,
+  "experiment_type": "development",
+  "git_commit": null,
+  "git_diff": null,
+  "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+  "protocol_snapshot": {
+    "augmentation": {
+      "mode": "matched",
+      "total": 1000
+    },
+    "classifier_methods": {
+      "balanced_random_forest": [
+        "baseline"
+      ]
+    },
+    "classifiers": [
+      "logistic_regression",
+      "random_forest",
+      "lightgbm",
+      "balanced_random_forest"
+    ],
+    "dataset": "shoppers",
+    "methods": [
+      "baseline",
+      "class_weight",
+      "ros",
+      "smote",
+      "borderline_smote",
+      "kmeans_smote",
+      "ugo_original",
+      "ugo_corrected"
+    ],
+    "preprocessing": {
+      "categorical": "mode_impute_one_hot_unknown_ignore",
+      "category_safe_sampling": true,
+      "fit_on": "fit_indices",
+      "numeric": "median_impute_standard_scale"
+    },
+    "primary_metric": "average_precision",
+    "protocol_id": "shoppers_uci_controlled_v1",
+    "role": "development",
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "smoke_method_parameters": {
+      "kmeans_smote": {
+        "cluster_balance_threshold": 0.05,
+        "kmeans_estimator": 3
+      }
+    },
+    "split": {
+      "outer_seed": 2026,
+      "test_fraction": 0.2,
+      "type": "stratified_holdout"
+    },
+    "status": "ready",
+    "threshold": {
+      "name": "fixed_0.5"
+    },
+    "track": "controlled",
+    "tuning_budget": {
+      "n_candidates": 10,
+      "sampler_seed": 42
+    },
+    "validation_fraction": 0.2
+  },
+  "python": "3.14.7 | packaged by Anaconda, Inc. | (main, Aug 14 2026, 10:21:40) [GCC 14.3.0]",
+  "run_id": "20261007T153639-17e4169cca5e",
+  "runtime_seconds": 3896.6716485259985,
+  "source_sha256": {
+    "DATASETS.MD": "00adb2030cdd004b592b4cee7e752d4dfe4f03555c8773fb8a2f3b59d7238b82",
+    "PHASE_1_ADD.MD": "0b907ec0f89d1dfdc102d0f92a8aa3127eb895345b901825da0bfeda3415dcd6",
+    "PLAN.MD": "1ef7679779226d5d80eebcead8b010f59395ec1c48afafdcba9d62e2a56e7114",
+    "PUBLISHED_RESULTS.MD": "aa9305acc9fabb6c3395c177cb7768c8a21b43f2769704557a031dff60f2292b",
+    "README.md": "1921124f3e7d445e064696ab1c6628c1bdb78f0950e212ffbd229d0b0b738601",
+    "benchmarks/climb_benchmark.py": "12263817cd8327400eb93c24fa112ca3043957f1162bc715a754b5335f36116c",
+    "benchmarks/h1.py": "22ae38733ac098821abc249fe4461c5af421fc50ba41de4ab7831a7121be6eb2",
+    "benchmarks/h1_pool.py": "b3a67d458f7c92ce10653970841821cba0ba9f6c50a8b3d74403e649d9ccf55c",
+    "benchmarks/manifest.yaml": "15dd6c2574fb197229160ea23e142ac1bfdc23fdb33b5c72934e924b1873aca6",
+    "benchmarks/protocols.py": "99e840d13821e6c4d4860d52e2f9e55d61017127cfc922b24db472f7a8275441",
+    "benchmarks/results.py": "27d5d0122169c96bb975d180366bb783492c8112eac5b6acbdda34f7a156b141",
+    "benchmarks/run.py": "901d9bfaa0e7218b90160bbf18c51eee7cb99f96d6efbdae9b3b0d63c43bbfe1",
+    "benchmarks/scoring.py": "8fba94167ddd21a5bdc639b85610c5951d0361148188ad34965a1ccf0217cef8",
+    "benchmarks/summarize.py": "77cadca32c1d4984527e06d2e9c6f698bc9c36d6c00c7dc384d353c8b6cda29c",
+    "classifiers/factory.py": "b0d5d88bafe0e1447dc1538613a76451ef0ebc875dbc7022b09deb75bb360dd4",
+    "classifiers/mlp.py": "e39963469ccba9be40416b54c7ccb65e5db8596a9c8f59fbcb9357b1ccc383af",
+    "configs/ablations/stage1_components.yaml": "83d5d03358372a9d47bf05c102369eea42efee658e034a42f1b33391333d50be",
+    "configs/ablations/stage1_controls.yaml": "f2f899890ca517be08d74dd254ae913cae379c4c329000a2b7bb6c6da1088ff5",
+    "configs/ablations/stage1_h1.yaml": "204ec76ab26f852357a204280f4eea3f9536673a5dbb8d2547828b9137f1fa04",
+    "configs/benchmarks/aps_controlled.yaml": "2119b0e07c0fb1afbbd4db649097b1634c7a1c22f3a1f458e1b47feb79e99eb6",
+    "configs/benchmarks/aps_published.yaml": "2d022f2b4a27998a6fef8c5bd2bc761d440547fce24b3867fddfd6eaa409c4fc",
+    "configs/benchmarks/baf_base_controlled.yaml": "e810daed05c77c24d93fecf669456b928d6e7bad64ba4781fe33397c8b1c7470",
+    "configs/benchmarks/baf_base_published.yaml": "5d266e8654a23b24ec00ab61786c20e0c40cd4f4ca5bfe01efea68d8d94f8846",
+    "configs/benchmarks/satimage_controlled.yaml": "63a69d3ce4ceb976950c51b8eccf5943f841d9f90ac1f69916175faef24163c3",
+    "configs/benchmarks/satimage_published.yaml": "43befba3b59894466b138df65dc6c5a8506e995ca3b52cbff60d2711f0c0f384",
+    "configs/benchmarks/shoppers_controlled.yaml": "260a9016c515d5a7446155dbcac89b9625e9dd5db7b7476696d14e8d373beb6d",
+    "configs/benchmarks/shoppers_published.yaml": "e2adaaf575248cff550580326aabd4ab7319b3ec777c1d8332235af10ae7cdda",
+    "datasets/climb_catalog.csv": "93d5c4f1ef140f0b164f4407e8df5d4551ea912e8110992cb154bb84cb8788d3",
+    "datasets/scripts/climb.py": "363ff3296c603a416f6f4bd034039a5e5271ada2be1fcb7192a7fa9eb13c21a8",
+    "datasets/scripts/synthetic.py": "cb38bf61538457ca5eae0ad877a63845b8d07b065ec341c1466f236d117f5a17",
+    "datasets/scripts/visualize.py": "08e6aecb0013aff4bf38a0cc32e3dec5c6bef0648ef0ddc793f4da356d951bed",
+    "eval/evaluate.py": "2145f19318e284c35029f6ad1cc323ea8b3233b1c3475d993b7488390f51d426",
+    "eval/plot.py": "08e6aecb0013aff4bf38a0cc32e3dec5c6bef0648ef0ddc793f4da356d951bed",
+    "execute_ugp.py": "26222a12c04ac34948d4303d4bd4a146f4e0cd3a7c47854dae2f5b3c5f111fef",
+    "experiments.py": "ae9f5b37cc58507d86b9c8a176df99d889a32c6561e59de2c82f88c18b40dfb0",
+    "explanation.MD": "6c26909446102e5d1645c2a3d8d56f7f13d3490c1020bda7b57f8da4825ab547",
+    "reports/reproduction.md": "13d9f83e0983692d212707b3d6a651898e4a8758b3f03de65cf60abb437bd009",
+    "requirements.txt": "94b3d227002f7f3312fd0b25dc30133105d8453c2b8f3f9a3fab04518f273e75",
+    "results/published_targets.csv": "3ba2c5541f1efe00dee9ffc03a536fcaff09503d6e30be7a8084808c51f10da4",
+    "samplers/allocation.py": "c32a260c880b3633d6b1fb76f6278e4a233146a646984320166687edda16bc93",
+    "samplers/constraints.py": "b8b909d8426cc7b72892bf88aea7333c6a76c130c37827ed35f9986a40c67953",
+    "samplers/controls.py": "1860c767b06c5190bae94fbd0c6b22faea05af117d87843b693ae6a743a04a4b",
+    "samplers/geometry.py": "a27e19900fed7771d759b83dfe3e32e66c1b00b3a14532880e16850214e99511",
+    "samplers/groups.py": "9d96f5e56d1857a6bb3e25006d5e04491349406126f5e24a29528dc78cb937e5",
+    "samplers/hdbscan_support.py": "5356db9fe0cb4515e3d2b03d48528423e2be8bc01af47d82673455de177a5add",
+    "samplers/protected.py": "1016e69198a6c9ecc7934771fd65d8660c89930f21109ae998511bf550e1817e",
+    "samplers/stopping.py": "2f8af8413b6a175f7a84a7518122934cf17233a1fa00653163cca1d9054377ad",
+    "samplers/ugo.py": "e98c16c6b5773f4dce67bf2d9516746f1ea366c255127539430faecdf4e5dc7d",
+    "samplers/ugo_original.py": "3577f4fbbd466cb0a48f5d1813a90fa9f9529cba0f74e6e7fd43d6a482c143dc",
+    "tests/test_benchmark_runner.py": "dbdb2a522ff10ac51a52d5efbccbc9b625c6ceb1df68023b993d15d3cd22189f",
+    "tests/test_controls.py": "5dc90108d79dfa1db54fd96c834cbe7144ac5c6d2d7e1e0c2850a1d11f690521",
+    "tests/test_data.py": "98672fd0d2d171a33eafb34eb24f92642adf666068e5c584e6c472bdbb690a64",
+    "tests/test_experiments.py": "8d56a82d0f7b49743d4eb670cdb6a83d80296abb38f433aa6b4317211eb97b59",
+    "tests/test_h1_support.py": "5183691abef797b9c14e96f155bd5c6a16251924860d8a7e51a7c0055de64fd5",
+    "tests/test_protocols.py": "eb33e305b596a4f5b0f0f5bedb4f69cc0d268f32394999a1879c72a5c0bf526a",
+    "tests/test_results.py": "522f79b35ca769e87f0b4cfecb25f7825134eadb539d9bee6d1d72c07d6b2b15",
+    "tests/test_sampler.py": "f164f4c40d0634f2d24e764b73c4c154a5a055695455faa7965d9f465c56e440",
+    "tests/test_shoppers_h1.py": "9de68c6ab3447fecac859ddc88d4420ca845b12d92eb1b270555b2e9f5c53f17",
+    "tests/test_shoppers_phase1.py": "98bb03686a8a1b710b94b6c5dec0178cc5662a0df5663da9af0b879cc835d992",
+    "tests/test_shoppers_u2.py": "a5a49d2987d0c044443a6ae8a1b6568e239664d38d7c7f7d7e983f31be8d0c41",
+    "tests/test_shoppers_u3.py": "0934ec4aa124a854eb42cd2892c2adc29d9f7eedf0411b0f7841bb7d3057c98f",
+    "tests/test_shoppers_u4.py": "e51a4af53867a93d1aafa6d509f09f58edb5cf622a0c487be49f592ccd3f3cf9",
+    "tests/test_shoppers_u5.py": "f9b58b7bea18f6c1f9ebc61d1d9d08ea2355fad282848e767ca8f4c0151b9372",
+    "tests/test_training.py": "bb9bd699a2cfe3c1488ee37b26e4c89fc9cbf35890925952f5f607c1aac3fb42",
+    "tests/test_ugo_allocation.py": "c477677b0177094a010454f68a2a5719b85e45c117fc0286f19e02b34de42f19",
+    "tests/test_ugo_combined.py": "94196ac5822752f69a293b1a9c1ef09890e1a9abc2cee6a354a9a824c7ecb4d5",
+    "tests/test_ugo_constraints.py": "e34b8fe42cbf0f6e2e1a5bc418d469cc0e2d1f210add0d011c5205d0f6c389fe",
+    "tests/test_ugo_geometry.py": "e42f0054726b302aa694492bf677768a5e12972938e5e281327cac236fb80fc1",
+    "tests/test_ugo_groups.py": "d6ee298357fd88a055c5c3480fd5354c53e2ea9a3aace12615eb78a87b5a51fe",
+    "tests/test_ugo_stopping.py": "17acc04bd50f90fb4d7c9d7bf1a3cae810820fdb40900dcaa18e46b139365067"
+  },
+  "status": "completed",
+  "study_sha256": "b4ec2f27b5b385208a21c569bb42bb004a10f410c271b3afe2c83dc299b36fd5",
+  "study_snapshot": {
+    "confirmatory_datasets": [],
+    "controlled_component_base": "U2",
+    "development_datasets": [
+      "shoppers"
+    ],
+    "experiment_type": "development",
+    "freeze": {
+      "evidence": {},
+      "reason": "H1 inclusion is awaiting the user's explicit decision; F1/F2 are not implemented.",
+      "status": "not_frozen"
+    },
+    "h1_policy": {
+      "gate": "predicted_label_not_minus_one_after_U2_relocation",
+      "historical_U5_reference": "results/runs/20261006T060142-8e042c6ffcf0",
+      "no_usable_clusters": "reject_all_with_explicit_status",
+      "prediction": "frozen_hdbscan_approximate_predict",
+      "preprocessing": "training_standardized_continuous_plus_onehot_scaled_by_inverse_sqrt_two",
+      "selection": "twelve_independent_detector_pairs_on_real_inner_validation_after_U2_selection",
+      "thinning_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "training_source": "real_minority_only"
+    },
+    "manual_review": {
+      "confirmatory_evaluation": "only_after_user_finalizes_phase1_configuration",
+      "decisions": {
+        "H1": "pending",
+        "U1": "keep",
+        "U2": "keep",
+        "U3": "discard",
+        "U4": "discard",
+        "U5": "discard"
+      },
+      "policy": "user_only_keep_or_discard"
+    },
+    "pairing": {
+      "classifier": "same_ten_U2_joint_learner_proposals_then_lock_selected_learner_and_group_alpha",
+      "count_budget": "fixed_1000_proposals_no_refill_report_actual_acceptance",
+      "retraining_cap": "20_generation_rounds",
+      "seed": "identical_classifier_and_sampler_seeds",
+      "split": "identical_real_outer_and_inner_split_fingerprints",
+      "underspend": "report_and_disallow_equal_count_claim_when_actual_counts_differ"
+    },
+    "stage_gate": {
+      "stage2_allowed": false
+    },
+    "study_id": "stage1_h1_shoppers_v1",
+    "study_type": "component_ablation",
+    "variants": {
+      "H1": {
+        "available": true,
+        "excluded_components": [
+          "U1",
+          "U3",
+          "U4",
+          "U5",
+          "H2",
+          "F1",
+          "F2"
+        ],
+        "method": "ugo_h1",
+        "missing_components": [],
+        "retained_components": [
+          "U2"
+        ],
+        "retention_status": "awaiting_user_decision",
+        "sampler_parameters": {
+          "allocation": "stability",
+          "grouping": "kmeans"
+        },
+        "sampler_search": {
+          "group_alpha": [
+            0.0,
+            0.5,
+            1.0
+          ],
+          "h1_min_cluster_size": [
+            5,
+            10,
+            20,
+            40
+          ],
+          "h1_min_samples": [
+            1,
+            5,
+            10
+          ]
+        },
+        "status": "ready_for_experiment"
+      },
+      "U0": {
+        "available": true,
+        "method": "ugo_original",
+        "missing_components": [],
+        "status": "ready"
+      },
+      "U2": {
+        "available": true,
+        "method": "ugo_groups_only",
+        "missing_components": [],
+        "retention_status": "kept_by_user",
+        "sampler_parameters": {
+          "allocation": "stability",
+          "grouping": "kmeans"
+        },
+        "sampler_search": {
+          "group_alpha": [
+            0.0,
+            0.5,
+            1.0
+          ]
+        },
+        "status": "ready_for_experiment"
+      },
+      "baseline": {
+        "available": true,
+        "method": "baseline",
+        "missing_components": [],
+        "status": "ready"
+      },
+      "corrected_current": {
+        "available": true,
+        "method": "ugo_corrected",
+        "missing_components": [],
+        "status": "ready"
+      }
+    }
+  }
+}

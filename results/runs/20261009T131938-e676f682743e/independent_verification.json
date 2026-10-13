@@ -1,0 +1,536 @@
+{
+  "verifier": "independent raw data, sklearn metrics/refits, torch autograd and reconstructed pool masks",
+  "run": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261009T131938-e676f682743e",
+  "passed": false,
+  "counts": {
+    "accepted_count_from_mask": 289,
+    "all_metrics_independent_accepted_count": 240,
+    "all_metrics_independent_value": 7920,
+    "all_metrics_record_count": 1,
+    "all_metrics_unique_cells": 1,
+    "all_three_classifier_families": 1,
+    "alternatives_exact_count_match": 289,
+    "ancestry_all_synthetic_rows": 180,
+    "ancestry_real_fitting_only_no_test": 428889,
+    "balanced_guidance_gradient_bias": 289,
+    "balanced_guidance_gradient_coefficients": 289,
+    "canonical_actual_native_estimator_parameters": 180,
+    "canonical_all_lr_scorer_parameters": 349,
+    "canonical_joint_candidate_count": 60,
+    "canonical_lr_scorer_C": 349,
+    "canonical_no_test_parent_roots": 120,
+    "canonical_original_fit_role": 30,
+    "canonical_original_validation_guidance_split": 30,
+    "canonical_outer_test_split": 30,
+    "canonical_prediction_raw_labels": 60,
+    "canonical_raw_fitting_reference_ids": 120,
+    "canonical_recursive_no_test_or_future_parent": 326418,
+    "canonical_recursive_parent_label": 221599,
+    "canonical_reference_present": 60,
+    "checkpoint_algorithm_identity": 349,
+    "checkpoint_exact_reconstructed_prefix_X": 289,
+    "checkpoint_exact_reconstructed_prefix_y": 289,
+    "checkpoint_native_parameters": 349,
+    "checkpoint_real_prefix_X": 349,
+    "checkpoint_real_prefix_y": 349,
+    "checkpoint_scorer_coefficients": 349,
+    "checkpoint_scorer_identity": 349,
+    "checkpoint_scorer_intercept": 349,
+    "cumulative_group_cap": 2312,
+    "cumulative_seed_cap": 289,
+    "diagnostic_fits_never_live": 540,
+    "every_live_checkpoint_including_terminal_saved": 120,
+    "exact_K5_no_regeneration": 289,
+    "final_exact_selected_pool_training_X": 120,
+    "final_exact_selected_pool_training_y": 120,
+    "final_training_raw_real_prefix_X": 180,
+    "final_training_raw_real_prefix_y": 180,
+    "forest_refit_tree_arrays": 202300,
+    "forest_tree_count": 181,
+    "full_five_seed_contract": 1,
+    "full_role_fit_count": 30,
+    "full_role_guidance_count": 30,
+    "full_ten_joint_candidates": 1,
+    "grouping_actual_real_role": 180,
+    "grouping_real_only": 180,
+    "guidance_ce_loss": 289,
+    "historical_full_config_selection": 180,
+    "historical_full_prediction_identity": 180,
+    "historical_full_prediction_reproduction": 120,
+    "historical_full_sampler_selection": 120,
+    "historical_prediction_schema": 60,
+    "independent_branch_rejection_reasons": 289,
+    "independent_canonical_argmax_selection": 45,
+    "independent_distinct_prefix_refits": 589,
+    "independent_final_coordinate_dedup": 289,
+    "independent_metric_value": 57900,
+    "independent_saved_native_lr_state_hash": 108,
+    "independent_saved_scorer_state_hash": 349,
+    "independent_selector_exact_mask": 578,
+    "initial_shared_countmatch": 30,
+    "initial_shared_exact_live_mask": 60,
+    "initial_shared_exact_pool_and_checkpoint_arrays": 960,
+    "initial_shared_link_independent_mask_count": 120,
+    "initial_shared_pool_link_file_hash": 60,
+    "inner_excludes_guidance_fit": 15,
+    "inner_has_no_test_predictions": 90,
+    "inner_test_not_evaluated": 180,
+    "lightgbm_refit_tree_dump": 180,
+    "live_branch_exact_mask": 289,
+    "live_checkpoint_artifacts_present": 120,
+    "live_checkpoints_refitted_lightgbm": 120,
+    "live_checkpoints_refitted_logistic_regression": 108,
+    "live_checkpoints_refitted_random_forest": 121,
+    "lr_prefix_refit_coefficients": 517,
+    "lr_prefix_refit_intercept": 517,
+    "native_anchor_difficulty_percentile": 2312,
+    "native_estimator_family": 878,
+    "native_group_allocation_weight": 2312,
+    "native_group_cap_room": 2312,
+    "native_independent_group_quota": 2312,
+    "native_independent_planned_anchor_order": 289,
+    "native_original_retrain_cadence": 180,
+    "native_prefix_refit_predictions": 878,
+    "native_seed_cap_history": 2312,
+    "no_test_in_fitting_or_guidance": 30,
+    "one_per_anchor_all_alternatives": 578,
+    "only_lr_gradient_scorer": 349,
+    "outer_deliberate_guidance_training_overlap": 15,
+    "paired_actual_training_exact_X": 578,
+    "paired_actual_training_exact_y": 578,
+    "paired_countmatch_actual_counts": 5400,
+    "paired_independent_seed_metric_delta": 5400,
+    "paired_parent_mass_field": 578,
+    "paired_parent_metrics_recomputed": 1156,
+    "parent_equal_mass_exact_weights": 578,
+    "parent_equal_total_mass": 578,
+    "parent_training_exact_real_labels": 578,
+    "parent_training_exact_real_rows": 578,
+    "per_round_group_quota_cap": 2312,
+    "planned_budget_independent_count": 289,
+    "pool_anchor_group_identity": 289,
+    "pool_exact_live_scorer_bias": 289,
+    "pool_exact_live_scorer_weights": 289,
+    "pool_file_sha256": 289,
+    "pool_parent_real_only": 578,
+    "pool_parent_same_class": 578,
+    "pool_preserves_native_group_quota": 2312,
+    "prediction_exact_role_coverage": 270,
+    "prediction_unique_row_ids": 270,
+    "preprocessing_fitted_only_role_statistics": 210,
+    "prohibited_native_tree_gradient_claim": 241,
+    "quotas_filled_including_negative_scores": 2312,
+    "raw_fit_labels": 30,
+    "raw_fit_preprocessing_reproduction": 30,
+    "raw_full_parameter_dot_scores": 289,
+    "raw_guidance_labels": 30,
+    "raw_guidance_preprocessing_reproduction": 30,
+    "raw_guidance_row_identity": 30,
+    "raw_prediction_labels": 270,
+    "raw_real_row_identity": 30,
+    "raw_test_row_identity": 30,
+    "recognized_numeric_metric": 57900,
+    "records_independent_accepted_count": 240,
+    "relocation_exact_real_coordinate": 289,
+    "relocation_real_only": 289,
+    "runtime_finite_nonnegative": 9050,
+    "runtime_observed_operational_identity": 120,
+    "runtime_round_terminal_surrogate_diagnostic_sum": 120,
+    "saved_predictions_from_native_model": 270,
+    "saved_preprocessor_actual_fit": 30,
+    "saved_preprocessor_actual_guidance": 30,
+    "selected_score_sign_counts": 867,
+    "selector_K5_contract": 120,
+    "sgd_actual_reductions": 289,
+    "sgd_max_absolute_error": 289,
+    "sgd_mean_absolute_error": 289,
+    "sgd_pearson_correlation": 289,
+    "sgd_predicted_reductions": 289,
+    "sgd_rank_correlation": 289,
+    "sgd_sign_agreement": 289,
+    "summary_independent_metric_mean": 1584,
+    "summary_independent_sample_sd": 1584,
+    "summary_independent_seed_count": 1584,
+    "summary_prohibits_native_tree_gradient_claim": 80,
+    "synthetic_unit_training_mass": 180,
+    "terminal_checkpoint_exact_prefix_X": 60,
+    "terminal_checkpoint_exact_prefix_y": 60,
+    "torch_autograd_candidate_dot": 18364,
+    "torch_autograd_guidance_bias": 289,
+    "torch_autograd_guidance_weights": 289,
+    "unavailable_role_metric_empty": 3600
+  },
+  "failures": [
+    {
+      "check": "historical_full_prediction_identity",
+      "detail": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261009T131938-e676f682743e/shoppers/fold-0/seed-0/logistic_regression/U5_F1:y_pred"
+    },
+    {
+      "check": "historical_full_prediction_reproduction",
+      "detail": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261009T131938-e676f682743e/shoppers/fold-0/seed-0/logistic_regression/U5_F1:probability_0; max error=0.05304232594080216"
+    },
+    {
+      "check": "historical_full_prediction_reproduction",
+      "detail": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261009T131938-e676f682743e/shoppers/fold-0/seed-0/logistic_regression/U5_F1:probability_1; max error=0.0530423259408023"
+    },
+    {
+      "check": "historical_full_prediction_identity",
+      "detail": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261009T131938-e676f682743e/shoppers/fold-0/seed-0/random_forest/U5_F1:y_pred"
+    },
+    {
+      "check": "historical_full_prediction_reproduction",
+      "detail": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261009T131938-e676f682743e/shoppers/fold-0/seed-0/random_forest/U5_F1:probability_0; max error=0.19870723272238"
+    },
+    {
+      "check": "historical_full_prediction_reproduction",
+      "detail": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261009T131938-e676f682743e/shoppers/fold-0/seed-0/random_forest/U5_F1:probability_1; max error=0.1987072327223803"
+    },
+    {
+      "check": "historical_full_sampler_selection",
+      "detail": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261009T131938-e676f682743e/shoppers/fold-0/seed-0/random_forest/U5_F1:sampler_parameters"
+    },
+    {
+      "check": "historical_full_prediction_identity",
+      "detail": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261009T131938-e676f682743e/shoppers/fold-0/seed-0/lightgbm/U5_F1:y_pred"
+    },
+    {
+      "check": "historical_full_prediction_reproduction",
+      "detail": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261009T131938-e676f682743e/shoppers/fold-0/seed-0/lightgbm/U5_F1:probability_0; max error=0.3390136677397416"
+    },
+    {
+      "check": "historical_full_prediction_reproduction",
+      "detail": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261009T131938-e676f682743e/shoppers/fold-0/seed-0/lightgbm/U5_F1:probability_1; max error=0.3390136677397416"
+    },
+    {
+      "check": "historical_full_sampler_selection",
+      "detail": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261009T131938-e676f682743e/shoppers/fold-0/seed-0/lightgbm/U5_F1:sampler_parameters"
+    },
+    {
+      "check": "historical_full_prediction_identity",
+      "detail": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261009T131938-e676f682743e/shoppers/fold-0/seed-1/logistic_regression/U5_F1:y_pred"
+    },
+    {
+      "check": "historical_full_prediction_reproduction",
+      "detail": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261009T131938-e676f682743e/shoppers/fold-0/seed-1/logistic_regression/U5_F1:probability_0; max error=0.042329619669379426"
+    },
+    {
+      "check": "historical_full_prediction_reproduction",
+      "detail": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261009T131938-e676f682743e/shoppers/fold-0/seed-1/logistic_regression/U5_F1:probability_1; max error=0.042329619669379426"
+    },
+    {
+      "check": "historical_full_prediction_identity",
+      "detail": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261009T131938-e676f682743e/shoppers/fold-0/seed-1/random_forest/U5_F1:y_pred"
+    },
+    {
+      "check": "historical_full_prediction_reproduction",
+      "detail": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261009T131938-e676f682743e/shoppers/fold-0/seed-1/random_forest/U5_F1:probability_0; max error=0.23200108225108224"
+    },
+    {
+      "check": "historical_full_prediction_reproduction",
+      "detail": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261009T131938-e676f682743e/shoppers/fold-0/seed-1/random_forest/U5_F1:probability_1; max error=0.23200108225108224"
+    },
+    {
+      "check": "historical_full_sampler_selection",
+      "detail": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261009T131938-e676f682743e/shoppers/fold-0/seed-1/random_forest/U5_F1:sampler_parameters"
+    },
+    {
+      "check": "historical_full_prediction_identity",
+      "detail": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261009T131938-e676f682743e/shoppers/fold-0/seed-1/lightgbm/U5_F1:y_pred"
+    },
+    {
+      "check": "historical_full_prediction_reproduction",
+      "detail": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261009T131938-e676f682743e/shoppers/fold-0/seed-1/lightgbm/U5_F1:probability_0; max error=0.242637742824665"
+    },
+    {
+      "check": "historical_full_prediction_reproduction",
+      "detail": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261009T131938-e676f682743e/shoppers/fold-0/seed-1/lightgbm/U5_F1:probability_1; max error=0.24263774282466505"
+    },
+    {
+      "check": "historical_full_sampler_selection",
+      "detail": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261009T131938-e676f682743e/shoppers/fold-0/seed-1/lightgbm/U5_F1:sampler_parameters"
+    },
+    {
+      "check": "historical_full_prediction_identity",
+      "detail": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261009T131938-e676f682743e/shoppers/fold-0/seed-2/logistic_regression/U5_F1:y_pred"
+    },
+    {
+      "check": "historical_full_prediction_reproduction",
+      "detail": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261009T131938-e676f682743e/shoppers/fold-0/seed-2/logistic_regression/U5_F1:probability_0; max error=0.085903785041053"
+    },
+    {
+      "check": "historical_full_prediction_reproduction",
+      "detail": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261009T131938-e676f682743e/shoppers/fold-0/seed-2/logistic_regression/U5_F1:probability_1; max error=0.08590378504105298"
+    },
+    {
+      "check": "historical_full_prediction_identity",
+      "detail": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261009T131938-e676f682743e/shoppers/fold-0/seed-2/random_forest/U5_F1:y_pred"
+    },
+    {
+      "check": "historical_full_prediction_reproduction",
+      "detail": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261009T131938-e676f682743e/shoppers/fold-0/seed-2/random_forest/U5_F1:probability_0; max error=0.15028841991342"
+    },
+    {
+      "check": "historical_full_prediction_reproduction",
+      "detail": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261009T131938-e676f682743e/shoppers/fold-0/seed-2/random_forest/U5_F1:probability_1; max error=0.1502884199134199"
+    },
+    {
+      "check": "historical_full_prediction_identity",
+      "detail": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261009T131938-e676f682743e/shoppers/fold-0/seed-2/lightgbm/U5_F1:y_pred"
+    },
+    {
+      "check": "historical_full_prediction_reproduction",
+      "detail": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261009T131938-e676f682743e/shoppers/fold-0/seed-2/lightgbm/U5_F1:probability_0; max error=0.17224448838696393"
+    },
+    {
+      "check": "historical_full_prediction_reproduction",
+      "detail": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261009T131938-e676f682743e/shoppers/fold-0/seed-2/lightgbm/U5_F1:probability_1; max error=0.17224448838696393"
+    },
+    {
+      "check": "historical_full_sampler_selection",
+      "detail": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261009T131938-e676f682743e/shoppers/fold-0/seed-2/lightgbm/U5_F1:sampler_parameters"
+    },
+    {
+      "check": "historical_full_prediction_identity",
+      "detail": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261009T131938-e676f682743e/shoppers/fold-0/seed-3/logistic_regression/U5_F1:y_pred"
+    },
+    {
+      "check": "historical_full_prediction_reproduction",
+      "detail": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261009T131938-e676f682743e/shoppers/fold-0/seed-3/logistic_regression/U5_F1:probability_0; max error=0.13727835052608617"
+    },
+    {
+      "check": "historical_full_prediction_reproduction",
+      "detail": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261009T131938-e676f682743e/shoppers/fold-0/seed-3/logistic_regression/U5_F1:probability_1; max error=0.13727835052608617"
+    },
+    {
+      "check": "historical_full_prediction_identity",
+      "detail": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261009T131938-e676f682743e/shoppers/fold-0/seed-3/random_forest/U5_F1:y_pred"
+    },
+    {
+      "check": "historical_full_prediction_reproduction",
+      "detail": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261009T131938-e676f682743e/shoppers/fold-0/seed-3/random_forest/U5_F1:probability_0; max error=0.26295613643283516"
+    },
+    {
+      "check": "historical_full_prediction_reproduction",
+      "detail": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261009T131938-e676f682743e/shoppers/fold-0/seed-3/random_forest/U5_F1:probability_1; max error=0.26295613643283555"
+    },
+    {
+      "check": "historical_full_sampler_selection",
+      "detail": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261009T131938-e676f682743e/shoppers/fold-0/seed-3/random_forest/U5_F1:sampler_parameters"
+    },
+    {
+      "check": "historical_full_prediction_identity",
+      "detail": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261009T131938-e676f682743e/shoppers/fold-0/seed-3/lightgbm/U5_F1:y_pred"
+    },
+    {
+      "check": "historical_full_prediction_reproduction",
+      "detail": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261009T131938-e676f682743e/shoppers/fold-0/seed-3/lightgbm/U5_F1:probability_0; max error=0.16539269864850292"
+    },
+    {
+      "check": "historical_full_prediction_reproduction",
+      "detail": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261009T131938-e676f682743e/shoppers/fold-0/seed-3/lightgbm/U5_F1:probability_1; max error=0.16539269864850292"
+    },
+    {
+      "check": "historical_full_prediction_identity",
+      "detail": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261009T131938-e676f682743e/shoppers/fold-0/seed-4/logistic_regression/U5_F1:y_pred"
+    },
+    {
+      "check": "historical_full_prediction_reproduction",
+      "detail": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261009T131938-e676f682743e/shoppers/fold-0/seed-4/logistic_regression/U5_F1:probability_0; max error=0.0658945266052483"
+    },
+    {
+      "check": "historical_full_prediction_reproduction",
+      "detail": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261009T131938-e676f682743e/shoppers/fold-0/seed-4/logistic_regression/U5_F1:probability_1; max error=0.0658945266052483"
+    },
+    {
+      "check": "historical_full_prediction_identity",
+      "detail": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261009T131938-e676f682743e/shoppers/fold-0/seed-4/random_forest/U5_F1:y_pred"
+    },
+    {
+      "check": "historical_full_prediction_reproduction",
+      "detail": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261009T131938-e676f682743e/shoppers/fold-0/seed-4/random_forest/U5_F1:probability_0; max error=0.15999999999999998"
+    },
+    {
+      "check": "historical_full_prediction_reproduction",
+      "detail": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261009T131938-e676f682743e/shoppers/fold-0/seed-4/random_forest/U5_F1:probability_1; max error=0.16000000000000003"
+    },
+    {
+      "check": "historical_full_sampler_selection",
+      "detail": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261009T131938-e676f682743e/shoppers/fold-0/seed-4/random_forest/U5_F1:sampler_parameters"
+    },
+    {
+      "check": "historical_full_prediction_identity",
+      "detail": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261009T131938-e676f682743e/shoppers/fold-0/seed-4/lightgbm/U5_F1:y_pred"
+    },
+    {
+      "check": "historical_full_prediction_reproduction",
+      "detail": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261009T131938-e676f682743e/shoppers/fold-0/seed-4/lightgbm/U5_F1:probability_0; max error=0.12284338977420262"
+    },
+    {
+      "check": "historical_full_prediction_reproduction",
+      "detail": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261009T131938-e676f682743e/shoppers/fold-0/seed-4/lightgbm/U5_F1:probability_1; max error=0.12284338977420256"
+    },
+    {
+      "check": "historical_full_sampler_selection",
+      "detail": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261009T131938-e676f682743e/shoppers/fold-0/seed-4/lightgbm/U5_F1:sampler_parameters"
+    },
+    {
+      "check": "all_metrics_independent_value",
+      "detail": "(0, 'random_forest', 'reference', 'U2', 'test'):test_average_precision; max error=5.117837671431147e-07"
+    },
+    {
+      "check": "all_metrics_independent_value",
+      "detail": "(0, 'random_forest', 'reference', 'U2', 'test'):test_macro_average_precision; max error=1.0207859898470062e-06"
+    },
+    {
+      "check": "independent_metric_value",
+      "detail": "record:(0, 'random_forest', 'reference', 'U2', 'test'):average_precision; max error=5.117837671431147e-07"
+    },
+    {
+      "check": "independent_metric_value",
+      "detail": "record:(0, 'random_forest', 'reference', 'U2', 'test'):macro_average_precision; max error=1.0207859898470062e-06"
+    },
+    {
+      "check": "independent_metric_value",
+      "detail": "record:(0, 'random_forest', 'reference', 'U2', 'test'):primary_metric_value; max error=5.117837671431147e-07"
+    },
+    {
+      "check": "all_metrics_independent_value",
+      "detail": "(1, 'random_forest', 'reference', 'U2', 'test'):test_macro_average_precision; max error=1.9344507329321914e-08"
+    },
+    {
+      "check": "independent_metric_value",
+      "detail": "record:(1, 'random_forest', 'reference', 'U2', 'test'):macro_average_precision; max error=1.9344507329321914e-08"
+    },
+    {
+      "check": "all_metrics_independent_value",
+      "detail": "(1, 'random_forest', 'reference', 'U5_F1', 'test'):test_macro_average_precision; max error=2.402922618660597e-07"
+    },
+    {
+      "check": "independent_metric_value",
+      "detail": "record:(1, 'random_forest', 'reference', 'U5_F1', 'test'):macro_average_precision; max error=2.402922618660597e-07"
+    },
+    {
+      "check": "all_metrics_independent_value",
+      "detail": "(2, 'random_forest', 'reference', 'U5', 'test'):test_average_precision; max error=4.325491386181213e-07"
+    },
+    {
+      "check": "all_metrics_independent_value",
+      "detail": "(2, 'random_forest', 'reference', 'U5', 'test'):test_macro_average_precision; max error=4.689389904166674e-07"
+    },
+    {
+      "check": "independent_metric_value",
+      "detail": "record:(2, 'random_forest', 'reference', 'U5', 'test'):average_precision; max error=4.325491386181213e-07"
+    },
+    {
+      "check": "independent_metric_value",
+      "detail": "record:(2, 'random_forest', 'reference', 'U5', 'test'):macro_average_precision; max error=4.689389904166674e-07"
+    },
+    {
+      "check": "independent_metric_value",
+      "detail": "record:(2, 'random_forest', 'reference', 'U5', 'test'):primary_metric_value; max error=4.325491386181213e-07"
+    },
+    {
+      "check": "all_metrics_independent_value",
+      "detail": "(2, 'random_forest', 'reference', 'U5_F1', 'test'):test_macro_average_precision; max error=2.962827205799101e-07"
+    },
+    {
+      "check": "independent_metric_value",
+      "detail": "record:(2, 'random_forest', 'reference', 'U5_F1', 'test'):macro_average_precision; max error=2.962827205799101e-07"
+    },
+    {
+      "check": "all_metrics_independent_value",
+      "detail": "(4, 'random_forest', 'reference', 'U0', 'test'):test_macro_average_precision; max error=3.0177092158467644e-08"
+    },
+    {
+      "check": "independent_metric_value",
+      "detail": "record:(4, 'random_forest', 'reference', 'U0', 'test'):macro_average_precision; max error=3.0177092158467644e-08"
+    },
+    {
+      "check": "summary_independent_sample_sd",
+      "detail": "{'algorithm': 'random_forest', 'variant_id': 'U0', 'metric': 'test_macro_average_precision', 'mean': 0.8539831218226096, 'sample_sd': 0.0031459709189704, 'seeds': 5}; max error=7.056577723194013e-09"
+    },
+    {
+      "check": "summary_independent_metric_mean",
+      "detail": "{'algorithm': 'random_forest', 'variant_id': 'U2', 'metric': 'test_average_precision', 'mean': 0.7177945468244883, 'sample_sd': 0.0052255445320717, 'seeds': 5}; max error=1.0235675351744078e-07"
+    },
+    {
+      "check": "summary_independent_sample_sd",
+      "detail": "{'algorithm': 'random_forest', 'variant_id': 'U2', 'metric': 'test_average_precision', 'mean': 0.7177945468244883, 'sample_sd': 0.0052255445320717, 'seeds': 5}; max error=5.9104028935809405e-08"
+    },
+    {
+      "check": "summary_independent_metric_mean",
+      "detail": "{'algorithm': 'random_forest', 'variant_id': 'U2', 'metric': 'test_macro_average_precision', 'mean': 0.8512266106608426, 'sample_sd': 0.0028683981232934, 'seeds': 5}; max error=1.9818071705923757e-07"
+    },
+    {
+      "check": "summary_independent_sample_sd",
+      "detail": "{'algorithm': 'random_forest', 'variant_id': 'U2', 'metric': 'test_macro_average_precision', 'mean': 0.8512266106608426, 'sample_sd': 0.0028683981232934, 'seeds': 5}; max error=1.1285704297654686e-07"
+    },
+    {
+      "check": "summary_independent_metric_mean",
+      "detail": "{'algorithm': 'random_forest', 'variant_id': 'U5', 'metric': 'test_average_precision', 'mean': 0.717602176564263, 'sample_sd': 0.0070706504232875, 'seeds': 5}; max error=8.650982785685102e-08"
+    },
+    {
+      "check": "summary_independent_sample_sd",
+      "detail": "{'algorithm': 'random_forest', 'variant_id': 'U5', 'metric': 'test_average_precision', 'mean': 0.717602176564263, 'sample_sd': 0.0070706504232875, 'seeds': 5}; max error=1.2632074067320254e-08"
+    },
+    {
+      "check": "summary_independent_metric_mean",
+      "detail": "{'algorithm': 'random_forest', 'variant_id': 'U5', 'metric': 'test_macro_average_precision', 'mean': 0.8508818188779739, 'sample_sd': 0.0041408576421059, 'seeds': 5}; max error=9.034552383990757e-08"
+    },
+    {
+      "check": "summary_independent_sample_sd",
+      "detail": "{'algorithm': 'random_forest', 'variant_id': 'U5', 'metric': 'test_macro_average_precision', 'mean': 0.8508818188779739, 'sample_sd': 0.0041408576421059, 'seeds': 5}; max error=1.9171154268249335e-08"
+    },
+    {
+      "check": "summary_independent_metric_mean",
+      "detail": "{'algorithm': 'random_forest', 'variant_id': 'U5_F1', 'metric': 'test_macro_average_precision', 'mean': 0.8513236547253747, 'sample_sd': 0.0059779075386442, 'seeds': 5}; max error=1.0679754758324833e-07"
+    },
+    {
+      "check": "summary_independent_sample_sd",
+      "detail": "{'algorithm': 'random_forest', 'variant_id': 'U5_F1', 'metric': 'test_macro_average_precision', 'mean': 0.8513236547253747, 'sample_sd': 0.0059779075386442, 'seeds': 5}; max error=4.7737611375171796e-08"
+    },
+    {
+      "check": "paired_independent_seed_metric_delta",
+      "detail": "{'algorithm': 'random_forest', 'seed': 0, 'role': 'outer', 'phase': 'iterative', 'reference_variant': 'U5_F1', 'evaluation_role': 'test', 'metric': 'macro_average_precision', 'utility_minus_reference': -0.0008059941005704, 'matched_accepted_counts': False, 'shared_frozen_pool': False}; max error=2.160145579879931e-09"
+    },
+    {
+      "check": "paired_independent_seed_metric_delta",
+      "detail": "{'algorithm': 'random_forest', 'seed': 1, 'role': 'outer', 'phase': 'iterative', 'reference_variant': 'U0', 'evaluation_role': 'test', 'metric': 'macro_average_precision', 'utility_minus_reference': 0.0002099997916472, 'matched_accepted_counts': True, 'shared_frozen_pool': False}; max error=1.3715035133521174e-09"
+    },
+    {
+      "check": "paired_independent_seed_metric_delta",
+      "detail": "{'algorithm': 'random_forest', 'seed': 1, 'role': 'outer', 'phase': 'iterative', 'reference_variant': 'U5', 'evaluation_role': 'test', 'metric': 'macro_average_precision', 'utility_minus_reference': 0.0039878772350919, 'matched_accepted_counts': True, 'shared_frozen_pool': False}; max error=1.7211371475603365e-08"
+    },
+    {
+      "check": "paired_independent_seed_metric_delta",
+      "detail": "{'algorithm': 'random_forest', 'seed': 1, 'role': 'outer', 'phase': 'iterative', 'reference_variant': 'U5_F1', 'evaluation_role': 'test', 'metric': 'macro_average_precision', 'utility_minus_reference': 0.002319677040426, 'matched_accepted_counts': False, 'shared_frozen_pool': False}; max error=2.4029226188210587e-07"
+    },
+    {
+      "check": "paired_independent_seed_metric_delta",
+      "detail": "{'algorithm': 'random_forest', 'seed': 2, 'role': 'outer', 'phase': 'iterative', 'reference_variant': 'U5', 'evaluation_role': 'test', 'metric': 'macro_average_precision', 'utility_minus_reference': 0.0014387399207218, 'matched_accepted_counts': True, 'shared_frozen_pool': False}; max error=4.6893899047087753e-07"
+    },
+    {
+      "check": "paired_independent_seed_metric_delta",
+      "detail": "{'algorithm': 'random_forest', 'seed': 2, 'role': 'outer', 'phase': 'iterative', 'reference_variant': 'U5', 'evaluation_role': 'test', 'metric': 'average_precision', 'utility_minus_reference': 0.0028747406887011, 'matched_accepted_counts': True, 'shared_frozen_pool': False}; max error=4.3254913871223e-07"
+    },
+    {
+      "check": "paired_independent_seed_metric_delta",
+      "detail": "{'algorithm': 'random_forest', 'seed': 2, 'role': 'outer', 'phase': 'iterative', 'reference_variant': 'U5_F1', 'evaluation_role': 'test', 'metric': 'macro_average_precision', 'utility_minus_reference': -0.0011432435834999, 'matched_accepted_counts': False, 'shared_frozen_pool': False}; max error=2.9628272054890194e-07"
+    },
+    {
+      "check": "paired_independent_seed_metric_delta",
+      "detail": "{'algorithm': 'random_forest', 'seed': 3, 'role': 'outer', 'phase': 'iterative', 'reference_variant': 'U5_F1', 'evaluation_role': 'test', 'metric': 'macro_average_precision', 'utility_minus_reference': 0.0014036979883889, 'matched_accepted_counts': False, 'shared_frozen_pool': False}; max error=4.2709957012027067e-10"
+    },
+    {
+      "check": "paired_independent_seed_metric_delta",
+      "detail": "{'algorithm': 'random_forest', 'seed': 4, 'role': 'outer', 'phase': 'iterative', 'reference_variant': 'U0', 'evaluation_role': 'test', 'metric': 'macro_average_precision', 'utility_minus_reference': 0.0079186058788176, 'matched_accepted_counts': True, 'shared_frozen_pool': False}; max error=3.017709210642594e-08"
+    }
+  ],
+  "limitations": [
+    "Wall-clock runtimes cannot be independently recreated: verify nonnegative accounting and sums only.",
+    "SGD verification concerns LR scoring model only; native RF/LightGBM gradients and retraining improvement are not claimed.",
+    "Tree pickle-state hashes are not stable across joblib deserialization; native learned-state equality is proved with independent prefix refits and full tree arrays/dumps instead.",
+    "Paired/parent diagnostic models: all saved metrics and training mass checked; redundant diagnostic refits not executed."
+  ],
+  "diagnostic_refits_enabled": false
+}

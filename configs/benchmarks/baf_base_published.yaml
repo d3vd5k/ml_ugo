@@ -1,0 +1,73 @@
+{
+  "track": "published",
+  "status": "unresolved",
+  "validation_fraction": 0.2,
+  "seeds": [
+    2021
+  ],
+  "methods": [
+    "baseline",
+    "class_weight",
+    "ros",
+    "smote",
+    "borderline_smote",
+    "kmeans_smote",
+    "ugo_original",
+    "ugo_corrected"
+  ],
+  "tuning_budget": {
+    "n_candidates": 100,
+    "sampler_seed": 42
+  },
+  "threshold": {
+    "name": "recall_at_fpr",
+    "fpr": 0.05
+  },
+  "augmentation": {
+    "mode": "native",
+    "total": 1000
+  },
+  "protocol_id": "baf_base_feedzai_figure1_unresolved",
+  "dataset": "baf_base",
+  "primary_metric": "recall_at_fpr",
+  "split": {
+    "type": "temporal",
+    "train_months": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "test_months": [
+      6,
+      7
+    ],
+    "validation_months": [
+      5
+    ]
+  },
+  "classifiers": [
+    "lightgbm"
+  ],
+  "missing_prerequisites": [
+    "Official notebook selects/highlights top5 models using TEST recall and computes thresholds on TEST ROC; incompatible with no-test-selection runner",
+    "Official Kaggle Base bytes/release version/checksum not available locally; supply authentic local release",
+    "Unseeded DataFrame.sample permutations and library/environment versions prevent exact run replay; search space and random-search seeds recovered"
+  ],
+  "author_audit": {
+    "source_pin": "3377cfd8fc20edcda3dd9dd14c10ed3dd276c6de",
+    "categorical_features": [
+      "payment_type",
+      "employment_status",
+      "housing_status",
+      "source",
+      "device_os"
+    ],
+    "preprocessing": "train-fit LabelEncoder, categorical_feature names passed toLightGBM; no missing-value imputation; numeric -1 sentinel kept; month is predictor",
+    "threshold": "largest empirical testROC FPR strictly<.05; minimum threshold among equalFPR; prediction uses strict>",
+    "search_selection": "100-trial distributions plotted; top5 Base sorted by TEST recall; no inner validation",
+    "scalar_target": "none verified"
+  }
+}

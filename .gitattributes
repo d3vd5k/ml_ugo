@@ -1,0 +1,8 @@
+# Uploads contain source and plain-text summaries, not model artifacts.
+# Keep retained text in regular Git rather than Git LFS.
+* text=auto
+*.py text eol=lf
+*.sh text eol=lf
+*.csv text eol=lf
+*.tsv text eol=lf
+*.json text eol=lf

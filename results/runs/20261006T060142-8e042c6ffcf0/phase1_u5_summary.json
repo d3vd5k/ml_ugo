@@ -1,0 +1,36 @@
+{
+  "run_id": "20261006T060142-8e042c6ffcf0",
+  "completed_cells": 90,
+  "numeric_mean_sd_values": 972,
+  "numeric_per_seed_deltas": 10125,
+  "pipeline_audits": 990,
+  "classifier_fits": 4290,
+  "oof_classifier_fits": 990,
+  "generated_in_search_and_refits": 825000,
+  "references": [
+    "baseline",
+    "U0",
+    "corrected_current",
+    "U1_oof_mma",
+    "U2"
+  ],
+  "variants": [
+    "baseline",
+    "U0",
+    "corrected_current",
+    "U1_oof_mma",
+    "U2",
+    "U5"
+  ],
+  "family_count": 3,
+  "seed_count": 5,
+  "wall_seconds": 4558.823630813,
+  "manual_decisions": {
+    "U1": "keep",
+    "U2": "keep",
+    "U3": "discard",
+    "U4": "discard",
+    "U5": "pending"
+  },
+  "verification_artifact": "verification_summary.json"
+}

@@ -1,0 +1,72 @@
+study_id: stage1_pool_random_f1_shoppers_v1
+study_type: component_ablation
+experiment_type: development
+development_datasets: [shoppers]
+confirmatory_datasets: []
+controlled_component_base: U2
+manual_review:
+  policy: user_only_keep_or_discard
+  decisions: {U1: keep, U2: keep, U3: discard, U4: discard, U5: discard, H1: discard, F1: keep, F2: discard, U5_F1: keep, learning_benefit: discard, validation_guided: discard, pool_utility: discard, pool_random_f1: pending}
+freeze:
+  status: not_frozen
+  reason: U5+F1 remains retained; pool-utility is discarded; pool-random+F1 is authorized but not retained.
+  evidence: {}
+stage_gate: {stage2_allowed: false}
+pairing:
+  split: identical_original_Shoppers_inner_outer_roles
+  seed: five_matched_seeds_for_all_three_native_classifiers
+  classifier: lock_same_seed_canonical_U2_ten_joint_learner_and_group_alpha_search
+  count_budget: unchanged_1000_selected_attempt_cap_for_F1_report_actual_accepted_count
+  retraining_cap: unchanged_20_generation_rounds_with_final_native_refit
+  underspend: report_no_regeneration_no_equal_count_claim_if_actual_counts_differ
+composition_policy:
+  native_classifiers: [logistic_regression, random_forest, lightgbm]
+  anchor_difficulty: actual_native_classifier_without_surrogate
+  groups: unchanged_U2_kmeans_stability_capped_allocation
+  proposals_per_distinct_planned_anchor: 5
+  selector: seeded_random_candidate_per_anchor_then_group_quota_fill
+  maximum_selected_per_anchor_per_round: 1
+  duplicates: exact_final_float32_coordinate_first_owner_exclude_prior_accepted_synthetics
+  ordering: random_select_then_F1_on_chosen_original_coordinates
+  rejected_choice: consumed_attempt_no_rescue_refill_or_regeneration
+  gate: retained_F1_log_ratio_greater_or_equal_logit_tau
+  flow_checkpoint: frozen_existing_F1_auto_device_checkpoint_same_real_fit_roles
+  detector_fit: eighty_percent_real_inner_fit_stratified_seed_plus_7919
+  calibration: remaining_twenty_percent_reserved_unused
+  validation: original_real_inner_validation_for_tau_selection_only
+  threshold_grid: [0.5, 0.6, 0.7, 0.8]
+  outer_refit: original_all_real_outer_training_preprocessing_fitting_generation_access
+  test: original_outer_test_final_evaluation_only
+  relocation_for_F1: disabled
+  utility_gradients_and_surrogates: disabled
+  excluded: [H1, F2, HDBSCAN, U1_for_new_method, U3, U4]
+reference_policy:
+  verified_run: results/runs/20261009T153348-af844bdecf5a
+  import: explicitly_import_original_UGO_U2_U5_U5_F1_with_source_provenance
+  random: freshly_run_native_pool_random_require_exact_historical_test_prediction_replay
+variants:
+  U0: {method: ugo_original, available: true, missing_components: []}
+  U2:
+    method: ugo_groups_only
+    available: true
+    sampler_parameters: {grouping: kmeans, allocation: stability, capture_proposals: true}
+    sampler_search: {group_alpha: [0.0, 0.5, 1.0]}
+    missing_components: []
+  U5:
+    method: ugo_combined
+    available: true
+    retention_status: discarded_by_user_reference_only
+    sampler_parameters: {grouping: kmeans, allocation: stability, capture_proposals: true}
+    sampler_search: {group_alpha: [0.0, 0.5, 1.0]}
+    scoring_policy: {n_splits: 3, training_source: real_only, refresh: fixed_before_generation}
+    missing_components: []
+  U5_F1:
+    method: ugo_combined_f1
+    available: true
+    retention_status: kept_by_user
+    sampler_parameters: {grouping: kmeans, allocation: stability, capture_proposals: true}
+    sampler_search: {group_alpha: [0.0, 0.5, 1.0], f1_tau: [0.5, 0.6, 0.7, 0.8]}
+    scoring_policy: {n_splits: 3, training_source: real_only, refresh: fixed_before_generation}
+    missing_components: []
+  pool_random: {method: ugo_groups_only, available: true, retention_status: diagnostic_control_only, missing_components: []}
+  pool_random_f1: {method: ugo_f1, available: true, retention_status: pending_user_decision, missing_components: []}

@@ -1,0 +1,34 @@
+study_id: stage1_learning_benefit_shoppers_v1
+study_type: component_ablation
+experiment_type: development
+development_datasets: [shoppers]
+confirmatory_datasets: []
+controlled_component_base: U2
+manual_review:
+  policy: user_only_keep_or_discard
+  decisions: {U1: keep, U2: keep, U3: discard, U4: discard, U5: discard, H1: discard, F1: keep, F2: discard, U5_F1: keep, learning_benefit: discard, pool_utility: discard, pool_random_f1: pending}
+  confirmatory_evaluation: only_after_user_finalizes_phase1_configuration
+freeze: {status: not_frozen, reason: Learning-benefit is a new U2-only development experiment; retained U5+F1 is unchanged., evidence: {}}
+stage_gate: {stage2_allowed: false}
+pairing:
+  split: fixed_outer_holdout_2026_original_validation_20_percent_fit_guidance_80_20
+  guidance_seed_offset: 104729
+  classifier: actual_sklearn_logistic_regression_only
+  tuning: ten_joint_canonical_U2_learner_group_alpha_proposals_validation_AP
+  group_alpha_cycle: [0.0, 0.5, 1.0]
+  target_synthetics: 1000
+  max_rounds: 20
+  initial_comparison: shared_frozen_real_checkpoint_identical_K5_pool_matched_counts
+  iterative_comparison: independent_live_trajectories_counts_may_diverge
+learning_benefit_policy:
+  guidance_role: training_information_not_classifier_fit_or_generation_reference
+  preprocessing: fitted_once_on_FIT_only_no_outer_refit
+  base: canonical_U2_kmeans_stability
+  excluded_components: [U1, U5, F1, F2, H1, H2, FlowGMM, HDBSCAN]
+  pool_size_per_anchor: 5
+  parents: real_FIT_only_half_weight_anchor_half_weight_partner
+  test_usage: final_evaluation_only_never_tuning
+variants:
+  U2: {method: ugo_groups_only, status: ready_for_experiment, available: true, retention_status: kept_by_user, sampler_parameters: {grouping: kmeans, allocation: stability}, missing_components: []}
+  pool_random: {method: ugo_groups_only, status: ready_for_experiment, available: true, retention_status: diagnostic_control_only, missing_components: []}
+  pool_utility: {method: ugo_groups_only, status: ready_for_experiment, available: true, retention_status: discarded_by_user_reference_only, missing_components: []}

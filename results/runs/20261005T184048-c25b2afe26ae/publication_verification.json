@@ -1,0 +1,15 @@
+{
+  "numeric_mean_sd_values_recomputed": 1392,
+  "paired_numeric_deltas_recomputed": 13125,
+  "all_metric_rows": 120,
+  "derived_statistics_tolerance": "Float64 reduction and CSV round-trip: relative/absolute1e-12; byte resources converted to MiB",
+  "report_links_resolved": 12,
+  "manual_decisions": {
+    "U1": "keep",
+    "U2": "keep",
+    "U3": "pending",
+    "U4": "pending",
+    "U5": "pending"
+  },
+  "confirmatory_gate": "closed"
+}

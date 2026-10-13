@@ -1,0 +1,11 @@
+{
+  "predictions": 75,
+  "numeric_metrics": 1575,
+  "H1_real_refits": 195,
+  "candidate_decisions": 175335,
+  "matched_thinning_groups": 0,
+  "exact_historical_references": 60,
+  "historical_U5_predictions": 15,
+  "historical_U5_numeric_metrics": 315,
+  "exact_U2_group_states": 30
+}

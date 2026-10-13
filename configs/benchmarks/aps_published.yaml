@@ -1,0 +1,48 @@
+{
+  "track": "published",
+  "status": "unresolved",
+  "validation_fraction": 0.2,
+  "seeds": [
+    2021
+  ],
+  "methods": [
+    "baseline",
+    "class_weight",
+    "ros",
+    "smote",
+    "borderline_smote",
+    "kmeans_smote",
+    "ugo_original",
+    "ugo_corrected"
+  ],
+  "tuning_budget": {
+    "n_candidates": 1,
+    "sampler_seed": 2021
+  },
+  "threshold": {
+    "name": "aps_cost",
+    "fp_cost": 10,
+    "fn_cost": 500
+  },
+  "augmentation": {
+    "mode": "native",
+    "total": 1000
+  },
+  "protocol_id": "aps_published_cost_references_unresolved",
+  "dataset": "aps",
+  "primary_metric": "aps_cost",
+  "split": {
+    "type": "official"
+  },
+  "classifiers": [
+    "random_forest"
+  ],
+  "missing_prerequisites": [
+    "Challenge-winning RF full preprocessing/tuning and threshold procedure not recovered",
+    "2026 transformer exact five initialization seeds, preprocessing operation order, checkpoint and threshold audit not recovered; not implemented as Stage1 controls"
+  ],
+  "targets": [
+    "IDA2016 cost9920",
+    "2026 transformer mean cost3440"
+  ]
+}

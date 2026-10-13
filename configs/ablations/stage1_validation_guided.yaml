@@ -1,0 +1,74 @@
+study_id: stage1_validation_guided_shoppers_v1
+study_type: component_ablation
+experiment_type: development
+development_datasets: [shoppers]
+confirmatory_datasets: []
+controlled_component_base: U2
+manual_review:
+  policy: user_only_keep_or_discard
+  decisions: {U1: keep, U2: keep, U3: discard, U4: discard, U5: discard, H1: discard, F1: keep, F2: discard, U5_F1: keep, learning_benefit: discard, validation_guided: discard, pool_utility: discard, pool_random_f1: pending}
+  confirmatory_evaluation: only_after_user_finalizes_phase1_configuration
+freeze: {status: not_frozen, reason: Separate validation-guided experiment; retained U5+F1 is unchanged., evidence: {}}
+stage_gate: {stage2_allowed: false}
+pairing:
+  split: original_outer_holdout_2026_original_validation_20_percent
+  classifier: [logistic_regression, random_forest, lightgbm]
+  seeds: [0, 1, 2, 3, 4]
+  tuning: original_ten_joint_U2_learner_group_alpha_proposals_then_lock_for_controls
+  reference_tuning: original_UGO_and_U5_conventions_U5_F1_locks_U5_and_selects_four_taus
+  target_synthetics: 1000
+  max_rounds: 20
+  initial_comparison: identical_frozen_native_and_LR_checkpoints_K5_pool_matched_counts
+  iterative_comparison: live_pools_may_diverge_after_native_retraining
+validation_guided_policy:
+  retained_F1_reference_device: auto
+  guidance: original_validation_reused_for_selection_not_independent_evaluation
+  inner_fitting: original_inner_fit_only
+  outer_fitting_preprocessing_generation: all_original_outer_training_including_guidance
+  inner_guidance_overlap: excluded_from_fitting_generation
+  outer_guidance_overlap: explicitly_authorized_in_fitting_and_generation
+  logistic_scoring: actual_full_coefficient_and_bias_balanced_guidance_CE_dot_product
+  tree_scoring: explicitly_authorized_prefix_fitted_LR_surrogate_refreshed_each_checkpoint
+  surrogate_parameters: same_seed_canonical_LR_U2_selected_parameters
+  native_anchor_scoring: unchanged_actual_downstream_classifier
+  one_step_claim: LR_scorer_only_not_native_RF_or_LightGBM
+  pool_size_per_anchor: 5
+  group_quotas_caps_cadence_stopping: unchanged_U2
+  maximum_accepted_per_anchor: 1
+  negative_scores: allowed_top_fill
+  duplicates: exact_final_float32_coordinate_first_owner_exclude_prior_synthetic
+  real_matches: baseline_relocation_remains_valid
+  quota_shortfalls: recorded_no_regeneration
+  parent_control: equal_total_added_weight_half_anchor_half_partner
+  test: final_evaluation_only_never_tuning
+  excluded_from_controls: [U1, U5, F1, F2, H1, H2, FlowGMM, HDBSCAN]
+variants:
+  U0: {method: ugo_original, status: ready, available: true, missing_components: []}
+  U2:
+    method: ugo_groups_only
+    status: ready_for_experiment
+    available: true
+    retention_status: kept_by_user
+    sampler_parameters: {grouping: kmeans, allocation: stability, capture_proposals: true}
+    sampler_search: {group_alpha: [0.0, 0.5, 1.0]}
+    missing_components: []
+  U5:
+    method: ugo_combined
+    status: ready_for_experiment
+    available: true
+    retention_status: discarded_by_user_reference_only
+    sampler_parameters: {grouping: kmeans, allocation: stability, capture_proposals: true}
+    sampler_search: {group_alpha: [0.0, 0.5, 1.0]}
+    scoring_policy: {n_splits: 3, training_source: real_only, refresh: fixed_before_generation}
+    missing_components: []
+  U5_F1:
+    method: ugo_combined_f1
+    status: ready_for_experiment
+    available: true
+    retention_status: kept_by_user
+    sampler_parameters: {grouping: kmeans, allocation: stability, capture_proposals: true}
+    sampler_search: {group_alpha: [0.0, 0.5, 1.0], f1_tau: [0.5, 0.6, 0.7, 0.8]}
+    scoring_policy: {n_splits: 3, training_source: real_only, refresh: fixed_before_generation}
+    missing_components: []
+  pool_random: {method: ugo_groups_only, status: ready_for_experiment, available: true, retention_status: diagnostic_control_only, missing_components: []}
+  pool_utility: {method: ugo_groups_only, status: ready_for_experiment, available: true, retention_status: discarded_by_user_reference_only, missing_components: []}

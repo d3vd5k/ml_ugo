@@ -1,0 +1,68 @@
+{
+  "track": "published",
+  "status": "unresolved",
+  "validation_fraction": 0.2,
+  "seeds": [
+    2021
+  ],
+  "methods": [
+    "baseline",
+    "class_weight",
+    "ros",
+    "smote",
+    "borderline_smote",
+    "kmeans_smote",
+    "ugo_original",
+    "ugo_corrected"
+  ],
+  "tuning_budget": {
+    "n_candidates": 1,
+    "sampler_seed": 2021
+  },
+  "threshold": {
+    "name": "fixed_0.5"
+  },
+  "augmentation": {
+    "mode": "native",
+    "total": 1000
+  },
+  "protocol_id": "satimage_sos_table2_unresolved",
+  "dataset": "satimage",
+  "primary_metric": "sos_inverse_support_f1",
+  "split": {
+    "type": "author_fixed"
+  },
+  "classifiers": [
+    "decision_tree",
+    "mlp"
+  ],
+  "classifier_parameters": {
+    "decision_tree": {
+      "max_depth": 30,
+      "class_weight": "balanced"
+    },
+    "mlp": {
+      "hidden_layer_sizes": [
+        100
+      ],
+      "max_iter": 50
+    }
+  },
+  "missing_prerequisites": [
+    "SOS NPZ contains6430rows (train5144/test1286) versus UCI6435rows; removal and preprocessing provenance absent",
+    "Released multiclass evaluator averages DT and MLP only, unlike handoff claim four classifiers; table recipe and trial seeds not established",
+    "No released no-resampling/SMOTE recipe for exact table or mapping author standardized rows to raw official split"
+  ],
+  "author_audit": {
+    "source_pin": "f1b450cf199d5e0013b401e380008446ef8757f7",
+    "metric": "sum_c F1_c*(1-support_c/N)/(K-1)",
+    "label_mapping": {
+      "1": 0,
+      "2": 4,
+      "3": 2,
+      "4": 5,
+      "5": 3,
+      "7": 1
+    }
+  }
+}

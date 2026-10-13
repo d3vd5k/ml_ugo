@@ -1,0 +1,372 @@
+[
+  {
+    "generator_checkpoint": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261011T154542-1b40c4b555c4/shoppers/fold-0/seed-0/inner/generator/generator.pt",
+    "generator_checkpoint_sha256": "571fd7949ea1f07077fe04333cf72e7d8a928b952c9f524f78c6964257bea094",
+    "generator_total_seconds": 1968.0534725380003,
+    "generator_training_seconds": 1967.560536001,
+    "reused_masks": 2,
+    "reused_native_classifiers": 3,
+    "role": "inner",
+    "seed": 0
+  },
+  {
+    "algorithm": "logistic_regression",
+    "initial_native_fit_count": 1,
+    "initial_native_fit_seconds": 0.01781897700038826,
+    "matching_seconds": 0.0002870839998649899,
+    "role": "inner",
+    "schedule_seconds": 0.04277961800016783,
+    "seed": 0
+  },
+  {
+    "algorithm": "random_forest",
+    "initial_native_fit_count": 1,
+    "initial_native_fit_seconds": 4.677345220999996,
+    "matching_seconds": 0.0002534060004109051,
+    "role": "inner",
+    "schedule_seconds": 0.11940783699992608,
+    "seed": 0
+  },
+  {
+    "algorithm": "lightgbm",
+    "initial_native_fit_count": 1,
+    "initial_native_fit_seconds": 0.07823323000047822,
+    "matching_seconds": 0.00022870600059832213,
+    "role": "inner",
+    "schedule_seconds": 0.05490236900004675,
+    "seed": 0
+  },
+  {
+    "generator_checkpoint": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261011T154542-1b40c4b555c4/shoppers/fold-0/seed-0/outer/generator/generator.pt",
+    "generator_checkpoint_sha256": "e3042394dffd6bad638474a809b52b9a73752d5b239b5ae33a9882317fa1d212",
+    "generator_total_seconds": 2522.083517149,
+    "generator_training_seconds": 2521.4797607499995,
+    "reused_masks": 2,
+    "reused_native_classifiers": 3,
+    "role": "outer",
+    "seed": 0
+  },
+  {
+    "algorithm": "logistic_regression",
+    "initial_native_fit_count": 1,
+    "initial_native_fit_seconds": 0.02349660199979553,
+    "matching_seconds": 0.0002563170000939863,
+    "role": "outer",
+    "schedule_seconds": 0.06148483200013288,
+    "seed": 0
+  },
+  {
+    "algorithm": "random_forest",
+    "initial_native_fit_count": 1,
+    "initial_native_fit_seconds": 5.900119306000306,
+    "matching_seconds": 0.00026308199994673487,
+    "role": "outer",
+    "schedule_seconds": 0.1655716699997356,
+    "seed": 0
+  },
+  {
+    "algorithm": "lightgbm",
+    "initial_native_fit_count": 1,
+    "initial_native_fit_seconds": 0.100280780000503,
+    "matching_seconds": 0.0002666379996298929,
+    "role": "outer",
+    "schedule_seconds": 0.08552152900028887,
+    "seed": 0
+  },
+  {
+    "generator_checkpoint": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261011T154542-1b40c4b555c4/shoppers/fold-0/seed-1/inner/generator/generator.pt",
+    "generator_checkpoint_sha256": "9b553ddb34cfb26213010c06a724a8fbe1b90325a5a53f76aec71320612ead0e",
+    "generator_total_seconds": 1968.0030746410002,
+    "generator_training_seconds": 1967.485295378,
+    "reused_masks": 2,
+    "reused_native_classifiers": 3,
+    "role": "inner",
+    "seed": 1
+  },
+  {
+    "algorithm": "logistic_regression",
+    "initial_native_fit_count": 1,
+    "initial_native_fit_seconds": 0.01798169600078836,
+    "matching_seconds": 0.00023035499907564372,
+    "role": "inner",
+    "schedule_seconds": 0.040468368999427184,
+    "seed": 1
+  },
+  {
+    "algorithm": "random_forest",
+    "initial_native_fit_count": 1,
+    "initial_native_fit_seconds": 4.36523870199926,
+    "matching_seconds": 0.0002592269993328955,
+    "role": "inner",
+    "schedule_seconds": 0.12427395800114027,
+    "seed": 1
+  },
+  {
+    "algorithm": "lightgbm",
+    "initial_native_fit_count": 1,
+    "initial_native_fit_seconds": 0.08407261999855109,
+    "matching_seconds": 0.0002548140000726562,
+    "role": "inner",
+    "schedule_seconds": 0.059763067998574115,
+    "seed": 1
+  },
+  {
+    "generator_checkpoint": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261011T154542-1b40c4b555c4/shoppers/fold-0/seed-1/outer/generator/generator.pt",
+    "generator_checkpoint_sha256": "350e63cc1116edfc5a1cebefb7a722608971ea94cd3f6d4980d04720e3247b8b",
+    "generator_total_seconds": 2596.4182195089998,
+    "generator_training_seconds": 2595.8697894939996,
+    "reused_masks": 2,
+    "reused_native_classifiers": 3,
+    "role": "outer",
+    "seed": 1
+  },
+  {
+    "algorithm": "logistic_regression",
+    "initial_native_fit_count": 1,
+    "initial_native_fit_seconds": 0.026915443000689265,
+    "matching_seconds": 0.00027119999867863953,
+    "role": "outer",
+    "schedule_seconds": 0.06294003800030623,
+    "seed": 1
+  },
+  {
+    "algorithm": "random_forest",
+    "initial_native_fit_count": 1,
+    "initial_native_fit_seconds": 5.637890494999738,
+    "matching_seconds": 0.00029359500149439555,
+    "role": "outer",
+    "schedule_seconds": 0.15417502799755312,
+    "seed": 1
+  },
+  {
+    "algorithm": "lightgbm",
+    "initial_native_fit_count": 1,
+    "initial_native_fit_seconds": 0.09954310899956909,
+    "matching_seconds": 0.00026529400020081084,
+    "role": "outer",
+    "schedule_seconds": 0.08615069499865058,
+    "seed": 1
+  },
+  {
+    "generator_checkpoint": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261011T154542-1b40c4b555c4/shoppers/fold-0/seed-2/inner/generator/generator.pt",
+    "generator_checkpoint_sha256": "70e17e3a8ab8375915c424d035b0ecdec2271b384f4232f9741385204dfaa762",
+    "generator_total_seconds": 2078.599978377999,
+    "generator_training_seconds": 2078.0261989419996,
+    "reused_masks": 2,
+    "reused_native_classifiers": 3,
+    "role": "inner",
+    "seed": 2
+  },
+  {
+    "algorithm": "logistic_regression",
+    "initial_native_fit_count": 1,
+    "initial_native_fit_seconds": 0.02012702700085356,
+    "matching_seconds": 0.00026398699992569163,
+    "role": "inner",
+    "schedule_seconds": 0.04194544499841868,
+    "seed": 2
+  },
+  {
+    "algorithm": "random_forest",
+    "initial_native_fit_count": 1,
+    "initial_native_fit_seconds": 4.563254943001084,
+    "matching_seconds": 0.0003016159989783773,
+    "role": "inner",
+    "schedule_seconds": 0.13002993900045112,
+    "seed": 2
+  },
+  {
+    "algorithm": "lightgbm",
+    "initial_native_fit_count": 1,
+    "initial_native_fit_seconds": 0.08601891000034811,
+    "matching_seconds": 0.0002664139992702985,
+    "role": "inner",
+    "schedule_seconds": 0.06187052799941739,
+    "seed": 2
+  },
+  {
+    "generator_checkpoint": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261011T154542-1b40c4b555c4/shoppers/fold-0/seed-2/outer/generator/generator.pt",
+    "generator_checkpoint_sha256": "ac7c51ad676bcaa0650922b71ca051d0af1a3fdd3937516d5d21be4e8a89e7e6",
+    "generator_total_seconds": 2656.199320814001,
+    "generator_training_seconds": 2655.6307513320007,
+    "reused_masks": 2,
+    "reused_native_classifiers": 3,
+    "role": "outer",
+    "seed": 2
+  },
+  {
+    "algorithm": "logistic_regression",
+    "initial_native_fit_count": 1,
+    "initial_native_fit_seconds": 0.028393446998961736,
+    "matching_seconds": 0.00027868500183103606,
+    "role": "outer",
+    "schedule_seconds": 0.06452000299759675,
+    "seed": 2
+  },
+  {
+    "algorithm": "random_forest",
+    "initial_native_fit_count": 1,
+    "initial_native_fit_seconds": 5.758951946001616,
+    "matching_seconds": 0.0002545589995861519,
+    "role": "outer",
+    "schedule_seconds": 0.16968562799957,
+    "seed": 2
+  },
+  {
+    "algorithm": "lightgbm",
+    "initial_native_fit_count": 1,
+    "initial_native_fit_seconds": 0.09747087600044324,
+    "matching_seconds": 0.0002836559979186859,
+    "role": "outer",
+    "schedule_seconds": 0.08614741400015191,
+    "seed": 2
+  },
+  {
+    "generator_checkpoint": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261011T154542-1b40c4b555c4/shoppers/fold-0/seed-3/inner/generator/generator.pt",
+    "generator_checkpoint_sha256": "8656bafa4ab3bcade25ce9df195f0d55931de592a02741c4c5d4dd2d1a47879b",
+    "generator_total_seconds": 2093.726662773999,
+    "generator_training_seconds": 2093.1733339560014,
+    "reused_masks": 2,
+    "reused_native_classifiers": 3,
+    "role": "inner",
+    "seed": 3
+  },
+  {
+    "algorithm": "logistic_regression",
+    "initial_native_fit_count": 1,
+    "initial_native_fit_seconds": 0.04425790700042853,
+    "matching_seconds": 0.00027018699984182604,
+    "role": "inner",
+    "schedule_seconds": 0.04446289599945885,
+    "seed": 3
+  },
+  {
+    "algorithm": "random_forest",
+    "initial_native_fit_count": 1,
+    "initial_native_fit_seconds": 2.142703130000882,
+    "matching_seconds": 0.0002568749987403862,
+    "role": "inner",
+    "schedule_seconds": 0.08113318100004108,
+    "seed": 3
+  },
+  {
+    "algorithm": "lightgbm",
+    "initial_native_fit_count": 1,
+    "initial_native_fit_seconds": 0.08697505699819885,
+    "matching_seconds": 0.00026378300026408397,
+    "role": "inner",
+    "schedule_seconds": 0.0647749700001441,
+    "seed": 3
+  },
+  {
+    "generator_checkpoint": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261011T154542-1b40c4b555c4/shoppers/fold-0/seed-3/outer/generator/generator.pt",
+    "generator_checkpoint_sha256": "8648fa046a51981de58e10987d6b4d54c9a64c1d5ed71bc752ff123cdd2828d9",
+    "generator_total_seconds": 2660.9490533200005,
+    "generator_training_seconds": 2660.377578825999,
+    "reused_masks": 2,
+    "reused_native_classifiers": 3,
+    "role": "outer",
+    "seed": 3
+  },
+  {
+    "algorithm": "logistic_regression",
+    "initial_native_fit_count": 1,
+    "initial_native_fit_seconds": 0.06838931899983436,
+    "matching_seconds": 0.0002792880004562903,
+    "role": "outer",
+    "schedule_seconds": 0.06799099700219813,
+    "seed": 3
+  },
+  {
+    "algorithm": "random_forest",
+    "initial_native_fit_count": 1,
+    "initial_native_fit_seconds": 2.4696277900002315,
+    "matching_seconds": 0.00026794999939738773,
+    "role": "outer",
+    "schedule_seconds": 0.10874887099998887,
+    "seed": 3
+  },
+  {
+    "algorithm": "lightgbm",
+    "initial_native_fit_count": 1,
+    "initial_native_fit_seconds": 0.09837503499875311,
+    "matching_seconds": 0.0002946439999504946,
+    "role": "outer",
+    "schedule_seconds": 0.08785509999506758,
+    "seed": 3
+  },
+  {
+    "generator_checkpoint": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261011T154542-1b40c4b555c4/shoppers/fold-0/seed-4/inner/generator/generator.pt",
+    "generator_checkpoint_sha256": "788fe05fa3d5d5e20d5abe6c4d173ead8b7b3f7e29bfab4e444da3f8592efd8c",
+    "generator_total_seconds": 2098.995612966999,
+    "generator_training_seconds": 2098.4510515660004,
+    "reused_masks": 2,
+    "reused_native_classifiers": 3,
+    "role": "inner",
+    "seed": 4
+  },
+  {
+    "algorithm": "logistic_regression",
+    "initial_native_fit_count": 1,
+    "initial_native_fit_seconds": 0.042745017002744135,
+    "matching_seconds": 0.00029871700098738074,
+    "role": "inner",
+    "schedule_seconds": 0.0419958080019569,
+    "seed": 4
+  },
+  {
+    "algorithm": "random_forest",
+    "initial_native_fit_count": 1,
+    "initial_native_fit_seconds": 2.1050660190012422,
+    "matching_seconds": 0.0002676309995877091,
+    "role": "inner",
+    "schedule_seconds": 0.08452761999797076,
+    "seed": 4
+  },
+  {
+    "algorithm": "lightgbm",
+    "initial_native_fit_count": 1,
+    "initial_native_fit_seconds": 0.08361042999968049,
+    "matching_seconds": 0.000270495998847764,
+    "role": "inner",
+    "schedule_seconds": 0.06192911399921286,
+    "seed": 4
+  },
+  {
+    "generator_checkpoint": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261011T154542-1b40c4b555c4/shoppers/fold-0/seed-4/outer/generator/generator.pt",
+    "generator_checkpoint_sha256": "2cab4d5fb185efd68482d1c89ccab963e155050c71a9d769ade629c2cc93da92",
+    "generator_total_seconds": 2676.876500446,
+    "generator_training_seconds": 2676.273652232998,
+    "reused_masks": 2,
+    "reused_native_classifiers": 3,
+    "role": "outer",
+    "seed": 4
+  },
+  {
+    "algorithm": "logistic_regression",
+    "initial_native_fit_count": 1,
+    "initial_native_fit_seconds": 0.05633200800002669,
+    "matching_seconds": 0.00029527300284826197,
+    "role": "outer",
+    "schedule_seconds": 0.0687539509999624,
+    "seed": 4
+  },
+  {
+    "algorithm": "random_forest",
+    "initial_native_fit_count": 1,
+    "initial_native_fit_seconds": 2.7841816789987206,
+    "matching_seconds": 0.0002945060005004052,
+    "role": "outer",
+    "schedule_seconds": 0.11653411700172,
+    "seed": 4
+  },
+  {
+    "algorithm": "lightgbm",
+    "initial_native_fit_count": 1,
+    "initial_native_fit_seconds": 0.10411249199751182,
+    "matching_seconds": 0.0005373710009735078,
+    "role": "outer",
+    "schedule_seconds": 0.09075432000099681,
+    "seed": 4
+  }
+]

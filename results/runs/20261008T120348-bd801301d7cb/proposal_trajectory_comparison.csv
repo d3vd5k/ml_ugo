@@ -1,0 +1,16 @@
+algorithm,seed,first_round_matched,later_originals_different
+logistic_regression,0,986,0
+random_forest,0,986,0
+lightgbm,0,986,9
+logistic_regression,1,986,4
+random_forest,1,986,0
+lightgbm,1,986,10
+logistic_regression,2,986,0
+random_forest,2,986,0
+lightgbm,2,986,8
+logistic_regression,3,986,1
+random_forest,3,986,0
+lightgbm,3,986,0
+logistic_regression,4,986,2
+random_forest,4,986,11
+lightgbm,4,986,0

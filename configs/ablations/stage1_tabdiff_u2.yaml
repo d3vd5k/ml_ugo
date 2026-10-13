@@ -1,0 +1,32 @@
+study_id: stage1_u2_tabdiff_no_f1_fixed_round_v1
+study_type: component_ablation
+experiment_type: development
+development_datasets: [shoppers]
+confirmatory_datasets: []
+manual_review:
+  policy: user_only_keep_or_discard
+  current_U5_semantics: U2_only_no_U1_OOF
+  decisions: {U2: keep, F1: keep, TabDiff: pending}
+freeze: {status: not_frozen, evidence: {}}
+stage_gate: {stage2_allowed: false}
+protocol:
+  augmentation_rounds: 1
+  F1_enabled: false
+  relocation: false
+  proposal_filters: existing_schema_and_generator_validity_only
+  count_decoder: user_approved_common_np_rint_ties_even
+  proposal_cap: 1000
+  quotas: unchanged_original_U2_saved_schedule
+  count_matching: per_group_minimum_A_B_C_uniform_thinning
+  shortfalls: report_no_regeneration_no_refill
+  duplicates: diagnostics_only
+  generator: reuse_verified_real_only_frozen_TabDiff_checkpoint_and_complete_saved_pools
+  preprocessing: reuse_identical_real_only_classifier_preprocessing
+  masks: unchanged_nested_original_feature_blocks_nearest_25_50_percent
+  mask_selection: new_no_F1_inner_validation_AP_tie_B
+  downstream: native_LR_RF_LightGBM_locked_canonical_U2_parameters
+  bootstrap: {draws: 2000, seed: 20261011, shared_stratified_test_rows: true, matched_seed_resampling: true}
+variants:
+  A: {method: ugo_schema_control, available: true, missing_components: [], description: fixed_round_original_U2_generator_common_schema_no_F1_no_relocation}
+  B: {method: tabdiff_inpaint, available: true, missing_components: [], description: U2_TabDiff_25_percent_no_F1}
+  C: {method: tabdiff_inpaint, available: true, missing_components: [], description: U2_TabDiff_50_percent_no_F1}

@@ -1,0 +1,2902 @@
+[
+  {
+    "evaluation_role": "test",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -0.002757502027575054,
+    "metric": "accuracy",
+    "phase": "initial",
+    "sample_sd": 0.0011252584692223947,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": true,
+    "utility_minus_random": [
+      -0.0036496350364964014,
+      -0.0024330900243310083,
+      -0.0012165450121653931,
+      -0.0024330900243308973,
+      -0.0040551500405515695
+    ]
+  },
+  {
+    "evaluation_role": "test",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -0.002480004222150489,
+    "metric": "average_precision",
+    "phase": "initial",
+    "sample_sd": 0.002484999956919845,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": true,
+    "utility_minus_random": [
+      -0.0009872187373386465,
+      -0.004925256235304931,
+      0.000888572909132801,
+      -0.002632804549730694,
+      -0.004743314497510975
+    ]
+  },
+  {
+    "evaluation_role": "test",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -0.003983227984845894,
+    "metric": "balanced_accuracy",
+    "phase": "initial",
+    "sample_sd": 0.00426598775788654,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": true,
+    "utility_minus_random": [
+      -0.008573172815065755,
+      -0.004646471244385109,
+      0.0024871622232718327,
+      -0.002508516646400838,
+      -0.006675141441649601
+    ]
+  },
+  {
+    "evaluation_role": "test",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": 0.0006528606676131421,
+    "metric": "balanced_cross_entropy",
+    "phase": "initial",
+    "sample_sd": 0.003146477480035997,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": true,
+    "utility_minus_random": [
+      -0.0027231790297350678,
+      0.004000236296206827,
+      -0.002703166554416714,
+      0.0024073682409013752,
+      0.0022830443851092896
+    ]
+  },
+  {
+    "evaluation_role": "test",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": 1146.0,
+    "metric": "cost",
+    "phase": "initial",
+    "sample_sd": 1701.096705069997,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": true,
+    "utility_minus_random": [
+      3030,
+      1530,
+      -1440,
+      550,
+      2060
+    ]
+  },
+  {
+    "evaluation_role": "test",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": 2.2,
+    "metric": "fn",
+    "phase": "initial",
+    "sample_sd": 3.420526275297414,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": true,
+    "utility_minus_random": [
+      6,
+      3,
+      -3,
+      1,
+      4
+    ]
+  },
+  {
+    "evaluation_role": "test",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": 4.6,
+    "metric": "fp",
+    "phase": "initial",
+    "sample_sd": 1.51657508881031,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": true,
+    "utility_minus_random": [
+      3,
+      3,
+      6,
+      5,
+      6
+    ]
+  },
+  {
+    "evaluation_role": "test",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -0.0020620759688339874,
+    "metric": "macro_average_precision",
+    "phase": "initial",
+    "sample_sd": 0.0015301461320471248,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": true,
+    "utility_minus_random": [
+      -0.0010372993853725587,
+      -0.0035432392674670243,
+      7.356776882427862e-05,
+      -0.00262743205122018,
+      -0.0031759769089344525
+    ]
+  },
+  {
+    "evaluation_role": "test",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -0.005309717546957238,
+    "metric": "macro_f1",
+    "phase": "initial",
+    "sample_sd": 0.00393745903129186,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": true,
+    "utility_minus_random": [
+      -0.009281268661525677,
+      -0.00551162652956394,
+      0.00060866189326092,
+      -0.003985502226102722,
+      -0.00837885221085477
+    ]
+  },
+  {
+    "evaluation_role": "test",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -0.011748670295736396,
+    "metric": "mcc",
+    "phase": "initial",
+    "sample_sd": 0.006618170060708494,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": true,
+    "utility_minus_random": [
+      -0.018015708837719857,
+      -0.011322967460657252,
+      -0.002037497648613884,
+      -0.009563575922104994,
+      -0.017803601609585995
+    ]
+  },
+  {
+    "evaluation_role": "test",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -0.009001851740846356,
+    "metric": "minority_f1",
+    "phase": "initial",
+    "sample_sd": 0.007322655766577889,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": true,
+    "utility_minus_random": [
+      -0.016517927436927593,
+      -0.009630818619582593,
+      0.0020547837771421884,
+      -0.006513647642679921,
+      -0.014401648782183862
+    ]
+  },
+  {
+    "evaluation_role": "test",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -0.0057591623036649,
+    "metric": "minority_recall",
+    "phase": "initial",
+    "sample_sd": 0.008954257265176482,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": true,
+    "utility_minus_random": [
+      -0.015706806282722474,
+      -0.007853403141361237,
+      0.007853403141361293,
+      -0.002617801047120394,
+      -0.010471204188481686
+    ]
+  },
+  {
+    "evaluation_role": "test",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": 0.0014648324162095604,
+    "metric": "ordinary_cross_entropy",
+    "phase": "initial",
+    "sample_sd": 0.0005902526808609509,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": true,
+    "utility_minus_random": [
+      0.0011220728141678182,
+      0.002069508933114639,
+      0.0006288943148376469,
+      0.0019050298293281087,
+      0.0015986561895995899
+    ]
+  },
+  {
+    "evaluation_role": "test",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -0.01574273028009281,
+    "metric": "precision",
+    "phase": "initial",
+    "sample_sd": 0.003567720874385665,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": true,
+    "utility_minus_random": [
+      -0.01592885113161213,
+      -0.012448132780082943,
+      -0.013467591930175993,
+      -0.01524411417459548,
+      -0.0216249613839975
+    ]
+  },
+  {
+    "evaluation_role": "test",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -0.002480004222150489,
+    "metric": "primary_metric_value",
+    "phase": "initial",
+    "sample_sd": 0.002484999956919845,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": true,
+    "utility_minus_random": [
+      -0.0009872187373386465,
+      -0.004925256235304931,
+      0.000888572909132801,
+      -0.002632804549730694,
+      -0.004743314497510975
+    ]
+  },
+  {
+    "evaluation_role": "test",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": 0.0022072936660268716,
+    "metric": "realized_fpr_test",
+    "phase": "initial",
+    "sample_sd": 0.0007277231712141616,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": true,
+    "utility_minus_random": [
+      0.0014395393474088275,
+      0.0014395393474088275,
+      0.002879078694817655,
+      0.002399232245681386,
+      0.002879078694817662
+    ]
+  },
+  {
+    "evaluation_role": "test",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -0.0057591623036649,
+    "metric": "realized_recall_test",
+    "phase": "initial",
+    "sample_sd": 0.008954257265176482,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": true,
+    "utility_minus_random": [
+      -0.015706806282722474,
+      -0.007853403141361237,
+      0.007853403141361293,
+      -0.002617801047120394,
+      -0.010471204188481686
+    ]
+  },
+  {
+    "evaluation_role": "test",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -0.004712041884816731,
+    "metric": "recall_at_fpr_test",
+    "phase": "initial",
+    "sample_sd": 0.007264103102362091,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": true,
+    "utility_minus_random": [
+      -0.002617801047120394,
+      0.0026178010471204494,
+      0.0,
+      -0.015706806282722474,
+      -0.007853403141361237
+    ]
+  },
+  {
+    "evaluation_role": "test",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": 0.0,
+    "metric": "roc_attained_fpr_test",
+    "phase": "initial",
+    "sample_sd": 0.00047984644913627583,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": true,
+    "utility_minus_random": [
+      -0.00047984644913627583,
+      0.0,
+      -0.00047984644913627583,
+      0.00047984644913627583,
+      0.00047984644913627583
+    ]
+  },
+  {
+    "evaluation_role": "test",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": 0.0,
+    "metric": "roc_fpr_limit",
+    "phase": "initial",
+    "sample_sd": 0.0,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": true,
+    "utility_minus_random": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "evaluation_role": "test",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -0.007857978860014537,
+    "metric": "sos_inverse_support_f1",
+    "phase": "initial",
+    "sample_sd": 0.0062734658011135876,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": true,
+    "utility_minus_random": [
+      -0.014275913120460837,
+      -0.008354637453007463,
+      0.0016067557482349892,
+      -0.005730394155954444,
+      -0.012535705318884927
+    ]
+  },
+  {
+    "evaluation_role": "test",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": 0.0,
+    "metric": "threshold",
+    "phase": "initial",
+    "sample_sd": 0.0,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": true,
+    "utility_minus_random": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "evaluation_role": "test",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -4.6,
+    "metric": "tn",
+    "phase": "initial",
+    "sample_sd": 1.51657508881031,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": true,
+    "utility_minus_random": [
+      -3,
+      -3,
+      -6,
+      -5,
+      -6
+    ]
+  },
+  {
+    "evaluation_role": "test",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -2.2,
+    "metric": "tp",
+    "phase": "initial",
+    "sample_sd": 3.420526275297414,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": true,
+    "utility_minus_random": [
+      -6,
+      -3,
+      3,
+      -1,
+      -4
+    ]
+  },
+  {
+    "evaluation_role": "test",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -0.0027614562338999617,
+    "metric": "weighted_f1",
+    "phase": "initial",
+    "sample_sd": 0.0016097920537651983,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": true,
+    "utility_minus_random": [
+      -0.004286624202590517,
+      -0.002668615606120306,
+      -0.0003894319617131492,
+      -0.002240610296251,
+      -0.004221999102824836
+    ]
+  },
+  {
+    "evaluation_role": "validation",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -0.0028383172833249095,
+    "metric": "accuracy",
+    "phase": "initial",
+    "sample_sd": 0.0014155337094544894,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": true,
+    "utility_minus_random": [
+      -0.0040547389761783625,
+      -0.001520527116066983,
+      -0.004561581348200727,
+      -0.001520527116066983,
+      -0.0025342118601114905
+    ]
+  },
+  {
+    "evaluation_role": "validation",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -0.004760954829817731,
+    "metric": "average_precision",
+    "phase": "initial",
+    "sample_sd": 0.004024782001584776,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": true,
+    "utility_minus_random": [
+      -1.169359951314064e-06,
+      -0.0051906310037133085,
+      -0.002501874878154564,
+      -0.010807199105115073,
+      -0.005303899802154399
+    ]
+  },
+  {
+    "evaluation_role": "validation",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -0.006233242913865622,
+    "metric": "balanced_accuracy",
+    "phase": "initial",
+    "sample_sd": 0.003176455325694983,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": true,
+    "utility_minus_random": [
+      -0.009096001887014982,
+      -0.0008992805755395628,
+      -0.008056178008412851,
+      -0.0062576168573338364,
+      -0.006857137241026878
+    ]
+  },
+  {
+    "evaluation_role": "validation",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": 0.0026931305920219416,
+    "metric": "balanced_cross_entropy",
+    "phase": "initial",
+    "sample_sd": 0.004802691169956146,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": true,
+    "utility_minus_random": [
+      -0.00407816727852095,
+      0.0024161025860182095,
+      0.002155346233527533,
+      0.009424927299307662,
+      0.0035474441197772544
+    ]
+  },
+  {
+    "evaluation_role": "validation",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": 1722.0,
+    "metric": "cost",
+    "phase": "initial",
+    "sample_sd": 971.8641880427532,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": true,
+    "utility_minus_random": [
+      2530,
+      30,
+      2050,
+      1990,
+      2010
+    ]
+  },
+  {
+    "evaluation_role": "validation",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": 3.4,
+    "metric": "fn",
+    "phase": "initial",
+    "sample_sd": 1.9493588689617927,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": true,
+    "utility_minus_random": [
+      5,
+      0,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "evaluation_role": "validation",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": 2.2,
+    "metric": "fp",
+    "phase": "initial",
+    "sample_sd": 2.280350850198276,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": true,
+    "utility_minus_random": [
+      3,
+      3,
+      5,
+      -1,
+      1
+    ]
+  },
+  {
+    "evaluation_role": "validation",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -0.002990606846673893,
+    "metric": "macro_average_precision",
+    "phase": "initial",
+    "sample_sd": 0.002323514821213482,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": true,
+    "utility_minus_random": [
+      -0.0003506117526826946,
+      -0.0032200403953489554,
+      -0.0015496941719647106,
+      -0.006510005539040575,
+      -0.0033226823743325307
+    ]
+  },
+  {
+    "evaluation_role": "validation",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -0.006862003416521145,
+    "metric": "macro_f1",
+    "phase": "initial",
+    "sample_sd": 0.0033281287264783823,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": true,
+    "utility_minus_random": [
+      -0.010096101597566465,
+      -0.00208271609053845,
+      -0.009905881790885696,
+      -0.005557431537537183,
+      -0.006667886066077933
+    ]
+  },
+  {
+    "evaluation_role": "validation",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -0.013577823585906191,
+    "metric": "mcc",
+    "phase": "initial",
+    "sample_sd": 0.006684225117167301,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": true,
+    "utility_minus_random": [
+      -0.019841550048018852,
+      -0.005328811778417486,
+      -0.020790782057311108,
+      -0.009269297728491721,
+      -0.012658676317291784
+    ]
+  },
+  {
+    "evaluation_role": "validation",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -0.01211901274692644,
+    "metric": "minority_f1",
+    "phase": "initial",
+    "sample_sd": 0.005944455471660935,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": true,
+    "utility_minus_random": [
+      -0.017910351081746323,
+      -0.0032335741314070132,
+      -0.017182960298106287,
+      -0.010336633663366235,
+      -0.011931544560006335
+    ]
+  },
+  {
+    "evaluation_role": "validation",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -0.011147540983606563,
+    "metric": "minority_recall",
+    "phase": "initial",
+    "sample_sd": 0.006391340553973095,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": true,
+    "utility_minus_random": [
+      -0.016393442622950838,
+      0.0,
+      -0.01311475409836066,
+      -0.01311475409836066,
+      -0.01311475409836066
+    ]
+  },
+  {
+    "evaluation_role": "validation",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": 0.0025945351167594,
+    "metric": "ordinary_cross_entropy",
+    "phase": "initial",
+    "sample_sd": 0.0017322186310310885,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": true,
+    "utility_minus_random": [
+      0.0011187257150161445,
+      0.0022794539251350665,
+      0.001925442460403104,
+      0.005592518853866857,
+      0.002056534629375828
+    ]
+  },
+  {
+    "evaluation_role": "validation",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -0.012812458176097751,
+    "metric": "precision",
+    "phase": "initial",
+    "sample_sd": 0.008744908830976733,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": true,
+    "utility_minus_random": [
+      -0.018636573257738154,
+      -0.009920262664165014,
+      -0.02443779712622185,
+      -0.0021794871794871273,
+      -0.008888170652876615
+    ]
+  },
+  {
+    "evaluation_role": "validation",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -0.004760954829817731,
+    "metric": "primary_metric_value",
+    "phase": "initial",
+    "sample_sd": 0.004024782001584776,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": true,
+    "utility_minus_random": [
+      -1.169359951314064e-06,
+      -0.0051906310037133085,
+      -0.002501874878154564,
+      -0.010807199105115073,
+      -0.005303899802154399
+    ]
+  },
+  {
+    "evaluation_role": "validation",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": 0.0013189448441247003,
+    "metric": "realized_fpr_test",
+    "phase": "initial",
+    "sample_sd": 0.0013671168166656358,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": true,
+    "utility_minus_random": [
+      0.0017985611510791394,
+      0.0017985611510791394,
+      0.00299760191846523,
+      -0.0005995203836930488,
+      0.0005995203836930418
+    ]
+  },
+  {
+    "evaluation_role": "validation",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -0.011147540983606563,
+    "metric": "realized_recall_test",
+    "phase": "initial",
+    "sample_sd": 0.006391340553973095,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": true,
+    "utility_minus_random": [
+      -0.016393442622950838,
+      0.0,
+      -0.01311475409836066,
+      -0.01311475409836066,
+      -0.01311475409836066
+    ]
+  },
+  {
+    "evaluation_role": "validation",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -0.01573770491803277,
+    "metric": "recall_at_fpr_test",
+    "phase": "initial",
+    "sample_sd": 0.01662136636804799,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": true,
+    "utility_minus_random": [
+      -0.006557377049180246,
+      0.0,
+      -0.01967213114754096,
+      -0.042622950819672156,
+      -0.00983606557377048
+    ]
+  },
+  {
+    "evaluation_role": "validation",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -0.000599520383693046,
+    "metric": "roc_attained_fpr_test",
+    "phase": "initial",
+    "sample_sd": 0.001405999928004627,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": true,
+    "utility_minus_random": [
+      -0.0011990407673860906,
+      0.0011990407673860906,
+      0.0005995203836930488,
+      -0.0017985611510791394,
+      -0.0017985611510791394
+    ]
+  },
+  {
+    "evaluation_role": "validation",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": 0.0,
+    "metric": "roc_fpr_limit",
+    "phase": "initial",
+    "sample_sd": 0.0,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": true,
+    "utility_minus_random": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "evaluation_role": "validation",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -0.010493682948879157,
+    "metric": "sos_inverse_support_f1",
+    "phase": "initial",
+    "sample_sd": 0.005133848567007978,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": true,
+    "utility_minus_random": [
+      -0.015494389507823447,
+      -0.0028777589236371748,
+      -0.014933077941591044,
+      -0.008859029356850345,
+      -0.010304159014493774
+    ]
+  },
+  {
+    "evaluation_role": "validation",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": 0.0,
+    "metric": "threshold",
+    "phase": "initial",
+    "sample_sd": 0.0,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": true,
+    "utility_minus_random": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "evaluation_role": "validation",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -2.2,
+    "metric": "tn",
+    "phase": "initial",
+    "sample_sd": 2.280350850198276,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": true,
+    "utility_minus_random": [
+      -3,
+      -3,
+      -5,
+      1,
+      -1
+    ]
+  },
+  {
+    "evaluation_role": "validation",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -3.4,
+    "metric": "tp",
+    "phase": "initial",
+    "sample_sd": 1.9493588689617927,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": true,
+    "utility_minus_random": [
+      -5,
+      0,
+      -4,
+      -4,
+      -4
+    ]
+  },
+  {
+    "evaluation_role": "validation",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -0.003230323884163133,
+    "metric": "weighted_f1",
+    "phase": "initial",
+    "sample_sd": 0.0015519045807315633,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": true,
+    "utility_minus_random": [
+      -0.00469781368730926,
+      -0.0012876732574398364,
+      -0.004878685640180458,
+      -0.0022558337182239097,
+      -0.003031613117662202
+    ]
+  },
+  {
+    "evaluation_role": "test",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -0.0021897810218977744,
+    "metric": "accuracy",
+    "phase": "iterative",
+    "sample_sd": 0.0017108696763770397,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": false,
+    "utility_minus_random": [
+      0.0,
+      -0.0032441200324411223,
+      -0.0008110300081102251,
+      -0.0028386050283860653,
+      -0.0040551500405514584
+    ]
+  },
+  {
+    "evaluation_role": "test",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -0.003634672207682077,
+    "metric": "average_precision",
+    "phase": "iterative",
+    "sample_sd": 0.0019770389232057315,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": false,
+    "utility_minus_random": [
+      -0.004584242487754131,
+      -0.005221666520465962,
+      -0.00043561206354703064,
+      -0.0030275541254730642,
+      -0.004904285841170197
+    ]
+  },
+  {
+    "evaluation_role": "test",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": 0.0002009828059209351,
+    "metric": "balanced_accuracy",
+    "phase": "iterative",
+    "sample_sd": 0.004944812396362417,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": false,
+    "utility_minus_random": [
+      0.004275909195968208,
+      -0.006195294992513478,
+      0.005934017344816245,
+      -0.0006104852729849064,
+      -0.002399232245681393
+    ]
+  },
+  {
+    "evaluation_role": "test",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -0.0019561860144986067,
+    "metric": "balanced_cross_entropy",
+    "phase": "iterative",
+    "sample_sd": 0.003064542711007879,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": false,
+    "utility_minus_random": [
+      -0.00646902940758165,
+      0.0020016352680486404,
+      -0.0022775030509312177,
+      -0.0007940159136898828,
+      -0.0022420169683389224
+    ]
+  },
+  {
+    "evaluation_role": "test",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -632.0,
+    "metric": "cost",
+    "phase": "iterative",
+    "sample_sd": 1918.2596278919077,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": false,
+    "utility_minus_random": [
+      -1960,
+      2040,
+      -2920,
+      -420,
+      100
+    ]
+  },
+  {
+    "evaluation_role": "test",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -1.4,
+    "metric": "fn",
+    "phase": "iterative",
+    "sample_sd": 3.8470768123342687,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": false,
+    "utility_minus_random": [
+      -4,
+      4,
+      -6,
+      -1,
+      0
+    ]
+  },
+  {
+    "evaluation_role": "test",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": 6.8,
+    "metric": "fp",
+    "phase": "iterative",
+    "sample_sd": 2.6832815729997477,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": false,
+    "utility_minus_random": [
+      4,
+      4,
+      8,
+      8,
+      10
+    ]
+  },
+  {
+    "evaluation_role": "test",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -0.0027182148744712142,
+    "metric": "macro_average_precision",
+    "phase": "iterative",
+    "sample_sd": 0.0010914576655518175,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": false,
+    "utility_minus_random": [
+      -0.002570563651540958,
+      -0.0038560742461516417,
+      -0.0009875138698322017,
+      -0.0027892091452439427,
+      -0.003387713459587327
+    ]
+  },
+  {
+    "evaluation_role": "test",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -0.0020037325846740117,
+    "metric": "macro_f1",
+    "phase": "iterative",
+    "sample_sd": 0.0042136115426348,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": false,
+    "utility_minus_random": [
+      0.0022790617767882715,
+      -0.006535358782186473,
+      0.0025247246803102863,
+      -0.0030309799559886663,
+      -0.005256110642293477
+    ]
+  },
+  {
+    "evaluation_role": "test",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -0.0046903892300479534,
+    "metric": "mcc",
+    "phase": "iterative",
+    "sample_sd": 0.008091656255981594,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": false,
+    "utility_minus_random": [
+      0.003984038016962788,
+      -0.01310103754468539,
+      0.003596300840770006,
+      -0.006653652894175244,
+      -0.011277594569111926
+    ]
+  },
+  {
+    "evaluation_role": "test",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -0.0025831191518112195,
+    "metric": "minority_f1",
+    "phase": "iterative",
+    "sample_sd": 0.007551851155485471,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": false,
+    "utility_minus_random": [
+      0.004696240705356902,
+      -0.011173184357541888,
+      0.00576259011571334,
+      -0.004236885604088636,
+      -0.007964356618495816
+    ]
+  },
+  {
+    "evaluation_role": "test",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": 0.003664921465968596,
+    "metric": "minority_recall",
+    "phase": "iterative",
+    "sample_sd": 0.010070881707681362,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": false,
+    "utility_minus_random": [
+      0.010471204188481686,
+      -0.010471204188481686,
+      0.015706806282722585,
+      0.002617801047120394,
+      0.0
+    ]
+  },
+  {
+    "evaluation_role": "test",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": 0.004506821492620394,
+    "metric": "ordinary_cross_entropy",
+    "phase": "iterative",
+    "sample_sd": 0.0009571877827120697,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": false,
+    "utility_minus_random": [
+      0.00431803067424924,
+      0.004696462991519212,
+      0.003842567311834688,
+      0.00604929618090061,
+      0.0036277503045982207
+    ]
+  },
+  {
+    "evaluation_role": "test",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -0.010693993438300842,
+    "metric": "precision",
+    "phase": "iterative",
+    "sample_sd": 0.005716174617365676,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": false,
+    "utility_minus_random": [
+      -0.002630121816168396,
+      -0.0119760479041916,
+      -0.008158052741429778,
+      -0.012689451734309909,
+      -0.018016292995404526
+    ]
+  },
+  {
+    "evaluation_role": "test",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -0.003634672207682077,
+    "metric": "primary_metric_value",
+    "phase": "iterative",
+    "sample_sd": 0.0019770389232057315,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": false,
+    "utility_minus_random": [
+      -0.004584242487754131,
+      -0.005221666520465962,
+      -0.00043561206354703064,
+      -0.0030275541254730642,
+      -0.004904285841170197
+    ]
+  },
+  {
+    "evaluation_role": "test",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": 0.0032629558541266814,
+    "metric": "realized_fpr_test",
+    "phase": "iterative",
+    "sample_sd": 0.0012875631348367353,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": false,
+    "utility_minus_random": [
+      0.0019193857965451033,
+      0.0019193857965451033,
+      0.0038387715930902067,
+      0.0038387715930902205,
+      0.004798464491362772
+    ]
+  },
+  {
+    "evaluation_role": "test",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": 0.003664921465968596,
+    "metric": "realized_recall_test",
+    "phase": "iterative",
+    "sample_sd": 0.010070881707681362,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": false,
+    "utility_minus_random": [
+      0.010471204188481686,
+      -0.010471204188481686,
+      0.015706806282722585,
+      0.002617801047120394,
+      0.0
+    ]
+  },
+  {
+    "evaluation_role": "test",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -0.0057591623036649334,
+    "metric": "recall_at_fpr_test",
+    "phase": "iterative",
+    "sample_sd": 0.00986463019969462,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": false,
+    "utility_minus_random": [
+      -0.01570680628272253,
+      -0.015706806282722474,
+      -0.005235602094240843,
+      0.005235602094240788,
+      0.002617801047120394
+    ]
+  },
+  {
+    "evaluation_role": "test",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": 0.0002879078694817655,
+    "metric": "roc_attained_fpr_test",
+    "phase": "iterative",
+    "sample_sd": 0.001296473712678146,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": false,
+    "utility_minus_random": [
+      0.00047984644913627583,
+      -0.00047984644913627583,
+      0.0009596928982725517,
+      0.0019193857965451033,
+      -0.0014395393474088275
+    ]
+  },
+  {
+    "evaluation_role": "test",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": 0.0,
+    "metric": "roc_fpr_limit",
+    "phase": "iterative",
+    "sample_sd": 0.0,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": false,
+    "utility_minus_random": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "evaluation_role": "test",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -0.0024036173929739,
+    "metric": "sos_inverse_support_f1",
+    "phase": "iterative",
+    "sample_sd": 0.006516098191026097,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": false,
+    "utility_minus_random": [
+      0.00394736613056923,
+      -0.009736323554796034,
+      0.004759455812125446,
+      -0.0038632797990810763,
+      -0.007125305553687067
+    ]
+  },
+  {
+    "evaluation_role": "test",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": 0.0,
+    "metric": "threshold",
+    "phase": "iterative",
+    "sample_sd": 0.0,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": false,
+    "utility_minus_random": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "evaluation_role": "test",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -6.8,
+    "metric": "tn",
+    "phase": "iterative",
+    "sample_sd": 2.6832815729997477,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": false,
+    "utility_minus_random": [
+      -4,
+      -4,
+      -8,
+      -8,
+      -10
+    ]
+  },
+  {
+    "evaluation_role": "test",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": 1.4,
+    "metric": "tp",
+    "phase": "iterative",
+    "sample_sd": 3.8470768123342687,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": false,
+    "utility_minus_random": [
+      4,
+      -4,
+      6,
+      1,
+      0
+    ]
+  },
+  {
+    "evaluation_role": "test",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -0.0016038477763741011,
+    "metric": "weighted_f1",
+    "phase": "iterative",
+    "sample_sd": 0.0019377214878041745,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": false,
+    "utility_minus_random": [
+      0.0006107574230072021,
+      -0.003334394009577135,
+      0.00028999354849534864,
+      -0.0021986801128960343,
+      -0.0033869157308998865
+    ]
+  },
+  {
+    "evaluation_role": "validation",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -0.005778003041054247,
+    "metric": "accuracy",
+    "phase": "iterative",
+    "sample_sd": 0.0021976161569872065,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": false,
+    "utility_minus_random": [
+      -0.003041054232133855,
+      -0.005068423720222981,
+      -0.005575266092245346,
+      -0.009123162696401454,
+      -0.006082108464267599
+    ]
+  },
+  {
+    "evaluation_role": "validation",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -0.007564051821208761,
+    "metric": "average_precision",
+    "phase": "iterative",
+    "sample_sd": 0.005850724468380596,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": false,
+    "utility_minus_random": [
+      -7.5012674976004945e-06,
+      -0.004937045225920533,
+      -0.006189155661276535,
+      -0.014797930736384468,
+      -0.01188862621496467
+    ]
+  },
+  {
+    "evaluation_role": "validation",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -0.006632267956126902,
+    "metric": "balanced_accuracy",
+    "phase": "iterative",
+    "sample_sd": 0.004993712532369052,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": false,
+    "utility_minus_random": [
+      -0.00045897708063058484,
+      -0.009695522270708024,
+      -0.0019577780398631894,
+      -0.01075401973503165,
+      -0.010295042654401065
+    ]
+  },
+  {
+    "evaluation_role": "validation",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": 0.0020571229211528096,
+    "metric": "balanced_cross_entropy",
+    "phase": "iterative",
+    "sample_sd": 0.007153871891013005,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": false,
+    "utility_minus_random": [
+      -0.009259430196338458,
+      0.001999036602492399,
+      0.0013560936228675935,
+      0.009368035031815158,
+      0.006821879544927356
+    ]
+  },
+  {
+    "evaluation_role": "validation",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": 1290.0,
+    "metric": "cost",
+    "phase": "iterative",
+    "sample_sd": 1556.9039790558697,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": false,
+    "utility_minus_random": [
+      -430,
+      2550,
+      -380,
+      2140,
+      2570
+    ]
+  },
+  {
+    "evaluation_role": "validation",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": 2.4,
+    "metric": "fn",
+    "phase": "iterative",
+    "sample_sd": 3.1304951684997055,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": false,
+    "utility_minus_random": [
+      -1,
+      5,
+      -1,
+      4,
+      5
+    ]
+  },
+  {
+    "evaluation_role": "validation",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": 9.0,
+    "metric": "fp",
+    "phase": "iterative",
+    "sample_sd": 3.8078865529319543,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": false,
+    "utility_minus_random": [
+      7,
+      5,
+      12,
+      14,
+      7
+    ]
+  },
+  {
+    "evaluation_role": "validation",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -0.0044951236767049926,
+    "metric": "macro_average_precision",
+    "phase": "iterative",
+    "sample_sd": 0.003463087951369083,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": false,
+    "utility_minus_random": [
+      3.4052749393831405e-05,
+      -0.0031449572696056194,
+      -0.0035128561376541745,
+      -0.008677535888319321,
+      -0.007174321837339681
+    ]
+  },
+  {
+    "evaluation_role": "validation",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -0.009347014247402008,
+    "metric": "macro_f1",
+    "phase": "iterative",
+    "sample_sd": 0.004338938037486289,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": false,
+    "utility_minus_random": [
+      -0.0036109623140858638,
+      -0.0099644451627241,
+      -0.006920705367829849,
+      -0.01507805803005946,
+      -0.011160900362310766
+    ]
+  },
+  {
+    "evaluation_role": "validation",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -0.019624465784121758,
+    "metric": "mcc",
+    "phase": "iterative",
+    "sample_sd": 0.008324960182335608,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": false,
+    "utility_minus_random": [
+      -0.008658083636698177,
+      -0.01994070440151241,
+      -0.0158924300643708,
+      -0.03126002800334249,
+      -0.022371082814684917
+    ]
+  },
+  {
+    "evaluation_role": "validation",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -0.015181788563116893,
+    "metric": "minority_f1",
+    "phase": "iterative",
+    "sample_sd": 0.007509854974432995,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": false,
+    "utility_minus_random": [
+      -0.0053050397877983935,
+      -0.016949152542372947,
+      -0.010338724209100425,
+      -0.024622781536556282,
+      -0.01869324473975642
+    ]
+  },
+  {
+    "evaluation_role": "validation",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -0.007868852459016362,
+    "metric": "minority_recall",
+    "phase": "iterative",
+    "sample_sd": 0.010263918585244922,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": false,
+    "utility_minus_random": [
+      0.003278688524590123,
+      -0.016393442622950727,
+      0.003278688524590234,
+      -0.013114754098360604,
+      -0.016393442622950838
+    ]
+  },
+  {
+    "evaluation_role": "validation",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": 0.007067741517571868,
+    "metric": "ordinary_cross_entropy",
+    "phase": "iterative",
+    "sample_sd": 0.00378127071392839,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": false,
+    "utility_minus_random": [
+      0.0034012484565891232,
+      0.005605440237934023,
+      0.005784297044575559,
+      0.013388736799330447,
+      0.007158985049430189
+    ]
+  },
+  {
+    "evaluation_role": "validation",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -0.0251083679432486,
+    "metric": "precision",
+    "phase": "iterative",
+    "sample_sd": 0.009275386166280862,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": false,
+    "utility_minus_random": [
+      -0.017956596888803467,
+      -0.01754385964912286,
+      -0.029708935854653284,
+      -0.039205927892059234,
+      -0.02112651943160415
+    ]
+  },
+  {
+    "evaluation_role": "validation",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -0.007564051821208761,
+    "metric": "primary_metric_value",
+    "phase": "iterative",
+    "sample_sd": 0.005850724468380596,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": false,
+    "utility_minus_random": [
+      -7.5012674976004945e-06,
+      -0.004937045225920533,
+      -0.006189155661276535,
+      -0.014797930736384468,
+      -0.01188862621496467
+    ]
+  },
+  {
+    "evaluation_role": "validation",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": 0.0053956834532374095,
+    "metric": "realized_fpr_test",
+    "phase": "iterative",
+    "sample_sd": 0.0022829056072733553,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": false,
+    "utility_minus_random": [
+      0.004196642685851321,
+      0.002997601918465223,
+      0.007194244604316544,
+      0.008393285371702641,
+      0.004196642685851321
+    ]
+  },
+  {
+    "evaluation_role": "validation",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -0.007868852459016362,
+    "metric": "realized_recall_test",
+    "phase": "iterative",
+    "sample_sd": 0.010263918585244922,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": false,
+    "utility_minus_random": [
+      0.003278688524590123,
+      -0.016393442622950727,
+      0.003278688524590234,
+      -0.013114754098360604,
+      -0.016393442622950838
+    ]
+  },
+  {
+    "evaluation_role": "validation",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -0.02163934426229508,
+    "metric": "recall_at_fpr_test",
+    "phase": "iterative",
+    "sample_sd": 0.018195982853130007,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": false,
+    "utility_minus_random": [
+      -0.013114754098360604,
+      0.0,
+      -0.02622950819672132,
+      -0.049180327868852514,
+      -0.01967213114754096
+    ]
+  },
+  {
+    "evaluation_role": "validation",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": 0.00011990407673860975,
+    "metric": "roc_attained_fpr_test",
+    "phase": "iterative",
+    "sample_sd": 0.001072454665467526,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": false,
+    "utility_minus_random": [
+      0.0,
+      0.0017985611510791394,
+      0.0,
+      0.0,
+      -0.0011990407673860906
+    ]
+  },
+  {
+    "evaluation_role": "validation",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": 0.0,
+    "metric": "roc_fpr_limit",
+    "phase": "iterative",
+    "sample_sd": 0.0,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": false,
+    "utility_minus_random": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "evaluation_role": "validation",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -0.013377828941937907,
+    "metric": "sos_inverse_support_f1",
+    "phase": "iterative",
+    "sample_sd": 0.006526484245032857,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": false,
+    "utility_minus_random": [
+      -0.004781275338247126,
+      -0.01478966369210133,
+      -0.009281962175053171,
+      -0.021671802652135086,
+      -0.01636444085215283
+    ]
+  },
+  {
+    "evaluation_role": "validation",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": 0.0,
+    "metric": "threshold",
+    "phase": "iterative",
+    "sample_sd": 0.0,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": false,
+    "utility_minus_random": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "evaluation_role": "validation",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -9.0,
+    "metric": "tn",
+    "phase": "iterative",
+    "sample_sd": 3.8078865529319543,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": false,
+    "utility_minus_random": [
+      -7,
+      -5,
+      -12,
+      -14,
+      -7
+    ]
+  },
+  {
+    "evaluation_role": "validation",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -2.4,
+    "metric": "tp",
+    "phase": "iterative",
+    "sample_sd": 3.1304951684997055,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": false,
+    "utility_minus_random": [
+      1,
+      -5,
+      1,
+      -4,
+      -5
+    ]
+  },
+  {
+    "evaluation_role": "validation",
+    "matched_counts": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mean": -0.005316199552866108,
+    "metric": "weighted_f1",
+    "phase": "iterative",
+    "sample_sd": 0.002197772323720944,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shared_pool": false,
+    "utility_minus_random": [
+      -0.0024406492899246013,
+      -0.00513922663334665,
+      -0.004559448560606416,
+      -0.008484313407983946,
+      -0.005957359872468926
+    ]
+  }
+]

@@ -1,0 +1,57 @@
+{
+  "track": "controlled",
+  "status": "ready",
+  "validation_fraction": 0.2,
+  "classifiers": [
+    "logistic_regression",
+    "random_forest",
+    "lightgbm",
+    "balanced_random_forest"
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "tuning_budget": {
+    "n_candidates": 10,
+    "sampler_seed": 42
+  },
+  "threshold": {
+    "name": "fixed_0.5"
+  },
+  "methods": [
+    "baseline",
+    "class_weight",
+    "ros",
+    "smote",
+    "borderline_smote",
+    "kmeans_smote",
+    "ugo_original",
+    "ugo_corrected"
+  ],
+  "augmentation": {
+    "mode": "matched",
+    "total": 1000
+  },
+  "classifier_methods": {
+    "balanced_random_forest": [
+      "baseline"
+    ]
+  },
+  "preprocessing": {
+    "fit_on": "fit_indices",
+    "numeric": "median_impute_standard_scale",
+    "categorical": "mode_impute_one_hot_unknown_ignore",
+    "category_safe_sampling": true
+  },
+  "role": "optional",
+  "protocol_id": "satimage_uci_official_controlled_v1",
+  "dataset": "satimage",
+  "primary_metric": "macro_f1",
+  "split": {
+    "type": "official"
+  }
+}

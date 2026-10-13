@@ -1,0 +1,59 @@
+study_id: stage1_shoppers_native_downweight_v1
+study_type: component_ablation
+experiment_type: development
+development_datasets: [shoppers]
+confirmatory_datasets: []
+manual_review:
+  policy: user_only_keep_or_discard
+  decisions: {U2: keep, F1: keep, F2: discard, H1: discard, pool_utility: discard, downweight: pending, bagging: deferred}
+freeze: {status: not_frozen, reason: Downweighting is a user-authorized experiment; bagging is deferred., evidence: {}}
+stage_gate: {stage2_allowed: false}
+classifiers: [logistic_regression, random_forest, lightgbm, mlp]
+seeds: [0, 1, 2, 3, 4]
+weights: [0.25, 0.5]
+unit_weight: 1.0
+real_weight: 1.0
+selection: {objective: inner_validation_average_precision, ties: larger_weight, test_selection: forbidden}
+protocol:
+  dataset: shoppers
+  original_outer_seed: 2026
+  validation_fraction: 0.2
+  augmentation_count: 1000
+  maximum_rounds: 20
+  proposals_per_pool_anchor: 5
+  budget_and_retraining_and_stopping: unchanged_native_U2
+  pool_random_F1: false
+  group_quotas: unchanged_U2
+  refill: forbidden
+  parent_source: real_training_only
+  synthetic_weights: all_accumulated_accepted_rows_not_only_latest_batch
+  count_matching: same_budget_not_forced_same_accepted_counts_if_trajectories_diverge
+  matched_parent_control: one_real_anchor_copy_per_selected_synthetic_same_weight
+mlp:
+  epochs: 160
+  smoke_epochs: 20
+  device: auto
+  fitting: existing_full_batch_native_RMSprop_weighted_mean_CE
+  epoch_selection: fixed_same_epochs_every_fit_and_arm
+  canonical_search: ten_joint_native_parameter_group_alpha_trials_on_inner_validation_only
+  F1_tau_search: unit_weight_inner_only_then_lock
+F1:
+  source: results/runs/20261009T153348-af844bdecf5a
+  configuration: frozen_retained_real_only_FlowGMM
+  existing_thresholds: lock_active_control_audit_thresholds
+  new_MLP_threshold_grid: [0.5, 0.6, 0.7, 0.8]
+  detector_fit: eighty_percent_real_inner_fit
+  calibration: remaining_twenty_percent_reserved_unused
+  relocation: disabled
+reporting:
+  metrics: all_24_existing_metrics
+  bootstrap_draws: 2000
+  bootstrap_seed: 20261012
+  uncertainty: paired_shared_outer_rows_and_matched_seed_resampling_conditional_development_only
+  log: [raw_and_final_candidates, parents, groups, quotas, initial_pool_identity, later_divergence, counts, effective_weight, native_fits, epochs, runtime]
+excluded: [bagging, class_weight, utility, TabDiff, HDBSCAN, F2, historical_U1_OOF_composition]
+variants:
+  U2: {method: ugo_groups_only, available: true, missing_components: []}
+  U2_F1: {method: ugo_f1, available: true, missing_components: []}
+  pool_random: {method: ugo_groups_only, available: true, missing_components: []}
+  real_only: {method: baseline, available: true, missing_components: []}

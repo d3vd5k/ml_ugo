@@ -1,0 +1,8 @@
+{
+  "pool_U2_source_and_replay_equal_main_predictions": 15,
+  "F1_models_identical_between_pool_and_iterative": 15,
+  "first_round_matched_cells": 30,
+  "later_changed_cells": 29,
+  "later_changed_proposals": 237,
+  "historical_U5_numeric_metrics_verified": 315
+}

@@ -1,0 +1,42 @@
+{
+  "completed_cells": 120,
+  "failed_cells": 0,
+  "metric_recomputations": 120,
+  "pipeline_audits": 1320,
+  "constraint_audits": 495,
+  "verified_accepted_points": 333607,
+  "verified_attempts": 4861611,
+  "real_preprocessing_contexts": 6,
+  "geometry_refits": 6,
+  "observed_training_fits_including_oof": 13238,
+  "runtime_cell_sum_seconds": 11612.140121188004,
+  "peak_rss_mib": 1810.84765625,
+  "retention": "awaiting_user_decision",
+  "manual_decisions": {
+    "U1": "keep",
+    "U2": "keep",
+    "U3": "pending"
+  },
+  "u3_underspent_outer_cells": 45,
+  "reference_metric_reproductions": 75,
+  "canonical_index_cells": 120,
+  "full_run_wall_seconds": 11618.98,
+  "actual_geometry_role_fits": 10,
+  "unique_real_training_partitions": 6,
+  "generating_pipeline_audits": 1155,
+  "underspent_generating_audits": 495,
+  "outer_u3_accepted": 31818,
+  "outer_u3_attempted": 433991,
+  "outer_u3_no_partner": 339644,
+  "outer_u3_constraint_rejected": 62529,
+  "outer_u3_duplicates": 6104,
+  "stop_reasons": {
+    "no_valid_partner": 6,
+    "iteration_cap": 38,
+    "no_candidate_satisfies_constraints": 1
+  },
+  "resources_scope": "whole-process sampled RSS; Torch allocator only; shared-cache construction billed on first use; all ten joint proposals and refit included",
+  "interpretation": "All 45 U3 outer cells underspent, so none is an equal-actual-count mechanism comparison against current/U0/U2. Descriptive procedure deltas are preserved without automatic retention.",
+  "interrupted_smoke": "results/smoke/20261005T182324-71e4e824cd70/interruption.json",
+  "repository_tests": 133
+}

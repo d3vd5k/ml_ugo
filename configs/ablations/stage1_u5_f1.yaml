@@ -1,0 +1,97 @@
+study_id: stage1_u5_f1_shoppers_v1
+study_type: component_ablation
+experiment_type: development
+development_datasets: [shoppers]
+confirmatory_datasets: []
+controlled_component_base: U5
+manual_review:
+  policy: user_only_keep_or_discard
+  decisions: {U1: keep, U2: keep, U3: discard, U4: discard, U5: discard, H1: discard, F1: keep, F2: discard, U5_F1: keep}
+  confirmatory_evaluation: only_after_user_finalizes_phase1_configuration
+freeze:
+  status: not_frozen
+  reason: U5+F1 is retained by the user; a separate U2 learning-benefit experiment is authorized before concluding Phase 1.
+  evidence: {}
+stage_gate: {stage2_allowed: false}
+pairing:
+  split: identical_real_outer_and_inner_split_fingerprints
+  seed: identical_classifier_and_sampler_seeds
+  classifier: same_ten_joint_U5_learner_and_group_alpha_proposals_then_lock_selected_base
+  count_budget: fixed_1000_original_proposals_no_refill_report_actual_acceptance
+  retraining_cap: 20_generation_rounds
+  underspend: report_and_disallow_equal_count_claim_when_actual_counts_differ
+composition_policy:
+  scoring: fixed_three_fold_real_only_oof_mma_with_fold_fitted_preprocessing
+  groups: canonical_U2_kmeans_stability_capped_allocation
+  gate: frozen_F1_original_proposal_log_ratio_greater_or_equal_logit_tau
+  detector_fit: eighty_percent_of_real_inner_fit_stratified_seed_plus_7919
+  calibration: remaining_twenty_percent_reserved_unused_by_F1
+  validation: original_real_inner_validation_excluded_from_detector_fit_in_both_roles
+  outer_replay: frozen_same_detector_fit_with_outer_classifier_inverse_coordinate_bridge
+  classifier_access: unchanged_all_real_inner_fit_or_outer_training
+  flow: flowgmm_tabular_v1_shared_across_F1_and_U5_F1_roles_and_families
+  selection: select_canonical_U5_learner_and_group_alpha_then_four_F1_taus_on_real_inner_validation
+  threshold_grid: [0.5, 0.6, 0.7, 0.8]
+  neighbor_post_detector: disabled
+  relocation: disabled
+  support_filter_F2: disabled
+  rejected_quota_refill: disabled
+  historical_F1_reference: results/runs/20261007T180310-edddfeea01ac
+  historical_U5_reference: results/runs/20261006T060142-8e042c6ffcf0
+variants:
+  baseline:
+    method: baseline
+    status: ready
+    available: true
+    missing_components: []
+  U0:
+    method: ugo_original
+    status: ready
+    available: true
+    missing_components: []
+  corrected_current:
+    method: ugo_corrected
+    status: ready
+    available: true
+    missing_components: []
+  U2:
+    method: ugo_groups_only
+    status: ready_for_experiment
+    available: true
+    retention_status: kept_by_user
+    sampler_parameters: {grouping: kmeans, allocation: stability, capture_proposals: true}
+    sampler_search: {group_alpha: [0.0, 0.5, 1.0]}
+    missing_components: []
+  U5:
+    method: ugo_combined
+    status: ready_for_experiment
+    available: true
+    retention_status: discarded_by_user
+    description: Explicit comparison and canonical learner-selection source only; standalone U5 is not reinstated.
+    retained_components: [U1_oof_mma, U2]
+    excluded_components: [U3, U4, H1, F1, F2, H2]
+    sampler_parameters: {grouping: kmeans, allocation: stability, capture_proposals: true}
+    sampler_search: {group_alpha: [0.0, 0.5, 1.0]}
+    scoring_policy: {n_splits: 3, training_source: real_only, refresh: fixed_before_generation}
+    missing_components: []
+  F1:
+    method: ugo_f1
+    status: ready_for_experiment
+    available: true
+    retention_status: kept_by_user
+    retained_components: [U2]
+    excluded_components: [U1, U3, U4, U5, H1, F2, H2]
+    sampler_parameters: {grouping: kmeans, allocation: stability, capture_proposals: true}
+    sampler_search: {group_alpha: [0.0, 0.5, 1.0], f1_tau: [0.5, 0.6, 0.7, 0.8]}
+    missing_components: []
+  U5_F1:
+    method: ugo_combined_f1
+    status: ready_for_experiment
+    available: true
+    retention_status: kept_by_user
+    retained_components: [U1_oof_mma, U2, F1_compatibility]
+    excluded_components: [U3, U4, H1, F2, H2]
+    sampler_parameters: {grouping: kmeans, allocation: stability, capture_proposals: true}
+    sampler_search: {group_alpha: [0.0, 0.5, 1.0], f1_tau: [0.5, 0.6, 0.7, 0.8]}
+    scoring_policy: {n_splits: 3, training_source: real_only, refresh: fixed_before_generation}
+    missing_components: []

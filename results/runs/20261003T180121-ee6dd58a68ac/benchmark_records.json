@@ -1,0 +1,4387 @@
+[
+  {
+    "algorithm": "logistic_regression",
+    "artifact_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T180121-ee6dd58a68ac",
+    "augmentation": {
+      "actual_count": 0,
+      "actual_counts": {
+        "0": 8338,
+        "1": 1526
+      },
+      "mode": "matched",
+      "real_counts": {
+        "0": 8338,
+        "1": 1526
+      },
+      "requested_count": 0,
+      "underspend": 0
+    },
+    "augmentation_count": null,
+    "average_precision": 0.610888987534699,
+    "balanced_accuracy": 0.6491292419933474,
+    "budget_mode": "matched",
+    "candidate_configs": [
+      {},
+      {
+        "C": 0.1
+      },
+      {
+        "C": 10.0
+      },
+      {
+        "C": 0.1
+      },
+      {
+        "C": 0.01
+      },
+      {
+        "C": 0.01
+      },
+      {
+        "C": 100.0
+      },
+      {
+        "C": 1.0
+      },
+      {
+        "C": 0.1
+      },
+      {
+        "C": 0.01
+      }
+    ],
+    "classifiers": null,
+    "config": {
+      "selected_epoch_sequence": [
+        null
+      ],
+      "selected_parameters": {
+        "C": 0.01
+      },
+      "settings": {
+        "augmentation": {
+          "mode": "matched",
+          "total": 1000
+        },
+        "device": "auto",
+        "method_parameters": {},
+        "mlp_epochs": 160,
+        "ugo_max_iterations": 20
+      },
+      "threshold": 0.5
+    },
+    "config_sha256": "6ef359ddbbc7c8cf501d5b1d424c474f7c9efa04e7240a1f1bab38475ea343b0",
+    "configuration_id": "900096cab5248cdae2746d93c2be1ed066509d8de2cff6b92d2ebf514567b202",
+    "cost": 130440,
+    "cuda_peak_torch_allocated_bytes": 0,
+    "cuda_peak_torch_reserved_bytes": 0,
+    "data_home": ".cache/benchmarks",
+    "dataset": "shoppers",
+    "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+    "device": "auto",
+    "download": false,
+    "effective_classifiers": [
+      "logistic_regression",
+      "random_forest",
+      "lightgbm",
+      "balanced_random_forest"
+    ],
+    "effective_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "effective_settings": {
+      "augmentation": {
+        "mode": "matched",
+        "total": 1000
+      },
+      "device": "auto",
+      "method_parameters": {},
+      "mlp_epochs": 160,
+      "ugo_max_iterations": 20
+    },
+    "effective_tuning_budget": 10,
+    "effective_variants": [
+      "baseline"
+    ],
+    "error": null,
+    "evaluation_policy_sha256": "af8a8e50eb193c0b5816d0ad8728f8f943b6449b0a95769d7e1822545cceafec",
+    "experiment_type": "development",
+    "fn": 260,
+    "fold": "b6658fbc892ef219628150d2ed4101b386b6e7d4bbc123d2dd1db51ff03f593a",
+    "fp": 44,
+    "local_data": null,
+    "macro_average_precision": 0.792374132331553,
+    "macro_f1": 0.6879562043795621,
+    "mcc": 0.43068067277392136,
+    "memory_scope": "cell process RSS sampled at 10ms; Torch CUDA allocator only",
+    "method": "baseline",
+    "methods": [
+      "baseline"
+    ],
+    "metrics": {
+      "average_precision": 0.610888987534699,
+      "balanced_accuracy": 0.6491292419933474,
+      "cost": 130440,
+      "fn": 260,
+      "fp": 44,
+      "macro_average_precision": 0.792374132331553,
+      "macro_f1": 0.6879562043795621,
+      "mcc": 0.43068067277392136,
+      "minority_f1": 0.44525547445255476,
+      "minority_recall": 0.3193717277486911,
+      "primary_metric": "average_precision",
+      "primary_metric_value": 0.610888987534699,
+      "realized_fpr_test": 0.02111324376199616,
+      "realized_recall_test": 0.3193717277486911,
+      "recall_at_fpr_test": 0.5130890052356021,
+      "roc_attained_fpr_test": 0.049424184261036466,
+      "roc_fpr_limit": 0.05,
+      "roc_operating_point_definition": "maximum attainable TPR with FPR <= limit; >= threshold; ties intact; no interpolation",
+      "sos_inverse_support_f1": 0.520447428087686,
+      "threshold": 0.5,
+      "tn": 2040,
+      "tp": 122,
+      "weighted_f1": 0.8554649806714381
+    },
+    "minority_f1": 0.44525547445255476,
+    "minority_recall": 0.3193717277486911,
+    "mlp_epochs": null,
+    "output_dir": null,
+    "peak_rss_bytes": 1143173120,
+    "positive_class": 1,
+    "predictions_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T180121-ee6dd58a68ac/shoppers/fold-0/seed-0/logistic_regression/baseline/predictions.csv",
+    "prepare": false,
+    "primary_metric": "average_precision",
+    "primary_metric_value": 0.610888987534699,
+    "protocol": "configs/benchmarks/shoppers_controlled.yaml",
+    "protocol_id": "shoppers_uci_controlled_v1",
+    "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+    "realized_fpr_test": 0.02111324376199616,
+    "realized_recall_test": 0.3193717277486911,
+    "recall_at_fpr_test": 0.5130890052356021,
+    "record_id": "d4c26d79ea414a608a13eb1f578adce6a790b92ca1414c6af2318909b6f3753b",
+    "record_scope": "benchmark_cell",
+    "roc_attained_fpr_test": 0.049424184261036466,
+    "roc_fpr_limit": 0.05,
+    "roc_operating_point_definition": "maximum attainable TPR with FPR <= limit; >= threshold; ties intact; no interpolation",
+    "rss_sample_interval_seconds": 0.01,
+    "run": true,
+    "run_id": "20261003T180121-ee6dd58a68ac",
+    "runtime_seconds": 0.3003876489965478,
+    "seed": 0,
+    "seeds": null,
+    "selected_candidate": 4,
+    "smoke": false,
+    "smoke_test_rows": 120,
+    "smoke_train_rows": 400,
+    "sos_inverse_support_f1": 0.520447428087686,
+    "split_fingerprint": "b6658fbc892ef219628150d2ed4101b386b6e7d4bbc123d2dd1db51ff03f593a",
+    "status": "completed",
+    "strategy": "baseline",
+    "study": "configs/ablations/stage1_controls.yaml",
+    "study_id": "stage1_baseline_controls_v1",
+    "study_sha256": "91f40a43ae81fe9914a13f09359ca59491b767dcf008910ea373553eb0e109dd",
+    "study_type": "baseline_control",
+    "threshold": 0.5,
+    "tn": 2040,
+    "tp": 122,
+    "tuning_budget": 10,
+    "ugo_max_iterations": null,
+    "unique_candidate_count": 6,
+    "variant": null,
+    "variant_id": "baseline",
+    "weighted_f1": 0.8554649806714381
+  },
+  {
+    "algorithm": "random_forest",
+    "artifact_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T180121-ee6dd58a68ac",
+    "augmentation": {
+      "actual_count": 0,
+      "actual_counts": {
+        "0": 8338,
+        "1": 1526
+      },
+      "mode": "matched",
+      "real_counts": {
+        "0": 8338,
+        "1": 1526
+      },
+      "requested_count": 0,
+      "underspend": 0
+    },
+    "augmentation_count": null,
+    "average_precision": 0.7400911743282638,
+    "balanced_accuracy": 0.7208788475645909,
+    "budget_mode": "matched",
+    "candidate_configs": [
+      {},
+      {
+        "max_depth": 6,
+        "max_features": "sqrt",
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 3,
+        "n_estimators": 400
+      },
+      {
+        "max_depth": 12,
+        "max_features": 0.8,
+        "min_samples_leaf": 1,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 8,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 3,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 8,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      }
+    ],
+    "classifiers": null,
+    "config": {
+      "selected_epoch_sequence": [
+        null
+      ],
+      "selected_parameters": {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 3,
+        "n_estimators": 400
+      },
+      "settings": {
+        "augmentation": {
+          "mode": "matched",
+          "total": 1000
+        },
+        "device": "auto",
+        "method_parameters": {},
+        "mlp_epochs": 160,
+        "ugo_max_iterations": 20
+      },
+      "threshold": 0.5
+    },
+    "config_sha256": "fb249554417831aaf5200732ec79d106dc535a32e0074871bb01c253aabc0187",
+    "configuration_id": "a3e54951c9678170cce178b4f094864980c9c5edace0c2d6ef11595a68bf4793",
+    "cost": 102950,
+    "cuda_peak_torch_allocated_bytes": 0,
+    "cuda_peak_torch_reserved_bytes": 0,
+    "data_home": ".cache/benchmarks",
+    "dataset": "shoppers",
+    "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+    "device": "auto",
+    "download": false,
+    "effective_classifiers": [
+      "logistic_regression",
+      "random_forest",
+      "lightgbm",
+      "balanced_random_forest"
+    ],
+    "effective_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "effective_settings": {
+      "augmentation": {
+        "mode": "matched",
+        "total": 1000
+      },
+      "device": "auto",
+      "method_parameters": {},
+      "mlp_epochs": 160,
+      "ugo_max_iterations": 20
+    },
+    "effective_tuning_budget": 10,
+    "effective_variants": [
+      "baseline"
+    ],
+    "error": null,
+    "evaluation_policy_sha256": "af8a8e50eb193c0b5816d0ad8728f8f943b6449b0a95769d7e1822545cceafec",
+    "experiment_type": "development",
+    "fn": 205,
+    "fold": "b6658fbc892ef219628150d2ed4101b386b6e7d4bbc123d2dd1db51ff03f593a",
+    "fp": 45,
+    "local_data": null,
+    "macro_average_precision": 0.861827493164784,
+    "macro_f1": 0.7641646570613654,
+    "mcc": 0.5584402960053284,
+    "memory_scope": "cell process RSS sampled at 10ms; Torch CUDA allocator only",
+    "method": "baseline",
+    "methods": [
+      "baseline"
+    ],
+    "metrics": {
+      "average_precision": 0.7400911743282638,
+      "balanced_accuracy": 0.7208788475645909,
+      "cost": 102950,
+      "fn": 205,
+      "fp": 45,
+      "macro_average_precision": 0.861827493164784,
+      "macro_f1": 0.7641646570613654,
+      "mcc": 0.5584402960053284,
+      "minority_f1": 0.5860927152317881,
+      "minority_recall": 0.46335078534031415,
+      "primary_metric": "average_precision",
+      "primary_metric_value": 0.7400911743282638,
+      "realized_fpr_test": 0.021593090211132437,
+      "realized_recall_test": 0.46335078534031415,
+      "recall_at_fpr_test": 0.6204188481675392,
+      "roc_attained_fpr_test": 0.04990403071017274,
+      "roc_fpr_limit": 0.05,
+      "roc_operating_point_definition": "maximum attainable TPR with FPR <= limit; >= threshold; ties intact; no interpolation",
+      "sos_inverse_support_f1": 0.641261800210619,
+      "threshold": 0.5,
+      "tn": 2039,
+      "tp": 177,
+      "weighted_f1": 0.8870675139121118
+    },
+    "minority_f1": 0.5860927152317881,
+    "minority_recall": 0.46335078534031415,
+    "mlp_epochs": null,
+    "output_dir": null,
+    "peak_rss_bytes": 1171173376,
+    "positive_class": 1,
+    "predictions_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T180121-ee6dd58a68ac/shoppers/fold-0/seed-0/random_forest/baseline/predictions.csv",
+    "prepare": false,
+    "primary_metric": "average_precision",
+    "primary_metric_value": 0.7400911743282638,
+    "protocol": "configs/benchmarks/shoppers_controlled.yaml",
+    "protocol_id": "shoppers_uci_controlled_v1",
+    "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+    "realized_fpr_test": 0.021593090211132437,
+    "realized_recall_test": 0.46335078534031415,
+    "recall_at_fpr_test": 0.6204188481675392,
+    "record_id": "014e8dec7e2a028beb79ab43962ad55f2cb1dc33c8f06283d46d15462b639330",
+    "record_scope": "benchmark_cell",
+    "roc_attained_fpr_test": 0.04990403071017274,
+    "roc_fpr_limit": 0.05,
+    "roc_operating_point_definition": "maximum attainable TPR with FPR <= limit; >= threshold; ties intact; no interpolation",
+    "rss_sample_interval_seconds": 0.01,
+    "run": true,
+    "run_id": "20261003T180121-ee6dd58a68ac",
+    "runtime_seconds": 20.447277651997865,
+    "seed": 0,
+    "seeds": null,
+    "selected_candidate": 2,
+    "smoke": false,
+    "smoke_test_rows": 120,
+    "smoke_train_rows": 400,
+    "sos_inverse_support_f1": 0.641261800210619,
+    "split_fingerprint": "b6658fbc892ef219628150d2ed4101b386b6e7d4bbc123d2dd1db51ff03f593a",
+    "status": "completed",
+    "strategy": "baseline",
+    "study": "configs/ablations/stage1_controls.yaml",
+    "study_id": "stage1_baseline_controls_v1",
+    "study_sha256": "91f40a43ae81fe9914a13f09359ca59491b767dcf008910ea373553eb0e109dd",
+    "study_type": "baseline_control",
+    "threshold": 0.5,
+    "tn": 2039,
+    "tp": 177,
+    "tuning_budget": 10,
+    "ugo_max_iterations": null,
+    "unique_candidate_count": 10,
+    "variant": null,
+    "variant_id": "baseline",
+    "weighted_f1": 0.8870675139121118
+  },
+  {
+    "algorithm": "lightgbm",
+    "artifact_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T180121-ee6dd58a68ac",
+    "augmentation": {
+      "actual_count": 0,
+      "actual_counts": {
+        "0": 8338,
+        "1": 1526
+      },
+      "mode": "matched",
+      "real_counts": {
+        "0": 8338,
+        "1": 1526
+      },
+      "requested_count": 0,
+      "underspend": 0
+    },
+    "augmentation_count": null,
+    "average_precision": 0.7493121830995556,
+    "balanced_accuracy": 0.7769455135613148,
+    "budget_mode": "matched",
+    "candidate_configs": [
+      {},
+      {
+        "learning_rate": 0.05,
+        "min_child_samples": 10,
+        "n_estimators": 200,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.01,
+        "min_child_samples": 20,
+        "n_estimators": 400,
+        "num_leaves": 63
+      },
+      {
+        "learning_rate": 0.05,
+        "min_child_samples": 10,
+        "n_estimators": 400,
+        "num_leaves": 63
+      },
+      {
+        "learning_rate": 0.05,
+        "min_child_samples": 50,
+        "n_estimators": 100,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.1,
+        "min_child_samples": 10,
+        "n_estimators": 200,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.01,
+        "min_child_samples": 50,
+        "n_estimators": 200,
+        "num_leaves": 63
+      },
+      {
+        "learning_rate": 0.1,
+        "min_child_samples": 20,
+        "n_estimators": 100,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.05,
+        "min_child_samples": 20,
+        "n_estimators": 100,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.01,
+        "min_child_samples": 10,
+        "n_estimators": 200,
+        "num_leaves": 15
+      }
+    ],
+    "classifiers": null,
+    "config": {
+      "selected_epoch_sequence": [
+        null
+      ],
+      "selected_parameters": {
+        "learning_rate": 0.05,
+        "min_child_samples": 50,
+        "n_estimators": 100,
+        "num_leaves": 15
+      },
+      "settings": {
+        "augmentation": {
+          "mode": "matched",
+          "total": 1000
+        },
+        "device": "auto",
+        "method_parameters": {},
+        "mlp_epochs": 160,
+        "ugo_max_iterations": 20
+      },
+      "threshold": 0.5
+    },
+    "config_sha256": "a3620c089da8b30272efa973da5d7a02f4dc1daaef161ed2be6b14203c8d4b5c",
+    "configuration_id": "3ae1a64358b403d97bd2a125eca58fe6c1c2cfe1ab56faea6058d28c08a00256",
+    "cost": 77450,
+    "cuda_peak_torch_allocated_bytes": 0,
+    "cuda_peak_torch_reserved_bytes": 0,
+    "data_home": ".cache/benchmarks",
+    "dataset": "shoppers",
+    "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+    "device": "auto",
+    "download": false,
+    "effective_classifiers": [
+      "logistic_regression",
+      "random_forest",
+      "lightgbm",
+      "balanced_random_forest"
+    ],
+    "effective_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "effective_settings": {
+      "augmentation": {
+        "mode": "matched",
+        "total": 1000
+      },
+      "device": "auto",
+      "method_parameters": {},
+      "mlp_epochs": 160,
+      "ugo_max_iterations": 20
+    },
+    "effective_tuning_budget": 10,
+    "effective_variants": [
+      "baseline"
+    ],
+    "error": null,
+    "evaluation_policy_sha256": "af8a8e50eb193c0b5816d0ad8728f8f943b6449b0a95769d7e1822545cceafec",
+    "experiment_type": "development",
+    "fn": 153,
+    "fold": "b6658fbc892ef219628150d2ed4101b386b6e7d4bbc123d2dd1db51ff03f593a",
+    "fp": 95,
+    "local_data": null,
+    "macro_average_precision": 0.8675012356661953,
+    "macro_f1": 0.7950204386979832,
+    "mcc": 0.593229350797091,
+    "memory_scope": "cell process RSS sampled at 10ms; Torch CUDA allocator only",
+    "method": "baseline",
+    "methods": [
+      "baseline"
+    ],
+    "metrics": {
+      "average_precision": 0.7493121830995556,
+      "balanced_accuracy": 0.7769455135613148,
+      "cost": 77450,
+      "fn": 153,
+      "fp": 95,
+      "macro_average_precision": 0.8675012356661953,
+      "macro_f1": 0.7950204386979832,
+      "mcc": 0.593229350797091,
+      "minority_f1": 0.6487252124645893,
+      "minority_recall": 0.599476439790576,
+      "primary_metric": "average_precision",
+      "primary_metric_value": 0.7493121830995556,
+      "realized_fpr_test": 0.04558541266794626,
+      "realized_recall_test": 0.599476439790576,
+      "recall_at_fpr_test": 0.6230366492146597,
+      "roc_attained_fpr_test": 0.049424184261036466,
+      "roc_fpr_limit": 0.05,
+      "roc_operating_point_definition": "maximum attainable TPR with FPR <= limit; >= threshold; ties intact; no interpolation",
+      "sos_inverse_support_f1": 0.6940494431386821,
+      "threshold": 0.5,
+      "tn": 1989,
+      "tp": 229,
+      "weighted_f1": 0.8959914342572842
+    },
+    "minority_f1": 0.6487252124645893,
+    "minority_recall": 0.599476439790576,
+    "mlp_epochs": null,
+    "output_dir": null,
+    "peak_rss_bytes": 1176223744,
+    "positive_class": 1,
+    "predictions_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T180121-ee6dd58a68ac/shoppers/fold-0/seed-0/lightgbm/baseline/predictions.csv",
+    "prepare": false,
+    "primary_metric": "average_precision",
+    "primary_metric_value": 0.7493121830995556,
+    "protocol": "configs/benchmarks/shoppers_controlled.yaml",
+    "protocol_id": "shoppers_uci_controlled_v1",
+    "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+    "realized_fpr_test": 0.04558541266794626,
+    "realized_recall_test": 0.599476439790576,
+    "recall_at_fpr_test": 0.6230366492146597,
+    "record_id": "5a005e158964b4977ded76a2473d4be4bc84952df9831ae4582d1ac5f6a2cc3a",
+    "record_scope": "benchmark_cell",
+    "roc_attained_fpr_test": 0.049424184261036466,
+    "roc_fpr_limit": 0.05,
+    "roc_operating_point_definition": "maximum attainable TPR with FPR <= limit; >= threshold; ties intact; no interpolation",
+    "rss_sample_interval_seconds": 0.01,
+    "run": true,
+    "run_id": "20261003T180121-ee6dd58a68ac",
+    "runtime_seconds": 2.536080858000787,
+    "seed": 0,
+    "seeds": null,
+    "selected_candidate": 4,
+    "smoke": false,
+    "smoke_test_rows": 120,
+    "smoke_train_rows": 400,
+    "sos_inverse_support_f1": 0.6940494431386821,
+    "split_fingerprint": "b6658fbc892ef219628150d2ed4101b386b6e7d4bbc123d2dd1db51ff03f593a",
+    "status": "completed",
+    "strategy": "baseline",
+    "study": "configs/ablations/stage1_controls.yaml",
+    "study_id": "stage1_baseline_controls_v1",
+    "study_sha256": "91f40a43ae81fe9914a13f09359ca59491b767dcf008910ea373553eb0e109dd",
+    "study_type": "baseline_control",
+    "threshold": 0.5,
+    "tn": 1989,
+    "tp": 229,
+    "tuning_budget": 10,
+    "ugo_max_iterations": null,
+    "unique_candidate_count": 10,
+    "variant": null,
+    "variant_id": "baseline",
+    "weighted_f1": 0.8959914342572842
+  },
+  {
+    "algorithm": "balanced_random_forest",
+    "artifact_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T180121-ee6dd58a68ac",
+    "augmentation": {
+      "actual_count": 0,
+      "actual_counts": {
+        "0": 8338,
+        "1": 1526
+      },
+      "mode": "matched",
+      "real_counts": {
+        "0": 8338,
+        "1": 1526
+      },
+      "requested_count": 0,
+      "underspend": 0
+    },
+    "augmentation_count": null,
+    "average_precision": 0.7405814750123382,
+    "balanced_accuracy": 0.8418328124528947,
+    "budget_mode": "matched",
+    "candidate_configs": [
+      {},
+      {
+        "max_depth": 6,
+        "max_features": "sqrt",
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 3,
+        "n_estimators": 400
+      },
+      {
+        "max_depth": 12,
+        "max_features": 0.8,
+        "min_samples_leaf": 1,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 8,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 3,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 8,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      }
+    ],
+    "classifiers": null,
+    "config": {
+      "selected_epoch_sequence": [
+        null
+      ],
+      "selected_parameters": {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 8,
+        "n_estimators": 100
+      },
+      "settings": {
+        "augmentation": {
+          "mode": "matched",
+          "total": 1000
+        },
+        "device": "auto",
+        "method_parameters": {},
+        "mlp_epochs": 160,
+        "ugo_max_iterations": 20
+      },
+      "threshold": 0.5
+    },
+    "config_sha256": "120c33119d0b5ca5827d27d2df9173c4a8993529a85cb0b4fc8448f73d2ec599",
+    "configuration_id": "90a75affdc38ac5dbfe0aeacb339dafe62fc89deb42d0a80a707041eda08355a",
+    "cost": 34210,
+    "cuda_peak_torch_allocated_bytes": 0,
+    "cuda_peak_torch_reserved_bytes": 0,
+    "data_home": ".cache/benchmarks",
+    "dataset": "shoppers",
+    "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+    "device": "auto",
+    "download": false,
+    "effective_classifiers": [
+      "logistic_regression",
+      "random_forest",
+      "lightgbm",
+      "balanced_random_forest"
+    ],
+    "effective_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "effective_settings": {
+      "augmentation": {
+        "mode": "matched",
+        "total": 1000
+      },
+      "device": "auto",
+      "method_parameters": {},
+      "mlp_epochs": 160,
+      "ugo_max_iterations": 20
+    },
+    "effective_tuning_budget": 10,
+    "effective_variants": [
+      "baseline"
+    ],
+    "error": null,
+    "evaluation_policy_sha256": "af8a8e50eb193c0b5816d0ad8728f8f943b6449b0a95769d7e1822545cceafec",
+    "experiment_type": "development",
+    "fn": 62,
+    "fold": "b6658fbc892ef219628150d2ed4101b386b6e7d4bbc123d2dd1db51ff03f593a",
+    "fp": 321,
+    "local_data": null,
+    "macro_average_precision": 0.8631715031955993,
+    "macro_f1": 0.7638159627118111,
+    "mcc": 0.563980169201468,
+    "memory_scope": "cell process RSS sampled at 10ms; Torch CUDA allocator only",
+    "method": "baseline",
+    "methods": [
+      "baseline"
+    ],
+    "metrics": {
+      "average_precision": 0.7405814750123382,
+      "balanced_accuracy": 0.8418328124528947,
+      "cost": 34210,
+      "fn": 62,
+      "fp": 321,
+      "macro_average_precision": 0.8631715031955993,
+      "macro_f1": 0.7638159627118111,
+      "mcc": 0.563980169201468,
+      "minority_f1": 0.6256109481915934,
+      "minority_recall": 0.837696335078534,
+      "primary_metric": "average_precision",
+      "primary_metric_value": 0.7405814750123382,
+      "realized_fpr_test": 0.15403071017274472,
+      "realized_recall_test": 0.837696335078534,
+      "recall_at_fpr_test": 0.6230366492146597,
+      "roc_attained_fpr_test": 0.04990403071017274,
+      "roc_fpr_limit": 0.05,
+      "roc_operating_point_definition": "maximum attainable TPR with FPR <= limit; >= threshold; ties intact; no interpolation",
+      "sos_inverse_support_f1": 0.66842872235763,
+      "threshold": 0.5,
+      "tn": 1763,
+      "tp": 320,
+      "weighted_f1": 0.8592032030659921
+    },
+    "minority_f1": 0.6256109481915934,
+    "minority_recall": 0.837696335078534,
+    "mlp_epochs": null,
+    "output_dir": null,
+    "peak_rss_bytes": 1191374848,
+    "positive_class": 1,
+    "predictions_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T180121-ee6dd58a68ac/shoppers/fold-0/seed-0/balanced_random_forest/baseline/predictions.csv",
+    "prepare": false,
+    "primary_metric": "average_precision",
+    "primary_metric_value": 0.7405814750123382,
+    "protocol": "configs/benchmarks/shoppers_controlled.yaml",
+    "protocol_id": "shoppers_uci_controlled_v1",
+    "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+    "realized_fpr_test": 0.15403071017274472,
+    "realized_recall_test": 0.837696335078534,
+    "recall_at_fpr_test": 0.6230366492146597,
+    "record_id": "6e9753ecf73b0b225717ca1f56e7056c48d3c32f529190db0ef1bdc075fd8ffb",
+    "record_scope": "benchmark_cell",
+    "roc_attained_fpr_test": 0.04990403071017274,
+    "roc_fpr_limit": 0.05,
+    "roc_operating_point_definition": "maximum attainable TPR with FPR <= limit; >= threshold; ties intact; no interpolation",
+    "rss_sample_interval_seconds": 0.01,
+    "run": true,
+    "run_id": "20261003T180121-ee6dd58a68ac",
+    "runtime_seconds": 10.882644899997103,
+    "seed": 0,
+    "seeds": null,
+    "selected_candidate": 4,
+    "smoke": false,
+    "smoke_test_rows": 120,
+    "smoke_train_rows": 400,
+    "sos_inverse_support_f1": 0.66842872235763,
+    "split_fingerprint": "b6658fbc892ef219628150d2ed4101b386b6e7d4bbc123d2dd1db51ff03f593a",
+    "status": "completed",
+    "strategy": "baseline",
+    "study": "configs/ablations/stage1_controls.yaml",
+    "study_id": "stage1_baseline_controls_v1",
+    "study_sha256": "91f40a43ae81fe9914a13f09359ca59491b767dcf008910ea373553eb0e109dd",
+    "study_type": "baseline_control",
+    "threshold": 0.5,
+    "tn": 1763,
+    "tp": 320,
+    "tuning_budget": 10,
+    "ugo_max_iterations": null,
+    "unique_candidate_count": 10,
+    "variant": null,
+    "variant_id": "baseline",
+    "weighted_f1": 0.8592032030659921
+  },
+  {
+    "algorithm": "logistic_regression",
+    "artifact_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T180121-ee6dd58a68ac",
+    "augmentation": {
+      "actual_count": 0,
+      "actual_counts": {
+        "0": 8338,
+        "1": 1526
+      },
+      "mode": "matched",
+      "real_counts": {
+        "0": 8338,
+        "1": 1526
+      },
+      "requested_count": 0,
+      "underspend": 0
+    },
+    "augmentation_count": null,
+    "average_precision": 0.610888987534699,
+    "balanced_accuracy": 0.6491292419933474,
+    "budget_mode": "matched",
+    "candidate_configs": [
+      {},
+      {
+        "C": 0.1
+      },
+      {
+        "C": 10.0
+      },
+      {
+        "C": 0.1
+      },
+      {
+        "C": 0.01
+      },
+      {
+        "C": 0.01
+      },
+      {
+        "C": 100.0
+      },
+      {
+        "C": 1.0
+      },
+      {
+        "C": 0.1
+      },
+      {
+        "C": 0.01
+      }
+    ],
+    "classifiers": null,
+    "config": {
+      "selected_epoch_sequence": [
+        null
+      ],
+      "selected_parameters": {
+        "C": 0.01
+      },
+      "settings": {
+        "augmentation": {
+          "mode": "matched",
+          "total": 1000
+        },
+        "device": "auto",
+        "method_parameters": {},
+        "mlp_epochs": 160,
+        "ugo_max_iterations": 20
+      },
+      "threshold": 0.5
+    },
+    "config_sha256": "6ef359ddbbc7c8cf501d5b1d424c474f7c9efa04e7240a1f1bab38475ea343b0",
+    "configuration_id": "15f3e2719ba65586246b8b77da39cd28a8175acce410b18e884e8beb6f10b0be",
+    "cost": 130440,
+    "cuda_peak_torch_allocated_bytes": 0,
+    "cuda_peak_torch_reserved_bytes": 0,
+    "data_home": ".cache/benchmarks",
+    "dataset": "shoppers",
+    "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+    "device": "auto",
+    "download": false,
+    "effective_classifiers": [
+      "logistic_regression",
+      "random_forest",
+      "lightgbm",
+      "balanced_random_forest"
+    ],
+    "effective_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "effective_settings": {
+      "augmentation": {
+        "mode": "matched",
+        "total": 1000
+      },
+      "device": "auto",
+      "method_parameters": {},
+      "mlp_epochs": 160,
+      "ugo_max_iterations": 20
+    },
+    "effective_tuning_budget": 10,
+    "effective_variants": [
+      "baseline"
+    ],
+    "error": null,
+    "evaluation_policy_sha256": "af8a8e50eb193c0b5816d0ad8728f8f943b6449b0a95769d7e1822545cceafec",
+    "experiment_type": "development",
+    "fn": 260,
+    "fold": "686cedfc5028c2d9569b062ebadf3f6c71363502f258b27da445514559265f78",
+    "fp": 44,
+    "local_data": null,
+    "macro_average_precision": 0.792374132331553,
+    "macro_f1": 0.6879562043795621,
+    "mcc": 0.43068067277392136,
+    "memory_scope": "cell process RSS sampled at 10ms; Torch CUDA allocator only",
+    "method": "baseline",
+    "methods": [
+      "baseline"
+    ],
+    "metrics": {
+      "average_precision": 0.610888987534699,
+      "balanced_accuracy": 0.6491292419933474,
+      "cost": 130440,
+      "fn": 260,
+      "fp": 44,
+      "macro_average_precision": 0.792374132331553,
+      "macro_f1": 0.6879562043795621,
+      "mcc": 0.43068067277392136,
+      "minority_f1": 0.44525547445255476,
+      "minority_recall": 0.3193717277486911,
+      "primary_metric": "average_precision",
+      "primary_metric_value": 0.610888987534699,
+      "realized_fpr_test": 0.02111324376199616,
+      "realized_recall_test": 0.3193717277486911,
+      "recall_at_fpr_test": 0.5130890052356021,
+      "roc_attained_fpr_test": 0.049424184261036466,
+      "roc_fpr_limit": 0.05,
+      "roc_operating_point_definition": "maximum attainable TPR with FPR <= limit; >= threshold; ties intact; no interpolation",
+      "sos_inverse_support_f1": 0.520447428087686,
+      "threshold": 0.5,
+      "tn": 2040,
+      "tp": 122,
+      "weighted_f1": 0.8554649806714381
+    },
+    "minority_f1": 0.44525547445255476,
+    "minority_recall": 0.3193717277486911,
+    "mlp_epochs": null,
+    "output_dir": null,
+    "peak_rss_bytes": 1196896256,
+    "positive_class": 1,
+    "predictions_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T180121-ee6dd58a68ac/shoppers/fold-0/seed-1/logistic_regression/baseline/predictions.csv",
+    "prepare": false,
+    "primary_metric": "average_precision",
+    "primary_metric_value": 0.610888987534699,
+    "protocol": "configs/benchmarks/shoppers_controlled.yaml",
+    "protocol_id": "shoppers_uci_controlled_v1",
+    "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+    "realized_fpr_test": 0.02111324376199616,
+    "realized_recall_test": 0.3193717277486911,
+    "recall_at_fpr_test": 0.5130890052356021,
+    "record_id": "f2c8aaacbd6f0d77b3904b0025749d0f885ddca47b31713dffa46d2e68e7ab33",
+    "record_scope": "benchmark_cell",
+    "roc_attained_fpr_test": 0.049424184261036466,
+    "roc_fpr_limit": 0.05,
+    "roc_operating_point_definition": "maximum attainable TPR with FPR <= limit; >= threshold; ties intact; no interpolation",
+    "rss_sample_interval_seconds": 0.01,
+    "run": true,
+    "run_id": "20261003T180121-ee6dd58a68ac",
+    "runtime_seconds": 0.2870888070028741,
+    "seed": 1,
+    "seeds": null,
+    "selected_candidate": 4,
+    "smoke": false,
+    "smoke_test_rows": 120,
+    "smoke_train_rows": 400,
+    "sos_inverse_support_f1": 0.520447428087686,
+    "split_fingerprint": "686cedfc5028c2d9569b062ebadf3f6c71363502f258b27da445514559265f78",
+    "status": "completed",
+    "strategy": "baseline",
+    "study": "configs/ablations/stage1_controls.yaml",
+    "study_id": "stage1_baseline_controls_v1",
+    "study_sha256": "91f40a43ae81fe9914a13f09359ca59491b767dcf008910ea373553eb0e109dd",
+    "study_type": "baseline_control",
+    "threshold": 0.5,
+    "tn": 2040,
+    "tp": 122,
+    "tuning_budget": 10,
+    "ugo_max_iterations": null,
+    "unique_candidate_count": 6,
+    "variant": null,
+    "variant_id": "baseline",
+    "weighted_f1": 0.8554649806714381
+  },
+  {
+    "algorithm": "random_forest",
+    "artifact_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T180121-ee6dd58a68ac",
+    "augmentation": {
+      "actual_count": 0,
+      "actual_counts": {
+        "0": 8338,
+        "1": 1526
+      },
+      "mode": "matched",
+      "real_counts": {
+        "0": 8338,
+        "1": 1526
+      },
+      "requested_count": 0,
+      "underspend": 0
+    },
+    "augmentation_count": null,
+    "average_precision": 0.7409796496168436,
+    "balanced_accuracy": 0.7756366130377546,
+    "budget_mode": "matched",
+    "candidate_configs": [
+      {},
+      {
+        "max_depth": 6,
+        "max_features": "sqrt",
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 3,
+        "n_estimators": 400
+      },
+      {
+        "max_depth": 12,
+        "max_features": 0.8,
+        "min_samples_leaf": 1,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 8,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 3,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 8,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      }
+    ],
+    "classifiers": null,
+    "config": {
+      "selected_epoch_sequence": [
+        null
+      ],
+      "selected_parameters": {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 8,
+        "n_estimators": 100
+      },
+      "settings": {
+        "augmentation": {
+          "mode": "matched",
+          "total": 1000
+        },
+        "device": "auto",
+        "method_parameters": {},
+        "mlp_epochs": 160,
+        "ugo_max_iterations": 20
+      },
+      "threshold": 0.5
+    },
+    "config_sha256": "120c33119d0b5ca5827d27d2df9173c4a8993529a85cb0b4fc8448f73d2ec599",
+    "configuration_id": "0f871bfbed1d01de9b0e96a475daae0020c10a348ce029dd2a448d9c9809687e",
+    "cost": 77950,
+    "cuda_peak_torch_allocated_bytes": 0,
+    "cuda_peak_torch_reserved_bytes": 0,
+    "data_home": ".cache/benchmarks",
+    "dataset": "shoppers",
+    "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+    "device": "auto",
+    "download": false,
+    "effective_classifiers": [
+      "logistic_regression",
+      "random_forest",
+      "lightgbm",
+      "balanced_random_forest"
+    ],
+    "effective_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "effective_settings": {
+      "augmentation": {
+        "mode": "matched",
+        "total": 1000
+      },
+      "device": "auto",
+      "method_parameters": {},
+      "mlp_epochs": 160,
+      "ugo_max_iterations": 20
+    },
+    "effective_tuning_budget": 10,
+    "effective_variants": [
+      "baseline"
+    ],
+    "error": null,
+    "evaluation_policy_sha256": "af8a8e50eb193c0b5816d0ad8728f8f943b6449b0a95769d7e1822545cceafec",
+    "experiment_type": "development",
+    "fn": 154,
+    "fold": "686cedfc5028c2d9569b062ebadf3f6c71363502f258b27da445514559265f78",
+    "fp": 95,
+    "local_data": null,
+    "macro_average_precision": 0.8626306259435901,
+    "macro_f1": 0.7939507421892695,
+    "mcc": 0.5912009081439547,
+    "memory_scope": "cell process RSS sampled at 10ms; Torch CUDA allocator only",
+    "method": "baseline",
+    "methods": [
+      "baseline"
+    ],
+    "metrics": {
+      "average_precision": 0.7409796496168436,
+      "balanced_accuracy": 0.7756366130377546,
+      "cost": 77950,
+      "fn": 154,
+      "fp": 95,
+      "macro_average_precision": 0.8626306259435901,
+      "macro_f1": 0.7939507421892695,
+      "mcc": 0.5912009081439547,
+      "minority_f1": 0.6468085106382979,
+      "minority_recall": 0.5968586387434555,
+      "primary_metric": "average_precision",
+      "primary_metric_value": 0.7409796496168436,
+      "realized_fpr_test": 0.04558541266794626,
+      "realized_recall_test": 0.5968586387434555,
+      "recall_at_fpr_test": 0.6073298429319371,
+      "roc_attained_fpr_test": 0.049424184261036466,
+      "roc_fpr_limit": 0.05,
+      "roc_operating_point_definition": "maximum attainable TPR with FPR <= limit; >= threshold; ties intact; no interpolation",
+      "sos_inverse_support_f1": 0.692395154963092,
+      "threshold": 0.5,
+      "tn": 1989,
+      "tp": 228,
+      "weighted_f1": 0.8955063294154472
+    },
+    "minority_f1": 0.6468085106382979,
+    "minority_recall": 0.5968586387434555,
+    "mlp_epochs": null,
+    "output_dir": null,
+    "peak_rss_bytes": 1196900352,
+    "positive_class": 1,
+    "predictions_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T180121-ee6dd58a68ac/shoppers/fold-0/seed-1/random_forest/baseline/predictions.csv",
+    "prepare": false,
+    "primary_metric": "average_precision",
+    "primary_metric_value": 0.7409796496168436,
+    "protocol": "configs/benchmarks/shoppers_controlled.yaml",
+    "protocol_id": "shoppers_uci_controlled_v1",
+    "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+    "realized_fpr_test": 0.04558541266794626,
+    "realized_recall_test": 0.5968586387434555,
+    "recall_at_fpr_test": 0.6073298429319371,
+    "record_id": "0ffef65fd5a964ea42df9c7e262c526ea6c26b8f09f02f6e2c31057a0f2faa46",
+    "record_scope": "benchmark_cell",
+    "roc_attained_fpr_test": 0.049424184261036466,
+    "roc_fpr_limit": 0.05,
+    "roc_operating_point_definition": "maximum attainable TPR with FPR <= limit; >= threshold; ties intact; no interpolation",
+    "rss_sample_interval_seconds": 0.01,
+    "run": true,
+    "run_id": "20261003T180121-ee6dd58a68ac",
+    "runtime_seconds": 20.729582517997187,
+    "seed": 1,
+    "seeds": null,
+    "selected_candidate": 4,
+    "smoke": false,
+    "smoke_test_rows": 120,
+    "smoke_train_rows": 400,
+    "sos_inverse_support_f1": 0.692395154963092,
+    "split_fingerprint": "686cedfc5028c2d9569b062ebadf3f6c71363502f258b27da445514559265f78",
+    "status": "completed",
+    "strategy": "baseline",
+    "study": "configs/ablations/stage1_controls.yaml",
+    "study_id": "stage1_baseline_controls_v1",
+    "study_sha256": "91f40a43ae81fe9914a13f09359ca59491b767dcf008910ea373553eb0e109dd",
+    "study_type": "baseline_control",
+    "threshold": 0.5,
+    "tn": 1989,
+    "tp": 228,
+    "tuning_budget": 10,
+    "ugo_max_iterations": null,
+    "unique_candidate_count": 10,
+    "variant": null,
+    "variant_id": "baseline",
+    "weighted_f1": 0.8955063294154472
+  },
+  {
+    "algorithm": "lightgbm",
+    "artifact_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T180121-ee6dd58a68ac",
+    "augmentation": {
+      "actual_count": 0,
+      "actual_counts": {
+        "0": 8338,
+        "1": 1526
+      },
+      "mode": "matched",
+      "real_counts": {
+        "0": 8338,
+        "1": 1526
+      },
+      "requested_count": 0,
+      "underspend": 0
+    },
+    "augmentation_count": null,
+    "average_precision": 0.7424033612430684,
+    "balanced_accuracy": 0.7500904422626644,
+    "budget_mode": "matched",
+    "candidate_configs": [
+      {},
+      {
+        "learning_rate": 0.05,
+        "min_child_samples": 10,
+        "n_estimators": 200,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.01,
+        "min_child_samples": 20,
+        "n_estimators": 400,
+        "num_leaves": 63
+      },
+      {
+        "learning_rate": 0.05,
+        "min_child_samples": 10,
+        "n_estimators": 400,
+        "num_leaves": 63
+      },
+      {
+        "learning_rate": 0.05,
+        "min_child_samples": 50,
+        "n_estimators": 100,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.1,
+        "min_child_samples": 10,
+        "n_estimators": 200,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.01,
+        "min_child_samples": 50,
+        "n_estimators": 200,
+        "num_leaves": 63
+      },
+      {
+        "learning_rate": 0.1,
+        "min_child_samples": 20,
+        "n_estimators": 100,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.05,
+        "min_child_samples": 20,
+        "n_estimators": 100,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.01,
+        "min_child_samples": 10,
+        "n_estimators": 200,
+        "num_leaves": 15
+      }
+    ],
+    "classifiers": null,
+    "config": {
+      "selected_epoch_sequence": [
+        null
+      ],
+      "selected_parameters": {
+        "learning_rate": 0.01,
+        "min_child_samples": 10,
+        "n_estimators": 200,
+        "num_leaves": 15
+      },
+      "settings": {
+        "augmentation": {
+          "mode": "matched",
+          "total": 1000
+        },
+        "device": "auto",
+        "method_parameters": {},
+        "mlp_epochs": 160,
+        "ugo_max_iterations": 20
+      },
+      "threshold": 0.5
+    },
+    "config_sha256": "1f44204b29d33b01cf9c89e02fafd5e0701ab808c15d15cc557ed33d1a59495a",
+    "configuration_id": "50c3a41de3ea13e46cf792311bf94864f8d89946dc97b2963679c016a5beb971",
+    "cost": 89260,
+    "cuda_peak_torch_allocated_bytes": 0,
+    "cuda_peak_torch_reserved_bytes": 0,
+    "data_home": ".cache/benchmarks",
+    "dataset": "shoppers",
+    "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+    "device": "auto",
+    "download": false,
+    "effective_classifiers": [
+      "logistic_regression",
+      "random_forest",
+      "lightgbm",
+      "balanced_random_forest"
+    ],
+    "effective_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "effective_settings": {
+      "augmentation": {
+        "mode": "matched",
+        "total": 1000
+      },
+      "device": "auto",
+      "method_parameters": {},
+      "mlp_epochs": 160,
+      "ugo_max_iterations": 20
+    },
+    "effective_tuning_budget": 10,
+    "effective_variants": [
+      "baseline"
+    ],
+    "error": null,
+    "evaluation_policy_sha256": "af8a8e50eb193c0b5816d0ad8728f8f943b6449b0a95769d7e1822545cceafec",
+    "experiment_type": "development",
+    "fn": 177,
+    "fold": "686cedfc5028c2d9569b062ebadf3f6c71363502f258b27da445514559265f78",
+    "fp": 76,
+    "local_data": null,
+    "macro_average_precision": 0.8639030868381825,
+    "macro_f1": 0.7795683709453294,
+    "mcc": 0.5695459243218918,
+    "memory_scope": "cell process RSS sampled at 10ms; Torch CUDA allocator only",
+    "method": "baseline",
+    "methods": [
+      "baseline"
+    ],
+    "metrics": {
+      "average_precision": 0.7424033612430684,
+      "balanced_accuracy": 0.7500904422626644,
+      "cost": 89260,
+      "fn": 177,
+      "fp": 76,
+      "macro_average_precision": 0.8639030868381825,
+      "macro_f1": 0.7795683709453294,
+      "mcc": 0.5695459243218918,
+      "minority_f1": 0.6184012066365008,
+      "minority_recall": 0.5366492146596858,
+      "primary_metric": "average_precision",
+      "primary_metric_value": 0.7424033612430684,
+      "realized_fpr_test": 0.036468330134357005,
+      "realized_recall_test": 0.5366492146596858,
+      "recall_at_fpr_test": 0.612565445026178,
+      "roc_attained_fpr_test": 0.04990403071017274,
+      "roc_fpr_limit": 0.05,
+      "roc_operating_point_definition": "maximum attainable TPR with FPR <= limit; >= threshold; ties intact; no interpolation",
+      "sos_inverse_support_f1": 0.668332963948725,
+      "threshold": 0.5,
+      "tn": 2008,
+      "tp": 205,
+      "weighted_f1": 0.8908037779419337
+    },
+    "minority_f1": 0.6184012066365008,
+    "minority_recall": 0.5366492146596858,
+    "mlp_epochs": null,
+    "output_dir": null,
+    "peak_rss_bytes": 1196904448,
+    "positive_class": 1,
+    "predictions_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T180121-ee6dd58a68ac/shoppers/fold-0/seed-1/lightgbm/baseline/predictions.csv",
+    "prepare": false,
+    "primary_metric": "average_precision",
+    "primary_metric_value": 0.7424033612430684,
+    "protocol": "configs/benchmarks/shoppers_controlled.yaml",
+    "protocol_id": "shoppers_uci_controlled_v1",
+    "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+    "realized_fpr_test": 0.036468330134357005,
+    "realized_recall_test": 0.5366492146596858,
+    "recall_at_fpr_test": 0.612565445026178,
+    "record_id": "51e50779e7f585036f089f341ef8385b0cd4e70e0bad4d4989f16c3996c81cb5",
+    "record_scope": "benchmark_cell",
+    "roc_attained_fpr_test": 0.04990403071017274,
+    "roc_fpr_limit": 0.05,
+    "roc_operating_point_definition": "maximum attainable TPR with FPR <= limit; >= threshold; ties intact; no interpolation",
+    "rss_sample_interval_seconds": 0.01,
+    "run": true,
+    "run_id": "20261003T180121-ee6dd58a68ac",
+    "runtime_seconds": 2.674101170996437,
+    "seed": 1,
+    "seeds": null,
+    "selected_candidate": 9,
+    "smoke": false,
+    "smoke_test_rows": 120,
+    "smoke_train_rows": 400,
+    "sos_inverse_support_f1": 0.668332963948725,
+    "split_fingerprint": "686cedfc5028c2d9569b062ebadf3f6c71363502f258b27da445514559265f78",
+    "status": "completed",
+    "strategy": "baseline",
+    "study": "configs/ablations/stage1_controls.yaml",
+    "study_id": "stage1_baseline_controls_v1",
+    "study_sha256": "91f40a43ae81fe9914a13f09359ca59491b767dcf008910ea373553eb0e109dd",
+    "study_type": "baseline_control",
+    "threshold": 0.5,
+    "tn": 2008,
+    "tp": 205,
+    "tuning_budget": 10,
+    "ugo_max_iterations": null,
+    "unique_candidate_count": 10,
+    "variant": null,
+    "variant_id": "baseline",
+    "weighted_f1": 0.8908037779419337
+  },
+  {
+    "algorithm": "balanced_random_forest",
+    "artifact_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T180121-ee6dd58a68ac",
+    "augmentation": {
+      "actual_count": 0,
+      "actual_counts": {
+        "0": 8338,
+        "1": 1526
+      },
+      "mode": "matched",
+      "real_counts": {
+        "0": 8338,
+        "1": 1526
+      },
+      "requested_count": 0,
+      "underspend": 0
+    },
+    "augmentation_count": null,
+    "average_precision": 0.7439566599862041,
+    "balanced_accuracy": 0.8380367497060626,
+    "budget_mode": "matched",
+    "candidate_configs": [
+      {},
+      {
+        "max_depth": 6,
+        "max_features": "sqrt",
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 3,
+        "n_estimators": 400
+      },
+      {
+        "max_depth": 12,
+        "max_features": 0.8,
+        "min_samples_leaf": 1,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 8,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 3,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 8,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      }
+    ],
+    "classifiers": null,
+    "config": {
+      "selected_epoch_sequence": [
+        null
+      ],
+      "selected_parameters": {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 8,
+        "n_estimators": 100
+      },
+      "settings": {
+        "augmentation": {
+          "mode": "matched",
+          "total": 1000
+        },
+        "device": "auto",
+        "method_parameters": {},
+        "mlp_epochs": 160,
+        "ugo_max_iterations": 20
+      },
+      "threshold": 0.5
+    },
+    "config_sha256": "120c33119d0b5ca5827d27d2df9173c4a8993529a85cb0b4fc8448f73d2ec599",
+    "configuration_id": "9d7e23458f4753c18997909ae3479bf9907583fe853913d39b5f02398f27f2d4",
+    "cost": 36150,
+    "cuda_peak_torch_allocated_bytes": 0,
+    "cuda_peak_torch_reserved_bytes": 0,
+    "data_home": ".cache/benchmarks",
+    "dataset": "shoppers",
+    "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+    "device": "auto",
+    "download": false,
+    "effective_classifiers": [
+      "logistic_regression",
+      "random_forest",
+      "lightgbm",
+      "balanced_random_forest"
+    ],
+    "effective_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "effective_settings": {
+      "augmentation": {
+        "mode": "matched",
+        "total": 1000
+      },
+      "device": "auto",
+      "method_parameters": {},
+      "mlp_epochs": 160,
+      "ugo_max_iterations": 20
+    },
+    "effective_tuning_budget": 10,
+    "effective_variants": [
+      "baseline"
+    ],
+    "error": null,
+    "evaluation_policy_sha256": "af8a8e50eb193c0b5816d0ad8728f8f943b6449b0a95769d7e1822545cceafec",
+    "experiment_type": "development",
+    "fn": 66,
+    "fold": "686cedfc5028c2d9569b062ebadf3f6c71363502f258b27da445514559265f78",
+    "fp": 315,
+    "local_data": null,
+    "macro_average_precision": 0.8647702644252109,
+    "macro_f1": 0.7633353795403314,
+    "mcc": 0.5605853419412115,
+    "memory_scope": "cell process RSS sampled at 10ms; Torch CUDA allocator only",
+    "method": "baseline",
+    "methods": [
+      "baseline"
+    ],
+    "metrics": {
+      "average_precision": 0.7439566599862041,
+      "balanced_accuracy": 0.8380367497060626,
+      "cost": 36150,
+      "fn": 66,
+      "fp": 315,
+      "macro_average_precision": 0.8647702644252109,
+      "macro_f1": 0.7633353795403314,
+      "mcc": 0.5605853419412115,
+      "minority_f1": 0.6238894373149062,
+      "minority_recall": 0.8272251308900523,
+      "primary_metric": "average_precision",
+      "primary_metric_value": 0.7439566599862041,
+      "realized_fpr_test": 0.15115163147792707,
+      "realized_recall_test": 0.8272251308900523,
+      "recall_at_fpr_test": 0.6099476439790575,
+      "roc_attained_fpr_test": 0.04990403071017274,
+      "roc_fpr_limit": 0.05,
+      "roc_operating_point_definition": "maximum attainable TPR with FPR <= limit; >= threshold; ties intact; no interpolation",
+      "sos_inverse_support_f1": 0.6670916675907477,
+      "threshold": 0.5,
+      "tn": 1769,
+      "tp": 316,
+      "weighted_f1": 0.8595790914899153
+    },
+    "minority_f1": 0.6238894373149062,
+    "minority_recall": 0.8272251308900523,
+    "mlp_epochs": null,
+    "output_dir": null,
+    "peak_rss_bytes": 1197129728,
+    "positive_class": 1,
+    "predictions_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T180121-ee6dd58a68ac/shoppers/fold-0/seed-1/balanced_random_forest/baseline/predictions.csv",
+    "prepare": false,
+    "primary_metric": "average_precision",
+    "primary_metric_value": 0.7439566599862041,
+    "protocol": "configs/benchmarks/shoppers_controlled.yaml",
+    "protocol_id": "shoppers_uci_controlled_v1",
+    "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+    "realized_fpr_test": 0.15115163147792707,
+    "realized_recall_test": 0.8272251308900523,
+    "recall_at_fpr_test": 0.6099476439790575,
+    "record_id": "f35cdb3bd63d6eedd97e2af3cacb9b88ca1ec9cf9ac24a9974fedabf70a8f16f",
+    "record_scope": "benchmark_cell",
+    "roc_attained_fpr_test": 0.04990403071017274,
+    "roc_fpr_limit": 0.05,
+    "roc_operating_point_definition": "maximum attainable TPR with FPR <= limit; >= threshold; ties intact; no interpolation",
+    "rss_sample_interval_seconds": 0.01,
+    "run": true,
+    "run_id": "20261003T180121-ee6dd58a68ac",
+    "runtime_seconds": 10.880280736004352,
+    "seed": 1,
+    "seeds": null,
+    "selected_candidate": 4,
+    "smoke": false,
+    "smoke_test_rows": 120,
+    "smoke_train_rows": 400,
+    "sos_inverse_support_f1": 0.6670916675907477,
+    "split_fingerprint": "686cedfc5028c2d9569b062ebadf3f6c71363502f258b27da445514559265f78",
+    "status": "completed",
+    "strategy": "baseline",
+    "study": "configs/ablations/stage1_controls.yaml",
+    "study_id": "stage1_baseline_controls_v1",
+    "study_sha256": "91f40a43ae81fe9914a13f09359ca59491b767dcf008910ea373553eb0e109dd",
+    "study_type": "baseline_control",
+    "threshold": 0.5,
+    "tn": 1769,
+    "tp": 316,
+    "tuning_budget": 10,
+    "ugo_max_iterations": null,
+    "unique_candidate_count": 10,
+    "variant": null,
+    "variant_id": "baseline",
+    "weighted_f1": 0.8595790914899153
+  },
+  {
+    "algorithm": "logistic_regression",
+    "artifact_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T180121-ee6dd58a68ac",
+    "augmentation": {
+      "actual_count": 0,
+      "actual_counts": {
+        "0": 8338,
+        "1": 1526
+      },
+      "mode": "matched",
+      "real_counts": {
+        "0": 8338,
+        "1": 1526
+      },
+      "requested_count": 0,
+      "underspend": 0
+    },
+    "augmentation_count": null,
+    "average_precision": 0.610888987534699,
+    "balanced_accuracy": 0.6491292419933474,
+    "budget_mode": "matched",
+    "candidate_configs": [
+      {},
+      {
+        "C": 0.1
+      },
+      {
+        "C": 10.0
+      },
+      {
+        "C": 0.1
+      },
+      {
+        "C": 0.01
+      },
+      {
+        "C": 0.01
+      },
+      {
+        "C": 100.0
+      },
+      {
+        "C": 1.0
+      },
+      {
+        "C": 0.1
+      },
+      {
+        "C": 0.01
+      }
+    ],
+    "classifiers": null,
+    "config": {
+      "selected_epoch_sequence": [
+        null
+      ],
+      "selected_parameters": {
+        "C": 0.01
+      },
+      "settings": {
+        "augmentation": {
+          "mode": "matched",
+          "total": 1000
+        },
+        "device": "auto",
+        "method_parameters": {},
+        "mlp_epochs": 160,
+        "ugo_max_iterations": 20
+      },
+      "threshold": 0.5
+    },
+    "config_sha256": "6ef359ddbbc7c8cf501d5b1d424c474f7c9efa04e7240a1f1bab38475ea343b0",
+    "configuration_id": "aed646fd90c8a78d0ef27d06a0a65543740c40d6fac281eea32f8e831ac9e8f3",
+    "cost": 130440,
+    "cuda_peak_torch_allocated_bytes": 0,
+    "cuda_peak_torch_reserved_bytes": 0,
+    "data_home": ".cache/benchmarks",
+    "dataset": "shoppers",
+    "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+    "device": "auto",
+    "download": false,
+    "effective_classifiers": [
+      "logistic_regression",
+      "random_forest",
+      "lightgbm",
+      "balanced_random_forest"
+    ],
+    "effective_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "effective_settings": {
+      "augmentation": {
+        "mode": "matched",
+        "total": 1000
+      },
+      "device": "auto",
+      "method_parameters": {},
+      "mlp_epochs": 160,
+      "ugo_max_iterations": 20
+    },
+    "effective_tuning_budget": 10,
+    "effective_variants": [
+      "baseline"
+    ],
+    "error": null,
+    "evaluation_policy_sha256": "af8a8e50eb193c0b5816d0ad8728f8f943b6449b0a95769d7e1822545cceafec",
+    "experiment_type": "development",
+    "fn": 260,
+    "fold": "299fdff2721bf55fd1ab2089ba51fc888f6e34ce5b5f553cbddaa8f473b79f01",
+    "fp": 44,
+    "local_data": null,
+    "macro_average_precision": 0.792374132331553,
+    "macro_f1": 0.6879562043795621,
+    "mcc": 0.43068067277392136,
+    "memory_scope": "cell process RSS sampled at 10ms; Torch CUDA allocator only",
+    "method": "baseline",
+    "methods": [
+      "baseline"
+    ],
+    "metrics": {
+      "average_precision": 0.610888987534699,
+      "balanced_accuracy": 0.6491292419933474,
+      "cost": 130440,
+      "fn": 260,
+      "fp": 44,
+      "macro_average_precision": 0.792374132331553,
+      "macro_f1": 0.6879562043795621,
+      "mcc": 0.43068067277392136,
+      "minority_f1": 0.44525547445255476,
+      "minority_recall": 0.3193717277486911,
+      "primary_metric": "average_precision",
+      "primary_metric_value": 0.610888987534699,
+      "realized_fpr_test": 0.02111324376199616,
+      "realized_recall_test": 0.3193717277486911,
+      "recall_at_fpr_test": 0.5130890052356021,
+      "roc_attained_fpr_test": 0.049424184261036466,
+      "roc_fpr_limit": 0.05,
+      "roc_operating_point_definition": "maximum attainable TPR with FPR <= limit; >= threshold; ties intact; no interpolation",
+      "sos_inverse_support_f1": 0.520447428087686,
+      "threshold": 0.5,
+      "tn": 2040,
+      "tp": 122,
+      "weighted_f1": 0.8554649806714381
+    },
+    "minority_f1": 0.44525547445255476,
+    "minority_recall": 0.3193717277486911,
+    "mlp_epochs": null,
+    "output_dir": null,
+    "peak_rss_bytes": 1202425856,
+    "positive_class": 1,
+    "predictions_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T180121-ee6dd58a68ac/shoppers/fold-0/seed-2/logistic_regression/baseline/predictions.csv",
+    "prepare": false,
+    "primary_metric": "average_precision",
+    "primary_metric_value": 0.610888987534699,
+    "protocol": "configs/benchmarks/shoppers_controlled.yaml",
+    "protocol_id": "shoppers_uci_controlled_v1",
+    "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+    "realized_fpr_test": 0.02111324376199616,
+    "realized_recall_test": 0.3193717277486911,
+    "recall_at_fpr_test": 0.5130890052356021,
+    "record_id": "c000fee01ffd9144c885dcef375771990fd15f91f1592c580d61fd8587833338",
+    "record_scope": "benchmark_cell",
+    "roc_attained_fpr_test": 0.049424184261036466,
+    "roc_fpr_limit": 0.05,
+    "roc_operating_point_definition": "maximum attainable TPR with FPR <= limit; >= threshold; ties intact; no interpolation",
+    "rss_sample_interval_seconds": 0.01,
+    "run": true,
+    "run_id": "20261003T180121-ee6dd58a68ac",
+    "runtime_seconds": 0.2987467600032687,
+    "seed": 2,
+    "seeds": null,
+    "selected_candidate": 4,
+    "smoke": false,
+    "smoke_test_rows": 120,
+    "smoke_train_rows": 400,
+    "sos_inverse_support_f1": 0.520447428087686,
+    "split_fingerprint": "299fdff2721bf55fd1ab2089ba51fc888f6e34ce5b5f553cbddaa8f473b79f01",
+    "status": "completed",
+    "strategy": "baseline",
+    "study": "configs/ablations/stage1_controls.yaml",
+    "study_id": "stage1_baseline_controls_v1",
+    "study_sha256": "91f40a43ae81fe9914a13f09359ca59491b767dcf008910ea373553eb0e109dd",
+    "study_type": "baseline_control",
+    "threshold": 0.5,
+    "tn": 2040,
+    "tp": 122,
+    "tuning_budget": 10,
+    "ugo_max_iterations": null,
+    "unique_candidate_count": 6,
+    "variant": null,
+    "variant_id": "baseline",
+    "weighted_f1": 0.8554649806714381
+  },
+  {
+    "algorithm": "random_forest",
+    "artifact_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T180121-ee6dd58a68ac",
+    "augmentation": {
+      "actual_count": 0,
+      "actual_counts": {
+        "0": 8338,
+        "1": 1526
+      },
+      "mode": "matched",
+      "real_counts": {
+        "0": 8338,
+        "1": 1526
+      },
+      "requested_count": 0,
+      "underspend": 0
+    },
+    "augmentation_count": null,
+    "average_precision": 0.7296310287620879,
+    "balanced_accuracy": 0.754846197907769,
+    "budget_mode": "matched",
+    "candidate_configs": [
+      {},
+      {
+        "max_depth": 6,
+        "max_features": "sqrt",
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 3,
+        "n_estimators": 400
+      },
+      {
+        "max_depth": 12,
+        "max_features": 0.8,
+        "min_samples_leaf": 1,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 8,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 3,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 8,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      }
+    ],
+    "classifiers": null,
+    "config": {
+      "selected_epoch_sequence": [
+        null
+      ],
+      "selected_parameters": {},
+      "settings": {
+        "augmentation": {
+          "mode": "matched",
+          "total": 1000
+        },
+        "device": "auto",
+        "method_parameters": {},
+        "mlp_epochs": 160,
+        "ugo_max_iterations": 20
+      },
+      "threshold": 0.5
+    },
+    "config_sha256": "3822c12105b970c8dfadddff1a38c4b482a75728940ba7af0e0d36933b8e4d68",
+    "configuration_id": "8666362b9f08dc9adcf039ae51d7b211d98eca5015ecda77cad95b5072c43ce7",
+    "cost": 87280,
+    "cuda_peak_torch_allocated_bytes": 0,
+    "cuda_peak_torch_reserved_bytes": 0,
+    "data_home": ".cache/benchmarks",
+    "dataset": "shoppers",
+    "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+    "device": "auto",
+    "download": false,
+    "effective_classifiers": [
+      "logistic_regression",
+      "random_forest",
+      "lightgbm",
+      "balanced_random_forest"
+    ],
+    "effective_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "effective_settings": {
+      "augmentation": {
+        "mode": "matched",
+        "total": 1000
+      },
+      "device": "auto",
+      "method_parameters": {},
+      "mlp_epochs": 160,
+      "ugo_max_iterations": 20
+    },
+    "effective_tuning_budget": 10,
+    "effective_variants": [
+      "baseline"
+    ],
+    "error": null,
+    "evaluation_policy_sha256": "af8a8e50eb193c0b5816d0ad8728f8f943b6449b0a95769d7e1822545cceafec",
+    "experiment_type": "development",
+    "fn": 173,
+    "fold": "299fdff2721bf55fd1ab2089ba51fc888f6e34ce5b5f553cbddaa8f473b79f01",
+    "fp": 78,
+    "local_data": null,
+    "macro_average_precision": 0.8562835087301066,
+    "macro_f1": 0.7829672150288908,
+    "mcc": 0.5750679045423965,
+    "memory_scope": "cell process RSS sampled at 10ms; Torch CUDA allocator only",
+    "method": "baseline",
+    "methods": [
+      "baseline"
+    ],
+    "metrics": {
+      "average_precision": 0.7296310287620879,
+      "balanced_accuracy": 0.754846197907769,
+      "cost": 87280,
+      "fn": 173,
+      "fp": 78,
+      "macro_average_precision": 0.8562835087301066,
+      "macro_f1": 0.7829672150288908,
+      "mcc": 0.5750679045423965,
+      "minority_f1": 0.624813153961136,
+      "minority_recall": 0.5471204188481675,
+      "primary_metric": "average_precision",
+      "primary_metric_value": 0.7296310287620879,
+      "realized_fpr_test": 0.03742802303262956,
+      "realized_recall_test": 0.5471204188481675,
+      "recall_at_fpr_test": 0.6178010471204188,
+      "roc_attained_fpr_test": 0.04990403071017274,
+      "roc_fpr_limit": 0.05,
+      "roc_operating_point_definition": "maximum attainable TPR with FPR <= limit; >= threshold; ties intact; no interpolation",
+      "sos_inverse_support_f1": 0.6738114113235709,
+      "threshold": 0.5,
+      "tn": 2006,
+      "tp": 209,
+      "weighted_f1": 0.8921230187342105
+    },
+    "minority_f1": 0.624813153961136,
+    "minority_recall": 0.5471204188481675,
+    "mlp_epochs": null,
+    "output_dir": null,
+    "peak_rss_bytes": 1202425856,
+    "positive_class": 1,
+    "predictions_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T180121-ee6dd58a68ac/shoppers/fold-0/seed-2/random_forest/baseline/predictions.csv",
+    "prepare": false,
+    "primary_metric": "average_precision",
+    "primary_metric_value": 0.7296310287620879,
+    "protocol": "configs/benchmarks/shoppers_controlled.yaml",
+    "protocol_id": "shoppers_uci_controlled_v1",
+    "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+    "realized_fpr_test": 0.03742802303262956,
+    "realized_recall_test": 0.5471204188481675,
+    "recall_at_fpr_test": 0.6178010471204188,
+    "record_id": "03d2cc3abd7a940a770e61d1fc5ad0d767a21110ad527a784f14d6d24e22a759",
+    "record_scope": "benchmark_cell",
+    "roc_attained_fpr_test": 0.04990403071017274,
+    "roc_fpr_limit": 0.05,
+    "roc_operating_point_definition": "maximum attainable TPR with FPR <= limit; >= threshold; ties intact; no interpolation",
+    "rss_sample_interval_seconds": 0.01,
+    "run": true,
+    "run_id": "20261003T180121-ee6dd58a68ac",
+    "runtime_seconds": 19.354968271996768,
+    "seed": 2,
+    "seeds": null,
+    "selected_candidate": 0,
+    "smoke": false,
+    "smoke_test_rows": 120,
+    "smoke_train_rows": 400,
+    "sos_inverse_support_f1": 0.6738114113235709,
+    "split_fingerprint": "299fdff2721bf55fd1ab2089ba51fc888f6e34ce5b5f553cbddaa8f473b79f01",
+    "status": "completed",
+    "strategy": "baseline",
+    "study": "configs/ablations/stage1_controls.yaml",
+    "study_id": "stage1_baseline_controls_v1",
+    "study_sha256": "91f40a43ae81fe9914a13f09359ca59491b767dcf008910ea373553eb0e109dd",
+    "study_type": "baseline_control",
+    "threshold": 0.5,
+    "tn": 2006,
+    "tp": 209,
+    "tuning_budget": 10,
+    "ugo_max_iterations": null,
+    "unique_candidate_count": 10,
+    "variant": null,
+    "variant_id": "baseline",
+    "weighted_f1": 0.8921230187342105
+  },
+  {
+    "algorithm": "lightgbm",
+    "artifact_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T180121-ee6dd58a68ac",
+    "augmentation": {
+      "actual_count": 0,
+      "actual_counts": {
+        "0": 8338,
+        "1": 1526
+      },
+      "mode": "matched",
+      "real_counts": {
+        "0": 8338,
+        "1": 1526
+      },
+      "requested_count": 0,
+      "underspend": 0
+    },
+    "augmentation_count": null,
+    "average_precision": 0.740931914354723,
+    "balanced_accuracy": 0.7832500929545478,
+    "budget_mode": "matched",
+    "candidate_configs": [
+      {},
+      {
+        "learning_rate": 0.05,
+        "min_child_samples": 10,
+        "n_estimators": 200,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.01,
+        "min_child_samples": 20,
+        "n_estimators": 400,
+        "num_leaves": 63
+      },
+      {
+        "learning_rate": 0.05,
+        "min_child_samples": 10,
+        "n_estimators": 400,
+        "num_leaves": 63
+      },
+      {
+        "learning_rate": 0.05,
+        "min_child_samples": 50,
+        "n_estimators": 100,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.1,
+        "min_child_samples": 10,
+        "n_estimators": 200,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.01,
+        "min_child_samples": 50,
+        "n_estimators": 200,
+        "num_leaves": 63
+      },
+      {
+        "learning_rate": 0.1,
+        "min_child_samples": 20,
+        "n_estimators": 100,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.05,
+        "min_child_samples": 20,
+        "n_estimators": 100,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.01,
+        "min_child_samples": 10,
+        "n_estimators": 200,
+        "num_leaves": 15
+      }
+    ],
+    "classifiers": null,
+    "config": {
+      "selected_epoch_sequence": [
+        null
+      ],
+      "selected_parameters": {
+        "learning_rate": 0.01,
+        "min_child_samples": 20,
+        "n_estimators": 400,
+        "num_leaves": 63
+      },
+      "settings": {
+        "augmentation": {
+          "mode": "matched",
+          "total": 1000
+        },
+        "device": "auto",
+        "method_parameters": {},
+        "mlp_epochs": 160,
+        "ugo_max_iterations": 20
+      },
+      "threshold": 0.5
+    },
+    "config_sha256": "d1e49eb3bebfa621b10375a96538622de75a35bdbdc3dad979537d1b03f6f3de",
+    "configuration_id": "2f72ccd642c53c4cde6924054bd921c7a41e1f6bf190b82961a209c794a7ca8b",
+    "cost": 74960,
+    "cuda_peak_torch_allocated_bytes": 0,
+    "cuda_peak_torch_reserved_bytes": 0,
+    "data_home": ".cache/benchmarks",
+    "dataset": "shoppers",
+    "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+    "device": "auto",
+    "download": false,
+    "effective_classifiers": [
+      "logistic_regression",
+      "random_forest",
+      "lightgbm",
+      "balanced_random_forest"
+    ],
+    "effective_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "effective_settings": {
+      "augmentation": {
+        "mode": "matched",
+        "total": 1000
+      },
+      "device": "auto",
+      "method_parameters": {},
+      "mlp_epochs": 160,
+      "ugo_max_iterations": 20
+    },
+    "effective_tuning_budget": 10,
+    "effective_variants": [
+      "baseline"
+    ],
+    "error": null,
+    "evaluation_policy_sha256": "af8a8e50eb193c0b5816d0ad8728f8f943b6449b0a95769d7e1822545cceafec",
+    "experiment_type": "development",
+    "fn": 148,
+    "fold": "299fdff2721bf55fd1ab2089ba51fc888f6e34ce5b5f553cbddaa8f473b79f01",
+    "fp": 96,
+    "local_data": null,
+    "macro_average_precision": 0.8632022637115073,
+    "macro_f1": 0.7997417327866234,
+    "mcc": 0.6020367482852951,
+    "memory_scope": "cell process RSS sampled at 10ms; Torch CUDA allocator only",
+    "method": "baseline",
+    "methods": [
+      "baseline"
+    ],
+    "metrics": {
+      "average_precision": 0.740931914354723,
+      "balanced_accuracy": 0.7832500929545478,
+      "cost": 74960,
+      "fn": 148,
+      "fp": 96,
+      "macro_average_precision": 0.8632022637115073,
+      "macro_f1": 0.7997417327866234,
+      "mcc": 0.6020367482852951,
+      "minority_f1": 0.6573033707865169,
+      "minority_recall": 0.612565445026178,
+      "primary_metric": "average_precision",
+      "primary_metric_value": 0.740931914354723,
+      "realized_fpr_test": 0.046065259117082535,
+      "realized_recall_test": 0.612565445026178,
+      "recall_at_fpr_test": 0.6178010471204188,
+      "roc_attained_fpr_test": 0.048464491362763915,
+      "roc_fpr_limit": 0.05,
+      "roc_operating_point_definition": "maximum attainable TPR with FPR <= limit; >= threshold; ties intact; no interpolation",
+      "sos_inverse_support_f1": 0.7014326929957956,
+      "threshold": 0.5,
+      "tn": 1988,
+      "tp": 234,
+      "weighted_f1": 0.8980507725774511
+    },
+    "minority_f1": 0.6573033707865169,
+    "minority_recall": 0.612565445026178,
+    "mlp_epochs": null,
+    "output_dir": null,
+    "peak_rss_bytes": 1202425856,
+    "positive_class": 1,
+    "predictions_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T180121-ee6dd58a68ac/shoppers/fold-0/seed-2/lightgbm/baseline/predictions.csv",
+    "prepare": false,
+    "primary_metric": "average_precision",
+    "primary_metric_value": 0.740931914354723,
+    "protocol": "configs/benchmarks/shoppers_controlled.yaml",
+    "protocol_id": "shoppers_uci_controlled_v1",
+    "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+    "realized_fpr_test": 0.046065259117082535,
+    "realized_recall_test": 0.612565445026178,
+    "recall_at_fpr_test": 0.6178010471204188,
+    "record_id": "1c8f4e1ab4a54b4ef0aebde5ecc94714d08a59d9d8b62a800458a18bbc10c905",
+    "record_scope": "benchmark_cell",
+    "roc_attained_fpr_test": 0.048464491362763915,
+    "roc_fpr_limit": 0.05,
+    "roc_operating_point_definition": "maximum attainable TPR with FPR <= limit; >= threshold; ties intact; no interpolation",
+    "rss_sample_interval_seconds": 0.01,
+    "run": true,
+    "run_id": "20261003T180121-ee6dd58a68ac",
+    "runtime_seconds": 3.1422426520002773,
+    "seed": 2,
+    "seeds": null,
+    "selected_candidate": 2,
+    "smoke": false,
+    "smoke_test_rows": 120,
+    "smoke_train_rows": 400,
+    "sos_inverse_support_f1": 0.7014326929957956,
+    "split_fingerprint": "299fdff2721bf55fd1ab2089ba51fc888f6e34ce5b5f553cbddaa8f473b79f01",
+    "status": "completed",
+    "strategy": "baseline",
+    "study": "configs/ablations/stage1_controls.yaml",
+    "study_id": "stage1_baseline_controls_v1",
+    "study_sha256": "91f40a43ae81fe9914a13f09359ca59491b767dcf008910ea373553eb0e109dd",
+    "study_type": "baseline_control",
+    "threshold": 0.5,
+    "tn": 1988,
+    "tp": 234,
+    "tuning_budget": 10,
+    "ugo_max_iterations": null,
+    "unique_candidate_count": 10,
+    "variant": null,
+    "variant_id": "baseline",
+    "weighted_f1": 0.8980507725774511
+  },
+  {
+    "algorithm": "balanced_random_forest",
+    "artifact_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T180121-ee6dd58a68ac",
+    "augmentation": {
+      "actual_count": 0,
+      "actual_counts": {
+        "0": 8338,
+        "1": 1526
+      },
+      "mode": "matched",
+      "real_counts": {
+        "0": 8338,
+        "1": 1526
+      },
+      "requested_count": 0,
+      "underspend": 0
+    },
+    "augmentation_count": null,
+    "average_precision": 0.7322705632876174,
+    "balanced_accuracy": 0.8465219925435379,
+    "budget_mode": "matched",
+    "candidate_configs": [
+      {},
+      {
+        "max_depth": 6,
+        "max_features": "sqrt",
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 3,
+        "n_estimators": 400
+      },
+      {
+        "max_depth": 12,
+        "max_features": 0.8,
+        "min_samples_leaf": 1,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 8,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 3,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 8,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      }
+    ],
+    "classifiers": null,
+    "config": {
+      "selected_epoch_sequence": [
+        null
+      ],
+      "selected_parameters": {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 3,
+        "n_estimators": 100
+      },
+      "settings": {
+        "augmentation": {
+          "mode": "matched",
+          "total": 1000
+        },
+        "device": "auto",
+        "method_parameters": {},
+        "mlp_epochs": 160,
+        "ugo_max_iterations": 20
+      },
+      "threshold": 0.5
+    },
+    "config_sha256": "4ae00acfbbff5f2f4a5211f4faffb0b1cb2b135b3734f27465c511fb93f40222",
+    "configuration_id": "9595acf3440dde09301dec3174cbbb2e58576fb66980d8e611198a7a7d5e320b",
+    "cost": 34460,
+    "cuda_peak_torch_allocated_bytes": 0,
+    "cuda_peak_torch_reserved_bytes": 0,
+    "data_home": ".cache/benchmarks",
+    "dataset": "shoppers",
+    "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+    "device": "auto",
+    "download": false,
+    "effective_classifiers": [
+      "logistic_regression",
+      "random_forest",
+      "lightgbm",
+      "balanced_random_forest"
+    ],
+    "effective_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "effective_settings": {
+      "augmentation": {
+        "mode": "matched",
+        "total": 1000
+      },
+      "device": "auto",
+      "method_parameters": {},
+      "mlp_epochs": 160,
+      "ugo_max_iterations": 20
+    },
+    "effective_tuning_budget": 10,
+    "effective_variants": [
+      "baseline"
+    ],
+    "error": null,
+    "evaluation_policy_sha256": "af8a8e50eb193c0b5816d0ad8728f8f943b6449b0a95769d7e1822545cceafec",
+    "experiment_type": "development",
+    "fn": 63,
+    "fold": "299fdff2721bf55fd1ab2089ba51fc888f6e34ce5b5f553cbddaa8f473b79f01",
+    "fp": 296,
+    "local_data": null,
+    "macro_average_precision": 0.8589499228693624,
+    "macro_f1": 0.7743436153441264,
+    "mcc": 0.5795628910363513,
+    "memory_scope": "cell process RSS sampled at 10ms; Torch CUDA allocator only",
+    "method": "baseline",
+    "methods": [
+      "baseline"
+    ],
+    "metrics": {
+      "average_precision": 0.7322705632876174,
+      "balanced_accuracy": 0.8465219925435379,
+      "cost": 34460,
+      "fn": 63,
+      "fp": 296,
+      "macro_average_precision": 0.8589499228693624,
+      "macro_f1": 0.7743436153441264,
+      "mcc": 0.5795628910363513,
+      "minority_f1": 0.6399197592778335,
+      "minority_recall": 0.8350785340314136,
+      "primary_metric": "average_precision",
+      "primary_metric_value": 0.7322705632876174,
+      "realized_fpr_test": 0.1420345489443378,
+      "realized_recall_test": 0.8350785340314136,
+      "recall_at_fpr_test": 0.6151832460732984,
+      "roc_attained_fpr_test": 0.049424184261036466,
+      "roc_fpr_limit": 0.05,
+      "roc_operating_point_definition": "maximum attainable TPR with FPR <= limit; >= threshold; ties intact; no interpolation",
+      "sos_inverse_support_f1": 0.6815660796487369,
+      "threshold": 0.5,
+      "tn": 1788,
+      "tp": 319,
+      "weighted_f1": 0.8671211510395158
+    },
+    "minority_f1": 0.6399197592778335,
+    "minority_recall": 0.8350785340314136,
+    "mlp_epochs": null,
+    "output_dir": null,
+    "peak_rss_bytes": 1202503680,
+    "positive_class": 1,
+    "predictions_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T180121-ee6dd58a68ac/shoppers/fold-0/seed-2/balanced_random_forest/baseline/predictions.csv",
+    "prepare": false,
+    "primary_metric": "average_precision",
+    "primary_metric_value": 0.7322705632876174,
+    "protocol": "configs/benchmarks/shoppers_controlled.yaml",
+    "protocol_id": "shoppers_uci_controlled_v1",
+    "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+    "realized_fpr_test": 0.1420345489443378,
+    "realized_recall_test": 0.8350785340314136,
+    "recall_at_fpr_test": 0.6151832460732984,
+    "record_id": "c5235180ca2ebb9a792943636c0607557454f4b772b32bf8d5ee30d3911cd8c8",
+    "record_scope": "benchmark_cell",
+    "roc_attained_fpr_test": 0.049424184261036466,
+    "roc_fpr_limit": 0.05,
+    "roc_operating_point_definition": "maximum attainable TPR with FPR <= limit; >= threshold; ties intact; no interpolation",
+    "rss_sample_interval_seconds": 0.01,
+    "run": true,
+    "run_id": "20261003T180121-ee6dd58a68ac",
+    "runtime_seconds": 11.08551126599923,
+    "seed": 2,
+    "seeds": null,
+    "selected_candidate": 6,
+    "smoke": false,
+    "smoke_test_rows": 120,
+    "smoke_train_rows": 400,
+    "sos_inverse_support_f1": 0.6815660796487369,
+    "split_fingerprint": "299fdff2721bf55fd1ab2089ba51fc888f6e34ce5b5f553cbddaa8f473b79f01",
+    "status": "completed",
+    "strategy": "baseline",
+    "study": "configs/ablations/stage1_controls.yaml",
+    "study_id": "stage1_baseline_controls_v1",
+    "study_sha256": "91f40a43ae81fe9914a13f09359ca59491b767dcf008910ea373553eb0e109dd",
+    "study_type": "baseline_control",
+    "threshold": 0.5,
+    "tn": 1788,
+    "tp": 319,
+    "tuning_budget": 10,
+    "ugo_max_iterations": null,
+    "unique_candidate_count": 10,
+    "variant": null,
+    "variant_id": "baseline",
+    "weighted_f1": 0.8671211510395158
+  },
+  {
+    "algorithm": "logistic_regression",
+    "artifact_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T180121-ee6dd58a68ac",
+    "augmentation": {
+      "actual_count": 0,
+      "actual_counts": {
+        "0": 8338,
+        "1": 1526
+      },
+      "mode": "matched",
+      "real_counts": {
+        "0": 8338,
+        "1": 1526
+      },
+      "requested_count": 0,
+      "underspend": 0
+    },
+    "augmentation_count": null,
+    "average_precision": 0.605832167301914,
+    "balanced_accuracy": 0.6645747706283728,
+    "budget_mode": "matched",
+    "candidate_configs": [
+      {},
+      {
+        "C": 0.1
+      },
+      {
+        "C": 10.0
+      },
+      {
+        "C": 0.1
+      },
+      {
+        "C": 0.01
+      },
+      {
+        "C": 0.01
+      },
+      {
+        "C": 100.0
+      },
+      {
+        "C": 1.0
+      },
+      {
+        "C": 0.1
+      },
+      {
+        "C": 0.01
+      }
+    ],
+    "classifiers": null,
+    "config": {
+      "selected_epoch_sequence": [
+        null
+      ],
+      "selected_parameters": {
+        "C": 0.1
+      },
+      "settings": {
+        "augmentation": {
+          "mode": "matched",
+          "total": 1000
+        },
+        "device": "auto",
+        "method_parameters": {},
+        "mlp_epochs": 160,
+        "ugo_max_iterations": 20
+      },
+      "threshold": 0.5
+    },
+    "config_sha256": "1aa03ffda8ac3851ebbd1b8faa62da2e23f4d44d1ddb2708c54e823c0194103a",
+    "configuration_id": "3a0399c2ce6b054d7133db208114107b5ff7bdc57ae87024be93db86be7ba15d",
+    "cost": 123560,
+    "cuda_peak_torch_allocated_bytes": 0,
+    "cuda_peak_torch_reserved_bytes": 0,
+    "data_home": ".cache/benchmarks",
+    "dataset": "shoppers",
+    "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+    "device": "auto",
+    "download": false,
+    "effective_classifiers": [
+      "logistic_regression",
+      "random_forest",
+      "lightgbm",
+      "balanced_random_forest"
+    ],
+    "effective_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "effective_settings": {
+      "augmentation": {
+        "mode": "matched",
+        "total": 1000
+      },
+      "device": "auto",
+      "method_parameters": {},
+      "mlp_epochs": 160,
+      "ugo_max_iterations": 20
+    },
+    "effective_tuning_budget": 10,
+    "effective_variants": [
+      "baseline"
+    ],
+    "error": null,
+    "evaluation_policy_sha256": "af8a8e50eb193c0b5816d0ad8728f8f943b6449b0a95769d7e1822545cceafec",
+    "experiment_type": "development",
+    "fn": 246,
+    "fold": "4d429ae367cbb3b9226fcd0818328855be271613fe2c3254af3eee962f803fe7",
+    "fp": 56,
+    "local_data": null,
+    "macro_average_precision": 0.7896134442016329,
+    "macro_f1": 0.702284876385773,
+    "mcc": 0.4444551556832608,
+    "memory_scope": "cell process RSS sampled at 10ms; Torch CUDA allocator only",
+    "method": "baseline",
+    "methods": [
+      "baseline"
+    ],
+    "metrics": {
+      "average_precision": 0.605832167301914,
+      "balanced_accuracy": 0.6645747706283728,
+      "cost": 123560,
+      "fn": 246,
+      "fp": 56,
+      "macro_average_precision": 0.7896134442016329,
+      "macro_f1": 0.702284876385773,
+      "mcc": 0.4444551556832608,
+      "minority_f1": 0.4738675958188153,
+      "minority_recall": 0.35602094240837695,
+      "primary_metric": "average_precision",
+      "primary_metric_value": 0.605832167301914,
+      "realized_fpr_test": 0.026871401151631478,
+      "realized_recall_test": 0.35602094240837695,
+      "recall_at_fpr_test": 0.5209424083769634,
+      "roc_attained_fpr_test": 0.04990403071017274,
+      "roc_fpr_limit": 0.05,
+      "roc_operating_point_definition": "maximum attainable TPR with FPR <= limit; >= threshold; ties intact; no interpolation",
+      "sos_inverse_support_f1": 0.5446343445427227,
+      "threshold": 0.5,
+      "tn": 2028,
+      "tp": 136,
+      "weighted_f1": 0.8599354082288233
+    },
+    "minority_f1": 0.4738675958188153,
+    "minority_recall": 0.35602094240837695,
+    "mlp_epochs": null,
+    "output_dir": null,
+    "peak_rss_bytes": 1202507776,
+    "positive_class": 1,
+    "predictions_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T180121-ee6dd58a68ac/shoppers/fold-0/seed-3/logistic_regression/baseline/predictions.csv",
+    "prepare": false,
+    "primary_metric": "average_precision",
+    "primary_metric_value": 0.605832167301914,
+    "protocol": "configs/benchmarks/shoppers_controlled.yaml",
+    "protocol_id": "shoppers_uci_controlled_v1",
+    "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+    "realized_fpr_test": 0.026871401151631478,
+    "realized_recall_test": 0.35602094240837695,
+    "recall_at_fpr_test": 0.5209424083769634,
+    "record_id": "a3abe60438a4376c7a49f6a4be5c7360c75c252f5f13d32376a6528fe592eb20",
+    "record_scope": "benchmark_cell",
+    "roc_attained_fpr_test": 0.04990403071017274,
+    "roc_fpr_limit": 0.05,
+    "roc_operating_point_definition": "maximum attainable TPR with FPR <= limit; >= threshold; ties intact; no interpolation",
+    "rss_sample_interval_seconds": 0.01,
+    "run": true,
+    "run_id": "20261003T180121-ee6dd58a68ac",
+    "runtime_seconds": 0.3072812000027625,
+    "seed": 3,
+    "seeds": null,
+    "selected_candidate": 1,
+    "smoke": false,
+    "smoke_test_rows": 120,
+    "smoke_train_rows": 400,
+    "sos_inverse_support_f1": 0.5446343445427227,
+    "split_fingerprint": "4d429ae367cbb3b9226fcd0818328855be271613fe2c3254af3eee962f803fe7",
+    "status": "completed",
+    "strategy": "baseline",
+    "study": "configs/ablations/stage1_controls.yaml",
+    "study_id": "stage1_baseline_controls_v1",
+    "study_sha256": "91f40a43ae81fe9914a13f09359ca59491b767dcf008910ea373553eb0e109dd",
+    "study_type": "baseline_control",
+    "threshold": 0.5,
+    "tn": 2028,
+    "tp": 136,
+    "tuning_budget": 10,
+    "ugo_max_iterations": null,
+    "unique_candidate_count": 6,
+    "variant": null,
+    "variant_id": "baseline",
+    "weighted_f1": 0.8599354082288233
+  },
+  {
+    "algorithm": "random_forest",
+    "artifact_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T180121-ee6dd58a68ac",
+    "augmentation": {
+      "actual_count": 0,
+      "actual_counts": {
+        "0": 8338,
+        "1": 1526
+      },
+      "mode": "matched",
+      "real_counts": {
+        "0": 8338,
+        "1": 1526
+      },
+      "requested_count": 0,
+      "underspend": 0
+    },
+    "augmentation_count": null,
+    "average_precision": 0.7433631189486181,
+    "balanced_accuracy": 0.7243257026861352,
+    "budget_mode": "matched",
+    "candidate_configs": [
+      {},
+      {
+        "max_depth": 6,
+        "max_features": "sqrt",
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 3,
+        "n_estimators": 400
+      },
+      {
+        "max_depth": 12,
+        "max_features": 0.8,
+        "min_samples_leaf": 1,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 8,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 3,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 8,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      }
+    ],
+    "classifiers": null,
+    "config": {
+      "selected_epoch_sequence": [
+        null
+      ],
+      "selected_parameters": {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      "settings": {
+        "augmentation": {
+          "mode": "matched",
+          "total": 1000
+        },
+        "device": "auto",
+        "method_parameters": {},
+        "mlp_epochs": 160,
+        "ugo_max_iterations": 20
+      },
+      "threshold": 0.5
+    },
+    "config_sha256": "18212fbfc299d5e67462c045e16d875ef7acb2a4c751d63665f0cd9b5fc38547",
+    "configuration_id": "07b3df20b87320724a001d514d2c0a304490c00d620eca91c84df895203b9c63",
+    "cost": 101470,
+    "cuda_peak_torch_allocated_bytes": 0,
+    "cuda_peak_torch_reserved_bytes": 0,
+    "data_home": ".cache/benchmarks",
+    "dataset": "shoppers",
+    "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+    "device": "auto",
+    "download": false,
+    "effective_classifiers": [
+      "logistic_regression",
+      "random_forest",
+      "lightgbm",
+      "balanced_random_forest"
+    ],
+    "effective_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "effective_settings": {
+      "augmentation": {
+        "mode": "matched",
+        "total": 1000
+      },
+      "device": "auto",
+      "method_parameters": {},
+      "mlp_epochs": 160,
+      "ugo_max_iterations": 20
+    },
+    "effective_tuning_budget": 10,
+    "effective_variants": [
+      "baseline"
+    ],
+    "error": null,
+    "evaluation_policy_sha256": "af8a8e50eb193c0b5816d0ad8728f8f943b6449b0a95769d7e1822545cceafec",
+    "experiment_type": "development",
+    "fn": 202,
+    "fold": "4d429ae367cbb3b9226fcd0818328855be271613fe2c3254af3eee962f803fe7",
+    "fp": 47,
+    "local_data": null,
+    "macro_average_precision": 0.8635542218945892,
+    "macro_f1": 0.766767057633075,
+    "mcc": 0.5614997870272065,
+    "memory_scope": "cell process RSS sampled at 10ms; Torch CUDA allocator only",
+    "method": "baseline",
+    "methods": [
+      "baseline"
+    ],
+    "metrics": {
+      "average_precision": 0.7433631189486181,
+      "balanced_accuracy": 0.7243257026861352,
+      "cost": 101470,
+      "fn": 202,
+      "fp": 47,
+      "macro_average_precision": 0.8635542218945892,
+      "macro_f1": 0.766767057633075,
+      "mcc": 0.5614997870272065,
+      "minority_f1": 0.5911330049261084,
+      "minority_recall": 0.4712041884816754,
+      "primary_metric": "average_precision",
+      "primary_metric_value": 0.7433631189486181,
+      "realized_fpr_test": 0.022552783109404992,
+      "realized_recall_test": 0.4712041884816754,
+      "recall_at_fpr_test": 0.612565445026178,
+      "roc_attained_fpr_test": 0.049424184261036466,
+      "roc_fpr_limit": 0.05,
+      "roc_operating_point_definition": "maximum attainable TPR with FPR <= limit; >= threshold; ties intact; no interpolation",
+      "sos_inverse_support_f1": 0.645546799033214,
+      "threshold": 0.5,
+      "tn": 2037,
+      "tp": 180,
+      "weighted_f1": 0.887987316232936
+    },
+    "minority_f1": 0.5911330049261084,
+    "minority_recall": 0.4712041884816754,
+    "mlp_epochs": null,
+    "output_dir": null,
+    "peak_rss_bytes": 1202507776,
+    "positive_class": 1,
+    "predictions_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T180121-ee6dd58a68ac/shoppers/fold-0/seed-3/random_forest/baseline/predictions.csv",
+    "prepare": false,
+    "primary_metric": "average_precision",
+    "primary_metric_value": 0.7433631189486181,
+    "protocol": "configs/benchmarks/shoppers_controlled.yaml",
+    "protocol_id": "shoppers_uci_controlled_v1",
+    "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+    "realized_fpr_test": 0.022552783109404992,
+    "realized_recall_test": 0.4712041884816754,
+    "recall_at_fpr_test": 0.612565445026178,
+    "record_id": "d11d6c659fbf5586f3089f623e4daa01b2913703d2c8c8f36c418a7c0a368e66",
+    "record_scope": "benchmark_cell",
+    "roc_attained_fpr_test": 0.049424184261036466,
+    "roc_fpr_limit": 0.05,
+    "roc_operating_point_definition": "maximum attainable TPR with FPR <= limit; >= threshold; ties intact; no interpolation",
+    "rss_sample_interval_seconds": 0.01,
+    "run": true,
+    "run_id": "20261003T180121-ee6dd58a68ac",
+    "runtime_seconds": 20.013272222000523,
+    "seed": 3,
+    "seeds": null,
+    "selected_candidate": 8,
+    "smoke": false,
+    "smoke_test_rows": 120,
+    "smoke_train_rows": 400,
+    "sos_inverse_support_f1": 0.645546799033214,
+    "split_fingerprint": "4d429ae367cbb3b9226fcd0818328855be271613fe2c3254af3eee962f803fe7",
+    "status": "completed",
+    "strategy": "baseline",
+    "study": "configs/ablations/stage1_controls.yaml",
+    "study_id": "stage1_baseline_controls_v1",
+    "study_sha256": "91f40a43ae81fe9914a13f09359ca59491b767dcf008910ea373553eb0e109dd",
+    "study_type": "baseline_control",
+    "threshold": 0.5,
+    "tn": 2037,
+    "tp": 180,
+    "tuning_budget": 10,
+    "ugo_max_iterations": null,
+    "unique_candidate_count": 10,
+    "variant": null,
+    "variant_id": "baseline",
+    "weighted_f1": 0.887987316232936
+  },
+  {
+    "algorithm": "lightgbm",
+    "artifact_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T180121-ee6dd58a68ac",
+    "augmentation": {
+      "actual_count": 0,
+      "actual_counts": {
+        "0": 8338,
+        "1": 1526
+      },
+      "mode": "matched",
+      "real_counts": {
+        "0": 8338,
+        "1": 1526
+      },
+      "requested_count": 0,
+      "underspend": 0
+    },
+    "augmentation_count": null,
+    "average_precision": 0.738926085760905,
+    "balanced_accuracy": 0.7571147913296017,
+    "budget_mode": "matched",
+    "candidate_configs": [
+      {},
+      {
+        "learning_rate": 0.05,
+        "min_child_samples": 10,
+        "n_estimators": 200,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.01,
+        "min_child_samples": 20,
+        "n_estimators": 400,
+        "num_leaves": 63
+      },
+      {
+        "learning_rate": 0.05,
+        "min_child_samples": 10,
+        "n_estimators": 400,
+        "num_leaves": 63
+      },
+      {
+        "learning_rate": 0.05,
+        "min_child_samples": 50,
+        "n_estimators": 100,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.1,
+        "min_child_samples": 10,
+        "n_estimators": 200,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.01,
+        "min_child_samples": 50,
+        "n_estimators": 200,
+        "num_leaves": 63
+      },
+      {
+        "learning_rate": 0.1,
+        "min_child_samples": 20,
+        "n_estimators": 100,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.05,
+        "min_child_samples": 20,
+        "n_estimators": 100,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.01,
+        "min_child_samples": 10,
+        "n_estimators": 200,
+        "num_leaves": 15
+      }
+    ],
+    "classifiers": null,
+    "config": {
+      "selected_epoch_sequence": [
+        null
+      ],
+      "selected_parameters": {
+        "learning_rate": 0.01,
+        "min_child_samples": 50,
+        "n_estimators": 200,
+        "num_leaves": 63
+      },
+      "settings": {
+        "augmentation": {
+          "mode": "matched",
+          "total": 1000
+        },
+        "device": "auto",
+        "method_parameters": {},
+        "mlp_epochs": 160,
+        "ugo_max_iterations": 20
+      },
+      "threshold": 0.5
+    },
+    "config_sha256": "60b4aa20922c59c915d6230d96a4feb01d1fdbe9d0e544c95cfe2489b6016aae",
+    "configuration_id": "e690184d7a962bf3cede79256fe107adc1647b55bbc0a21a8272103641e36c23",
+    "cost": 86740,
+    "cuda_peak_torch_allocated_bytes": 0,
+    "cuda_peak_torch_reserved_bytes": 0,
+    "data_home": ".cache/benchmarks",
+    "dataset": "shoppers",
+    "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+    "device": "auto",
+    "download": false,
+    "effective_classifiers": [
+      "logistic_regression",
+      "random_forest",
+      "lightgbm",
+      "balanced_random_forest"
+    ],
+    "effective_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "effective_settings": {
+      "augmentation": {
+        "mode": "matched",
+        "total": 1000
+      },
+      "device": "auto",
+      "method_parameters": {},
+      "mlp_epochs": 160,
+      "ugo_max_iterations": 20
+    },
+    "effective_tuning_budget": 10,
+    "effective_variants": [
+      "baseline"
+    ],
+    "error": null,
+    "evaluation_policy_sha256": "af8a8e50eb193c0b5816d0ad8728f8f943b6449b0a95769d7e1822545cceafec",
+    "experiment_type": "development",
+    "fn": 172,
+    "fold": "4d429ae367cbb3b9226fcd0818328855be271613fe2c3254af3eee962f803fe7",
+    "fp": 74,
+    "local_data": null,
+    "macro_average_precision": 0.8620932485935183,
+    "macro_f1": 0.7864826852168625,
+    "mcc": 0.5828422858563251,
+    "memory_scope": "cell process RSS sampled at 10ms; Torch CUDA allocator only",
+    "method": "baseline",
+    "methods": [
+      "baseline"
+    ],
+    "metrics": {
+      "average_precision": 0.738926085760905,
+      "balanced_accuracy": 0.7571147913296017,
+      "cost": 86740,
+      "fn": 172,
+      "fp": 74,
+      "macro_average_precision": 0.8620932485935183,
+      "macro_f1": 0.7864826852168625,
+      "mcc": 0.5828422858563251,
+      "minority_f1": 0.6306306306306306,
+      "minority_recall": 0.5497382198952879,
+      "primary_metric": "average_precision",
+      "primary_metric_value": 0.738926085760905,
+      "realized_fpr_test": 0.03550863723608445,
+      "realized_recall_test": 0.5497382198952879,
+      "recall_at_fpr_test": 0.6099476439790575,
+      "roc_attained_fpr_test": 0.049424184261036466,
+      "roc_fpr_limit": 0.05,
+      "roc_operating_point_definition": "maximum attainable TPR with FPR <= limit; >= threshold; ties intact; no interpolation",
+      "sos_inverse_support_f1": 0.6789156953929507,
+      "threshold": 0.5,
+      "tn": 2010,
+      "tp": 210,
+      "weighted_f1": 0.8940496750407743
+    },
+    "minority_f1": 0.6306306306306306,
+    "minority_recall": 0.5497382198952879,
+    "mlp_epochs": null,
+    "output_dir": null,
+    "peak_rss_bytes": 1202507776,
+    "positive_class": 1,
+    "predictions_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T180121-ee6dd58a68ac/shoppers/fold-0/seed-3/lightgbm/baseline/predictions.csv",
+    "prepare": false,
+    "primary_metric": "average_precision",
+    "primary_metric_value": 0.738926085760905,
+    "protocol": "configs/benchmarks/shoppers_controlled.yaml",
+    "protocol_id": "shoppers_uci_controlled_v1",
+    "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+    "realized_fpr_test": 0.03550863723608445,
+    "realized_recall_test": 0.5497382198952879,
+    "recall_at_fpr_test": 0.6099476439790575,
+    "record_id": "01e2998926cfaefee8084f1130722e9f2ccb13c44a081e64fad0b6be4e5e6c7f",
+    "record_scope": "benchmark_cell",
+    "roc_attained_fpr_test": 0.049424184261036466,
+    "roc_fpr_limit": 0.05,
+    "roc_operating_point_definition": "maximum attainable TPR with FPR <= limit; >= threshold; ties intact; no interpolation",
+    "rss_sample_interval_seconds": 0.01,
+    "run": true,
+    "run_id": "20261003T180121-ee6dd58a68ac",
+    "runtime_seconds": 2.865881130004709,
+    "seed": 3,
+    "seeds": null,
+    "selected_candidate": 6,
+    "smoke": false,
+    "smoke_test_rows": 120,
+    "smoke_train_rows": 400,
+    "sos_inverse_support_f1": 0.6789156953929507,
+    "split_fingerprint": "4d429ae367cbb3b9226fcd0818328855be271613fe2c3254af3eee962f803fe7",
+    "status": "completed",
+    "strategy": "baseline",
+    "study": "configs/ablations/stage1_controls.yaml",
+    "study_id": "stage1_baseline_controls_v1",
+    "study_sha256": "91f40a43ae81fe9914a13f09359ca59491b767dcf008910ea373553eb0e109dd",
+    "study_type": "baseline_control",
+    "threshold": 0.5,
+    "tn": 2010,
+    "tp": 210,
+    "tuning_budget": 10,
+    "ugo_max_iterations": null,
+    "unique_candidate_count": 10,
+    "variant": null,
+    "variant_id": "baseline",
+    "weighted_f1": 0.8940496750407743
+  },
+  {
+    "algorithm": "balanced_random_forest",
+    "artifact_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T180121-ee6dd58a68ac",
+    "augmentation": {
+      "actual_count": 0,
+      "actual_counts": {
+        "0": 8338,
+        "1": 1526
+      },
+      "mode": "matched",
+      "real_counts": {
+        "0": 8338,
+        "1": 1526
+      },
+      "requested_count": 0,
+      "underspend": 0
+    },
+    "augmentation_count": null,
+    "average_precision": 0.7388355438839397,
+    "balanced_accuracy": 0.8443840379455537,
+    "budget_mode": "matched",
+    "candidate_configs": [
+      {},
+      {
+        "max_depth": 6,
+        "max_features": "sqrt",
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 3,
+        "n_estimators": 400
+      },
+      {
+        "max_depth": 12,
+        "max_features": 0.8,
+        "min_samples_leaf": 1,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 8,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 3,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 8,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      }
+    ],
+    "classifiers": null,
+    "config": {
+      "selected_epoch_sequence": [
+        null
+      ],
+      "selected_parameters": {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      "settings": {
+        "augmentation": {
+          "mode": "matched",
+          "total": 1000
+        },
+        "device": "auto",
+        "method_parameters": {},
+        "mlp_epochs": 160,
+        "ugo_max_iterations": 20
+      },
+      "threshold": 0.5
+    },
+    "config_sha256": "9b79788329c259d908499b1472318b070acb21c65951c1e767fd3e2449be1c74",
+    "configuration_id": "2bdfd63f5fa26946552b2eb6a756566123e21b0a31ab25a3ff0a8155d6df131c",
+    "cost": 35440,
+    "cuda_peak_torch_allocated_bytes": 0,
+    "cuda_peak_torch_reserved_bytes": 0,
+    "data_home": ".cache/benchmarks",
+    "dataset": "shoppers",
+    "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+    "device": "auto",
+    "download": false,
+    "effective_classifiers": [
+      "logistic_regression",
+      "random_forest",
+      "lightgbm",
+      "balanced_random_forest"
+    ],
+    "effective_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "effective_settings": {
+      "augmentation": {
+        "mode": "matched",
+        "total": 1000
+      },
+      "device": "auto",
+      "method_parameters": {},
+      "mlp_epochs": 160,
+      "ugo_max_iterations": 20
+    },
+    "effective_tuning_budget": 10,
+    "effective_variants": [
+      "baseline"
+    ],
+    "error": null,
+    "evaluation_policy_sha256": "af8a8e50eb193c0b5816d0ad8728f8f943b6449b0a95769d7e1822545cceafec",
+    "experiment_type": "development",
+    "fn": 65,
+    "fold": "4d429ae367cbb3b9226fcd0818328855be271613fe2c3254af3eee962f803fe7",
+    "fp": 294,
+    "local_data": null,
+    "macro_average_precision": 0.862325037239605,
+    "macro_f1": 0.7736647008879368,
+    "mcc": 0.5772460718325916,
+    "memory_scope": "cell process RSS sampled at 10ms; Torch CUDA allocator only",
+    "method": "baseline",
+    "methods": [
+      "baseline"
+    ],
+    "metrics": {
+      "average_precision": 0.7388355438839397,
+      "balanced_accuracy": 0.8443840379455537,
+      "cost": 35440,
+      "fn": 65,
+      "fp": 294,
+      "macro_average_precision": 0.862325037239605,
+      "macro_f1": 0.7736647008879368,
+      "mcc": 0.5772460718325916,
+      "minority_f1": 0.6384692849949648,
+      "minority_recall": 0.8298429319371727,
+      "primary_metric": "average_precision",
+      "primary_metric_value": 0.7388355438839397,
+      "realized_fpr_test": 0.14107485604606526,
+      "realized_recall_test": 0.8298429319371727,
+      "recall_at_fpr_test": 0.6099476439790575,
+      "roc_attained_fpr_test": 0.04894433781190019,
+      "roc_fpr_limit": 0.05,
+      "roc_operating_point_definition": "maximum attainable TPR with FPR <= limit; >= threshold; ties intact; no interpolation",
+      "sos_inverse_support_f1": 0.6803546449877591,
+      "threshold": 0.5,
+      "tn": 1790,
+      "tp": 317,
+      "weighted_f1": 0.8669747567881148
+    },
+    "minority_f1": 0.6384692849949648,
+    "minority_recall": 0.8298429319371727,
+    "mlp_epochs": null,
+    "output_dir": null,
+    "peak_rss_bytes": 1202524160,
+    "positive_class": 1,
+    "predictions_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T180121-ee6dd58a68ac/shoppers/fold-0/seed-3/balanced_random_forest/baseline/predictions.csv",
+    "prepare": false,
+    "primary_metric": "average_precision",
+    "primary_metric_value": 0.7388355438839397,
+    "protocol": "configs/benchmarks/shoppers_controlled.yaml",
+    "protocol_id": "shoppers_uci_controlled_v1",
+    "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+    "realized_fpr_test": 0.14107485604606526,
+    "realized_recall_test": 0.8298429319371727,
+    "recall_at_fpr_test": 0.6099476439790575,
+    "record_id": "079112ecbed1b3bc7cbc40e1fc8284700b54feb1a956509c2177a4ee1ed22e59",
+    "record_scope": "benchmark_cell",
+    "roc_attained_fpr_test": 0.04894433781190019,
+    "roc_fpr_limit": 0.05,
+    "roc_operating_point_definition": "maximum attainable TPR with FPR <= limit; >= threshold; ties intact; no interpolation",
+    "rss_sample_interval_seconds": 0.01,
+    "run": true,
+    "run_id": "20261003T180121-ee6dd58a68ac",
+    "runtime_seconds": 12.038510475998919,
+    "seed": 3,
+    "seeds": null,
+    "selected_candidate": 5,
+    "smoke": false,
+    "smoke_test_rows": 120,
+    "smoke_train_rows": 400,
+    "sos_inverse_support_f1": 0.6803546449877591,
+    "split_fingerprint": "4d429ae367cbb3b9226fcd0818328855be271613fe2c3254af3eee962f803fe7",
+    "status": "completed",
+    "strategy": "baseline",
+    "study": "configs/ablations/stage1_controls.yaml",
+    "study_id": "stage1_baseline_controls_v1",
+    "study_sha256": "91f40a43ae81fe9914a13f09359ca59491b767dcf008910ea373553eb0e109dd",
+    "study_type": "baseline_control",
+    "threshold": 0.5,
+    "tn": 1790,
+    "tp": 317,
+    "tuning_budget": 10,
+    "ugo_max_iterations": null,
+    "unique_candidate_count": 10,
+    "variant": null,
+    "variant_id": "baseline",
+    "weighted_f1": 0.8669747567881148
+  },
+  {
+    "algorithm": "logistic_regression",
+    "artifact_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T180121-ee6dd58a68ac",
+    "augmentation": {
+      "actual_count": 0,
+      "actual_counts": {
+        "0": 8338,
+        "1": 1526
+      },
+      "mode": "matched",
+      "real_counts": {
+        "0": 8338,
+        "1": 1526
+      },
+      "requested_count": 0,
+      "underspend": 0
+    },
+    "augmentation_count": null,
+    "average_precision": 0.605832167301914,
+    "balanced_accuracy": 0.6645747706283728,
+    "budget_mode": "matched",
+    "candidate_configs": [
+      {},
+      {
+        "C": 0.1
+      },
+      {
+        "C": 10.0
+      },
+      {
+        "C": 0.1
+      },
+      {
+        "C": 0.01
+      },
+      {
+        "C": 0.01
+      },
+      {
+        "C": 100.0
+      },
+      {
+        "C": 1.0
+      },
+      {
+        "C": 0.1
+      },
+      {
+        "C": 0.01
+      }
+    ],
+    "classifiers": null,
+    "config": {
+      "selected_epoch_sequence": [
+        null
+      ],
+      "selected_parameters": {
+        "C": 0.1
+      },
+      "settings": {
+        "augmentation": {
+          "mode": "matched",
+          "total": 1000
+        },
+        "device": "auto",
+        "method_parameters": {},
+        "mlp_epochs": 160,
+        "ugo_max_iterations": 20
+      },
+      "threshold": 0.5
+    },
+    "config_sha256": "1aa03ffda8ac3851ebbd1b8faa62da2e23f4d44d1ddb2708c54e823c0194103a",
+    "configuration_id": "a2de29f1095a52e73ebbabfb5186ce0879f8f36ce20c09c3d152fba0f256061c",
+    "cost": 123560,
+    "cuda_peak_torch_allocated_bytes": 0,
+    "cuda_peak_torch_reserved_bytes": 0,
+    "data_home": ".cache/benchmarks",
+    "dataset": "shoppers",
+    "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+    "device": "auto",
+    "download": false,
+    "effective_classifiers": [
+      "logistic_regression",
+      "random_forest",
+      "lightgbm",
+      "balanced_random_forest"
+    ],
+    "effective_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "effective_settings": {
+      "augmentation": {
+        "mode": "matched",
+        "total": 1000
+      },
+      "device": "auto",
+      "method_parameters": {},
+      "mlp_epochs": 160,
+      "ugo_max_iterations": 20
+    },
+    "effective_tuning_budget": 10,
+    "effective_variants": [
+      "baseline"
+    ],
+    "error": null,
+    "evaluation_policy_sha256": "af8a8e50eb193c0b5816d0ad8728f8f943b6449b0a95769d7e1822545cceafec",
+    "experiment_type": "development",
+    "fn": 246,
+    "fold": "58a01d76d43dad9bdfe3b11ce1b9837556b500eefebcfb522a6e8f741441ca3b",
+    "fp": 56,
+    "local_data": null,
+    "macro_average_precision": 0.7896134442016329,
+    "macro_f1": 0.702284876385773,
+    "mcc": 0.4444551556832608,
+    "memory_scope": "cell process RSS sampled at 10ms; Torch CUDA allocator only",
+    "method": "baseline",
+    "methods": [
+      "baseline"
+    ],
+    "metrics": {
+      "average_precision": 0.605832167301914,
+      "balanced_accuracy": 0.6645747706283728,
+      "cost": 123560,
+      "fn": 246,
+      "fp": 56,
+      "macro_average_precision": 0.7896134442016329,
+      "macro_f1": 0.702284876385773,
+      "mcc": 0.4444551556832608,
+      "minority_f1": 0.4738675958188153,
+      "minority_recall": 0.35602094240837695,
+      "primary_metric": "average_precision",
+      "primary_metric_value": 0.605832167301914,
+      "realized_fpr_test": 0.026871401151631478,
+      "realized_recall_test": 0.35602094240837695,
+      "recall_at_fpr_test": 0.5209424083769634,
+      "roc_attained_fpr_test": 0.04990403071017274,
+      "roc_fpr_limit": 0.05,
+      "roc_operating_point_definition": "maximum attainable TPR with FPR <= limit; >= threshold; ties intact; no interpolation",
+      "sos_inverse_support_f1": 0.5446343445427227,
+      "threshold": 0.5,
+      "tn": 2028,
+      "tp": 136,
+      "weighted_f1": 0.8599354082288233
+    },
+    "minority_f1": 0.4738675958188153,
+    "minority_recall": 0.35602094240837695,
+    "mlp_epochs": null,
+    "output_dir": null,
+    "peak_rss_bytes": 1202876416,
+    "positive_class": 1,
+    "predictions_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T180121-ee6dd58a68ac/shoppers/fold-0/seed-4/logistic_regression/baseline/predictions.csv",
+    "prepare": false,
+    "primary_metric": "average_precision",
+    "primary_metric_value": 0.605832167301914,
+    "protocol": "configs/benchmarks/shoppers_controlled.yaml",
+    "protocol_id": "shoppers_uci_controlled_v1",
+    "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+    "realized_fpr_test": 0.026871401151631478,
+    "realized_recall_test": 0.35602094240837695,
+    "recall_at_fpr_test": 0.5209424083769634,
+    "record_id": "88f7f4f8ffc632bc611be4a78ac998069593fe1dffe66e2c37a4200f88433a5d",
+    "record_scope": "benchmark_cell",
+    "roc_attained_fpr_test": 0.04990403071017274,
+    "roc_fpr_limit": 0.05,
+    "roc_operating_point_definition": "maximum attainable TPR with FPR <= limit; >= threshold; ties intact; no interpolation",
+    "rss_sample_interval_seconds": 0.01,
+    "run": true,
+    "run_id": "20261003T180121-ee6dd58a68ac",
+    "runtime_seconds": 0.3022111379978014,
+    "seed": 4,
+    "seeds": null,
+    "selected_candidate": 1,
+    "smoke": false,
+    "smoke_test_rows": 120,
+    "smoke_train_rows": 400,
+    "sos_inverse_support_f1": 0.5446343445427227,
+    "split_fingerprint": "58a01d76d43dad9bdfe3b11ce1b9837556b500eefebcfb522a6e8f741441ca3b",
+    "status": "completed",
+    "strategy": "baseline",
+    "study": "configs/ablations/stage1_controls.yaml",
+    "study_id": "stage1_baseline_controls_v1",
+    "study_sha256": "91f40a43ae81fe9914a13f09359ca59491b767dcf008910ea373553eb0e109dd",
+    "study_type": "baseline_control",
+    "threshold": 0.5,
+    "tn": 2028,
+    "tp": 136,
+    "tuning_budget": 10,
+    "ugo_max_iterations": null,
+    "unique_candidate_count": 6,
+    "variant": null,
+    "variant_id": "baseline",
+    "weighted_f1": 0.8599354082288233
+  },
+  {
+    "algorithm": "random_forest",
+    "artifact_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T180121-ee6dd58a68ac",
+    "augmentation": {
+      "actual_count": 0,
+      "actual_counts": {
+        "0": 8338,
+        "1": 1526
+      },
+      "mode": "matched",
+      "real_counts": {
+        "0": 8338,
+        "1": 1526
+      },
+      "requested_count": 0,
+      "underspend": 0
+    },
+    "augmentation_count": null,
+    "average_precision": 0.7433884081984744,
+    "balanced_accuracy": 0.7320484670036478,
+    "budget_mode": "matched",
+    "candidate_configs": [
+      {},
+      {
+        "max_depth": 6,
+        "max_features": "sqrt",
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 3,
+        "n_estimators": 400
+      },
+      {
+        "max_depth": 12,
+        "max_features": 0.8,
+        "min_samples_leaf": 1,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 8,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 3,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 8,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      }
+    ],
+    "classifiers": null,
+    "config": {
+      "selected_epoch_sequence": [
+        null
+      ],
+      "selected_parameters": {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 3,
+        "n_estimators": 400
+      },
+      "settings": {
+        "augmentation": {
+          "mode": "matched",
+          "total": 1000
+        },
+        "device": "auto",
+        "method_parameters": {},
+        "mlp_epochs": 160,
+        "ugo_max_iterations": 20
+      },
+      "threshold": 0.5
+    },
+    "config_sha256": "fb249554417831aaf5200732ec79d106dc535a32e0074871bb01c253aabc0187",
+    "configuration_id": "552836b88ebbf69adc17e5efb010898c39073ca8d015abb87ba14abecd26c5b6",
+    "cost": 98030,
+    "cuda_peak_torch_allocated_bytes": 0,
+    "cuda_peak_torch_reserved_bytes": 0,
+    "data_home": ".cache/benchmarks",
+    "dataset": "shoppers",
+    "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+    "device": "auto",
+    "download": false,
+    "effective_classifiers": [
+      "logistic_regression",
+      "random_forest",
+      "lightgbm",
+      "balanced_random_forest"
+    ],
+    "effective_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "effective_settings": {
+      "augmentation": {
+        "mode": "matched",
+        "total": 1000
+      },
+      "device": "auto",
+      "method_parameters": {},
+      "mlp_epochs": 160,
+      "ugo_max_iterations": 20
+    },
+    "effective_tuning_budget": 10,
+    "effective_variants": [
+      "baseline"
+    ],
+    "error": null,
+    "evaluation_policy_sha256": "af8a8e50eb193c0b5816d0ad8728f8f943b6449b0a95769d7e1822545cceafec",
+    "experiment_type": "development",
+    "fn": 195,
+    "fold": "58a01d76d43dad9bdfe3b11ce1b9837556b500eefebcfb522a6e8f741441ca3b",
+    "fp": 53,
+    "local_data": null,
+    "macro_average_precision": 0.8635002464225068,
+    "macro_f1": 0.7718727851925904,
+    "mcc": 0.5665275538644106,
+    "memory_scope": "cell process RSS sampled at 10ms; Torch CUDA allocator only",
+    "method": "baseline",
+    "methods": [
+      "baseline"
+    ],
+    "metrics": {
+      "average_precision": 0.7433884081984744,
+      "balanced_accuracy": 0.7320484670036478,
+      "cost": 98030,
+      "fn": 195,
+      "fp": 53,
+      "macro_average_precision": 0.8635002464225068,
+      "macro_f1": 0.7718727851925904,
+      "mcc": 0.5665275538644106,
+      "minority_f1": 0.6012861736334405,
+      "minority_recall": 0.4895287958115183,
+      "primary_metric": "average_precision",
+      "primary_metric_value": 0.7433884081984744,
+      "realized_fpr_test": 0.02543186180422265,
+      "realized_recall_test": 0.4895287958115183,
+      "recall_at_fpr_test": 0.6282722513089005,
+      "roc_attained_fpr_test": 0.04990403071017274,
+      "roc_fpr_limit": 0.05,
+      "roc_operating_point_definition": "maximum attainable TPR with FPR <= limit; >= threshold; ties intact; no interpolation",
+      "sos_inverse_support_f1": 0.6541362025187569,
+      "threshold": 0.5,
+      "tn": 2031,
+      "tp": 187,
+      "weighted_f1": 0.8896093678664236
+    },
+    "minority_f1": 0.6012861736334405,
+    "minority_recall": 0.4895287958115183,
+    "mlp_epochs": null,
+    "output_dir": null,
+    "peak_rss_bytes": 1202876416,
+    "positive_class": 1,
+    "predictions_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T180121-ee6dd58a68ac/shoppers/fold-0/seed-4/random_forest/baseline/predictions.csv",
+    "prepare": false,
+    "primary_metric": "average_precision",
+    "primary_metric_value": 0.7433884081984744,
+    "protocol": "configs/benchmarks/shoppers_controlled.yaml",
+    "protocol_id": "shoppers_uci_controlled_v1",
+    "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+    "realized_fpr_test": 0.02543186180422265,
+    "realized_recall_test": 0.4895287958115183,
+    "recall_at_fpr_test": 0.6282722513089005,
+    "record_id": "ebd3c8504281159a4bbf3343e69c7d94e1945680fc25c7af52dbca38bb0e1e14",
+    "record_scope": "benchmark_cell",
+    "roc_attained_fpr_test": 0.04990403071017274,
+    "roc_fpr_limit": 0.05,
+    "roc_operating_point_definition": "maximum attainable TPR with FPR <= limit; >= threshold; ties intact; no interpolation",
+    "rss_sample_interval_seconds": 0.01,
+    "run": true,
+    "run_id": "20261003T180121-ee6dd58a68ac",
+    "runtime_seconds": 20.11732336899877,
+    "seed": 4,
+    "seeds": null,
+    "selected_candidate": 2,
+    "smoke": false,
+    "smoke_test_rows": 120,
+    "smoke_train_rows": 400,
+    "sos_inverse_support_f1": 0.6541362025187569,
+    "split_fingerprint": "58a01d76d43dad9bdfe3b11ce1b9837556b500eefebcfb522a6e8f741441ca3b",
+    "status": "completed",
+    "strategy": "baseline",
+    "study": "configs/ablations/stage1_controls.yaml",
+    "study_id": "stage1_baseline_controls_v1",
+    "study_sha256": "91f40a43ae81fe9914a13f09359ca59491b767dcf008910ea373553eb0e109dd",
+    "study_type": "baseline_control",
+    "threshold": 0.5,
+    "tn": 2031,
+    "tp": 187,
+    "tuning_budget": 10,
+    "ugo_max_iterations": null,
+    "unique_candidate_count": 10,
+    "variant": null,
+    "variant_id": "baseline",
+    "weighted_f1": 0.8896093678664236
+  },
+  {
+    "algorithm": "lightgbm",
+    "artifact_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T180121-ee6dd58a68ac",
+    "augmentation": {
+      "actual_count": 0,
+      "actual_counts": {
+        "0": 8338,
+        "1": 1526
+      },
+      "mode": "matched",
+      "real_counts": {
+        "0": 8338,
+        "1": 1526
+      },
+      "requested_count": 0,
+      "underspend": 0
+    },
+    "augmentation_count": null,
+    "average_precision": 0.7424033612430684,
+    "balanced_accuracy": 0.7500904422626644,
+    "budget_mode": "matched",
+    "candidate_configs": [
+      {},
+      {
+        "learning_rate": 0.05,
+        "min_child_samples": 10,
+        "n_estimators": 200,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.01,
+        "min_child_samples": 20,
+        "n_estimators": 400,
+        "num_leaves": 63
+      },
+      {
+        "learning_rate": 0.05,
+        "min_child_samples": 10,
+        "n_estimators": 400,
+        "num_leaves": 63
+      },
+      {
+        "learning_rate": 0.05,
+        "min_child_samples": 50,
+        "n_estimators": 100,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.1,
+        "min_child_samples": 10,
+        "n_estimators": 200,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.01,
+        "min_child_samples": 50,
+        "n_estimators": 200,
+        "num_leaves": 63
+      },
+      {
+        "learning_rate": 0.1,
+        "min_child_samples": 20,
+        "n_estimators": 100,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.05,
+        "min_child_samples": 20,
+        "n_estimators": 100,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.01,
+        "min_child_samples": 10,
+        "n_estimators": 200,
+        "num_leaves": 15
+      }
+    ],
+    "classifiers": null,
+    "config": {
+      "selected_epoch_sequence": [
+        null
+      ],
+      "selected_parameters": {
+        "learning_rate": 0.01,
+        "min_child_samples": 10,
+        "n_estimators": 200,
+        "num_leaves": 15
+      },
+      "settings": {
+        "augmentation": {
+          "mode": "matched",
+          "total": 1000
+        },
+        "device": "auto",
+        "method_parameters": {},
+        "mlp_epochs": 160,
+        "ugo_max_iterations": 20
+      },
+      "threshold": 0.5
+    },
+    "config_sha256": "1f44204b29d33b01cf9c89e02fafd5e0701ab808c15d15cc557ed33d1a59495a",
+    "configuration_id": "9304f92e222bbf7a08b9b5a17489174673caf6d58aed119e474d41cd69780c17",
+    "cost": 89260,
+    "cuda_peak_torch_allocated_bytes": 0,
+    "cuda_peak_torch_reserved_bytes": 0,
+    "data_home": ".cache/benchmarks",
+    "dataset": "shoppers",
+    "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+    "device": "auto",
+    "download": false,
+    "effective_classifiers": [
+      "logistic_regression",
+      "random_forest",
+      "lightgbm",
+      "balanced_random_forest"
+    ],
+    "effective_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "effective_settings": {
+      "augmentation": {
+        "mode": "matched",
+        "total": 1000
+      },
+      "device": "auto",
+      "method_parameters": {},
+      "mlp_epochs": 160,
+      "ugo_max_iterations": 20
+    },
+    "effective_tuning_budget": 10,
+    "effective_variants": [
+      "baseline"
+    ],
+    "error": null,
+    "evaluation_policy_sha256": "af8a8e50eb193c0b5816d0ad8728f8f943b6449b0a95769d7e1822545cceafec",
+    "experiment_type": "development",
+    "fn": 177,
+    "fold": "58a01d76d43dad9bdfe3b11ce1b9837556b500eefebcfb522a6e8f741441ca3b",
+    "fp": 76,
+    "local_data": null,
+    "macro_average_precision": 0.8639030868381825,
+    "macro_f1": 0.7795683709453294,
+    "mcc": 0.5695459243218918,
+    "memory_scope": "cell process RSS sampled at 10ms; Torch CUDA allocator only",
+    "method": "baseline",
+    "methods": [
+      "baseline"
+    ],
+    "metrics": {
+      "average_precision": 0.7424033612430684,
+      "balanced_accuracy": 0.7500904422626644,
+      "cost": 89260,
+      "fn": 177,
+      "fp": 76,
+      "macro_average_precision": 0.8639030868381825,
+      "macro_f1": 0.7795683709453294,
+      "mcc": 0.5695459243218918,
+      "minority_f1": 0.6184012066365008,
+      "minority_recall": 0.5366492146596858,
+      "primary_metric": "average_precision",
+      "primary_metric_value": 0.7424033612430684,
+      "realized_fpr_test": 0.036468330134357005,
+      "realized_recall_test": 0.5366492146596858,
+      "recall_at_fpr_test": 0.612565445026178,
+      "roc_attained_fpr_test": 0.04990403071017274,
+      "roc_fpr_limit": 0.05,
+      "roc_operating_point_definition": "maximum attainable TPR with FPR <= limit; >= threshold; ties intact; no interpolation",
+      "sos_inverse_support_f1": 0.668332963948725,
+      "threshold": 0.5,
+      "tn": 2008,
+      "tp": 205,
+      "weighted_f1": 0.8908037779419337
+    },
+    "minority_f1": 0.6184012066365008,
+    "minority_recall": 0.5366492146596858,
+    "mlp_epochs": null,
+    "output_dir": null,
+    "peak_rss_bytes": 1202876416,
+    "positive_class": 1,
+    "predictions_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T180121-ee6dd58a68ac/shoppers/fold-0/seed-4/lightgbm/baseline/predictions.csv",
+    "prepare": false,
+    "primary_metric": "average_precision",
+    "primary_metric_value": 0.7424033612430684,
+    "protocol": "configs/benchmarks/shoppers_controlled.yaml",
+    "protocol_id": "shoppers_uci_controlled_v1",
+    "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+    "realized_fpr_test": 0.036468330134357005,
+    "realized_recall_test": 0.5366492146596858,
+    "recall_at_fpr_test": 0.612565445026178,
+    "record_id": "49ac0cc13df42358cfcc995bd7a63f95bf1bcf63a94ec5763d443d0b0a02b7ee",
+    "record_scope": "benchmark_cell",
+    "roc_attained_fpr_test": 0.04990403071017274,
+    "roc_fpr_limit": 0.05,
+    "roc_operating_point_definition": "maximum attainable TPR with FPR <= limit; >= threshold; ties intact; no interpolation",
+    "rss_sample_interval_seconds": 0.01,
+    "run": true,
+    "run_id": "20261003T180121-ee6dd58a68ac",
+    "runtime_seconds": 2.6359055139982956,
+    "seed": 4,
+    "seeds": null,
+    "selected_candidate": 9,
+    "smoke": false,
+    "smoke_test_rows": 120,
+    "smoke_train_rows": 400,
+    "sos_inverse_support_f1": 0.668332963948725,
+    "split_fingerprint": "58a01d76d43dad9bdfe3b11ce1b9837556b500eefebcfb522a6e8f741441ca3b",
+    "status": "completed",
+    "strategy": "baseline",
+    "study": "configs/ablations/stage1_controls.yaml",
+    "study_id": "stage1_baseline_controls_v1",
+    "study_sha256": "91f40a43ae81fe9914a13f09359ca59491b767dcf008910ea373553eb0e109dd",
+    "study_type": "baseline_control",
+    "threshold": 0.5,
+    "tn": 2008,
+    "tp": 205,
+    "tuning_budget": 10,
+    "ugo_max_iterations": null,
+    "unique_candidate_count": 10,
+    "variant": null,
+    "variant_id": "baseline",
+    "weighted_f1": 0.8908037779419337
+  },
+  {
+    "algorithm": "balanced_random_forest",
+    "artifact_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T180121-ee6dd58a68ac",
+    "augmentation": {
+      "actual_count": 0,
+      "actual_counts": {
+        "0": 8338,
+        "1": 1526
+      },
+      "mode": "matched",
+      "real_counts": {
+        "0": 8338,
+        "1": 1526
+      },
+      "requested_count": 0,
+      "underspend": 0
+    },
+    "augmentation_count": null,
+    "average_precision": 0.7422697901827398,
+    "balanced_accuracy": 0.8382553185075017,
+    "budget_mode": "matched",
+    "candidate_configs": [
+      {},
+      {
+        "max_depth": 6,
+        "max_features": "sqrt",
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 3,
+        "n_estimators": 400
+      },
+      {
+        "max_depth": 12,
+        "max_features": 0.8,
+        "min_samples_leaf": 1,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 8,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 3,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 8,
+        "n_estimators": 100
+      },
+      {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      }
+    ],
+    "classifiers": null,
+    "config": {
+      "selected_epoch_sequence": [
+        null
+      ],
+      "selected_parameters": {
+        "max_depth": null,
+        "max_features": 0.8,
+        "min_samples_leaf": 8,
+        "n_estimators": 100
+      },
+      "settings": {
+        "augmentation": {
+          "mode": "matched",
+          "total": 1000
+        },
+        "device": "auto",
+        "method_parameters": {},
+        "mlp_epochs": 160,
+        "ugo_max_iterations": 20
+      },
+      "threshold": 0.5
+    },
+    "config_sha256": "120c33119d0b5ca5827d27d2df9173c4a8993529a85cb0b4fc8448f73d2ec599",
+    "configuration_id": "91f1ffc0303b7ee144d74d11caeb5266807f708fcd491a9caecab4955bcf978b",
+    "cost": 35250,
+    "cuda_peak_torch_allocated_bytes": 0,
+    "cuda_peak_torch_reserved_bytes": 0,
+    "data_home": ".cache/benchmarks",
+    "dataset": "shoppers",
+    "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+    "device": "auto",
+    "download": false,
+    "effective_classifiers": [
+      "logistic_regression",
+      "random_forest",
+      "lightgbm",
+      "balanced_random_forest"
+    ],
+    "effective_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "effective_settings": {
+      "augmentation": {
+        "mode": "matched",
+        "total": 1000
+      },
+      "device": "auto",
+      "method_parameters": {},
+      "mlp_epochs": 160,
+      "ugo_max_iterations": 20
+    },
+    "effective_tuning_budget": 10,
+    "effective_variants": [
+      "baseline"
+    ],
+    "error": null,
+    "evaluation_policy_sha256": "af8a8e50eb193c0b5816d0ad8728f8f943b6449b0a95769d7e1822545cceafec",
+    "experiment_type": "development",
+    "fn": 64,
+    "fold": "58a01d76d43dad9bdfe3b11ce1b9837556b500eefebcfb522a6e8f741441ca3b",
+    "fp": 325,
+    "local_data": null,
+    "macro_average_precision": 0.8639212689763998,
+    "macro_f1": 0.7604614606678445,
+    "mcc": 0.557514731593668,
+    "memory_scope": "cell process RSS sampled at 10ms; Torch CUDA allocator only",
+    "method": "baseline",
+    "methods": [
+      "baseline"
+    ],
+    "metrics": {
+      "average_precision": 0.7422697901827398,
+      "balanced_accuracy": 0.8382553185075017,
+      "cost": 35250,
+      "fn": 64,
+      "fp": 325,
+      "macro_average_precision": 0.8639212689763998,
+      "macro_f1": 0.7604614606678445,
+      "mcc": 0.557514731593668,
+      "minority_f1": 0.6204878048780488,
+      "minority_recall": 0.8324607329842932,
+      "primary_metric": "average_precision",
+      "primary_metric_value": 0.7422697901827398,
+      "realized_fpr_test": 0.15595009596928983,
+      "realized_recall_test": 0.8324607329842932,
+      "recall_at_fpr_test": 0.5968586387434555,
+      "roc_attained_fpr_test": 0.046065259117082535,
+      "roc_fpr_limit": 0.05,
+      "roc_operating_point_definition": "maximum attainable TPR with FPR <= limit; >= threshold; ties intact; no interpolation",
+      "sos_inverse_support_f1": 0.6638535279207916,
+      "threshold": 0.5,
+      "tn": 1759,
+      "tp": 318,
+      "weighted_f1": 0.8570693934148974
+    },
+    "minority_f1": 0.6204878048780488,
+    "minority_recall": 0.8324607329842932,
+    "mlp_epochs": null,
+    "output_dir": null,
+    "peak_rss_bytes": 1202941952,
+    "positive_class": 1,
+    "predictions_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261003T180121-ee6dd58a68ac/shoppers/fold-0/seed-4/balanced_random_forest/baseline/predictions.csv",
+    "prepare": false,
+    "primary_metric": "average_precision",
+    "primary_metric_value": 0.7422697901827398,
+    "protocol": "configs/benchmarks/shoppers_controlled.yaml",
+    "protocol_id": "shoppers_uci_controlled_v1",
+    "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+    "realized_fpr_test": 0.15595009596928983,
+    "realized_recall_test": 0.8324607329842932,
+    "recall_at_fpr_test": 0.5968586387434555,
+    "record_id": "5e47f497f899290f4776aafe9fd94dc32e51e2f070bf58341580c623379dc7e1",
+    "record_scope": "benchmark_cell",
+    "roc_attained_fpr_test": 0.046065259117082535,
+    "roc_fpr_limit": 0.05,
+    "roc_operating_point_definition": "maximum attainable TPR with FPR <= limit; >= threshold; ties intact; no interpolation",
+    "rss_sample_interval_seconds": 0.01,
+    "run": true,
+    "run_id": "20261003T180121-ee6dd58a68ac",
+    "runtime_seconds": 10.657288749003783,
+    "seed": 4,
+    "seeds": null,
+    "selected_candidate": 4,
+    "smoke": false,
+    "smoke_test_rows": 120,
+    "smoke_train_rows": 400,
+    "sos_inverse_support_f1": 0.6638535279207916,
+    "split_fingerprint": "58a01d76d43dad9bdfe3b11ce1b9837556b500eefebcfb522a6e8f741441ca3b",
+    "status": "completed",
+    "strategy": "baseline",
+    "study": "configs/ablations/stage1_controls.yaml",
+    "study_id": "stage1_baseline_controls_v1",
+    "study_sha256": "91f40a43ae81fe9914a13f09359ca59491b767dcf008910ea373553eb0e109dd",
+    "study_type": "baseline_control",
+    "threshold": 0.5,
+    "tn": 1759,
+    "tp": 318,
+    "tuning_budget": 10,
+    "ugo_max_iterations": null,
+    "unique_candidate_count": 10,
+    "variant": null,
+    "variant_id": "baseline",
+    "weighted_f1": 0.8570693934148974
+  }
+]

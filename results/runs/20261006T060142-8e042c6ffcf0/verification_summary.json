@@ -1,0 +1,39 @@
+{
+  "run_id": "20261006T060142-8e042c6ffcf0",
+  "status": "completed",
+  "counts": {
+    "numeric_metrics": 1800,
+    "predictions": 90,
+    "pipeline_audits": 990,
+    "classifier_fits": 4290,
+    "oof_audits": 330,
+    "group_audits": 330,
+    "combined_audits": 165,
+    "joint_selections": 15,
+    "source_files": 7,
+    "canonical_cells": 90,
+    "reference_metric_values": 1500,
+    "reference_cells": 75,
+    "identical_U1_inner_scoring": 150,
+    "identical_U2_real_groups": 165
+  },
+  "wall_seconds": 4558.823630813,
+  "max_peak_rss_bytes": 1854320640,
+  "max_cuda_peak_torch_allocated_bytes": 16440320,
+  "max_cuda_peak_torch_reserved_bytes": 27262976,
+  "numeric_tolerance": 1e-12,
+  "manual_decisions": {
+    "U1": "keep",
+    "U2": "keep",
+    "U3": "discard",
+    "U4": "discard",
+    "U5": "pending"
+  },
+  "freeze": {
+    "evidence": {},
+    "reason": "U5 inclusion awaits user review; U3/U4 were discarded; W5/R5 and required mechanism comparisons remain unavailable.",
+    "status": "not_frozen"
+  },
+  "stage2_allowed": false,
+  "note": "Fixed holdout across five descriptive seeds, not five independent datasets; RSS/reserved are process/cache scopes, not standalone method memory."
+}

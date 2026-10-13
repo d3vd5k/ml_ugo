@@ -1,0 +1,8 @@
+{
+  "records": 90,
+  "numeric_metrics": 1890,
+  "candidate_decisions": 105000,
+  "flow_model_replays": 75,
+  "neighbor_replays": 30,
+  "immutable_pools": 0
+}

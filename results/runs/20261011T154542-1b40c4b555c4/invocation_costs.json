@@ -1,0 +1,7 @@
+{
+  "F1_training_repeated": false,
+  "generator_fits": 10,
+  "historical_timing_not_compared": true,
+  "shared_training_not_charged_per_arm": true,
+  "wall_seconds": 23627.074032025
+}

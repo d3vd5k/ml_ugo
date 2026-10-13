@@ -1,0 +1,11 @@
+{
+  "status": "cancelled_before_completion",
+  "reason": "Execution tool clamped requested 86400-second timeout to 3600 seconds. The invocation was cancelled proactively and restarted with timeout=0, not allowed to expire.",
+  "job_id": "bg_5",
+  "restart_job_id": "bg_6",
+  "completed_prediction_sets_preserved": 16,
+  "completed_prediction_sets": "12 logistic-regression variants and four random-forest references, seed 0",
+  "included_in_reported_aggregates": false,
+  "rerun_note": "The clean complete invocation repeats these cells and completed inner proposals to preserve all timing/memory records. Those repeated results are not additional independent seeds or evidence. Original files remain preserved.",
+  "canonical_status_note": "Original manifest is not rewritten; the interrupted invocation never finalized its canonical cell registry. This sidecar records cancellation separately."
+}

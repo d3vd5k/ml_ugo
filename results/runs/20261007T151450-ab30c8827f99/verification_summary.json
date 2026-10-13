@@ -1,0 +1,8 @@
+{
+  "predictions": 120,
+  "numeric_metrics": 2520,
+  "H1_real_refits": 30,
+  "candidate_decisions": 30000,
+  "matched_thinning_groups": 600,
+  "exact_historical_references": 15
+}

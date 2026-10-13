@@ -1,0 +1,9 @@
+{
+  "changed_component": "U5_F1 reference FlowGMM execution device only",
+  "import_policy": "Source-backed immutable artifact links; imported rows retain source runtime, predictions and training provenance. New U5_F1 artifacts are local.",
+  "imported_cells": 225,
+  "rerun_cells": 15,
+  "source_manifest_sha256": "594576d1ad24002179b28e293188c8206324efd1ecf34d6e0c6e6eae91af0324",
+  "source_records_sha256": "84c750afa4003a9baf93d78160840790f05b3d6d78ec0f1b73de27614d32942c",
+  "source_run": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261009T131938-e676f682743e"
+}

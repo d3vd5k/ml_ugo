@@ -1,0 +1,84 @@
+study_id: stage1_f1_shoppers_v1
+study_type: component_ablation
+experiment_type: development
+development_datasets: [shoppers]
+confirmatory_datasets: []
+controlled_component_base: U2
+manual_review:
+  policy: user_only_keep_or_discard
+  decisions: {U1: keep, U2: keep, U3: discard, U4: discard, U5: discard, H1: discard, F1: keep, F2: discard}
+  confirmatory_evaluation: only_after_user_finalizes_phase1_configuration
+freeze:
+  status: not_frozen
+  reason: The user kept F1 and discarded F2; final Phase 1 configuration is not yet frozen.
+  evidence: {}
+stage_gate: {stage2_allowed: false}
+pairing:
+  split: identical_real_outer_and_inner_split_fingerprints
+  seed: identical_classifier_and_sampler_seeds
+  classifier: same_ten_U2_joint_learner_proposals_then_lock_selected_learner_and_group_alpha
+  count_budget: fixed_1000_original_proposals_no_refill_report_actual_acceptance
+  retraining_cap: 20_generation_rounds
+  underspend: report_and_disallow_equal_count_claim_when_actual_counts_differ
+f1_policy:
+  implementation: flowgmm_tabular_v1
+  training_source: both_classes_real_detector_fit_only
+  detector_fit: eighty_percent_of_real_inner_fit_stratified_seed_plus_7919
+  calibration: remaining_twenty_percent_reserved_unused_by_F1
+  validation: original_real_inner_validation_excluded_from_detector_fit_in_both_roles
+  outer_replay: frozen_same_detector_fit_with_outer_classifier_inverse_coordinate_bridge
+  classifier_access: unchanged_all_real_inner_fit_or_outer_training
+  categorical_representation: full_onehot_uniform_dequantization_not_arbitrary_category_codes
+  evaluation_dequantization: deterministic_content_keyed_shared_between_classes
+  priors: equal
+  gate: original_proposal_log_likelihood_ratio_greater_or_equal_logit_tau
+  neighbor_post_detector: disabled
+  relocation: disabled
+  support_filter_F2: disabled
+  selection: four_tau_candidates_on_real_inner_validation_after_canonical_U2_selection
+  threshold_grid: [0.5, 0.6, 0.7, 0.8]
+  historical_U5_reference: results/runs/20261006T060142-8e042c6ffcf0
+variants:
+  baseline:
+    method: baseline
+    status: ready
+    available: true
+    missing_components: []
+  U0:
+    method: ugo_original
+    status: ready
+    available: true
+    missing_components: []
+  corrected_current:
+    method: ugo_corrected
+    status: ready
+    available: true
+    missing_components: []
+  U2:
+    method: ugo_groups_only
+    status: ready_for_experiment
+    available: true
+    retention_status: kept_by_user
+    sampler_parameters: {grouping: kmeans, allocation: stability}
+    sampler_search: {group_alpha: [0.0, 0.5, 1.0]}
+    missing_components: []
+  N_reject:
+    method: ugo_n_reject
+    status: ready_for_experiment
+    available: true
+    retention_status: diagnostic_control_only
+    sampler_parameters: {grouping: kmeans, allocation: stability}
+    sampler_search: {group_alpha: [0.0, 0.5, 1.0]}
+    missing_components: []
+  F1:
+    method: ugo_f1
+    status: ready_for_experiment
+    available: true
+    retention_status: kept_by_user
+    retained_components: [U2]
+    excluded_components: [U1, U3, U4, U5, H1, H2, F2]
+    sampler_parameters: {grouping: kmeans, allocation: stability}
+    sampler_search:
+      group_alpha: [0.0, 0.5, 1.0]
+      f1_tau: [0.5, 0.6, 0.7, 0.8]
+    missing_components: []

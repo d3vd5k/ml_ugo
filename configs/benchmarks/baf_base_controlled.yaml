@@ -1,0 +1,1238 @@
+{
+  "track": "controlled",
+  "status": "ready",
+  "validation_fraction": 0.2,
+  "classifiers": [
+    "logistic_regression",
+    "random_forest",
+    "lightgbm",
+    "balanced_random_forest"
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "tuning_budget": {
+    "n_candidates": 100,
+    "sampler_seed": 42
+  },
+  "threshold": {
+    "name": "recall_at_fpr",
+    "fpr": 0.05
+  },
+  "methods": [
+    "baseline",
+    "class_weight",
+    "ros",
+    "smote",
+    "borderline_smote",
+    "kmeans_smote",
+    "ugo_original",
+    "ugo_corrected"
+  ],
+  "augmentation": {
+    "mode": "matched",
+    "total": 1000
+  },
+  "classifier_methods": {
+    "balanced_random_forest": [
+      "baseline"
+    ]
+  },
+  "preprocessing": {
+    "fit_on": "fit_indices",
+    "numeric": "median_impute_standard_scale",
+    "categorical": "mode_impute_one_hot_unknown_ignore",
+    "category_safe_sampling": true
+  },
+  "role": "confirmatory",
+  "protocol_id": "baf_base_temporal_controlled_v1",
+  "dataset": "baf_base",
+  "primary_metric": "recall_at_fpr",
+  "split": {
+    "type": "temporal",
+    "train_months": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "test_months": [
+      6,
+      7
+    ],
+    "validation_months": [
+      5
+    ]
+  },
+  "availability": {
+    "requires": "Local official Kaggle Base.csv or Base.parquet; credentials not accessed"
+  },
+  "search_audit": {
+    "source_pin": "3377cfd8fc20edcda3dd9dd14c10ed3dd276c6de",
+    "selection": "inner month5 only; differs from author test-ranked figure",
+    "author_sampling": "100 independent Optuna RandomSampler trial seeds drawn without replacement by NumPy RandomState42",
+    "controlled_sampling": "NumPy RandomState per recovered trial seed, integer uniform or half-step-quantized log-uniform, float log-uniform and uniform categories; same audited distribution families, NOT exact Optuna categorical random stream replay",
+    "trial_seeds": [
+      987231,
+      79954,
+      567130,
+      500891,
+      55399,
+      135049,
+      733378,
+      732057,
+      51333,
+      731479,
+      399758,
+      401397,
+      855485,
+      858884,
+      503247,
+      864741,
+      35032,
+      995703,
+      376761,
+      811353,
+      577745,
+      659806,
+      219339,
+      979755,
+      625691,
+      215339,
+      443417,
+      980328,
+      336983,
+      518812,
+      943378,
+      2085,
+      663615,
+      677814,
+      957737,
+      543082,
+      529927,
+      66336,
+      272966,
+      876375,
+      443181,
+      38747,
+      244518,
+      321941,
+      212423,
+      684487,
+      460021,
+      330797,
+      820287,
+      934968,
+      878902,
+      507014,
+      63468,
+      568670,
+      855771,
+      606372,
+      358900,
+      178392,
+      921914,
+      348365,
+      377482,
+      44792,
+      690927,
+      50313,
+      780881,
+      18958,
+      804703,
+      8985,
+      99901,
+      655318,
+      224928,
+      926625,
+      67898,
+      68878,
+      904484,
+      244299,
+      912237,
+      803684,
+      444936,
+      895958,
+      858828,
+      575347,
+      464016,
+      196829,
+      309023,
+      347381,
+      310804,
+      837523,
+      268240,
+      366137,
+      449596,
+      586917,
+      980753,
+      51662,
+      892873,
+      576798,
+      480866,
+      550670,
+      584291,
+      362131
+    ],
+    "author_environment": {
+      "numpy": "1.20.2",
+      "optuna": "2.10.0",
+      "lightgbm": "3.1.1",
+      "pandas": "1.1.4"
+    }
+  },
+  "candidate_parameters": {
+    "lightgbm": [
+      {
+        "n_estimators": 282,
+        "max_depth": 3,
+        "learning_rate": 0.0845632961216524,
+        "num_leaves": 12,
+        "boosting_type": "gbdt",
+        "min_data_in_leaf": 7,
+        "max_bin": 204,
+        "enable_bundle": true
+      },
+      {
+        "n_estimators": 20,
+        "max_depth": 15,
+        "learning_rate": 0.06854855597212585,
+        "num_leaves": 36,
+        "boosting_type": "goss",
+        "min_data_in_leaf": 28,
+        "max_bin": 410,
+        "enable_bundle": true
+      },
+      {
+        "n_estimators": 1552,
+        "max_depth": 16,
+        "learning_rate": 0.033090342339747,
+        "num_leaves": 28,
+        "boosting_type": "goss",
+        "min_data_in_leaf": 113,
+        "max_bin": 413,
+        "enable_bundle": false
+      },
+      {
+        "n_estimators": 80,
+        "max_depth": 13,
+        "learning_rate": 0.028697688089953932,
+        "num_leaves": 35,
+        "boosting_type": "gbdt",
+        "min_data_in_leaf": 10,
+        "max_bin": 112,
+        "enable_bundle": false
+      },
+      {
+        "n_estimators": 594,
+        "max_depth": 5,
+        "learning_rate": 0.04387521153073488,
+        "num_leaves": 13,
+        "boosting_type": "gbdt",
+        "min_data_in_leaf": 12,
+        "max_bin": 246,
+        "enable_bundle": false
+      },
+      {
+        "n_estimators": 4196,
+        "max_depth": 22,
+        "learning_rate": 0.026576202063598967,
+        "num_leaves": 27,
+        "boosting_type": "goss",
+        "min_data_in_leaf": 56,
+        "max_bin": 441,
+        "enable_bundle": false
+      },
+      {
+        "n_estimators": 1122,
+        "max_depth": 28,
+        "learning_rate": 0.027668430088564337,
+        "num_leaves": 25,
+        "boosting_type": "gbdt",
+        "min_data_in_leaf": 5,
+        "max_bin": 389,
+        "enable_bundle": true
+      },
+      {
+        "n_estimators": 227,
+        "max_depth": 29,
+        "learning_rate": 0.025253606182392842,
+        "num_leaves": 80,
+        "boosting_type": "gbdt",
+        "min_data_in_leaf": 18,
+        "max_bin": 245,
+        "enable_bundle": false
+      },
+      {
+        "n_estimators": 142,
+        "max_depth": 27,
+        "learning_rate": 0.059975241979927096,
+        "num_leaves": 56,
+        "boosting_type": "gbdt",
+        "min_data_in_leaf": 40,
+        "max_bin": 148,
+        "enable_bundle": false
+      },
+      {
+        "n_estimators": 77,
+        "max_depth": 20,
+        "learning_rate": 0.03144435854125781,
+        "num_leaves": 35,
+        "boosting_type": "goss",
+        "min_data_in_leaf": 9,
+        "max_bin": 482,
+        "enable_bundle": true
+      },
+      {
+        "n_estimators": 8099,
+        "max_depth": 9,
+        "learning_rate": 0.052487879983189135,
+        "num_leaves": 39,
+        "boosting_type": "goss",
+        "min_data_in_leaf": 53,
+        "max_bin": 267,
+        "enable_bundle": false
+      },
+      {
+        "n_estimators": 9721,
+        "max_depth": 11,
+        "learning_rate": 0.06671083084142353,
+        "num_leaves": 88,
+        "boosting_type": "gbdt",
+        "min_data_in_leaf": 7,
+        "max_bin": 405,
+        "enable_bundle": true
+      },
+      {
+        "n_estimators": 168,
+        "max_depth": 20,
+        "learning_rate": 0.06998885152845685,
+        "num_leaves": 14,
+        "boosting_type": "goss",
+        "min_data_in_leaf": 60,
+        "max_bin": 209,
+        "enable_bundle": false
+      },
+      {
+        "n_estimators": 242,
+        "max_depth": 10,
+        "learning_rate": 0.02187887275506793,
+        "num_leaves": 19,
+        "boosting_type": "gbdt",
+        "min_data_in_leaf": 6,
+        "max_bin": 129,
+        "enable_bundle": false
+      },
+      {
+        "n_estimators": 491,
+        "max_depth": 3,
+        "learning_rate": 0.045299968104252915,
+        "num_leaves": 25,
+        "boosting_type": "gbdt",
+        "min_data_in_leaf": 16,
+        "max_bin": 134,
+        "enable_bundle": false
+      },
+      {
+        "n_estimators": 80,
+        "max_depth": 28,
+        "learning_rate": 0.04716535119775822,
+        "num_leaves": 14,
+        "boosting_type": "gbdt",
+        "min_data_in_leaf": 142,
+        "max_bin": 494,
+        "enable_bundle": true
+      },
+      {
+        "n_estimators": 3871,
+        "max_depth": 25,
+        "learning_rate": 0.0437613050236967,
+        "num_leaves": 61,
+        "boosting_type": "goss",
+        "min_data_in_leaf": 7,
+        "max_bin": 380,
+        "enable_bundle": true
+      },
+      {
+        "n_estimators": 34,
+        "max_depth": 12,
+        "learning_rate": 0.04341005669780891,
+        "num_leaves": 55,
+        "boosting_type": "gbdt",
+        "min_data_in_leaf": 68,
+        "max_bin": 279,
+        "enable_bundle": true
+      },
+      {
+        "n_estimators": 3039,
+        "max_depth": 18,
+        "learning_rate": 0.03355971235734985,
+        "num_leaves": 16,
+        "boosting_type": "goss",
+        "min_data_in_leaf": 77,
+        "max_bin": 205,
+        "enable_bundle": true
+      },
+      {
+        "n_estimators": 237,
+        "max_depth": 23,
+        "learning_rate": 0.02913682197830921,
+        "num_leaves": 21,
+        "boosting_type": "goss",
+        "min_data_in_leaf": 12,
+        "max_bin": 361,
+        "enable_bundle": true
+      },
+      {
+        "n_estimators": 205,
+        "max_depth": 16,
+        "learning_rate": 0.062203554014590136,
+        "num_leaves": 10,
+        "boosting_type": "gbdt",
+        "min_data_in_leaf": 16,
+        "max_bin": 308,
+        "enable_bundle": true
+      },
+      {
+        "n_estimators": 691,
+        "max_depth": 17,
+        "learning_rate": 0.06124049067690588,
+        "num_leaves": 35,
+        "boosting_type": "gbdt",
+        "min_data_in_leaf": 12,
+        "max_bin": 184,
+        "enable_bundle": true
+      },
+      {
+        "n_estimators": 1359,
+        "max_depth": 10,
+        "learning_rate": 0.035476648928400405,
+        "num_leaves": 65,
+        "boosting_type": "gbdt",
+        "min_data_in_leaf": 124,
+        "max_bin": 467,
+        "enable_bundle": true
+      },
+      {
+        "n_estimators": 878,
+        "max_depth": 9,
+        "learning_rate": 0.030583279390275466,
+        "num_leaves": 27,
+        "boosting_type": "goss",
+        "min_data_in_leaf": 6,
+        "max_bin": 120,
+        "enable_bundle": true
+      },
+      {
+        "n_estimators": 256,
+        "max_depth": 21,
+        "learning_rate": 0.08514060712647105,
+        "num_leaves": 19,
+        "boosting_type": "goss",
+        "min_data_in_leaf": 26,
+        "max_bin": 287,
+        "enable_bundle": false
+      },
+      {
+        "n_estimators": 1119,
+        "max_depth": 9,
+        "learning_rate": 0.06540852756866697,
+        "num_leaves": 36,
+        "boosting_type": "gbdt",
+        "min_data_in_leaf": 9,
+        "max_bin": 312,
+        "enable_bundle": true
+      },
+      {
+        "n_estimators": 105,
+        "max_depth": 27,
+        "learning_rate": 0.09711506971590288,
+        "num_leaves": 95,
+        "boosting_type": "goss",
+        "min_data_in_leaf": 102,
+        "max_bin": 218,
+        "enable_bundle": true
+      },
+      {
+        "n_estimators": 227,
+        "max_depth": 8,
+        "learning_rate": 0.09501885436688111,
+        "num_leaves": 47,
+        "boosting_type": "gbdt",
+        "min_data_in_leaf": 164,
+        "max_bin": 102,
+        "enable_bundle": true
+      },
+      {
+        "n_estimators": 36,
+        "max_depth": 16,
+        "learning_rate": 0.05445207158440931,
+        "num_leaves": 59,
+        "boosting_type": "gbdt",
+        "min_data_in_leaf": 34,
+        "max_bin": 289,
+        "enable_bundle": true
+      },
+      {
+        "n_estimators": 137,
+        "max_depth": 27,
+        "learning_rate": 0.03227031969481615,
+        "num_leaves": 63,
+        "boosting_type": "goss",
+        "min_data_in_leaf": 14,
+        "max_bin": 215,
+        "enable_bundle": false
+      },
+      {
+        "n_estimators": 5541,
+        "max_depth": 9,
+        "learning_rate": 0.02245402600979229,
+        "num_leaves": 19,
+        "boosting_type": "goss",
+        "min_data_in_leaf": 19,
+        "max_bin": 223,
+        "enable_bundle": true
+      },
+      {
+        "n_estimators": 24,
+        "max_depth": 10,
+        "learning_rate": 0.06173969044500244,
+        "num_leaves": 13,
+        "boosting_type": "goss",
+        "min_data_in_leaf": 96,
+        "max_bin": 349,
+        "enable_bundle": true
+      },
+      {
+        "n_estimators": 90,
+        "max_depth": 19,
+        "learning_rate": 0.04654104042581981,
+        "num_leaves": 41,
+        "boosting_type": "gbdt",
+        "min_data_in_leaf": 18,
+        "max_bin": 338,
+        "enable_bundle": false
+      },
+      {
+        "n_estimators": 34,
+        "max_depth": 29,
+        "learning_rate": 0.03688393852717681,
+        "num_leaves": 55,
+        "boosting_type": "goss",
+        "min_data_in_leaf": 6,
+        "max_bin": 218,
+        "enable_bundle": true
+      },
+      {
+        "n_estimators": 5184,
+        "max_depth": 12,
+        "learning_rate": 0.02065662312206336,
+        "num_leaves": 24,
+        "boosting_type": "goss",
+        "min_data_in_leaf": 6,
+        "max_bin": 321,
+        "enable_bundle": false
+      },
+      {
+        "n_estimators": 99,
+        "max_depth": 29,
+        "learning_rate": 0.09459854705993223,
+        "num_leaves": 15,
+        "boosting_type": "goss",
+        "min_data_in_leaf": 25,
+        "max_bin": 417,
+        "enable_bundle": true
+      },
+      {
+        "n_estimators": 132,
+        "max_depth": 10,
+        "learning_rate": 0.02390868478832091,
+        "num_leaves": 54,
+        "boosting_type": "gbdt",
+        "min_data_in_leaf": 16,
+        "max_bin": 301,
+        "enable_bundle": true
+      },
+      {
+        "n_estimators": 1919,
+        "max_depth": 21,
+        "learning_rate": 0.03453247524159393,
+        "num_leaves": 15,
+        "boosting_type": "gbdt",
+        "min_data_in_leaf": 10,
+        "max_bin": 486,
+        "enable_bundle": false
+      },
+      {
+        "n_estimators": 260,
+        "max_depth": 15,
+        "learning_rate": 0.037328274012581,
+        "num_leaves": 89,
+        "boosting_type": "goss",
+        "min_data_in_leaf": 13,
+        "max_bin": 355,
+        "enable_bundle": false
+      },
+      {
+        "n_estimators": 24,
+        "max_depth": 24,
+        "learning_rate": 0.02400415573489472,
+        "num_leaves": 12,
+        "boosting_type": "gbdt",
+        "min_data_in_leaf": 5,
+        "max_bin": 252,
+        "enable_bundle": true
+      },
+      {
+        "n_estimators": 123,
+        "max_depth": 27,
+        "learning_rate": 0.026308401933355475,
+        "num_leaves": 13,
+        "boosting_type": "goss",
+        "min_data_in_leaf": 97,
+        "max_bin": 413,
+        "enable_bundle": false
+      },
+      {
+        "n_estimators": 93,
+        "max_depth": 6,
+        "learning_rate": 0.0640835414112575,
+        "num_leaves": 10,
+        "boosting_type": "goss",
+        "min_data_in_leaf": 98,
+        "max_bin": 469,
+        "enable_bundle": false
+      },
+      {
+        "n_estimators": 488,
+        "max_depth": 28,
+        "learning_rate": 0.038083549800346665,
+        "num_leaves": 31,
+        "boosting_type": "gbdt",
+        "min_data_in_leaf": 166,
+        "max_bin": 247,
+        "enable_bundle": true
+      },
+      {
+        "n_estimators": 327,
+        "max_depth": 17,
+        "learning_rate": 0.0719307899186168,
+        "num_leaves": 19,
+        "boosting_type": "goss",
+        "min_data_in_leaf": 27,
+        "max_bin": 154,
+        "enable_bundle": false
+      },
+      {
+        "n_estimators": 75,
+        "max_depth": 8,
+        "learning_rate": 0.0758769188976494,
+        "num_leaves": 19,
+        "boosting_type": "gbdt",
+        "min_data_in_leaf": 32,
+        "max_bin": 407,
+        "enable_bundle": false
+      },
+      {
+        "n_estimators": 8211,
+        "max_depth": 3,
+        "learning_rate": 0.04116027726675259,
+        "num_leaves": 11,
+        "boosting_type": "gbdt",
+        "min_data_in_leaf": 140,
+        "max_bin": 179,
+        "enable_bundle": true
+      },
+      {
+        "n_estimators": 74,
+        "max_depth": 17,
+        "learning_rate": 0.06137710044065483,
+        "num_leaves": 10,
+        "boosting_type": "goss",
+        "min_data_in_leaf": 58,
+        "max_bin": 472,
+        "enable_bundle": true
+      },
+      {
+        "n_estimators": 3550,
+        "max_depth": 18,
+        "learning_rate": 0.07992256860125152,
+        "num_leaves": 12,
+        "boosting_type": "gbdt",
+        "min_data_in_leaf": 7,
+        "max_bin": 128,
+        "enable_bundle": false
+      },
+      {
+        "n_estimators": 22,
+        "max_depth": 18,
+        "learning_rate": 0.023383186488953534,
+        "num_leaves": 15,
+        "boosting_type": "gbdt",
+        "min_data_in_leaf": 68,
+        "max_bin": 403,
+        "enable_bundle": true
+      },
+      {
+        "n_estimators": 1178,
+        "max_depth": 25,
+        "learning_rate": 0.04601468575766976,
+        "num_leaves": 12,
+        "boosting_type": "gbdt",
+        "min_data_in_leaf": 38,
+        "max_bin": 185,
+        "enable_bundle": false
+      },
+      {
+        "n_estimators": 36,
+        "max_depth": 22,
+        "learning_rate": 0.08630782526452423,
+        "num_leaves": 17,
+        "boosting_type": "goss",
+        "min_data_in_leaf": 52,
+        "max_bin": 259,
+        "enable_bundle": false
+      },
+      {
+        "n_estimators": 103,
+        "max_depth": 7,
+        "learning_rate": 0.043146684768817216,
+        "num_leaves": 27,
+        "boosting_type": "gbdt",
+        "min_data_in_leaf": 18,
+        "max_bin": 262,
+        "enable_bundle": false
+      },
+      {
+        "n_estimators": 35,
+        "max_depth": 25,
+        "learning_rate": 0.054096249369425975,
+        "num_leaves": 10,
+        "boosting_type": "goss",
+        "min_data_in_leaf": 8,
+        "max_bin": 195,
+        "enable_bundle": false
+      },
+      {
+        "n_estimators": 395,
+        "max_depth": 14,
+        "learning_rate": 0.08432418604040302,
+        "num_leaves": 19,
+        "boosting_type": "goss",
+        "min_data_in_leaf": 153,
+        "max_bin": 165,
+        "enable_bundle": true
+      },
+      {
+        "n_estimators": 132,
+        "max_depth": 6,
+        "learning_rate": 0.06468098672854972,
+        "num_leaves": 14,
+        "boosting_type": "gbdt",
+        "min_data_in_leaf": 157,
+        "max_bin": 223,
+        "enable_bundle": false
+      },
+      {
+        "n_estimators": 106,
+        "max_depth": 9,
+        "learning_rate": 0.041140137817637416,
+        "num_leaves": 25,
+        "boosting_type": "gbdt",
+        "min_data_in_leaf": 39,
+        "max_bin": 102,
+        "enable_bundle": false
+      },
+      {
+        "n_estimators": 154,
+        "max_depth": 17,
+        "learning_rate": 0.04476230323306661,
+        "num_leaves": 99,
+        "boosting_type": "goss",
+        "min_data_in_leaf": 90,
+        "max_bin": 292,
+        "enable_bundle": true
+      },
+      {
+        "n_estimators": 660,
+        "max_depth": 19,
+        "learning_rate": 0.042205876213510386,
+        "num_leaves": 32,
+        "boosting_type": "gbdt",
+        "min_data_in_leaf": 15,
+        "max_bin": 110,
+        "enable_bundle": true
+      },
+      {
+        "n_estimators": 7059,
+        "max_depth": 5,
+        "learning_rate": 0.026016798320119335,
+        "num_leaves": 86,
+        "boosting_type": "goss",
+        "min_data_in_leaf": 21,
+        "max_bin": 430,
+        "enable_bundle": false
+      },
+      {
+        "n_estimators": 3463,
+        "max_depth": 14,
+        "learning_rate": 0.05216797021474245,
+        "num_leaves": 29,
+        "boosting_type": "goss",
+        "min_data_in_leaf": 39,
+        "max_bin": 446,
+        "enable_bundle": false
+      },
+      {
+        "n_estimators": 719,
+        "max_depth": 12,
+        "learning_rate": 0.041049884847652277,
+        "num_leaves": 96,
+        "boosting_type": "goss",
+        "min_data_in_leaf": 13,
+        "max_bin": 113,
+        "enable_bundle": true
+      },
+      {
+        "n_estimators": 1950,
+        "max_depth": 16,
+        "learning_rate": 0.04826574220447579,
+        "num_leaves": 29,
+        "boosting_type": "goss",
+        "min_data_in_leaf": 152,
+        "max_bin": 286,
+        "enable_bundle": true
+      },
+      {
+        "n_estimators": 363,
+        "max_depth": 27,
+        "learning_rate": 0.040678032305400166,
+        "num_leaves": 16,
+        "boosting_type": "goss",
+        "min_data_in_leaf": 24,
+        "max_bin": 408,
+        "enable_bundle": true
+      },
+      {
+        "n_estimators": 307,
+        "max_depth": 20,
+        "learning_rate": 0.024100934281030762,
+        "num_leaves": 33,
+        "boosting_type": "goss",
+        "min_data_in_leaf": 52,
+        "max_bin": 357,
+        "enable_bundle": false
+      },
+      {
+        "n_estimators": 3803,
+        "max_depth": 7,
+        "learning_rate": 0.02709485628735452,
+        "num_leaves": 33,
+        "boosting_type": "gbdt",
+        "min_data_in_leaf": 86,
+        "max_bin": 230,
+        "enable_bundle": true
+      },
+      {
+        "n_estimators": 1285,
+        "max_depth": 8,
+        "learning_rate": 0.023327800675648623,
+        "num_leaves": 56,
+        "boosting_type": "gbdt",
+        "min_data_in_leaf": 8,
+        "max_bin": 365,
+        "enable_bundle": false
+      },
+      {
+        "n_estimators": 7636,
+        "max_depth": 9,
+        "learning_rate": 0.08023181649448571,
+        "num_leaves": 56,
+        "boosting_type": "goss",
+        "min_data_in_leaf": 121,
+        "max_bin": 169,
+        "enable_bundle": true
+      },
+      {
+        "n_estimators": 1531,
+        "max_depth": 12,
+        "learning_rate": 0.030679531699194566,
+        "num_leaves": 14,
+        "boosting_type": "goss",
+        "min_data_in_leaf": 95,
+        "max_bin": 286,
+        "enable_bundle": true
+      },
+      {
+        "n_estimators": 5772,
+        "max_depth": 4,
+        "learning_rate": 0.036581479595739375,
+        "num_leaves": 67,
+        "boosting_type": "gbdt",
+        "min_data_in_leaf": 10,
+        "max_bin": 130,
+        "enable_bundle": false
+      },
+      {
+        "n_estimators": 1315,
+        "max_depth": 13,
+        "learning_rate": 0.020695647370441668,
+        "num_leaves": 54,
+        "boosting_type": "goss",
+        "min_data_in_leaf": 11,
+        "max_bin": 189,
+        "enable_bundle": false
+      },
+      {
+        "n_estimators": 47,
+        "max_depth": 29,
+        "learning_rate": 0.06810855167373386,
+        "num_leaves": 51,
+        "boosting_type": "goss",
+        "min_data_in_leaf": 78,
+        "max_bin": 269,
+        "enable_bundle": true
+      },
+      {
+        "n_estimators": 107,
+        "max_depth": 7,
+        "learning_rate": 0.04046902046137547,
+        "num_leaves": 18,
+        "boosting_type": "goss",
+        "min_data_in_leaf": 159,
+        "max_bin": 372,
+        "enable_bundle": true
+      },
+      {
+        "n_estimators": 83,
+        "max_depth": 14,
+        "learning_rate": 0.021986762952694108,
+        "num_leaves": 46,
+        "boosting_type": "goss",
+        "min_data_in_leaf": 28,
+        "max_bin": 123,
+        "enable_bundle": true
+      },
+      {
+        "n_estimators": 35,
+        "max_depth": 30,
+        "learning_rate": 0.06617347086749699,
+        "num_leaves": 74,
+        "boosting_type": "goss",
+        "min_data_in_leaf": 8,
+        "max_bin": 468,
+        "enable_bundle": true
+      },
+      {
+        "n_estimators": 53,
+        "max_depth": 22,
+        "learning_rate": 0.05138895849137923,
+        "num_leaves": 26,
+        "boosting_type": "gbdt",
+        "min_data_in_leaf": 35,
+        "max_bin": 278,
+        "enable_bundle": true
+      },
+      {
+        "n_estimators": 2826,
+        "max_depth": 8,
+        "learning_rate": 0.09736382355257317,
+        "num_leaves": 17,
+        "boosting_type": "goss",
+        "min_data_in_leaf": 13,
+        "max_bin": 111,
+        "enable_bundle": false
+      },
+      {
+        "n_estimators": 20,
+        "max_depth": 19,
+        "learning_rate": 0.0690327436426626,
+        "num_leaves": 24,
+        "boosting_type": "goss",
+        "min_data_in_leaf": 30,
+        "max_bin": 356,
+        "enable_bundle": true
+      },
+      {
+        "n_estimators": 99,
+        "max_depth": 14,
+        "learning_rate": 0.02746975007230102,
+        "num_leaves": 17,
+        "boosting_type": "goss",
+        "min_data_in_leaf": 20,
+        "max_bin": 267,
+        "enable_bundle": true
+      },
+      {
+        "n_estimators": 1830,
+        "max_depth": 13,
+        "learning_rate": 0.07177197619259501,
+        "num_leaves": 12,
+        "boosting_type": "gbdt",
+        "min_data_in_leaf": 41,
+        "max_bin": 216,
+        "enable_bundle": true
+      },
+      {
+        "n_estimators": 7859,
+        "max_depth": 7,
+        "learning_rate": 0.09311106343745174,
+        "num_leaves": 30,
+        "boosting_type": "goss",
+        "min_data_in_leaf": 7,
+        "max_bin": 336,
+        "enable_bundle": false
+      },
+      {
+        "n_estimators": 2263,
+        "max_depth": 3,
+        "learning_rate": 0.0278821348601287,
+        "num_leaves": 16,
+        "boosting_type": "goss",
+        "min_data_in_leaf": 20,
+        "max_bin": 291,
+        "enable_bundle": false
+      },
+      {
+        "n_estimators": 30,
+        "max_depth": 16,
+        "learning_rate": 0.028837832424820468,
+        "num_leaves": 17,
+        "boosting_type": "gbdt",
+        "min_data_in_leaf": 31,
+        "max_bin": 144,
+        "enable_bundle": true
+      },
+      {
+        "n_estimators": 116,
+        "max_depth": 8,
+        "learning_rate": 0.035360346345553746,
+        "num_leaves": 26,
+        "boosting_type": "gbdt",
+        "min_data_in_leaf": 5,
+        "max_bin": 295,
+        "enable_bundle": false
+      },
+      {
+        "n_estimators": 1036,
+        "max_depth": 27,
+        "learning_rate": 0.051983053379228775,
+        "num_leaves": 16,
+        "boosting_type": "gbdt",
+        "min_data_in_leaf": 23,
+        "max_bin": 195,
+        "enable_bundle": true
+      },
+      {
+        "n_estimators": 306,
+        "max_depth": 11,
+        "learning_rate": 0.06969868323190428,
+        "num_leaves": 78,
+        "boosting_type": "gbdt",
+        "min_data_in_leaf": 60,
+        "max_bin": 402,
+        "enable_bundle": false
+      },
+      {
+        "n_estimators": 2095,
+        "max_depth": 10,
+        "learning_rate": 0.03509014596285988,
+        "num_leaves": 75,
+        "boosting_type": "goss",
+        "min_data_in_leaf": 14,
+        "max_bin": 465,
+        "enable_bundle": false
+      },
+      {
+        "n_estimators": 181,
+        "max_depth": 8,
+        "learning_rate": 0.020113447937469508,
+        "num_leaves": 86,
+        "boosting_type": "gbdt",
+        "min_data_in_leaf": 49,
+        "max_bin": 376,
+        "enable_bundle": false
+      },
+      {
+        "n_estimators": 156,
+        "max_depth": 21,
+        "learning_rate": 0.09171716401044826,
+        "num_leaves": 24,
+        "boosting_type": "goss",
+        "min_data_in_leaf": 30,
+        "max_bin": 252,
+        "enable_bundle": false
+      },
+      {
+        "n_estimators": 3039,
+        "max_depth": 29,
+        "learning_rate": 0.04861404050774553,
+        "num_leaves": 93,
+        "boosting_type": "gbdt",
+        "min_data_in_leaf": 6,
+        "max_bin": 129,
+        "enable_bundle": false
+      },
+      {
+        "n_estimators": 308,
+        "max_depth": 6,
+        "learning_rate": 0.020161902516244987,
+        "num_leaves": 56,
+        "boosting_type": "goss",
+        "min_data_in_leaf": 112,
+        "max_bin": 207,
+        "enable_bundle": false
+      },
+      {
+        "n_estimators": 1241,
+        "max_depth": 21,
+        "learning_rate": 0.027957746970767913,
+        "num_leaves": 86,
+        "boosting_type": "gbdt",
+        "min_data_in_leaf": 6,
+        "max_bin": 141,
+        "enable_bundle": false
+      },
+      {
+        "n_estimators": 106,
+        "max_depth": 29,
+        "learning_rate": 0.021987689694454412,
+        "num_leaves": 15,
+        "boosting_type": "gbdt",
+        "min_data_in_leaf": 14,
+        "max_bin": 426,
+        "enable_bundle": true
+      },
+      {
+        "n_estimators": 8174,
+        "max_depth": 16,
+        "learning_rate": 0.04937513258681576,
+        "num_leaves": 27,
+        "boosting_type": "gbdt",
+        "min_data_in_leaf": 14,
+        "max_bin": 228,
+        "enable_bundle": true
+      },
+      {
+        "n_estimators": 1016,
+        "max_depth": 22,
+        "learning_rate": 0.03981329520058054,
+        "num_leaves": 23,
+        "boosting_type": "gbdt",
+        "min_data_in_leaf": 89,
+        "max_bin": 260,
+        "enable_bundle": true
+      },
+      {
+        "n_estimators": 792,
+        "max_depth": 21,
+        "learning_rate": 0.07950699411026818,
+        "num_leaves": 67,
+        "boosting_type": "gbdt",
+        "min_data_in_leaf": 15,
+        "max_bin": 488,
+        "enable_bundle": true
+      },
+      {
+        "n_estimators": 96,
+        "max_depth": 27,
+        "learning_rate": 0.029392713584759762,
+        "num_leaves": 73,
+        "boosting_type": "goss",
+        "min_data_in_leaf": 161,
+        "max_bin": 370,
+        "enable_bundle": true
+      },
+      {
+        "n_estimators": 149,
+        "max_depth": 9,
+        "learning_rate": 0.08417154453885431,
+        "num_leaves": 14,
+        "boosting_type": "goss",
+        "min_data_in_leaf": 7,
+        "max_bin": 371,
+        "enable_bundle": false
+      },
+      {
+        "n_estimators": 32,
+        "max_depth": 15,
+        "learning_rate": 0.029371564315786126,
+        "num_leaves": 76,
+        "boosting_type": "gbdt",
+        "min_data_in_leaf": 17,
+        "max_bin": 214,
+        "enable_bundle": true
+      },
+      {
+        "n_estimators": 126,
+        "max_depth": 10,
+        "learning_rate": 0.029867912984750937,
+        "num_leaves": 16,
+        "boosting_type": "gbdt",
+        "min_data_in_leaf": 7,
+        "max_bin": 261,
+        "enable_bundle": true
+      },
+      {
+        "n_estimators": 837,
+        "max_depth": 4,
+        "learning_rate": 0.020075632033953364,
+        "num_leaves": 26,
+        "boosting_type": "gbdt",
+        "min_data_in_leaf": 83,
+        "max_bin": 369,
+        "enable_bundle": true
+      }
+    ]
+  },
+  "audited_search_space": {
+    "n_estimators": {
+      "type": "int",
+      "low": 20,
+      "high": 10000,
+      "log": true
+    },
+    "max_depth": {
+      "type": "int",
+      "low": 3,
+      "high": 30
+    },
+    "learning_rate": {
+      "type": "float",
+      "low": 0.02,
+      "high": 0.1,
+      "log": true
+    },
+    "num_leaves": {
+      "type": "int",
+      "low": 10,
+      "high": 100,
+      "log": true
+    },
+    "boosting_type": [
+      "gbdt",
+      "goss"
+    ],
+    "min_data_in_leaf": {
+      "type": "int",
+      "low": 5,
+      "high": 200,
+      "log": true
+    },
+    "max_bin": {
+      "type": "int",
+      "low": 100,
+      "high": 500
+    },
+    "enable_bundle": [
+      true,
+      false
+    ]
+  }
+}

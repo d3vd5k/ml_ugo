@@ -1,0 +1,210 @@
+# PLAN.MD Step 6 declarations, not implemented surrogate variants.
+# corrected_current is a separately identified corrected baseline, NOT U0/U5.
+# Execution classifiers/seeds/counts come from the benchmark protocol and recorded CLI overrides.
+study_id: stage1_component_ablation_v1
+study_type: component_ablation
+experiment_type: development
+development_datasets: [shoppers]
+confirmatory_datasets: [climb, aps, baf_base, satimage]
+classifier_methods:
+  balanced_random_forest: [baseline]
+controlled_component_base: corrected_current
+manual_review:
+  policy: user_only_keep_or_discard
+  decisions: {U1: keep, U2: keep, U3: discard, U4: discard, U5: discard}
+  confirmatory_evaluation: only_after_user_finalizes_phase1_configuration
+pairing:
+  split: identical_real_outer_and_inner_split_fingerprints
+  seed: identical_classifier_and_sampler_seeds
+  classifier: identical_family_parameters_and_tuning_opportunities
+  count_budget: matched_actual_per_class_counts
+  underspend: report_and_disallow_equal_count_claim_when_actual_counts_differ
+  native_budget: separate_records_and_summaries
+freeze:
+  status: not_frozen
+  reason: U3/U4/U5 were discarded; final configuration freeze was not authorized, and W5/R5 plus required mechanism comparisons remain unavailable.
+  evidence: {}
+stage_gate:
+  stage2_allowed: false
+  required:
+    - Explain each retained component with completed development ablations.
+    - Compare U5 generation against W5 weighting and R5 exact duplication.
+    - Control loss normalization and regularization for weights w_i=1+k_i and duplication.
+    - Vary imbalance, minority group size, overlap, corruption and irrelevant dimensions independently.
+    - Include separated islands and disconnected/curved minority support.
+    - Preserve declared development/confirmatory roles and freeze before confirmatory evaluation.
+variants:
+  baseline:
+    method: baseline
+    status: ready
+    available: true
+    description: No resampling, rerun under the same component-study policy.
+    missing_components: []
+  U0:
+    method: ugo_original
+    status: ready
+    available: true
+    description: Original UGO, separately named from the corrected current implementation.
+    missing_components: []
+    protocol_note: Original cap/category deviations must remain recorded; ready does not certify published reproduction.
+  corrected_current:
+    method: ugo_corrected
+    status: ready
+    available: true
+    description: Current corrected real-only UGO baseline; not the original algorithm and not a successful-components combination.
+    missing_components: []
+  U1_oof_mma:
+    method: ugo_oof_mma
+    status: ready_for_experiment
+    available: true
+    retention_status: kept_by_user
+    description: Scoring-only candidate relative to corrected_current; fixed real-only three-fold OOF MMA.
+    scoring_policy: {n_splits: 3, training_source: real_only, refresh: fixed_before_generation}
+    missing_components: []
+  U1:
+    method: ugo_scoring_only
+    status: unavailable
+    available: false
+    description: Scoring only.
+    missing_components: [out_of_fold_same_family_committee_disagreement, real_inner_calibration_comparison]
+  U2:
+    method: ugo_groups_only
+    status: ready_for_experiment
+    available: true
+    retention_status: kept_by_user
+    description: User-retained group protection/allocation candidate; KMeans stability-adjusted quotas against corrected_current, not U1+U2.
+    sampler_parameters: {grouping: kmeans, allocation: stability}
+    sampler_search: {group_alpha: [0.0, 0.5, 1.0]}
+    missing_components: []
+    requires_user_decisions: [U1]
+  U2_graph:
+    method: ugo_groups_only
+    status: ready_for_experiment
+    available: true
+    retention_status: awaiting_user_decision
+    description: Graph grouping with stability-adjusted quotas; separate U2 comparison, not selected automatically.
+    sampler_parameters: {grouping: graph, allocation: stability}
+    sampler_search: {group_alpha: [0.0, 0.5, 1.0]}
+    missing_components: []
+    requires_user_decisions: [U1]
+  U2_kmeans_size:
+    method: ugo_groups_only
+    status: ready_for_experiment
+    available: true
+    retention_status: awaiting_user_decision
+    sampler_parameters: {grouping: kmeans, allocation: size}
+    missing_components: []
+    requires_user_decisions: [U1]
+  U2_kmeans_uniform:
+    method: ugo_groups_only
+    status: ready_for_experiment
+    available: true
+    retention_status: awaiting_user_decision
+    sampler_parameters: {grouping: kmeans, allocation: uniform}
+    missing_components: []
+    requires_user_decisions: [U1]
+  U2_kmeans_difficulty:
+    method: ugo_groups_only
+    status: ready_for_experiment
+    available: true
+    retention_status: awaiting_user_decision
+    sampler_parameters: {grouping: kmeans, allocation: difficulty}
+    missing_components: []
+    requires_user_decisions: [U1]
+  U2_graph_size:
+    method: ugo_groups_only
+    status: ready_for_experiment
+    available: true
+    retention_status: awaiting_user_decision
+    sampler_parameters: {grouping: graph, allocation: size}
+    missing_components: []
+    requires_user_decisions: [U1]
+  U2_graph_uniform:
+    method: ugo_groups_only
+    status: ready_for_experiment
+    available: true
+    retention_status: awaiting_user_decision
+    sampler_parameters: {grouping: graph, allocation: uniform}
+    missing_components: []
+    requires_user_decisions: [U1]
+  U2_graph_difficulty:
+    method: ugo_groups_only
+    status: ready_for_experiment
+    available: true
+    retention_status: awaiting_user_decision
+    sampler_parameters: {grouping: graph, allocation: difficulty}
+    missing_components: []
+    requires_user_decisions: [U1]
+  U3:
+    method: ugo_constraints_only
+    status: ready_for_experiment
+    available: true
+    retention_status: discarded_by_user
+    description: Isolated real-reference geometry against corrected_current; compatible connected-group interpolation and bounded step shortening, not U1+U2+U3.
+    sampler_parameters: {repair: shorten, max_shortening: 4}
+    sampler_search: {constraint_settings: [{eta: 0.25, rho: 0.5}, {eta: 0.5, rho: 1.0}, {eta: 1.0, rho: 1.5}]}
+    missing_components: []
+    requires_user_decisions: [U1, U2]
+  U3_relocation:
+    method: ugo_constraints_only
+    status: ready_for_experiment
+    available: true
+    retention_status: discarded_by_user
+    description: Same isolated geometry; failed points relocate within the compatible connected real group and must pass unchanged constraints afterward.
+    sampler_parameters: {repair: relocate}
+    sampler_search: {constraint_settings: [{eta: 0.25, rho: 0.5}, {eta: 0.5, rho: 1.0}, {eta: 1.0, rho: 1.5}]}
+    missing_components: []
+    requires_user_decisions: [U1, U2]
+  U3_rejection:
+    method: ugo_constraints_only
+    status: ready_for_experiment
+    available: true
+    retention_status: discarded_by_user
+    description: Same isolated geometry; failed points are rejected without repair or quota padding.
+    sampler_parameters: {repair: reject}
+    sampler_search: {constraint_settings: [{eta: 0.25, rho: 0.5}, {eta: 0.5, rho: 1.0}, {eta: 1.0, rho: 1.5}]}
+    missing_components: []
+    requires_user_decisions: [U1, U2]
+  U4:
+    method: ugo_stopping_only
+    status: ready_for_experiment
+    available: true
+    retention_status: discarded_by_user
+    description: Stopping-only real-inner-validation checkpoint selection against corrected_current, not U1+U2+U4; no discarded U3 geometry.
+    sampler_parameters: {policy: checkpoint, budget_fractions: [0.0, 0.25, 0.5, 1.0]}
+    missing_components: []
+    requires_user_decisions: [U1, U2, U3]
+  U4_fixed_grid:
+    method: ugo_stopping_only
+    status: ready_for_experiment
+    available: true
+    retention_status: discarded_by_user
+    description: Independent fixed generation-budget grid selected on real inner validation; stopping-only alternative, not automatically retained.
+    sampler_parameters: {policy: fixed_grid, budget_fractions: [0.0, 0.25, 0.5, 1.0]}
+    missing_components: []
+    requires_user_decisions: [U1, U2, U3]
+  U5:
+    method: ugo_combined
+    status: ready_for_experiment
+    available: true
+    retention_status: discarded_by_user
+    description: User-requested combination of kept U1_oof_mma scoring and canonical U2 KMeans/stability support/allocation; corrected interpolation/relocation/Welch stopping, excluding U3/U4.
+    retained_components: [U1_oof_mma, U2]
+    excluded_components: [U3, U4]
+    sampler_parameters: {grouping: kmeans, allocation: stability}
+    sampler_search: {group_alpha: [0.0, 0.5, 1.0]}
+    scoring_policy: {n_splits: 3, training_source: real_only, refresh: fixed_before_generation}
+    missing_components: []
+    requires_user_decisions: [U1, U2, U3, U4]
+  W5:
+    method: ugo_allocation_weights
+    status: unavailable
+    available: false
+    description: U5 seed allocation implemented as sample weights w_i=1+k_i.
+    missing_components: [selected_U5_seed_multiplicity, equivalent_loss_normalization_and_regularization, allocation_weight_pipeline]
+  R5:
+    method: ugo_allocation_duplication
+    status: unavailable
+    available: false
+    description: U5 seed allocation implemented as exact duplication.
+    missing_components: [selected_U5_seed_multiplicity, equivalent_loss_normalization_and_regularization, allocation_exact_duplication_pipeline]

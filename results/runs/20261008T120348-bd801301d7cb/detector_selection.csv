@@ -1,0 +1,16 @@
+algorithm,seed,tau,q,support_off,accepted
+logistic_regression,0,0.8,,True,549
+random_forest,0,0.7,,True,720
+lightgbm,0,0.8,0.1,False,500
+logistic_regression,1,0.8,0.1,False,482
+random_forest,1,0.6,,True,704
+lightgbm,1,0.8,0.1,False,500
+logistic_regression,2,0.8,0.1,False,397
+random_forest,2,0.8,,True,540
+lightgbm,2,0.5,0.01,False,711
+logistic_regression,3,0.8,0.1,False,364
+random_forest,3,0.7,,True,568
+lightgbm,3,0.7,,True,579
+logistic_regression,4,0.8,0.1,False,463
+random_forest,4,0.8,0.1,False,477
+lightgbm,4,0.7,,True,695

@@ -1,0 +1,15 @@
+{
+  "F1_scoring_calls": 0,
+  "generator_fits": 0,
+  "native_arm_fits": 90,
+  "source_invocation": {
+    "F1_training_repeated": false,
+    "generator_fits": 10,
+    "historical_timing_not_compared": true,
+    "shared_training_not_charged_per_arm": true,
+    "wall_seconds": 23627.074032025
+  },
+  "source_root": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261011T154542-1b40c4b555c4",
+  "source_training_and_sampling_reused": true,
+  "wall_seconds": 144.84407411699794
+}

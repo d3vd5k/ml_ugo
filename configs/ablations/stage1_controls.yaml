@@ -1,0 +1,65 @@
+# Baseline comparisons are not evidence that U1-U5/W5/R5 have been completed.
+# Execution classifiers/seeds/counts come from the benchmark protocol and recorded CLI overrides.
+study_id: stage1_baseline_controls_v1
+study_type: baseline_control
+experiment_type: development
+development_datasets: [shoppers]
+confirmatory_datasets: [climb, aps, baf_base, satimage]
+classifier_methods:
+  balanced_random_forest: [baseline]
+pairing:
+  split: identical_real_outer_and_inner_split_fingerprints
+  seed: identical_classifier_and_sampler_seeds
+  classifier: identical_family_and_tuning_budget_where_applicable
+  count_budget: matched_actual_per_class_counts_for_generation_mechanisms
+  non_generation_controls: [baseline, class_weight, balanced_random_forest]
+  underspend: explicit_actual_counts_no_padding_no_equal_count_claim
+  native_budget: separate_records_and_summaries
+freeze:
+  status: not_frozen
+  reason: Setup and baseline controls do not complete PLAN Step 6.
+  evidence: {}
+stage_gate:
+  stage2_allowed: false
+  component_study: configs/ablations/stage1_components.yaml
+variants:
+  baseline:
+    method: baseline
+    status: ready
+    available: true
+    description: No resampling.
+  class_weight:
+    method: class_weight
+    status: ready
+    available: true
+    description: Class weighting with the same downstream family where supported.
+  ros:
+    method: ros
+    status: ready
+    available: true
+    description: Random oversampling exact duplication control.
+  smote:
+    method: smote
+    status: ready
+    available: true
+    description: SMOTE with category-valid mixed-feature handling where required.
+  borderline_smote:
+    method: borderline_smote
+    status: ready
+    available: true
+    description: BorderlineSMOTE; unsupported feature schemas are explicit unsupported cells.
+  kmeans_smote:
+    method: kmeans_smote
+    status: ready
+    available: true
+    description: KMeansSMOTE; insufficient support or unsupported schemas are explicit failures/unsupported cells.
+  ugo_original:
+    method: ugo_original
+    status: ready
+    available: true
+    description: Separately identified original UGO reference; original budget cap and controlled category projection recorded as deviations.
+  ugo_corrected:
+    method: ugo_corrected
+    status: ready
+    available: true
+    description: Corrected current real-only UGO; never mislabeled original U0 or combined U5.

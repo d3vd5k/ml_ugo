@@ -1,0 +1,85 @@
+{
+  "track": "published",
+  "status": "unresolved",
+  "validation_fraction": 0.2,
+  "seeds": [
+    2021
+  ],
+  "methods": [
+    "baseline",
+    "class_weight",
+    "ros",
+    "smote",
+    "borderline_smote",
+    "kmeans_smote",
+    "ugo_original",
+    "ugo_corrected"
+  ],
+  "tuning_budget": {
+    "n_candidates": 1,
+    "sampler_seed": 2021
+  },
+  "threshold": {
+    "name": "fixed_0.5"
+  },
+  "augmentation": {
+    "mode": "native",
+    "total": 1000
+  },
+  "protocol_id": "shoppers_sos_table2_unresolved",
+  "dataset": "shoppers",
+  "primary_metric": "sos_inverse_support_f1",
+  "split": {
+    "type": "author_fixed"
+  },
+  "classifiers": [
+    "decision_tree",
+    "adaboost",
+    "logistic_regression",
+    "mlp"
+  ],
+  "classifier_parameters": {
+    "decision_tree": {
+      "max_depth": 20
+    },
+    "adaboost": {},
+    "logistic_regression": {
+      "solver": "lbfgs",
+      "max_iter": 50
+    },
+    "mlp": {
+      "hidden_layer_sizes": [
+        50
+      ],
+      "max_iter": 50
+    }
+  },
+  "missing_prerequisites": [
+    "No baseline/no-resampling and SMOTE executable recipe or exact baseline RNG sequence released",
+    "Five explicit paper trial seeds and reported spread hierarchy not recoverable; source pins RNG2021 and repeats generation5times",
+    "Author preprocessing provenance and source-row split identities absent; NPZ and JSON recover values, not original split seed or duplicate-row identities"
+  ],
+  "author_audit": {
+    "source_pin": "f1b450cf199d5e0013b401e380008446ef8757f7",
+    "array_rows": {
+      "train": 9864,
+      "test": 2466
+    },
+    "class_counts": {
+      "train": [
+        8307,
+        1557
+      ],
+      "test": [
+        2115,
+        351
+      ]
+    },
+    "metric": "F1_0*support_1/N+F1_1*support_0/N; NOT sklearn weighted_f1",
+    "aggregation": "classifier mean per evaluator repetition; generator mean/std across5repetitions; config.test.n_iter=1",
+    "preprocessing": "continuous metadata bounds: log(max(x,1e-2)) if min>=0,max>=1000 else (x-min)/(max-min)*5; ordinal passthrough; categorical>2 train-fit onehot; <=2 passthrough; shuffle and truncate50000",
+    "preprocessing_provenance": "Metadata bounds equal full UCI table; Administrative max27 occurs in authorTEST only(trainmax26). Treat author scaling as published-track heldout-metadata leakage, not controlled preprocessing.",
+    "encoding": "Month,VisitorType,Weekend,label metadata0-based; OS,Browser,Region,TrafficType retain original1-based values",
+    "source_row_match": "Full multiset matches encoded rawUCI at8decimal tolerance;125duplicate rows make original-row indices ambiguous"
+  }
+}

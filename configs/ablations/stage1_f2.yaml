@@ -1,0 +1,93 @@
+study_id: stage1_f2_shoppers_v1
+study_type: component_ablation
+experiment_type: development
+development_datasets: [shoppers]
+confirmatory_datasets: []
+controlled_component_base: U2
+manual_review:
+  policy: user_only_keep_or_discard
+  decisions: {U1: keep, U2: keep, U3: discard, U4: discard, U5: discard, H1: discard, F1: keep, F2: discard}
+  confirmatory_evaluation: only_after_user_finalizes_phase1_configuration
+freeze:
+  status: not_frozen
+  reason: The user kept F1 and discarded F2; F2 remains available only for historical reproduction and Phase 1 is not frozen.
+  evidence: {}
+stage_gate: {stage2_allowed: false}
+pairing:
+  split: identical_real_outer_and_inner_split_fingerprints
+  seed: identical_classifier_and_sampler_seeds
+  classifier: reuse_selected_canonical_U2_learner_and_group_alpha_from_F1
+  compatibility: lock_F1_validation_selected_tau_before_q_selection
+  count_budget: fixed_1000_original_proposals_no_refill_report_actual_acceptance
+  retraining_cap: 20_generation_rounds
+  underspend: report_and_disallow_equal_count_claim_when_actual_counts_differ
+f2_policy:
+  implementation: flowgmm_tabular_v1_with_calibrated_likelihood_adapter
+  iterative_f1_source_run: results/runs/20261007T180310-edddfeea01ac
+  smoke_iterative_f1_source_run: results/smoke/20261007T193854-789c042995bf
+  pool_f1_source_run: results/runs/20261007T172857-728d008031d6
+  smoke_pool_f1_source_run: results/smoke/20261007T180216-278047c1ae7f
+  model: reuse_exact_frozen_F1_core_and_fit_only_preprocessing_no_refit
+  calibration: original_reserved_real_calibration_rows_only_both_classes
+  calibration_density: intended_class_log_likelihood_including_flow_Jacobian
+  quantile_interpolation: numpy_linear_with_documented_negative_infinity_endpoint_extension
+  unknown_calibration_categories: closed_fit_vocabulary_zero_density_negative_infinity_retain_every_row
+  quantile_grid: [null, 0.01, 0.05, 0.10]
+  support_off: explicit_null_quantile_not_zero
+  selection: real_inner_validation_AP_after_locking_F1_tau_learner_and_group_alpha
+  ties: prefer_support_off_then_lower_quantile
+  classifier_access: unchanged_all_real_inner_fit_or_outer_training
+  coordinate_space: original_U2_proposals_never_relocated
+  support_gate: compatibility_and_class_specific_calibration_likelihood_threshold
+  failure: discard_no_refill_explicit_zero_acceptance_termination
+  thinning: uniform_without_replacement_only_from_F1_accepted_original_proposals
+  thinning_counts: match_selected_F2_per_original_U2_group_separately_for_inner_and_outer
+  thinning_seeds: [0, 1, 2, 3, 4]
+  historical_U5_reference: results/runs/20261006T060142-8e042c6ffcf0
+variants:
+  F1:
+    method: ugo_f1
+    status: ready_for_experiment
+    available: true
+    retention_status: kept_by_user
+    retained_components: [U2]
+    sampler_parameters: {grouping: kmeans, allocation: stability}
+    sampler_search: {group_alpha: [0.0, 0.5, 1.0], f1_tau: [0.5, 0.6, 0.7, 0.8]}
+    missing_components: []
+  F2:
+    method: ugo_f2
+    status: ready_for_experiment
+    available: true
+    retention_status: discarded_by_user
+    retained_components: [U2, F1_compatibility]
+    excluded_components: [U1, U3, U4, U5, H1, H2]
+    sampler_search: {f2_q: [null, 0.01, 0.05, 0.10]}
+    missing_components: []
+  F2_support_off:
+    method: ugo_f2
+    status: ready_for_experiment
+    available: true
+    retention_status: diagnostic_control_only
+    sampler_search: {f2_q: [null]}
+    missing_components: []
+  F2_q001:
+    method: ugo_f2
+    status: ready_for_experiment
+    available: true
+    retention_status: diagnostic_control_only
+    sampler_search: {f2_q: [0.01]}
+    missing_components: []
+  F2_q005:
+    method: ugo_f2
+    status: ready_for_experiment
+    available: true
+    retention_status: diagnostic_control_only
+    sampler_search: {f2_q: [0.05]}
+    missing_components: []
+  F2_q010:
+    method: ugo_f2
+    status: ready_for_experiment
+    available: true
+    retention_status: diagnostic_control_only
+    sampler_search: {f2_q: [0.10]}
+    missing_components: []

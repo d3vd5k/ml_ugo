@@ -1,0 +1,8 @@
+{
+  "cache_builds": 10,
+  "fresh_smoke_reference_subrun_included": false,
+  "frozen_flow_training_repeated": false,
+  "historical_reference_tuning_included": false,
+  "observed_total_seconds": 1037.0314438269997,
+  "parent_cache_build_once_per_seed_role": true
+}

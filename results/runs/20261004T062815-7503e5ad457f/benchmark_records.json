@@ -1,0 +1,134 @@
+[
+  {
+    "algorithm": "lightgbm",
+    "artifact_path": "/home/d3vd5k/Projects/ml_project_2/results/runs/20261004T062815-7503e5ad457f",
+    "augmentation": {},
+    "augmentation_count": null,
+    "budget_mode": "matched",
+    "candidate_configs": [
+      {},
+      {
+        "learning_rate": 0.05,
+        "min_child_samples": 10,
+        "n_estimators": 200,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.01,
+        "min_child_samples": 20,
+        "n_estimators": 400,
+        "num_leaves": 63
+      },
+      {
+        "learning_rate": 0.05,
+        "min_child_samples": 10,
+        "n_estimators": 400,
+        "num_leaves": 63
+      },
+      {
+        "learning_rate": 0.05,
+        "min_child_samples": 50,
+        "n_estimators": 100,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.1,
+        "min_child_samples": 10,
+        "n_estimators": 200,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.01,
+        "min_child_samples": 50,
+        "n_estimators": 200,
+        "num_leaves": 63
+      },
+      {
+        "learning_rate": 0.1,
+        "min_child_samples": 20,
+        "n_estimators": 100,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.05,
+        "min_child_samples": 20,
+        "n_estimators": 100,
+        "num_leaves": 15
+      },
+      {
+        "learning_rate": 0.01,
+        "min_child_samples": 10,
+        "n_estimators": 200,
+        "num_leaves": 15
+      }
+    ],
+    "classifiers": [
+      "lightgbm"
+    ],
+    "config_sha256": "fd2a70803be61661dd17711a59b1cec2a374cf63bfed75b4910810fa06d5733d",
+    "configuration_id": "257e394a2b23146ef328427d432c619f6d6ef67b8cf0e4d4d5c67281b024287c",
+    "data_home": ".cache/benchmarks",
+    "dataset": "shoppers",
+    "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+    "device": "auto",
+    "download": false,
+    "effective_classifiers": [
+      "lightgbm"
+    ],
+    "effective_seeds": [
+      1
+    ],
+    "effective_settings": {
+      "augmentation": {
+        "mode": "matched",
+        "total": 1000
+      },
+      "device": "auto",
+      "method_parameters": {},
+      "mlp_epochs": 160,
+      "ugo_max_iterations": 20
+    },
+    "effective_tuning_budget": 10,
+    "effective_variants": [
+      "kmeans_smote"
+    ],
+    "error": "RuntimeError: No clusters found with sufficient samples of class 1. Try lowering the cluster_balance_threshold or increasing the number of clusters.",
+    "evaluation_policy_sha256": "af8a8e50eb193c0b5816d0ad8728f8f943b6449b0a95769d7e1822545cceafec",
+    "experiment_type": "development",
+    "fold": "686cedfc5028c2d9569b062ebadf3f6c71363502f258b27da445514559265f78",
+    "local_data": null,
+    "method": "kmeans_smote",
+    "methods": [
+      "kmeans_smote"
+    ],
+    "metrics": {},
+    "mlp_epochs": null,
+    "output_dir": null,
+    "prepare": false,
+    "protocol": "configs/benchmarks/shoppers_controlled.yaml",
+    "protocol_id": "shoppers_uci_controlled_v1",
+    "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+    "record_id": "414a082cbb044553b57e7b14d22939045cc35aa7f31177d50bf5062981b1e865",
+    "record_scope": "benchmark_cell",
+    "run": true,
+    "run_id": "20261004T062815-7503e5ad457f",
+    "seed": 1,
+    "seeds": [
+      1
+    ],
+    "smoke": false,
+    "smoke_test_rows": 120,
+    "smoke_train_rows": 400,
+    "split_fingerprint": "686cedfc5028c2d9569b062ebadf3f6c71363502f258b27da445514559265f78",
+    "status": "failed",
+    "strategy": "kmeans_smote",
+    "study": "configs/ablations/stage1_controls.yaml",
+    "study_id": "stage1_baseline_controls_v1",
+    "study_sha256": "91f40a43ae81fe9914a13f09359ca59491b767dcf008910ea373553eb0e109dd",
+    "study_type": "baseline_control",
+    "tuning_budget": 10,
+    "ugo_max_iterations": null,
+    "variant": null,
+    "variant_id": "kmeans_smote"
+  }
+]

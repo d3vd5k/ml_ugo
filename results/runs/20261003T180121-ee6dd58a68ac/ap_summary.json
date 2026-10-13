@@ -1,0 +1,113 @@
+{
+  "summaries": [
+    {
+      "aggregation": "fold means within seed, descriptive mean/sample SD across seeds; no independent-fold inference",
+      "algorithm": "logistic_regression",
+      "budget_mode": "matched",
+      "completed_cells": 5,
+      "dataset": "shoppers",
+      "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+      "evaluation_policy_sha256": "af8a8e50eb193c0b5816d0ad8728f8f943b6449b0a95769d7e1822545cceafec",
+      "experiment_type": "development",
+      "failed_cells": 0,
+      "mean": 0.608866259441585,
+      "method": "baseline",
+      "metric": "average_precision",
+      "prepared_cells": 0,
+      "protocol_id": "shoppers_uci_controlled_v1",
+      "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+      "seed_count": 5,
+      "selected_config_sha256s": [
+        "1aa03ffda8ac3851ebbd1b8faa62da2e23f4d44d1ddb2708c54e823c0194103a",
+        "6ef359ddbbc7c8cf501d5b1d424c474f7c9efa04e7240a1f1bab38475ea343b0"
+      ],
+      "std_across_seed_means": 0.002769734510744856,
+      "study_id": "stage1_baseline_controls_v1",
+      "study_sha256": "91f40a43ae81fe9914a13f09359ca59491b767dcf008910ea373553eb0e109dd",
+      "variant_id": "baseline"
+    },
+    {
+      "aggregation": "fold means within seed, descriptive mean/sample SD across seeds; no independent-fold inference",
+      "algorithm": "random_forest",
+      "budget_mode": "matched",
+      "completed_cells": 5,
+      "dataset": "shoppers",
+      "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+      "evaluation_policy_sha256": "af8a8e50eb193c0b5816d0ad8728f8f943b6449b0a95769d7e1822545cceafec",
+      "experiment_type": "development",
+      "failed_cells": 0,
+      "mean": 0.7394906759708576,
+      "method": "baseline",
+      "metric": "average_precision",
+      "prepared_cells": 0,
+      "protocol_id": "shoppers_uci_controlled_v1",
+      "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+      "seed_count": 5,
+      "selected_config_sha256s": [
+        "120c33119d0b5ca5827d27d2df9173c4a8993529a85cb0b4fc8448f73d2ec599",
+        "18212fbfc299d5e67462c045e16d875ef7acb2a4c751d63665f0cd9b5fc38547",
+        "3822c12105b970c8dfadddff1a38c4b482a75728940ba7af0e0d36933b8e4d68",
+        "fb249554417831aaf5200732ec79d106dc535a32e0074871bb01c253aabc0187"
+      ],
+      "std_across_seed_means": 0.005700403823662372,
+      "study_id": "stage1_baseline_controls_v1",
+      "study_sha256": "91f40a43ae81fe9914a13f09359ca59491b767dcf008910ea373553eb0e109dd",
+      "variant_id": "baseline"
+    },
+    {
+      "aggregation": "fold means within seed, descriptive mean/sample SD across seeds; no independent-fold inference",
+      "algorithm": "lightgbm",
+      "budget_mode": "matched",
+      "completed_cells": 5,
+      "dataset": "shoppers",
+      "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+      "evaluation_policy_sha256": "af8a8e50eb193c0b5816d0ad8728f8f943b6449b0a95769d7e1822545cceafec",
+      "experiment_type": "development",
+      "failed_cells": 0,
+      "mean": 0.7427953811402641,
+      "method": "baseline",
+      "metric": "average_precision",
+      "prepared_cells": 0,
+      "protocol_id": "shoppers_uci_controlled_v1",
+      "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+      "seed_count": 5,
+      "selected_config_sha256s": [
+        "1f44204b29d33b01cf9c89e02fafd5e0701ab808c15d15cc557ed33d1a59495a",
+        "60b4aa20922c59c915d6230d96a4feb01d1fdbe9d0e544c95cfe2489b6016aae",
+        "a3620c089da8b30272efa973da5d7a02f4dc1daaef161ed2be6b14203c8d4b5c",
+        "d1e49eb3bebfa621b10375a96538622de75a35bdbdc3dad979537d1b03f6f3de"
+      ],
+      "std_across_seed_means": 0.003912161236764295,
+      "study_id": "stage1_baseline_controls_v1",
+      "study_sha256": "91f40a43ae81fe9914a13f09359ca59491b767dcf008910ea373553eb0e109dd",
+      "variant_id": "baseline"
+    },
+    {
+      "aggregation": "fold means within seed, descriptive mean/sample SD across seeds; no independent-fold inference",
+      "algorithm": "balanced_random_forest",
+      "budget_mode": "matched",
+      "completed_cells": 5,
+      "dataset": "shoppers",
+      "dataset_fingerprint": "f1a2bac10dab0d6554789cc94105ad3ffee1d3c04e30f097a11bed07ee88a31d",
+      "evaluation_policy_sha256": "af8a8e50eb193c0b5816d0ad8728f8f943b6449b0a95769d7e1822545cceafec",
+      "experiment_type": "development",
+      "failed_cells": 0,
+      "mean": 0.7395828064705678,
+      "method": "baseline",
+      "metric": "average_precision",
+      "prepared_cells": 0,
+      "protocol_id": "shoppers_uci_controlled_v1",
+      "protocol_sha256": "13a4c865f9618da28b7d33dd34c49478009e2459ff565baf5bfaea99d486f9ff",
+      "seed_count": 5,
+      "selected_config_sha256s": [
+        "120c33119d0b5ca5827d27d2df9173c4a8993529a85cb0b4fc8448f73d2ec599",
+        "4ae00acfbbff5f2f4a5211f4faffb0b1cb2b135b3734f27465c511fb93f40222",
+        "9b79788329c259d908499b1472318b070acb21c65951c1e767fd3e2449be1c74"
+      ],
+      "std_across_seed_means": 0.004510407870747986,
+      "study_id": "stage1_baseline_controls_v1",
+      "study_sha256": "91f40a43ae81fe9914a13f09359ca59491b767dcf008910ea373553eb0e109dd",
+      "variant_id": "baseline"
+    }
+  ]
+}

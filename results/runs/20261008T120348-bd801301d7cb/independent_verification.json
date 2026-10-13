@@ -1,0 +1,10 @@
+{
+  "records": 75,
+  "numeric_metrics": 1575,
+  "candidate_decisions": 270000,
+  "calibration_rows": 23685,
+  "unknown_calibration_rows": 15,
+  "flow_replays": 270,
+  "thinning_group_checks": 0,
+  "source_hash_checks": 75
+}
