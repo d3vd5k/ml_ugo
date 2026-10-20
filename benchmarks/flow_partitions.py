@@ -1,4 +1,4 @@
-"""F1 detector roles are distinct from the unchanged classifier training access."""
+"""Real-only FlowGMM detector roles shared by named and CLIMB comparisons."""
 import json
 
 import numpy as np
@@ -20,8 +20,8 @@ def flow_for_partition(dataset, split, partitions, role, seed, parameters, devic
     """
     from samplers.flow_gmm import FlowGMMConfig, FlowGate, fit_flow_gmm
 
-    if dataset["name"] != "shoppers" or role not in ("inner", "outer"):
-        raise ValueError("F1 development requires Shoppers and an inner/outer role")
+    if role not in ("inner", "outer"):
+        raise ValueError("FlowGMM requires an inner/outer role")
     real = np.asarray(split["fit_indices"])
     fit, calibration = train_test_split(real, test_size=.2,
         stratify=np.asarray(dataset["y"])[real], random_state=int(seed) + 7919)

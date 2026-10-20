@@ -1,0 +1,500 @@
+{
+  "config": {
+    "augmentation_total": 1000,
+    "classifiers": [
+      "mlp",
+      "logistic_regression",
+      "xgboost",
+      "random_forest"
+    ],
+    "datasets": [
+      "ozone-level-8hr",
+      "wilt",
+      "mammography",
+      "dis",
+      "Satellite"
+    ],
+    "device": "auto",
+    "experiment_type": "development",
+    "flow_epochs": 60,
+    "group_alphas": [
+      0.0,
+      0.5,
+      1.0
+    ],
+    "max_iterations": 20,
+    "methods": [
+      "original_ugo",
+      "u2_flow_gate"
+    ],
+    "mlp_epochs": 160,
+    "primary_metric": "minority_f1",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "study_id": "phase1_climb_u2_flow_vs_original_f1_v1",
+    "taus": [
+      0.5,
+      0.6,
+      0.7,
+      0.8
+    ],
+    "test_fraction": 0.2,
+    "threads": 4,
+    "threshold_selection": "real_validation_minority_f1_ties_closest_0.5_then_higher",
+    "tuning_candidates": 10,
+    "validation_fraction": 0.2
+  },
+  "config_path": "configs/ablations/climb_flow_f1.json",
+  "created_at": "2026-10-20T15:20:22.429501+00:00",
+  "cuda_available": true,
+  "datasets": [
+    {
+      "feature_dtypes": {
+        "V1": "float64",
+        "V10": "float64",
+        "V11": "float64",
+        "V12": "float64",
+        "V13": "float64",
+        "V14": "float64",
+        "V15": "float64",
+        "V16": "float64",
+        "V17": "float64",
+        "V18": "float64",
+        "V19": "float64",
+        "V2": "float64",
+        "V20": "float64",
+        "V21": "float64",
+        "V22": "float64",
+        "V23": "float64",
+        "V24": "float64",
+        "V25": "float64",
+        "V26": "float64",
+        "V27": "float64",
+        "V28": "float64",
+        "V29": "float64",
+        "V3": "float64",
+        "V30": "float64",
+        "V31": "float64",
+        "V32": "float64",
+        "V33": "float64",
+        "V34": "float64",
+        "V35": "float64",
+        "V36": "float64",
+        "V37": "float64",
+        "V38": "float64",
+        "V39": "float64",
+        "V4": "float64",
+        "V40": "float64",
+        "V41": "float64",
+        "V42": "float64",
+        "V43": "float64",
+        "V44": "float64",
+        "V45": "float64",
+        "V46": "float64",
+        "V47": "float64",
+        "V48": "float64",
+        "V49": "float64",
+        "V5": "float64",
+        "V50": "float64",
+        "V51": "float64",
+        "V52": "float64",
+        "V53": "float64",
+        "V54": "float64",
+        "V55": "float64",
+        "V56": "float64",
+        "V57": "float64",
+        "V58": "float64",
+        "V59": "float64",
+        "V6": "float64",
+        "V60": "float64",
+        "V61": "float64",
+        "V62": "float64",
+        "V63": "float64",
+        "V64": "float64",
+        "V65": "float64",
+        "V66": "float64",
+        "V67": "float64",
+        "V68": "float64",
+        "V69": "float64",
+        "V7": "float64",
+        "V70": "float64",
+        "V71": "float64",
+        "V72": "float64",
+        "V8": "float64",
+        "V9": "float64"
+      },
+      "fingerprint_algorithm": "sha256_pandas_raw_values_v1",
+      "label_mapping": [
+        {
+          "encoded": 0,
+          "label": "1"
+        },
+        {
+          "encoded": 1,
+          "label": "2"
+        }
+      ],
+      "n_features": 72,
+      "n_rows": 2534,
+      "name": "ozone-level-8hr",
+      "openml_id": 1487,
+      "openml_md5_checksum": "6e6b7aeb382e30ae79149e4e5845cf2d",
+      "openml_name": "ozone-level-8hr",
+      "raw_fingerprint": "4822908885d07da30a339169aad1cd62d2d13d61271d19b4ccd99ac8346fa53c",
+      "row_id_attributes": [],
+      "row_id_source": "original_row_position",
+      "source": "openml_raw",
+      "target_attribute": "Class",
+      "version": 1
+    },
+    {
+      "feature_dtypes": {
+        "GLCM_Pan": "float64",
+        "Mean_G": "float64",
+        "Mean_NIR": "float64",
+        "Mean_R": "float64",
+        "SD_Plan": "float64"
+      },
+      "fingerprint_algorithm": "sha256_pandas_raw_values_v1",
+      "label_mapping": [
+        {
+          "encoded": 0,
+          "label": "1"
+        },
+        {
+          "encoded": 1,
+          "label": "2"
+        }
+      ],
+      "n_features": 5,
+      "n_rows": 4839,
+      "name": "wilt",
+      "openml_id": 40983,
+      "openml_md5_checksum": "aa7c0aaf3fd671f06bbf6a68be4754f7",
+      "openml_name": "wilt",
+      "raw_fingerprint": "d0b4ee4e55ae83860a363cf66dbb34e443dfe23f764fbe31a5eeaee8a7fc1de9",
+      "row_id_attributes": [],
+      "row_id_source": "original_row_position",
+      "source": "openml_raw",
+      "target_attribute": "class",
+      "version": 2
+    },
+    {
+      "feature_dtypes": {
+        "attr1": "float64",
+        "attr2": "float64",
+        "attr3": "float64",
+        "attr4": "float64",
+        "attr5": "float64",
+        "attr6": "float64"
+      },
+      "fingerprint_algorithm": "sha256_pandas_raw_values_v1",
+      "label_mapping": [
+        {
+          "encoded": 0,
+          "label": "-1"
+        },
+        {
+          "encoded": 1,
+          "label": "1"
+        }
+      ],
+      "n_features": 6,
+      "n_rows": 11183,
+      "name": "mammography",
+      "openml_id": 310,
+      "openml_md5_checksum": "5feded5bcc067a737ec94f50ad42e93a",
+      "openml_name": "mammography",
+      "raw_fingerprint": "948ba6d5f64bf71ecf761bab0226c620d8b72e3823d7a4f73aee0fa7f11beec4",
+      "row_id_attributes": [],
+      "row_id_source": "original_row_position",
+      "source": "openml_raw",
+      "target_attribute": "class",
+      "version": 1
+    },
+    {
+      "feature_dtypes": {
+        "FTI": "uint8",
+        "FTI_measured": "category",
+        "I131_treatment": "category",
+        "T3": "uint8",
+        "T3_measured": "category",
+        "T4U": "uint8",
+        "T4U_measured": "category",
+        "TBG": "category",
+        "TBG_measured": "category",
+        "TSH": "float64",
+        "TSH_measured": "category",
+        "TT4": "uint8",
+        "TT4_measured": "category",
+        "age": "uint8",
+        "goitre": "category",
+        "hypopituitary": "category",
+        "lithium": "category",
+        "on_antithyroid_medication": "category",
+        "on_thyroxine": "category",
+        "pregnant": "category",
+        "psych": "category",
+        "query_hyperthyroid": "category",
+        "query_hypothyroid": "category",
+        "query_on_thyroxine": "category",
+        "referral_source": "category",
+        "sex": "category",
+        "sick": "category",
+        "thyroid_surgery": "category",
+        "tumor": "category"
+      },
+      "fingerprint_algorithm": "sha256_pandas_raw_values_v1",
+      "label_mapping": [
+        {
+          "encoded": 0,
+          "label": "0"
+        },
+        {
+          "encoded": 1,
+          "label": "1"
+        }
+      ],
+      "n_features": 29,
+      "n_rows": 3772,
+      "name": "dis",
+      "openml_id": 40713,
+      "openml_md5_checksum": "05d4e8f2415e9b019fa3034c81035b47",
+      "openml_name": "dis",
+      "raw_fingerprint": "f8d8c6d91fe730b8adea58bc4eb3fb1b3555f61077d05878a235ac1b23ad84a4",
+      "row_id_attributes": [],
+      "row_id_source": "original_row_position",
+      "source": "openml_raw",
+      "target_attribute": "class",
+      "version": 1
+    },
+    {
+      "feature_dtypes": {
+        "V1": "uint8",
+        "V10": "uint8",
+        "V11": "uint8",
+        "V12": "uint8",
+        "V13": "uint8",
+        "V14": "uint8",
+        "V15": "uint8",
+        "V16": "uint8",
+        "V17": "uint8",
+        "V18": "uint8",
+        "V19": "uint8",
+        "V2": "uint8",
+        "V20": "uint8",
+        "V21": "uint8",
+        "V22": "uint8",
+        "V23": "uint8",
+        "V24": "uint8",
+        "V25": "uint8",
+        "V26": "uint8",
+        "V27": "uint8",
+        "V28": "uint8",
+        "V29": "uint8",
+        "V3": "uint8",
+        "V30": "uint8",
+        "V31": "uint8",
+        "V32": "uint8",
+        "V33": "uint8",
+        "V34": "uint8",
+        "V35": "uint8",
+        "V36": "uint8",
+        "V4": "uint8",
+        "V5": "uint8",
+        "V6": "uint8",
+        "V7": "uint8",
+        "V8": "uint8",
+        "V9": "uint8"
+      },
+      "fingerprint_algorithm": "sha256_pandas_raw_values_v1",
+      "label_mapping": [
+        {
+          "encoded": 0,
+          "label": "Anomaly"
+        },
+        {
+          "encoded": 1,
+          "label": "Normal"
+        }
+      ],
+      "n_features": 36,
+      "n_rows": 5100,
+      "name": "Satellite",
+      "openml_id": 40900,
+      "openml_md5_checksum": "7a4e6eb8113b885d48b74fb2eb754570",
+      "openml_name": "Satellite",
+      "raw_fingerprint": "414e637e7664ea772b3981f735e595e0cbd7fb7a187fcd8d3bb48db6b3275623",
+      "row_id_attributes": [],
+      "row_id_source": "original_row_position",
+      "source": "openml_raw",
+      "target_attribute": "Target",
+      "version": 1
+    }
+  ],
+  "dependencies": {
+    "imbalanced-learn": "0.14.2",
+    "numpy": "2.5.2",
+    "openml": "0.15.1",
+    "pandas": "3.0.5",
+    "scikit-learn": "1.6.0",
+    "scipy": "1.18.1",
+    "torch": "2.13.0",
+    "xgboost": "3.4.1"
+  },
+  "learner_training": "fixed native epochs; validation=None; unit synthetic weights",
+  "methods": [
+    "original_ugo",
+    "u2_flow_gate"
+  ],
+  "mode": "run",
+  "primary_metric": "minority_f1",
+  "python": "3.14.7 | packaged by Anaconda, Inc. | (main, Aug 14 2026, 10:21:40) [GCC 14.3.0]",
+  "runtime_seconds": 2756.4471971929997,
+  "selection_policy": "10 common learner proposals; alpha cycles by candidate; lock canonical U2 learner/alpha before tau search",
+  "shared_flow_fits": [
+    {
+      "core_sha256": "c510b40d028ffad9dc6e2da41fb7f117c499b1e7259ffd0d5714baad39f4a334",
+      "dataset": "ozone-level-8hr",
+      "fit_count": 1,
+      "fit_seconds": 3.600350260999903,
+      "seed": 42
+    },
+    {
+      "core_sha256": "d6aa9cd52ff4bba3c0b3bec33fb829294c73a52692992df147ac87db085bb164",
+      "dataset": "ozone-level-8hr",
+      "fit_count": 1,
+      "fit_seconds": 2.9000760930000524,
+      "seed": 43
+    },
+    {
+      "core_sha256": "b38c95f7c549851f50a3c21be86cdaf30da32c6dc6cea04e5876ba14fb80332e",
+      "dataset": "ozone-level-8hr",
+      "fit_count": 1,
+      "fit_seconds": 2.6882504500001687,
+      "seed": 44
+    },
+    {
+      "core_sha256": "4521ef470592c6b983479782f2bb7eddcb43d5303b2dcc2ae9a68d9038c5c672",
+      "dataset": "wilt",
+      "fit_count": 1,
+      "fit_seconds": 4.030200440999579,
+      "seed": 42
+    },
+    {
+      "core_sha256": "76566faf83f8ca8965b5e3dcfb30944edefbae6da020ac400540c4e892afafcd",
+      "dataset": "wilt",
+      "fit_count": 1,
+      "fit_seconds": 3.848263244000009,
+      "seed": 43
+    },
+    {
+      "core_sha256": "bc5f6d33c7d9971af5b1e5f1542b8692ba933de833dbf35ef061e99dd8fc779d",
+      "dataset": "wilt",
+      "fit_count": 1,
+      "fit_seconds": 3.8648285650001526,
+      "seed": 44
+    },
+    {
+      "core_sha256": "ecefd43f943e1a98cae7238d8138e6f52dcb4c9370a68a0220ea6b7b9a607004",
+      "dataset": "mammography",
+      "fit_count": 1,
+      "fit_seconds": 8.631655723999756,
+      "seed": 42
+    },
+    {
+      "core_sha256": "1506f3a37102bf9eb15e6dad4ab37aab5a56b9b08e6414c9e7f5be23b76ad90c",
+      "dataset": "mammography",
+      "fit_count": 1,
+      "fit_seconds": 8.623730132000219,
+      "seed": 43
+    },
+    {
+      "core_sha256": "6e54969a4993684e45cc89db14730beb5877f758bb45cbec4de497d5b4a5b381",
+      "dataset": "mammography",
+      "fit_count": 1,
+      "fit_seconds": 8.650428175999878,
+      "seed": 44
+    },
+    {
+      "core_sha256": "2eb31a91fd42f5cbbcebda54ab6a38f9c7ead7b44d10fce67c403ab0201850e0",
+      "dataset": "dis",
+      "fit_count": 1,
+      "fit_seconds": 3.352266478000274,
+      "seed": 42
+    },
+    {
+      "core_sha256": "924553f2442bf09aa5a11c0236acab239203401420898d07ffd0552f34cc360d",
+      "dataset": "dis",
+      "fit_count": 1,
+      "fit_seconds": 3.1524520020002456,
+      "seed": 43
+    },
+    {
+      "core_sha256": "cc6db1cdca044d4e78be445f9bd4e66a07bd313c6805965255e3c3cd7d9682bd",
+      "dataset": "dis",
+      "fit_count": 1,
+      "fit_seconds": 3.1238093189999745,
+      "seed": 44
+    },
+    {
+      "core_sha256": "1922db5afb27d1596bae8b1dd6c8be3c45c0eee04fa4a4b27a3106ae3835f97d",
+      "dataset": "Satellite",
+      "fit_count": 1,
+      "fit_seconds": 4.28428545099996,
+      "seed": 42
+    },
+    {
+      "core_sha256": "d29ec13fc44946cbfadec9acbb7d5962cc1bc95640fdcddfc99b57dc20b22258",
+      "dataset": "Satellite",
+      "fit_count": 1,
+      "fit_seconds": 4.278695847000108,
+      "seed": 43
+    },
+    {
+      "core_sha256": "08a0814013a834fe02d53aa84224085e880a924552f95d3a2694afbd29606241",
+      "dataset": "Satellite",
+      "fit_count": 1,
+      "fit_seconds": 4.241469899000094,
+      "seed": 44
+    }
+  ],
+  "smoke_is_scientific_evidence": false,
+  "source_hashes": {
+    "benchmarks/climb_flow_f1.py": "a179e87076bcfa3aec83c74646342076a2d15efe4095ee70cd97a35b61ee8ec2",
+    "benchmarks/climb_flow_f1_report.py": "660e9167d1096c38f47f8ab86b933729b70e954e03b6204d59c5798edec30a7c",
+    "benchmarks/flow_partitions.py": "46f924fff17d68b808268854b47da6513d465e09e61f3fb8f27260747093c194",
+    "benchmarks/protocols.py": "99e840d13821e6c4d4860d52e2f9e55d61017127cfc922b24db472f7a8275441",
+    "benchmarks/results.py": "27d5d0122169c96bb975d180366bb783492c8112eac5b6acbdda34f7a156b141",
+    "benchmarks/run.py": "0abbe28feb8d49ced76edf7a1e6524ac0cefc345ee553df38addf4fc9aa7bad3",
+    "benchmarks/scoring.py": "8fba94167ddd21a5bdc639b85610c5951d0361148188ad34965a1ccf0217cef8",
+    "classifiers/factory.py": "b0d5d88bafe0e1447dc1538613a76451ef0ebc875dbc7022b09deb75bb360dd4",
+    "classifiers/mlp.py": "e39963469ccba9be40416b54c7ccb65e5db8596a9c8f59fbcb9357b1ccc383af",
+    "configs/ablations/climb_flow_f1.json": "c5d9adef116928eb513569bb854842867fbc0b5a3bb0593df43093c512e415ff",
+    "datasets/scripts/climb.py": "363ff3296c603a416f6f4bd034039a5e5271ada2be1fcb7192a7fa9eb13c21a8",
+    "datasets/scripts/synthetic.py": "cb38bf61538457ca5eae0ad877a63845b8d07b065ec341c1466f236d117f5a17",
+    "experiments.py": "ae9f5b37cc58507d86b9c8a176df99d889a32c6561e59de2c82f88c18b40dfb0",
+    "samplers/allocation.py": "c32a260c880b3633d6b1fb76f6278e4a233146a646984320166687edda16bc93",
+    "samplers/constraints.py": "b8b909d8426cc7b72892bf88aea7333c6a76c130c37827ed35f9986a40c67953",
+    "samplers/controls.py": "ab04729b1c8ecde84df31f1bbdd4072a89b336fea75ea4e2a24957494fa0d74e",
+    "samplers/flow_gmm.py": "181b6b474fa5278a9c0f6f6887f6bd12e60c43d081b2d20ed49f3d2d632c0d93",
+    "samplers/flow_support.py": "a19b23769b4c709c76a4f75d043c490524fb9be3f751d6a2da3cbb3e6a118d58",
+    "samplers/geometry.py": "a27e19900fed7771d759b83dfe3e32e66c1b00b3a14532880e16850214e99511",
+    "samplers/groups.py": "9d96f5e56d1857a6bb3e25006d5e04491349406126f5e24a29528dc78cb937e5",
+    "samplers/hdbscan_support.py": "5356db9fe0cb4515e3d2b03d48528423e2be8bc01af47d82673455de177a5add",
+    "samplers/learning_benefit.py": "1fa27c1d29a52571a72740a3a7310b3fa3848a578dfbd776eef733fde6b82d1d",
+    "samplers/pool_random.py": "94eb57efc3dcf9d6d33f479f189dcf0761a13883ce1ebf76774ed9dbb725c1c2",
+    "samplers/protected.py": "b0c2a92427fdedc1bfb91d7e04db128e776619560ef805a764b03710ad0e6054",
+    "samplers/stopping.py": "2f8af8413b6a175f7a84a7518122934cf17233a1fa00653163cca1d9054377ad",
+    "samplers/ugo.py": "e98c16c6b5773f4dce67bf2d9516746f1ea366c255127539430faecdf4e5dc7d",
+    "samplers/ugo_original.py": "3577f4fbbd466cb0a48f5d1813a90fa9f9529cba0f74e6e7fd43d6a482c143dc"
+  },
+  "split_policy": "repeated stratified holdouts; smoke re-splits only outer training",
+  "status": "completed",
+  "study": "climb_flow_f1",
+  "threshold_policy": "validation_unique_scores_max_f1_tie_nearest_half_then_higher",
+  "torch_cuda": "13.0"
+}

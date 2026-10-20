@@ -384,7 +384,7 @@ class FlowGate:
         self.inference_seconds, self.inference_rows = 0., 0
         self._numeric, self._categorical, self._encoder, self._groups = _layout(classifier_preprocessor)
         self._columns = classifier_preprocessor.named_steps["columns"]
-        self._width = self._columns.output_indices_["categorical"].stop
+        self._width = max(block.stop for block in self._columns.output_indices_.values())
         self._raw_columns = list(classifier_preprocessor.feature_names_in_)
         if self._raw_columns != list(core.preprocessor.feature_names_in_):
             raise ValueError("Classifier and detector raw feature schemas must match")

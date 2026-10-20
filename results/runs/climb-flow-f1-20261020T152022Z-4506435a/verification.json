@@ -1,0 +1,67 @@
+{
+  "status": "passed",
+  "success": true,
+  "verified_cells": 120,
+  "expected_cells": 120,
+  "datasets": [
+    "ozone-level-8hr",
+    "wilt",
+    "mammography",
+    "dis",
+    "Satellite"
+  ],
+  "classifiers": [
+    "mlp",
+    "logistic_regression",
+    "xgboost",
+    "random_forest"
+  ],
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "mode": "run",
+  "full_five_dataset_suite": true,
+  "independent_native_test_metrics": true,
+  "independent_selected_validation_thresholds": true,
+  "role_identity_disjointness": true,
+  "paired_native_labels": true,
+  "compact_provenance_audits_checked": true,
+  "raw_generation_replayed": false,
+  "candidate_scores_independently_recomputed": "selected candidate only",
+  "source_hashes": {
+    "benchmarks/climb_flow_f1.py": "a179e87076bcfa3aec83c74646342076a2d15efe4095ee70cd97a35b61ee8ec2",
+    "benchmarks/climb_flow_f1_report.py": "660e9167d1096c38f47f8ab86b933729b70e954e03b6204d59c5798edec30a7c",
+    "benchmarks/flow_partitions.py": "46f924fff17d68b808268854b47da6513d465e09e61f3fb8f27260747093c194",
+    "benchmarks/protocols.py": "99e840d13821e6c4d4860d52e2f9e55d61017127cfc922b24db472f7a8275441",
+    "benchmarks/results.py": "27d5d0122169c96bb975d180366bb783492c8112eac5b6acbdda34f7a156b141",
+    "benchmarks/run.py": "0abbe28feb8d49ced76edf7a1e6524ac0cefc345ee553df38addf4fc9aa7bad3",
+    "benchmarks/scoring.py": "8fba94167ddd21a5bdc639b85610c5951d0361148188ad34965a1ccf0217cef8",
+    "classifiers/factory.py": "b0d5d88bafe0e1447dc1538613a76451ef0ebc875dbc7022b09deb75bb360dd4",
+    "classifiers/mlp.py": "e39963469ccba9be40416b54c7ccb65e5db8596a9c8f59fbcb9357b1ccc383af",
+    "configs/ablations/climb_flow_f1.json": "c5d9adef116928eb513569bb854842867fbc0b5a3bb0593df43093c512e415ff",
+    "datasets/scripts/climb.py": "363ff3296c603a416f6f4bd034039a5e5271ada2be1fcb7192a7fa9eb13c21a8",
+    "datasets/scripts/synthetic.py": "cb38bf61538457ca5eae0ad877a63845b8d07b065ec341c1466f236d117f5a17",
+    "experiments.py": "ae9f5b37cc58507d86b9c8a176df99d889a32c6561e59de2c82f88c18b40dfb0",
+    "samplers/allocation.py": "c32a260c880b3633d6b1fb76f6278e4a233146a646984320166687edda16bc93",
+    "samplers/constraints.py": "b8b909d8426cc7b72892bf88aea7333c6a76c130c37827ed35f9986a40c67953",
+    "samplers/controls.py": "ab04729b1c8ecde84df31f1bbdd4072a89b336fea75ea4e2a24957494fa0d74e",
+    "samplers/flow_gmm.py": "181b6b474fa5278a9c0f6f6887f6bd12e60c43d081b2d20ed49f3d2d632c0d93",
+    "samplers/flow_support.py": "a19b23769b4c709c76a4f75d043c490524fb9be3f751d6a2da3cbb3e6a118d58",
+    "samplers/geometry.py": "a27e19900fed7771d759b83dfe3e32e66c1b00b3a14532880e16850214e99511",
+    "samplers/groups.py": "9d96f5e56d1857a6bb3e25006d5e04491349406126f5e24a29528dc78cb937e5",
+    "samplers/hdbscan_support.py": "5356db9fe0cb4515e3d2b03d48528423e2be8bc01af47d82673455de177a5add",
+    "samplers/learning_benefit.py": "1fa27c1d29a52571a72740a3a7310b3fa3848a578dfbd776eef733fde6b82d1d",
+    "samplers/pool_random.py": "94eb57efc3dcf9d6d33f479f189dcf0761a13883ce1ebf76774ed9dbb725c1c2",
+    "samplers/protected.py": "b0c2a92427fdedc1bfb91d7e04db128e776619560ef805a764b03710ad0e6054",
+    "samplers/stopping.py": "2f8af8413b6a175f7a84a7518122934cf17233a1fa00653163cca1d9054377ad",
+    "samplers/ugo.py": "e98c16c6b5773f4dce67bf2d9516746f1ea366c255127539430faecdf4e5dc7d",
+    "samplers/ugo_original.py": "3577f4fbbd466cb0a48f5d1813a90fa9f9529cba0f74e6e7fd43d6a482c143dc"
+  },
+  "artifacts": [
+    "summary.csv",
+    "paired_deltas.csv",
+    "RESULTS.md"
+  ]
+}

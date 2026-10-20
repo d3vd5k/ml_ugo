@@ -6,6 +6,8 @@ The current allocation baseline treats each class as a group, scores real seeds 
 
 For a concise, mechanism-only explanation, see [Technical changes to UGO](reports/technical_changes.md).
 
+For the evidence-backed closing proposal, see [Phase 1 final pipeline draft](reports/phase1_final_pipeline.md). It targets minority-class F1 with validation-selected decision thresholds, optional U2/FlowGMM augmentation and synthetic-weight selection; it does not change implemented defaults, retention decisions or freeze status.
+
 ## Git upload contents
 
 `.gitignore` allows source, configuration, documentation, and text metadata. Results are limited to text summaries directly in `results/`, the run registry, and immediate `results/runs/<run-id>/` files. All nested run artifacts, fold/seed directories, smoke outputs, caches, trained models, array files, archives, PDFs, and generated notebooks stay local. Retained summaries use regular Git, not Git LFS.
@@ -543,4 +545,31 @@ conda run -n ml_project python -m unittest discover -s tests -p "test_*.py"
 Regression coverage includes train-fitted preprocessing, rare-class holdout coverage, validation/descendant isolation, fixed-epoch refit, generation caps, constant-group stopping, categorical validity, independent simulation controls, AP semantics and deterministic CPU/CUDA execution.
 
 Setup verification: **75 regression tests passed**; Shoppers training-only smoke exercised 25 applicable default classifier/control cells plus 8 MLP/XGBoost CUDA-path cells. Seven intrinsic-ensemble combinations were explicitly unsupported, not fake successes. APS/Satimage preparation validated official partitions without training; BAF requires a local official Base release. No full CLIMB or comparative study was run.
+
+## F1-first five-dataset U2 + FlowGMM comparison
+
+`configs/ablations/climb_flow_f1.json` declares the requested comparison of **original UGO only** against canonical **U2 + compatibility-only FlowGMM**, without corrected UGO, U1 composition, downweighting or an ensemble. The five previously used datasets are `ozone-level-8hr`, `wilt`, `mammography`, `dis` and `Satellite` from the **CLIMB/imbalanced-ensemble catalogue**, not imbalanced-learn's separate dataset collection. Raw cached OpenML tables are loaded so preprocessing fits within each training role.
+
+```bash
+# Training-only reduced check across all four native classifier families.
+conda run --no-capture-output -n ml_project python -B -m benchmarks.climb_flow_f1 \
+  --smoke --datasets ozone-level-8hr dis --seeds 42
+
+# All five datasets, MLP/LR/XGBoost/RF, seeds 42/43/44, both methods: 120 cells.
+conda run --no-capture-output -n ml_project python -B -u -m benchmarks.climb_flow_f1 --run
+
+# Independently recompute saved prediction metrics and selected validation thresholds.
+conda run --no-capture-output -n ml_project python -B -m benchmarks.climb_flow_f1_report RUN_DIR
+```
+
+Both methods receive the same ten native learner proposals per split. U2 cycles group alpha across those proposals; its winning learner/alpha is locked before selecting FlowGMM tau from 0.5/0.6/0.7/0.8. Selection maximizes **real-validation minority F1**, including a classifier threshold search over whole tied-score groups. Test scores never select thresholds. The positive class is identified from real outer training, including when its encoded label is 0. Report fixed-0.5 F1 separately; historical AP-selected/calibrated study scores are not interchangeable with this fresh protocol.
+
+Three seeds define repeated stratified 80/20 outer splits with 20% inner validation. Native MLP fits use fixed 160 epochs; the frozen FlowGMM uses 60 epochs and fits only its reserved 80% real inner-fit core, excluding calibration, validation and test rows even during outer replay. Models and generation use CUDA where supported; LR/RF remain CPU estimators. Both methods retain their native stopping under a 1,000-proposal allowance and 20 rounds. Rejection/cap shortfalls are not refilled, and a common cap does **not** imply matched accepted dose.
+
+This dedicated runner saves compact `manifest.json`, `records.json`, `metrics.csv`, `splits.json`, `selections.json`, and native test/selected-validation prediction CSVs; it deliberately avoids recursive source archives, checkpoints, augmented arrays and raw per-proposal logs. It does not use the older run registry. Source hashes and dependency versions remain in the manifest. `summary.csv`, `paired_deltas.csv`, `verification.json` and `RESULTS.md` are generated after checking complete coverage, paired identities/labels, selected validation thresholds, metrics and compact count/role evidence. Compact ancestry evidence is **not** independent raw-generation replay. Smoke metrics are integration evidence only.
+
+Numeric-only FlowGMM coordinate bridges now derive their width from all transformer output blocks, rather than assuming a categorical block exists. The regression checks raw-coordinate reconstruction, density ratios and gate acceptance with a differently fitted classifier scaler.
+
+Completed study: [all metrics and per-dataset comparisons](results/runs/climb-flow-f1-20261020T152022Z-4506435a/RESULTS.md). All **120 cells** completed; saved native predictions and selected validation thresholds passed independent artifact checks. A separate [raw-data audit](results/runs/climb-flow-f1-20261020T152022Z-4506435a/raw_data_verification.json) bound all 240 test/validation CSVs to raw OpenML labels and independently reconstructed split identities. Equal-dataset mean F1 improves for MLP/LR/RF but declines for XGBoost; outcomes are mixed across datasets. No universal superiority or component-retention decision follows. Scientific runtime was 2,756.45 seconds, including 69.27 seconds of shared Flow fitting; 5,349 native classifier fits were recorded. Six targeted gate/threshold regressions and the 16-cell training-only smoke passed.
+
 

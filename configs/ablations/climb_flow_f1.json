@@ -1,0 +1,21 @@
+{
+  "study_id": "phase1_climb_u2_flow_vs_original_f1_v1",
+  "experiment_type": "development",
+  "datasets": ["ozone-level-8hr", "wilt", "mammography", "dis", "Satellite"],
+  "classifiers": ["mlp", "logistic_regression", "xgboost", "random_forest"],
+  "seeds": [42, 43, 44],
+  "methods": ["original_ugo", "u2_flow_gate"],
+  "primary_metric": "minority_f1",
+  "threshold_selection": "real_validation_minority_f1_ties_closest_0.5_then_higher",
+  "test_fraction": 0.2,
+  "validation_fraction": 0.2,
+  "tuning_candidates": 10,
+  "augmentation_total": 1000,
+  "max_iterations": 20,
+  "mlp_epochs": 160,
+  "flow_epochs": 60,
+  "group_alphas": [0.0, 0.5, 1.0],
+  "taus": [0.5, 0.6, 0.7, 0.8],
+  "device": "auto",
+  "threads": 4
+}

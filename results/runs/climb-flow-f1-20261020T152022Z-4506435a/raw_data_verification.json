@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "run_id": "climb-flow-f1-20261020T152022Z-4506435a",
+  "datasets": ["ozone-level-8hr", "wilt", "mammography", "dis", "Satellite"],
+  "verified_prediction_files": 240,
+  "verified_dataset_seed_splits": 15,
+  "raw_openml_labels_and_row_ids_checked": true,
+  "seeded_stratified_outer_and_inner_splits_reconstructed": true,
+  "positive_class_recomputed_from_outer_training_only": true,
+  "raw_generation_replayed": false,
+  "model_retraining_performed": false
+}

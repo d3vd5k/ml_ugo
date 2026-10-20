@@ -47,3 +47,5 @@ __pycache__/
 # Never upload fold/seed directories, even outside the normal run layout.
 fold-*/
 seed-*/
+PLAN2*
+PLAN2/*

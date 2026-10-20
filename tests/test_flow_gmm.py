@@ -125,6 +125,22 @@ class FlowGMMTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 gate.predict(points, self.y[:3], tau)
 
+    def test_numeric_only_classifier_bridge_preserves_raw_density_and_acceptance(self):
+        frame = self.frame.drop(columns="kind")
+        core = fit_flow_gmm(frame, self.y, np.arange(len(frame)), 91, small_config())
+        classifier = make_preprocessor(frame).fit(frame.iloc[::2])
+        gate = FlowGate(core, classifier, calibration_row_ids=[100, 101],
+                        validation_row_ids=[200, 201])
+        chosen = np.array([2, 31, 40])
+        raw = frame.iloc[chosen]
+        points = classifier.named_steps["columns"].transform(raw)
+        actual = gate.predict(points, self.y[chosen], .6)
+        expected = core.density(core.represent(raw), self.y[chosen])
+        np.testing.assert_allclose(actual["log_ratio"], expected["log_ratio"], rtol=1e-12, atol=1e-12)
+        np.testing.assert_array_equal(actual["accepted"],
+                                      expected["log_ratio"] >= np.log(.6) - np.log1p(-.6))
+        np.testing.assert_allclose(gate.inverse_classifier(points), raw, rtol=1e-12, atol=1e-12)
+
     def test_class_swap_is_symmetric_supervised_fit(self):
         swapped = fit_flow_gmm(self.frame, 1 - self.y, np.arange(len(self.y)), 91, small_config())
         original = self.core.density(self.core.represent(self.frame), self.y)
