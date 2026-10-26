@@ -1,0 +1,111 @@
+{
+  "study_id": "shoppers_u2_flow_weight1_factorial_v1",
+  "mode": "scientific",
+  "status": "complete",
+  "created_utc": "2026-10-23T16:23:34.767198+00:00",
+  "config": {
+    "study_id": "shoppers_u2_flow_weight1_factorial_v1",
+    "dataset": "shoppers",
+    "experiment_type": "development",
+    "classifiers": [
+      "mlp",
+      "random_forest",
+      "xgboost"
+    ],
+    "outer_folds": 5,
+    "split_seed": 2026,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "duplicate_policy": "group identical raw predictor rows across outer, inner and detector-reserve partitions; preserve rows",
+    "learner_selection": "ten real-only candidates by threshold-optimized real-validation minority F1, AP secondary, then lock across variants",
+    "decision_threshold": "per-arm real-validation F1; additionally report fixed 0.5",
+    "n_candidates": 10,
+    "mlp_epochs": 160,
+    "flow_epochs": 60,
+    "flow_fit_fraction": 0.8,
+    "flow_reserve_calibration_used": false,
+    "group_alpha": 0.5,
+    "gate_tau": 0.6,
+    "proposal_cap": 1000,
+    "max_rounds": 20,
+    "real_weight": 1.0,
+    "synthetic_weight": 1.0,
+    "refill": false,
+    "n_jobs": 4,
+    "random_forest_prediction_n_jobs": 1,
+    "replay_mask_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "variants": {
+      "A0": "Real-only",
+      "A1": "Base interpolation / pass-through",
+      "A2": "Base interpolation + Flow",
+      "A3": "U2 / pass-through",
+      "A4": "U2 + Flow gate",
+      "A5": "U2 + Flow / no stability allocation multiplier",
+      "A6": "U2 + Flow / nonbinding subgroup and anchor caps",
+      "A7": "Native U2 neighbor detection + relocation"
+    },
+    "replay_strategies": [
+      "flow",
+      "random_round",
+      "random_round_group"
+    ],
+    "replay_scope": "fixed original A4 proposal stream; final-fit intervention, not an independently evolving random trajectory",
+    "expected_main_cells": 360,
+    "expected_replay_cells": 945,
+    "confirmatory_claims": false,
+    "production_defaults_changed": false,
+    "device": "cuda"
+  },
+  "source_hashes": {
+    "benchmarks/shoppers_ablation.py": "50f1419d09bacae9217a74785a4933df6485f8bf23b2a163ce58cdbb4dc18e30",
+    "benchmarks/shoppers_ablation_sampling.py": "b9e5e87121a2ec62d0d7aa841562da2d037ab2fcf0912b9401bb42ba928ef2d5",
+    "samplers/ugo.py": "e98c16c6b5773f4dce67bf2d9516746f1ea366c255127539430faecdf4e5dc7d",
+    "samplers/groups.py": "9d96f5e56d1857a6bb3e25006d5e04491349406126f5e24a29528dc78cb937e5",
+    "samplers/allocation.py": "c32a260c880b3633d6b1fb76f6278e4a233146a646984320166687edda16bc93",
+    "samplers/flow_gmm.py": "181b6b474fa5278a9c0f6f6887f6bd12e60c43d081b2d20ed49f3d2d632c0d93",
+    "datasets/scripts/climb.py": "363ff3296c603a416f6f4bd034039a5e5271ada2be1fcb7192a7fa9eb13c21a8",
+    "UGO_30_Datasets.ipynb": "7669e81cb9226c770c4a228c45cd4648849dc32ba7ad209d9ae79669a52e9d4f",
+    "configs/ablations/shoppers_u2_flow_weight1.yaml": "8b66b7b42b72baf71ca27a837d9bfaded0bca15e8572c5b94883ec625c54bd01"
+  },
+  "dataset_rows": 12330,
+  "expected_counts": {
+    "main": 360,
+    "replay": 945
+  },
+  "versions": {
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.6.0",
+    "imbalanced-learn": "0.14.2",
+    "torch": "2.13.0",
+    "xgboost": "3.4.1"
+  },
+  "platform": "Linux-7.2.9-2-cachyos-x86_64-with-glibc2.44",
+  "gpu": "NVIDIA GeForce RTX 3050 Ti Laptop GPU",
+  "aggregation": "five-fold OOF within training seed; random-mask metric means within seed; sample SD over three training seeds",
+  "claims": "development only; previously examined Shoppers; no independent-fold or random-mask significance",
+  "classifier_checkpoints_saved": false,
+  "weights": {
+    "real": 1.0,
+    "synthetic": 1.0
+  },
+  "completed_counts": {
+    "replay": 945,
+    "main": 360
+  }
+}

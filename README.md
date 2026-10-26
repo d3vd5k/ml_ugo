@@ -8,9 +8,71 @@ For a concise, mechanism-only explanation, see [Technical changes to UGO](report
 
 For the evidence-backed closing proposal, see [Phase 1 final pipeline draft](reports/phase1_final_pipeline.md). It targets minority-class F1 with validation-selected decision thresholds, optional U2/FlowGMM augmentation and synthetic-weight selection; it does not change implemented defaults, retention decisions or freeze status.
 
+## Standalone 30-dataset notebook
+
+Copy/download **[UGO_30_Datasets.ipynb](UGO_30_Datasets.ipynb)** and run its cells in order in a Python 3.11+ Jupyter/Colab kernel. The first cell installs dependencies; all pipeline source is embedded, so no repository checkout or sidecar `.py` files are needed.
+
+The catalogue now has **32 stable IDs**, with `DATASET_RANGE = "1-32"` and `EXCLUDED_DATASETS = [10, 26]` selecting **30 active datasets**. IDs 1–30 are unchanged; the two large datasets remain numbered 10 and 26 but are skipped by default. Appended replacements are **31: haberman (306 rows, 3 predictors)** and **32: blood-transfusion-service-center (748 rows, 4 predictors)**. To run only the additions, set `DATASET_RANGE = "31-32"`; other inclusive ranges such as `"1-5"` still work without renumbering. Set `EXCLUDED_DATASETS = []` only to deliberately permit the large datasets again. These are binary CLIMB/imbalanced-ensemble sources, not imbalanced-learn's separate 27-dataset collection. The complete numbered catalogue and raw OpenML IDs are inside the notebook.
+
+Each selected dataset compares **no oversampling, original UGO, U2 + FlowGMM compatibility gate, SMOTE, KMeansSMOTE and RWO (Random Walk Oversampling)**, with **MLP, logistic regression, XGBoost, random forest and RBF SVM**. Selection uses real-validation minority F1, including a frozen classifier decision threshold. MLP/FlowGMM/dense distances and XGBoost use CUDA when available; sklearn LR/RF/SVM and the three added sampler implementations run on CPU. `DEVICE = "cpu"` supports machines without NVIDIA GPUs.
+
+The first cell installs imbalanced-learn as well as the existing dependencies. `SAMPLER_PARAMETERS` exposes fixed SMOTE/KMeansSMOTE settings; the default KMeansSMOTE balance threshold is explicitly 0.0 to admit rare-positive clusters, never a fallback after failure. Standard SMOTE/KMeansSMOTE operate on numeric/full-one-hot coordinates with whole-category argmax projection, not silently substituted SMOTENC. RWO uses real-class standard-deviation/sqrt(n) Gaussian steps for numeric features and nominal-frequency sampling for categorical blocks. Training-only sampler pools are reused across native learner candidates/classifiers; infeasible sampler settings remain recorded failures.
+
+The notebook displays all six F1 means without hiding columns. `comparison.csv` adds per-method F1 SD/seed coverage, `summary.csv` contains all metrics, and `paired_deltas.csv` compares all 15 method pairs on identical data/splits. Partial coverage is flagged explicitly rather than ranked as a complete comparison.
+
+Verified for the expanded catalogue: raw binary source sizes/targets for IDs 31/32, **60 CUDA smoke cells** outside the repository covering both additions × all five classifiers × all six methods, six independently recomputed metrics per cell, 60 validation-selected thresholds and all 150 matched method pairs. Five stable-range/exclusion regression tests passed. Earlier sampler-core evidence includes 60 CPU and 60 CUDA smoke cells, numerical sampler regressions and native/gated/all-rejected U2 parity; original catalogue entries are unchanged. The full **2,700-cell** default study was not run; other operating systems and clean-machine dependency installation were not exercised.
+
+Maintainers can regenerate the notebook using `python notebooks/build_portable_notebook.py`; the builder embeds the tested root sampler cores plus `notebooks/portable_ugo/` and the fixed catalogue. Notebook users need only the `.ipynb`.
+
+## Publication-quality synthetic comparison figures
+
+From the repository root, using the project environment:
+
+```bash
+conda run --no-capture-output -n ml_project python -B -m reports.synthetic_six_methods --device auto
+```
+
+The generator loads the exact sampler implementations embedded in `UGO_30_Datasets.ipynb`, without running its installer or 30-dataset experiment. It creates `make_moons`, two-feature linear `make_classification`, and `make_circles` examples with the same **400 real majority / 100 real minority** observations for every method. The default seed is 42. Original UGO and U2 use the notebook-default MLP for native difficulty scoring (160 epochs); the frozen real-only FlowGMM uses 60 epochs, group alpha 0.5 and gate tau 0.6. Twenty percent of the real rows are reserved from FlowGMM fitting and are not used for calibration. Parameters are prespecified, not selected for the prettiest plot or claimed F1 performance.
+
+Outputs are saved in `reports/figures/synthetic_six_methods/`:
+
+- `moons_comparison`, `linear_comparison`, `circles_comparison`: six-panel publication figures, each 7.2 × 5.8 inches.
+- `overview`: all 18 dataset/method panels; `overview_preview.png` is a smaller viewing copy.
+- Each publication figure is saved as **600-dpi PNG plus vector PDF/SVG**; PDFs embed TrueType fonts.
+- `points.csv`, `counts.csv`, and `manifest.json`: exact plotted coordinates, actual/requested augmentation counts, stopping reasons, implementation checksum, parameters, versions and sampler/FlowGMM audits.
+
+All six methods use identical real observations and the same requested budget of 300 additions (baseline requests zero). Original UGO stopping, U2 quotas and gate rejection can leave fewer synthetic points; annotations show the actual count rather than silently refilling. Axes use original sklearn feature coordinates with equal aspect and shared limits across methods for each dataset; no outliers are clipped, and overlapping points are not jittered. Colors and marker shapes distinguish real majority, real minority and synthetic minority points.
+
+These are **single-seed qualitative training illustrations, not held-out F1 evidence**. Use the separate notebook benchmark for predictive comparisons. `--device cpu`, `--seed`, `--dpi` (minimum 300), `--output`, and `--notebook` are available for reproduction. Generated figures remain local under the repository's source/text-only upload policy.
+
+## Shoppers: controlled U2 + Flow gate ablation, weight 1
+
+The dedicated [configuration](configs/ablations/shoppers_u2_flow_weight1.yaml) and `benchmarks.shoppers_ablation` runner implement the requested Shoppers-only study for **MLP, random forest and XGBoost**: five duplicate-predictor-group-disjoint outer folds, three matched seeds, eight factorial/knockout/reference variants, and ten random masks for each of two fixed-proposal replay controls. All real and synthetic weights are **1**. Unlike the [historical AP-selected table](reports/shoppers_u2_flow_ablation.md), learner candidates and decision thresholds are selected on **real-validation minority F1**; sampler alpha/tau are fixed at 0.5/0.6.
+
+The study trains MLP, XGBoost and the shared real-only FlowGMM models on CUDA, and uses CUDA for native sampler neighbor math. Random forest trains on CPU with four jobs; probability accumulation uses one job to make MMA ranks, threshold ties and exact replay checks deterministic. Preprocessing/KMeans remain CPU operations. XGBoost may report its host-input DMatrix prediction path; its training booster device is checked to remain CUDA, with no silent CPU-training fallback. This runner requires CUDA for the registered training protocol; the standalone benchmark notebook remains CPU-capable.
+
+Reproduce in a **new** run directory (preparation refuses to overwrite existing splits):
+
+```bash
+RUN_DIR=results/runs/shoppers-u2-flow-weight1-reproduction
+conda run --no-capture-output -n ml_project python -B -m benchmarks.shoppers_ablation --prepare --run-dir "$RUN_DIR"
+conda run --no-capture-output -n ml_project python -B -m benchmarks.shoppers_ablation --run --classifier mlp --run-dir "$RUN_DIR"
+conda run --no-capture-output -n ml_project python -B -m benchmarks.shoppers_ablation --run --classifier random_forest --run-dir "$RUN_DIR"
+conda run --no-capture-output -n ml_project python -B -m benchmarks.shoppers_ablation --run --classifier xgboost --run-dir "$RUN_DIR"
+conda run --no-capture-output -n ml_project python -B -m benchmarks.shoppers_ablation --collect --run-dir "$RUN_DIR"
+```
+
+Requested run directory: `results/runs/shoppers-u2-flow-weight1-20261023T161535Z`. Completed workers can be resumed without duplicating their unit records. Preparation freezes source hashes, raw-source provenance, nested partitions, real-only preprocessing/groups and one detector checkpoint per fold/seed, shared by all classifiers. Classifier workers write selections, pre-outer threshold locks, inner/outer predictions, final training arrays, ancestry/audits and A4 original-proposal traces. Replay masks match counts by round or round+subgroup; they are conditional final-fit interventions on A4's stream, not independent random generation trajectories. Classifier model checkpoints are not retained.
+
+Collection requires exactly **360 main + 945 replay outer evaluations**, independently verifies saved artifacts, and writes `RESULTS.md`, `metrics.csv`, `oof_metrics.csv`, `summary.csv`, `paired_deltas.csv`, `paired_summary.csv`, `replay_summary.csv` and `verification.json`. Scores pool the five held-out folds within each training seed; random-mask metrics are averaged within that seed before reporting seed means/sample SD. All metrics are also reported at threshold 0.5. Shared detector fit times are references, not costs to sum per classifier; outer cell timings exclude learner search and are not independent serial-speed benchmarks when workers run concurrently. These remain development results on the previously examined Shoppers dataset, not independent-fold significance or confirmatory claims.
+
+Integration evidence: all 120 main and 75 replay cells passed on an isolated 800-row training-only smoke subset, including leakage/prefix/weight/cap/knockout checks and exact replay predictions. Native A4/A7 sampler geometry, ancestry and stopping also matched the notebook's canonical implementation exactly in a CUDA MLP smoke context. Smoke settings are explicitly labelled and are never substituted for full-study settings.
+
+The requested full run **completed all 360 main and 945 replay evaluations**; independent saved-prediction, threshold, split, weight, ancestry, knockout and count-matching verification passed. See the [full results](results/runs/shoppers-u2-flow-weight1-20261023T161535Z/RESULTS.md), [main summary CSV](results/runs/shoppers-u2-flow-weight1-20261023T161535Z/summary.csv), or [results/source bundle](results/runs/shoppers-u2-flow-weight1-20261023T161535Z/results_bundle.zip). The bundle contains summaries, verification records and an offline-checked source/data archive; detailed prediction/training/trace artifacts remain in the full local run directory. All 24 main F1 means and sample SDs also independently matched direct pooling of per-fold confusion counts. The gate improves mean F1 over U2 pass-through for RF/XGBoost, not MLP; count-matched replay likewise does not show a universal gate benefit. No automatic retention/default change is applied.
+
 ## Git upload contents
 
-`.gitignore` allows source, configuration, documentation, and text metadata. Results are limited to text summaries directly in `results/`, the run registry, and immediate `results/runs/<run-id>/` files. All nested run artifacts, fold/seed directories, smoke outputs, caches, trained models, array files, archives, PDFs, and generated notebooks stay local. Retained summaries use regular Git, not Git LFS.
+`.gitignore` allows source, configuration, documentation, text metadata and the standalone `UGO_30_Datasets.ipynb`. Results are limited to text summaries directly in `results/`, the run registry, and immediate `results/runs/<run-id>/` files. All nested run artifacts, fold/seed directories, smoke outputs, caches, trained models, array files, archives, PDFs, and other generated notebooks stay local. Retained summaries use regular Git, not Git LFS.
 
 Summary-only uploads do not contain the checkpoints or detailed per-fold/per-seed artifacts needed for artifact-level verification; regenerate them locally when needed. Ignore rules affect new additions, not files already committed or stored in Git history.
 

@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "source_archive": "source.zip",
+  "source_archive_sha256": "920ebd9e830a1ec5ed57433cc6cfcb7fae7e6303a70bda467d6554fc4393b291",
+  "archive_member_count": 19,
+  "archive_crc_verified": true,
+  "native_source_hashes_match_preparation": true,
+  "pinned_public_UCI_archive_included": true,
+  "restored_outside_original_checkout": true,
+  "PYTHONPATH_cleared_for_probe": true,
+  "archived_CLI_help_executed": true,
+  "archived_sampler_and_report_imported": true,
+  "pinned_Shoppers_loaded_offline_and_checksum_checked": true,
+  "loaded_rows": 12330,
+  "training_reexecuted_from_archive": false
+}

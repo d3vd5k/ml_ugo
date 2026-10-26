@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "scope": "negative controls on copies of actual smoke artifacts; no fitted data modified",
+  "checks": [
+    {
+      "case": "stability knockout left wrong multiplier",
+      "rejected": true,
+      "reason": "Wrong stability allocation intervention"
+    },
+    {
+      "case": "quota knockout left binding seed cap",
+      "rejected": true,
+      "reason": "Wrong subgroup/anchor caps"
+    },
+    {
+      "case": "synthetic row used as interpolation parent",
+      "rejected": true,
+      "reason": "Non-real or cross-class interpolation parent"
+    },
+    {
+      "case": "relocation present in Flow arm",
+      "rejected": true,
+      "reason": "Relocation outside native A7 real support"
+    },
+    {
+      "case": "synthetic/real weight changed",
+      "rejected": true,
+      "reason": "Non-unit or missing weights"
+    }
+  ]
+}

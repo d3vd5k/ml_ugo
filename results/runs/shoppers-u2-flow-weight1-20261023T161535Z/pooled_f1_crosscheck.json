@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "source": "360 completed main per-fold metric records",
+  "independent_method": "sum TP, FP and FN across five folds separately per classifier, variant and training seed; compute binary F1; then Python statistics.mean and statistics.stdev across three seeds",
+  "classifiers": ["mlp", "random_forest", "xgboost"],
+  "variants": ["A0", "A1", "A2", "A3", "A4", "A5", "A6", "A7"],
+  "training_seeds": [0, 1, 2],
+  "final_summary_F1_means_checked": 24,
+  "final_summary_F1_sample_SDs_checked": 24,
+  "absolute_tolerance": 1e-14,
+  "all_matched": true,
+  "new_training_performed": false
+}

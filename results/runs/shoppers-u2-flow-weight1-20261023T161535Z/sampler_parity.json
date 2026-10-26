@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "scope": "integration smoke: fold 0 inner role, 800-row training-only development subset",
+  "source_smoke_run": "results/smoke/shoppers-u2-flow-weight1-20261023T161535Z-v2",
+  "classifier": "native MLP",
+  "mlp_epochs": 3,
+  "device": "cuda",
+  "canonical_reference": "run_u2 embedded in UGO_30_Datasets.ipynb",
+  "variants_checked": ["A4", "A7"],
+  "features_bitwise_equal": true,
+  "labels_bitwise_equal": true,
+  "full_ancestry_equal": true,
+  "stop_reasons_equal": true,
+  "A4_accepted_trace_coordinates_equal_final_synthetic_rows": true,
+  "scientific_performance_claim": false
+}

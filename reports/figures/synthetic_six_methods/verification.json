@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "methods": [
+    "baseline",
+    "original_ugo",
+    "u2_flow_gate",
+    "smote",
+    "kmeans_smote",
+    "rwo"
+  ],
+  "datasets": [
+    "moons",
+    "linear",
+    "circles"
+  ],
+  "all_18_real_prefixes_exactly_match_sklearn_generators": true,
+  "synthetic_labels_counts_budgets_and_visible_limits_verified": true,
+  "frozen_flow_gate_acceptance_and_disjoint_real_only_fit_verified": true,
+  "publication_pngs_verified_at_600_dpi": 4,
+  "vector_pdfs_with_embedded_truetype_fonts_no_raster_scatter_verified": 4,
+  "svg_method_titles_and_counts_verified": 4
+}
